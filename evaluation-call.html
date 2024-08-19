@@ -24,11 +24,14 @@
 		<!-- Подключение шрифтов с гугла -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/nice-select.css">
 		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/circle.css">
 		<link rel="stylesheet" href="css/styles.css" async>
+		<link rel="stylesheet" href="css/styles2.css" async>
 
 		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
 		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
@@ -51,9 +54,7 @@
 							<span>1243</span>
 						</div>
 
-						<div class="nitifications new">
-							<svg class="icon"><use xlink:href="images/sprite.svg#ic_nitifications"></use></svg>
-						</div>
+						<div class="sep"></div>
 
 						<div class="account">
 							<a href="/" class="settings_link">
@@ -83,7 +84,7 @@
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
 						</button>
 
-						<div class="page_title">Файлы</div>
+						<div class="page_title">Сводка</div>
 
 						<div class="wallet">
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
@@ -155,8 +156,8 @@
 										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
 									</a>
 
-									<div class="sub_menu" style="display: block;"><div>
-										<a >
+									<div class="sub_menu" style="display: block;">
+										<div><a class="active">
 											<span class="count">3</span>
 											<span>Все курсы</span>
 										</a></div>
@@ -292,207 +293,185 @@
 										<div><a href="/"></a></div>
 									</div>
 								</div>
-
-								<div class="item">
-									<a href="/" class="active">
-										<div class="icon icon15">
-											<svg><use xlink:href="images/sprite.svg#ic_category16"></use></svg>
-										</div>
-										<span>Пути обучения</span>
-									</a>
-								</div>
-
 							</div>
 						</aside>
 
 
-						<section class="content learning-paths">
-							<div class="page_title">Пути обучения</div>
+						<section class="content evaluation-calls">											
 
-							<div class="learning-paths_top">
-								<div class="learning-paths_top-icon">
-									<svg class="icon">
-										<use xlink:href="images/sprite.svg#learning-paths-icon"></use>
-									</svg>	
-								</div>								
-								<div class="learning-paths_top-info">
-									<div class="learning-paths_top-title">Ознакомьтесь с путями обучения</div>
-									<div class="learning-paths_top-text">Бизнес-план упорядочивает презентационный материал, учитывая современные тенденции. Опрос переворачивает целевой трафик. Поисковая реклама программирует коллективный медиабизнес. Молодежная аудитория откровенна.<br>
-										Один из признанных классиков маркетинга Ф.Котлер определяет это так: искусство медиапланирования поразительно. Потребление достижимо в разумные сроки. Бренд, пренебрегая деталями, разнородно создает сублимированный фактор коммуникации. VIP-мероприятие реально охватывает коллективный формат события. А вот по мнению аналитиков потребительский рынок нетривиален.
+							<section class="name-assessment">
+								<section class="page_title">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_left"></use></svg>
+									</a>
+									<div class="page_title-info">
+										<span>Холодные звонки</span>
+										<div class="page_title-info-text">Количество сделанных звонков: <b>45</b></div>
+									</div>
+								</section>	
+
+								<div class="name-assessment_items">
+									<div class="name-assessment_item">
+										<div class="name-assessment_item-title">Название оценки</div>
+										<div class="name-assessment_item-text green">75%</div>
+									</div>
+									<div class="name-assessment_item">
+										<div class="name-assessment_item-title">Название оценки<br> в две строки</div>
+										<div class="name-assessment_item-text yellow">75%</div>
+									</div>
+									<div class="name-assessment_item">
+										<div class="name-assessment_item-title">Название оценки</div>
+										<div class="name-assessment_item-text red">75%</div>
+									</div>
+									<div class="name-assessment_item">
+										<div class="name-assessment_item-title">Название оценки</div>
+										<div class="name-assessment_item-text green">75%</div>
+									</div>
+									<div class="name-assessment_item">
+										<div class="name-assessment_item-title">Название оценки</div>
+										<div class="name-assessment_item-text green">75%</div>
+									</div>
+									<div class="name-assessment_item">
+										<div class="name-assessment_item-title">Название оценки в две строки</div>
+										<div class="name-assessment_item-text yellow">75%</div>
+									</div>
+									<div class="name-assessment_item">
+										<div class="name-assessment_item-title">Название оценки</div>
+										<div class="name-assessment_item-text red">75%</div>
+									</div>
+									<div class="name-assessment_item">
+										<div class="name-assessment_item-title">Название оценки</div>
+										<div class="name-assessment_item-text green">75%</div>
+									</div>
+									<div class="name-assessment_item">
+										<div class="name-assessment_item-title">Название оценки</div>
+										<div class="name-assessment_item-text green">75%</div>
+									</div>
+									<div class="name-assessment_item">
+										<div class="name-assessment_item-title">Название оценки в две строки</div>
+										<div class="name-assessment_item-text yellow">75%</div>
 									</div>
 								</div>
-							</div>
+							</section>
+						
+					
 
-							<section class="faq ">
-
-								<div class="accordion">
-									<div class="accordion_item">
-										<div class="head">
-											<div class="title">Группа завода №1</div>
-											<div class="icon"></div>
-										</div>
-
-										<div class="data">
-											<div class="training-plan_items">
-												<div class="training-plan_item">
-													<div class="training-plan_item-title"><span>1</span> Посмотрите курсы</div>
-													<ul>
-														<li> <a href="">Курс о станке ТБМ-8000</a></li>
-														<li><a href="">Курс по технике безопасности на заводе</a></li>
-														<li><a href="">Продажный курс</a></li>
-													</ul>
-												</div>
-												<div class="training-plan_item">
-													<div class="training-plan_item-title"><span>2</span> Сходить в бух. отдел</div>
-													<ul>
-														<li class="active"><a href="">Открыть дверь</a></li>
-														<li class="active"><a href="">Зайти в отдел</a></li>
-													</ul>
-												</div>
-												<div class="training-plan_item">
-													<div class="training-plan_item-title"><span>3</span> Пройти тренажер</div>
-													<ul>
-														<li><a href="">Курс о станке ТБМ-8000</a></li>
-													</ul>
-												</div>
-												<div class="training-plan_item">
-													<div class="training-plan_item-title"><span>4</span> Пройти инструкцию</div>
-													<ul>
-														<li><a href="">Курс о станке ТБМ-8000</a></li>
-														<li><a href="">Курс по технике безопасности на заводе</a></li>
-													</ul>
-												</div>
-												<div class="training-plan_item">
-													<div class="training-plan_item-title"><span>5</span> Пройти тест</div>
-													<ul>
-														<li><a href="">Курс о станке ТБМ-8000</a></li>
-													</ul>
-												</div>
-												<div class="training-plan_item">
-													<div class="training-plan_item-title"><span>6</span> Прочитать книгу</div>
-													<ul>
-														<li> <a href="">Курс о станке ТБМ-8000</a></li>
-														<li><a href="">Курс по технике безопасности на заводе</a></li>
-														<li><a href="">Продажный курс</a></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="accordion_item">
-										<div class="head">
-											<div class="title">Группа завода №2 (Цех плавления)</div>
-											<div class="icon"></div>
-										</div>
-
-										<div class="data">
-											<div class="training-plan_items">
-												<div class="training-plan_item">
-													<div class="training-plan_item-title"><span>1</span> Посмотрите курсы</div>
-													<ul>
-														<li> <a href="">Курс о станке ТБМ-8000</a></li>
-														<li><a href="">Курс по технике безопасности на заводе</a></li>
-														<li><a href="">Продажный курс</a></li>
-													</ul>
-												</div>
-												<div class="training-plan_item">
-													<div class="training-plan_item-title"><span>2</span> Сходить в бух. отдел</div>
-													<ul>
-														<li class="active"><a href="">Открыть дверь</a></li>
-														<li class="active"><a href="">Зайти в отдел</a></li>
-													</ul>
-												</div>
-												<div class="training-plan_item">
-													<div class="training-plan_item-title"><span>3</span> Пройти тренажер</div>
-													<ul>
-														<li><a href="">Курс о станке ТБМ-8000</a></li>
-													</ul>
-												</div>
-												<div class="training-plan_item">
-													<div class="training-plan_item-title"><span>4</span> Пройти инструкцию</div>
-													<ul>
-														<li><a href="">Курс о станке ТБМ-8000</a></li>
-														<li><a href="">Курс по технике безопасности на заводе</a></li>
-													</ul>
-												</div>
-												<div class="training-plan_item">
-													<div class="training-plan_item-title"><span>5</span> Пройти тест</div>
-													<ul>
-														<li><a href="">Курс о станке ТБМ-8000</a></li>
-													</ul>
-												</div>
-												<div class="training-plan_item">
-													<div class="training-plan_item-title"><span>6</span> Прочитать книгу</div>
-													<ul>
-														<li> <a href="">Курс о станке ТБМ-8000</a></li>
-														<li><a href="">Курс по технике безопасности на заводе</a></li>
-														<li><a href="">Продажный курс</a></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="accordion_item">
-										<div class="head">
-											<div class="title">Группа завода №3 (Цех сборки)</div>
-											<div class="icon"></div>
-										</div>
-
-										<div class="data">
-											<div class="training-plan_items">
-												<div class="training-plan_item">
-													<div class="training-plan_item-title"><span>1</span> Посмотрите курсы</div>
-													<ul>
-														<li> <a href="">Курс о станке ТБМ-8000</a></li>
-														<li><a href="">Курс по технике безопасности на заводе</a></li>
-														<li><a href="">Продажный курс</a></li>
-													</ul>
-												</div>
-												<div class="training-plan_item">
-													<div class="training-plan_item-title"><span>2</span> Сходить в бух. отдел</div>
-													<ul>
-														<li class="active"><a href="">Открыть дверь</a></li>
-														<li class="active"><a href="">Зайти в отдел</a></li>
-													</ul>
-												</div>
-												<div class="training-plan_item">
-													<div class="training-plan_item-title"><span>3</span> Пройти тренажер</div>
-													<ul>
-														<li><a href="">Курс о станке ТБМ-8000</a></li>
-													</ul>
-												</div>
-												<div class="training-plan_item">
-													<div class="training-plan_item-title"><span>4</span> Пройти инструкцию</div>
-													<ul>
-														<li><a href="">Курс о станке ТБМ-8000</a></li>
-														<li><a href="">Курс по технике безопасности на заводе</a></li>
-													</ul>
-												</div>
-												<div class="training-plan_item">
-													<div class="training-plan_item-title"><span>5</span> Пройти тест</div>
-													<ul>
-														<li><a href="">Курс о станке ТБМ-8000</a></li>
-													</ul>
-												</div>
-												<div class="training-plan_item">
-													<div class="training-plan_item-title"><span>6</span> Прочитать книгу</div>
-													<ul>
-														<li> <a href="">Курс о станке ТБМ-8000</a></li>
-														<li><a href="">Курс по технике безопасности на заводе</a></li>
-														<li><a href="">Продажный курс</a></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									
+							
+							<section class="inforamation-calls">
+								<div class="block_top-info">
+									<div class="block_title">Информация о звонках</div>
+									<div class="block_text">Всего звонков: <b>57</b></div>
 								</div>
 
+								<div class="table-wrap">
+									<table>
+										<thead>
+											<tr>
+												<th>Дата</th>
+												<th>Имя клиента</th>
+												<th>Номер телефона</th>
+												<th>Ср. оценка</th>
+												<th>Статус</th>
+												<th>Открыть</th>
+											</tr>
+										</thead>									
+										<tbody>
+											<tr>
+												<td>30.07.2024 в 15:30</td>
+												<td>Петров Василий Иванович</td>
+												<td>+7(903)987-65-43</td>
+												<td>
+													<div class="inforamation-calls_procent green">75%</div>
+												</td>
+												<td>
+													<div class="inforamation-calls_label green">
+														Ознакомлен
+													</div>
+												</td>
+												<td>
+													<a href="#">
+														<div class="mistake_item-arrow">
+															<svg class="icon"><use xlink:href="images/sprite.svg#mistake-arrow"></use></svg>											
+														</div>										
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td>30.07.2024 в 15:30</td>
+												<td>Петров Василий Иванович</td>
+												<td>+7(903)987-65-43</td>
+												<td>
+													<div class="inforamation-calls_procent yellow">45%</div>
+												</td>
+												<td>
+													<div class="inforamation-calls_label green">
+														Ознакомлен
+													</div>
+												</td>
+												<td>
+													<a href="#">
+														<div class="mistake_item-arrow">
+															<svg class="icon"><use xlink:href="images/sprite.svg#mistake-arrow"></use></svg>											
+														</div>										
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td>30.07.2024 в 15:30</td>
+												<td>Петров Василий Иванович</td>
+												<td>+7(903)987-65-43</td>
+												<td>
+													<div class="inforamation-calls_procent red">23%</div>
+												</td>
+												<td>
+													<div class="inforamation-calls_label yellow">
+														Не ознакомлен
+													</div>
+												</td>
+												<td>
+													<a href="#">
+														<div class="mistake_item-arrow">
+															<svg class="icon"><use xlink:href="images/sprite.svg#mistake-arrow"></use></svg>											
+														</div>										
+													</a>
+												</td>
+											</tr>
+										</tbody>  
+									</table>	
+								</div>
 							</section>
 
+							
+							<div class="pagination">
+								<a href="/" class="prev">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#prev2"></use>
+									</svg>
+								</a>
+								<a href="/" class="prev">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#prev1"></use>
+									</svg>
+								</a>
+								<a class="active">1</a>
+								<a href="/">2</a>
+								<a href="/">3</a>
+								<a href="/">...</a>
+								<a href="/">10</a>
+								<a href="/" class="next">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#next1"></use>
+									</svg>
+								</a>
+								<a href="/" class="next">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#next2"></use>
+									</svg>
+								</a>
+							</div>
 
+
+						
 							<footer>
 								<div class="logo">
 									<img src="images/logo.svg" alt="">
@@ -527,6 +506,30 @@
 				</section>
 			</div>
 		</div>
+
+
+		<section class="modal" id="test">
+			<img data-src="images/ic_warning.svg" alt="" class="icon lozad">
+
+			<div class="modal_title">Аттестация по теме “Маркетинг в IT-Сфере”</div>
+
+			<div class="modal_desc">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок. Теперь никто не сможет обвинить вас в плагиате, ибо каждый текст Яндекс.Рефератов неповторим.</div>
+
+			<div class="btns">
+				<button class="close_btn btn">Позже</button>
+
+				<a href="">Начать</a>
+			</div>
+		</section>
+
+
+		<section class="modal" id="video_modal">
+			<video class="video-player video_new" width="100%" controlsList="nodownload" controls crossorigin="anonymous">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
+			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default></track>
+			</video>
+		</section>
 
 
 		<div class="supports_error">

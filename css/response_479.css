@@ -2072,4 +2072,12 @@
         flex-direction: column;
     }
 
+
+    .name-assessment_items > * {
+        width: 100%;
+    }
+
+
+    
+
 }

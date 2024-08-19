@@ -3292,4 +3292,62 @@
     }
 
 
+
+    
+
+    .evaluation-calls .mistake_items > * {
+        width: 100%;
+    }
+    .evaluation-calls .table-wrap {
+        overflow-y: scroll;
+        overflow: -moz-scrollbars-none; 
+        -ms-overflow-style: none;
+    }
+    .evaluation-calls table {
+        width: 760px;
+    }
+    .evaluation-calls .table-wrap::-webkit-scrollbar { 
+        width: 0; 
+    }
+    .evaluation-calls_head {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .evaluation-calls_head .page_title {
+        width: 100%;
+    }
+    .name-assessment_items {
+        gap: 10px;
+    }
+    .name-assessment_items > * {
+        width: calc(100% / 2 - 12px);
+    }
+
+    .evaluation-calls .mistake_items > * {
+        width: 100%;
+    }
+    .examples-calls .table-wrap {
+        overflow-y: scroll;
+        overflow: -moz-scrollbars-none; 
+        -ms-overflow-style: none;
+    }
+    .examples-calls table {
+        width: 760px;
+    }
+    .examples-calls .table-wrap::-webkit-scrollbar { 
+        width: 0; 
+    }
+
+    .communication-assessment_items > * {
+        width: 100%;
+    }
+    .call-dialog_top {
+        flex-direction: column;
+    }
+    .call-dialog_audio {
+        width: 100%;
+    }
+
+
 }
