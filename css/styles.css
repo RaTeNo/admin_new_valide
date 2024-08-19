@@ -1835,6 +1835,10 @@ aside .menu .sub_menu a.active
     line-height: 19px;
 }
 
+.text_block h1, .text_block h3, .text_block h3, .text_block h4,.text_block h5, .text_block h6{
+    line-height: 1;
+}
+
 
 .text_block > *
 {
