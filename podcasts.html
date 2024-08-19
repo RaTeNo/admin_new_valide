@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#0B00D8">
+		<meta name="theme-color" content="#0B00D8">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="sep"></div>
+
+						<div class="account">
+							<a href="/" class="settings_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+							</a>
+
+							<div class="user">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<!-- <img data-src="" alt="" class="lozad"> -->
+								</div>
+
+								<div class="name">Модератор</div>
+							</div>
+
+							<a href="/" class="logout_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+							</a>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="row">
+						<button class="menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						</button>
+
+						<div class="page_title">Сводка</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="nitifications new">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_nitifications"></use></svg>
+						</div>
+
+						<div class="account modal_cont">
+							<button class="user btn mini_modal_btn" data-modal-id="#account_modal">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<img data-src="images/tmp/user_avatar.jpg" alt="" class="lozad">
+								</div>
+
+								<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="account_modal">
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+									<span>Настройки</span>
+								</a></div>
+
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+									<span>Выход</span>
+								</a></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="content_flex">
+					<div class="cont row">
+						<aside>
+							<button class="close_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<div class="menu">
+								<div class="item">
+									<a href="/">
+										<div class="icon icon1">
+											<svg><use xlink:href="images/sprite.svg#ic_category1"></use></svg>
+										</div>
+										<span>Сводка</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon2 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category2"></use></svg>
+										</div>
+										<span>Мои задачи</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a  href="#" class="sub_link active open">
+										<div class="icon icon3 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category3"></use></svg>
+										</div>
+										<span>Курсы</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu" style="display: block;">
+										<div><a class="active">
+											<span class="count">3</span>
+											<span>Все курсы</span>
+										</a></div>
+										<div><a href="/">Новые курсы</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="#" class="sub_link">
+										<div class="icon icon4 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category4"></use></svg>
+										</div>
+										<span>Обратная связь</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/">По тренажерам</a></div>
+										<div><a href="/">По заданиям</a></div>
+										<div><a href="/">По другому</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5">
+											<svg><use xlink:href="images/sprite.svg#ic_category5"></use></svg>
+										</div>
+										<span>Тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_2">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_2"></use></svg>
+										</div>
+										<span>Аудио тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_3">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_3"></use></svg>
+										</div>
+										<span>Тренажеры действий</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon6">
+											<svg><use xlink:href="images/sprite.svg#ic_category6"></use></svg>
+										</div>
+										<span>Новости</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon7">
+											<svg><use xlink:href="images/sprite.svg#ic_category7"></use></svg>
+										</div>
+										<span>Опросы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon8">
+											<svg><use xlink:href="images/sprite.svg#ic_category8"></use></svg>
+										</div>
+										<span>Обсуждения</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon9">
+											<svg><use xlink:href="images/sprite.svg#ic_category9"></use></svg>
+										</div>
+										<span>Вебинары</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon10">
+											<svg><use xlink:href="images/sprite.svg#ic_category10"></use></svg>
+										</div>
+										<span>Подкасты</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon11">
+											<svg><use xlink:href="images/sprite.svg#ic_category11"></use></svg>
+										</div>
+										<span>Файлы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon12">
+											<svg><use xlink:href="images/sprite.svg#ic_category12"></use></svg>
+										</div>
+										<span>Коллеги</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon13">
+											<svg><use xlink:href="images/sprite.svg#ic_category13"></use></svg>
+										</div>
+										<span>Настройки</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/" class="sub_link">
+										<div class="icon icon14">
+											<svg><use xlink:href="images/sprite.svg#ic_category14"></use></svg>
+										</div>
+										<span>Управление</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/"></a></div>
+									</div>
+								</div>
+							</div>
+						</aside>
+
+
+						<section class="content">
+							<div class="block-head">
+								<div class="block-head_title">Подкасты</div>
+								<div class="block-head_text">143 подкаста в коллекции. Обновляется каждую неделю</div>
+
+
+								<div class="message_new warning mt20">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+									<div>После ознакомления с лекцией, пожалуйста нажмите кнопку <strong>“Ознакомлен”</strong> в конце страницы</div>
+									<button class="close_new_message">х</button>
+								</div>
+
+							</div>
+
+
+							<section class="podcasts">
+								<div class="podcasts_items">
+									<div class="podcasts_item">
+										<a href="podcast.html" class="podcasts_item-left">
+											<div class="podcasts_item-img">
+												<img data-src="images/podcast1.jpg" alt="" class="lozad">
+											</div>
+											<div class="podcasts_item-info">
+												<div class="podcasts_item-top">
+													<div class="podcasts_item-title">Новости в сфере маркетинга</div>
+													<div class="podcasts_item-text">Подкаст о продажах в интернете. 
+														<br>О маркетинге и рекламе в целом.
+													</div>	
+												</div>	
+												<div class="podcasts_item-bottom">
+													<div class="podcasts_item-desc">
+														<div class="podcasts_item-col">5 выпусков</div>
+														<div class="podcasts_item-date">Последний: Сегодня</div>
+													</div>
+													<div class="podcasts_item-link">
+														Страница подкаста
+													</div>	
+												</div>												
+											</div>
+										</a>
+										<div class="podcasts_item-right">
+											<div class="podcasts_item-right-title">Последние выпуски</div>
+											<div class="podcasts_item-right-items">
+												<div class="podcasts_item-right-item">
+													<a class="podcast_play" href="sounds/Manntra%20-%20K%C3%B6nigsmord.mp3" data-title="Продажи в эпоху цифровых технологий: новые возможности и вызовы" data-cat="Новости в сфере маркетинга" data-img="images/podcast1.jpg">
+														<svg class="play"><use xlink:href="images/sprite.svg#ic_play"></use></svg>
+														<svg class="pause"><use xlink:href="images/sprite.svg#ic_pause"></use></svg>
+													</a>
+													<div class="podcasts_item-right-item-info">
+														<div class="podcasts_item-right-item-title">
+															<span>Жизнь в гармонии</span> 
+															<div class="podcasts_item-right-item-icon">
+																<svg class="icon">
+																	<use xlink:href="images/sprite.svg#headphones2"></use>
+																</svg>	
+															</div>		
+														</div>														
+														<div class="podcasts_item-right-item-desc">
+															<div class="podcasts_item-right-item-date">Сегодня</div>
+														</div>
+													</div>
+													<div class="podcasts_item-right-item-time">43:35</div>													
+												</div>	
+												<div class="podcasts_item-right-item">
+													<a class="podcast_play_video" href="https://www.youtube.com/watch?v=C0DPdy98e4c" data-fancybox>
+														<svg class="play"><use xlink:href="images/sprite.svg#ic_play"></use></svg>
+													</a>
+													<div class="podcasts_item-right-item-info">
+														<div class="podcasts_item-right-item-title">
+															<span>Продавай как профи: советы и лучшие практики в интернет-продажах</span> 
+															<div class="podcasts_item-right-item-icon">
+																<svg class="icon">
+																	<use xlink:href="images/sprite.svg#camera"></use>
+																</svg>	
+															</div>	
+														</div>
+														<div class="podcasts_item-right-item-desc">
+															<div class="podcasts_item-right-item-date">18 марта 2023</div>
+														</div>
+													</div>
+													<div class="podcasts_item-right-item-time">43:35</div>													
+												</div>
+											</div>
+											<a href="#" class="link-more">
+												Еще 25 выпусков
+											</a>
+											<div class="podcasts_item-right-items hide-content">
+												<div class="podcasts_item-right-item">
+													<a class="podcast_play" href="sounds/Manntra%20-%20K%C3%B6nigsmord.mp3" data-title="Продажи в эпоху цифровых технологий: новые возможности и вызовы" data-cat="Новости в сфере маркетинга" data-img="images/podcast2.jpg">
+														<svg class="play"><use xlink:href="images/sprite.svg#ic_play"></use></svg>
+														<svg class="pause"><use xlink:href="images/sprite.svg#ic_pause"></use></svg>
+													</a>
+													<div class="podcasts_item-right-item-info">
+														<div class="podcasts_item-right-item-title">
+															<span>Жизнь в гармонии</span> 
+															<div class="podcasts_item-right-item-icon">
+																<svg class="icon">
+																	<use xlink:href="images/sprite.svg#headphones2"></use>
+																</svg>	
+															</div>		
+														</div>														
+														<div class="podcasts_item-right-item-desc">
+															<div class="podcasts_item-right-item-date">Сегодня</div>
+														</div>
+													</div>
+													<div class="podcasts_item-right-item-time">43:35</div>													
+												</div>	
+												<div class="podcasts_item-right-item">
+													<div class="audio_message">	
+														<div class="audio_media">											
+															<audio
+																controls
+																src="images/t-rex-roar.mp3">
+																	Your browser does not support the
+																	<code>audio</code> element.
+															</audio>
+														</div>
+													</div>
+													<div class="podcasts_item-right-item-info">
+														<div class="podcasts_item-right-item-title">
+															<span>Продавай как профи: советы и лучшие практики в интернет-продажах</span> 
+															<div class="podcasts_item-right-item-icon">
+																<svg class="icon">
+																	<use xlink:href="images/sprite.svg#camera"></use>
+																</svg>	
+															</div>	
+														</div>
+														<div class="podcasts_item-right-item-desc">
+															<div class="podcasts_item-right-item-date">18 марта 2023</div>
+														</div>
+													</div>
+													<div class="podcasts_item-right-item-time">43:35</div>													
+												</div>
+											</div>											
+										</div>
+									</div>
+
+									<div class="podcasts_item">
+										<a href="podcast.html" class="podcasts_item-left">
+											<div class="podcasts_item-img">
+												<img data-src="images/podcast2.jpg" alt="" class="lozad">
+											</div>
+											<div class="podcasts_item-info">
+												<div class="podcasts_item-top">
+													<div class="podcasts_item-title">Мотивация к новым свершениям</div>
+													<div class="podcasts_item-text">Подкаст о продажах в интернете. 
+														<br>О маркетинге и рекламе в целом.
+													</div>	
+												</div>												
+												<div class="podcasts_item-bottom">
+													<div class="podcasts_item-desc">
+														<div class="podcasts_item-col">5 выпусков</div>
+														<div class="podcasts_item-date">Последний: 18 марта 2023</div>
+													</div>
+													<div class="podcasts_item-link">
+														Страница подкаста
+													</div>	
+												</div>												
+											</div>
+										</a>
+										<div class="podcasts_item-right">
+											<div class="podcasts_item-right-title">Последние выпуски</div>
+											<div class="podcasts_item-right-items">
+												<div class="podcasts_item-right-item">
+													<a class="podcast_play" href="sounds/Manntra%20-%20K%C3%B6nigsmord.mp3" data-title="Продажи в эпоху цифровых технологий: новые возможности и вызовы" data-cat="Новости в сфере маркетинга" data-img="images/podcast2.jpg">
+														<svg class="play"><use xlink:href="images/sprite.svg#ic_play"></use></svg>
+														<svg class="pause"><use xlink:href="images/sprite.svg#ic_pause"></use></svg>
+													</a>
+													<div class="podcasts_item-right-item-info">
+														<div class="podcasts_item-right-item-title">
+															<span>Продавай как профи: советы и лучшие практики в интернет-продажах</span> 
+															<div class="podcasts_item-right-item-icon">
+																<svg class="icon">
+																	<use xlink:href="images/sprite.svg#camera"></use>
+																</svg>	
+															</div>	
+														</div>
+														<div class="podcasts_item-right-item-desc">
+															<div class="podcasts_item-right-item-date">18 марта 2023</div>
+														</div>
+													</div>
+													<div class="podcasts_item-right-item-time">43:35</div>													
+												</div>
+											</div>											
+										</div>
+									</div>
+
+									<div class="podcasts_item">
+										<a href="podcast.html" class="podcasts_item-left">
+											<div class="podcasts_item-img">
+												<img data-src="images/podcast3.jpg" alt="" class="lozad">
+											</div>
+											<div class="podcasts_item-info">
+												<div class="podcasts_item-top">
+													<div class="podcasts_item-title">Мотивация к новым свершениям</div>
+													<div class="podcasts_item-text">Подкаст о продажах в интернете. 
+														<br>О маркетинге и рекламе в целом.
+													</div>	
+												</div>	
+												<div class="podcasts_item-bottom">
+													<div class="podcasts_item-desc">
+														<div class="podcasts_item-col">5 выпусков</div>
+														<div class="podcasts_item-date">Последний: 18 марта 2023</div>
+													</div>
+													<div class="podcasts_item-link">
+														Страница подкаста
+													</div>	
+												</div>												
+											</div>
+										</a>
+										<div class="podcasts_item-right">
+											<div class="podcasts_item-right-text">У этого подкаста пока нет выпусков</div>									
+										</div>
+									</div>
+								</div>
+							</section>
+							
+
+							<div class="player_fixed">
+								<div class="audio_media">
+									<div class="player_fixed_head">
+										<img  class="player_fixed_img" src="images/podcast2.jpg" >
+										<div class="player_fixed_info">
+											<div class="player_title">												
+											</div>
+											<div class="player_desc">												
+											</div>
+										</div>	
+									</div>
+									<audio
+										controls
+										src="images/t-rex-roar.mp3">
+											Your browser does not support the
+											<code>audio</code> element.
+									</audio>
+								</div>
+							</div>
+							
+							<div class="new"></div>
+
+							<footer>
+								<div class="logo">
+									<img src="images/logo.svg" alt="">
+
+									<div class="desc">Описание первой компании 123</div>
+								</div>
+
+								<div class="contacts location">
+									<div class="name">Адрес</div>
+
+									<div class="val">г. Москва, ул. Ломоносова, д. 75</div>
+								</div>
+
+								<div class="contacts email">
+									<div class="name">Электронная почта</div>
+
+									<div class="val">
+										<div><a href="mailto:company1@gmail.com">company1@gmail.com</a></div>
+									</div>
+								</div>
+
+								<div class="contacts phone">
+									<div class="name">Телефон</div>
+
+									<div class="val">
+										<div><a href="tel:+79219879988">+79219879988</a></div>
+									</div>
+								</div>
+							</footer>
+						</section>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<a href="" target="_blank" class="telegram_fixed">
+			<svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<rect width="39" height="39" rx="19.5" fill="#00AADF"/>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M9.25391 19.0054L29.0844 10.5763L29.0844 10.5764L15.6048 20.8851L16.3033 28.0249L16.3032 28.025L14.4525 21.0686L9.25391 19.0054ZM16.3033 28.0249L16.3033 28.025L16.3033 28.0249L16.3033 28.0249ZM16.3033 28.0249L16.5733 21.9603L29.0844 10.5764L25.2545 28.5521L19.7108 24.7233L16.3033 28.0249ZM29.0844 10.5764L29.0844 10.5764L29.0845 10.5763L29.0844 10.5764Z" fill="white"/>
+				<path d="M29.084 10.5763L16.5728 21.9603L16.3027 28.025L19.7103 24.7233L25.2541 28.5521L29.084 10.5763Z" fill="white"/>
+			</svg>
+			Бот, помогающий в обучении
+		</a>
+
+		<a href="" target="_blank" class="telegram_fixed">
+			<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#1976d2" d="M24,4C13,4,4,13,4,24s9,20,20,20s20-9,20-20S35,4,24,4z"/><path fill="#fff" d="M25.2,33.2c-9,0-14.1-6.1-14.3-16.4h4.5c0.1,7.5,3.5,10.7,6.1,11.3V16.8h4.2v6.5c2.6-0.3,5.3-3.2,6.2-6.5h4.2	c-0.7,4-3.7,7-5.8,8.2c2.1,1,5.5,3.6,6.7,8.2h-4.7c-1-3.1-3.5-5.5-6.8-5.9v5.9H25.2z"/></svg>
+			Бот, помогающий в обучении
+		</a>
+
+		<a href="" target="_blank" class="telegram_fixed">
+			<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g clip-path="url(#clip0_905_7460)">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M20 0C31.0469 0 40 8.95313 40 20C40 31.0469 31.0469 40 20 40C8.95313 40 0 31.0469 0 20C0 8.95313 8.95313 0 20 0ZM15.125 8.5625H24.8828C28.5469 8.5625 31.5391 11.5234 31.5391 15.1328V24.8594C31.5391 28.4766 28.5469 31.4297 24.8828 31.4297H15.125C11.4609 31.4297 8.46875 28.4688 8.46875 24.8594V15.1406C8.46875 11.5234 11.4609 8.5625 15.125 8.5625ZM19.9375 13.8281C23.5 13.8281 26.3828 16.7188 26.3828 20.2734C26.3828 23.8359 23.4922 26.7188 19.9375 26.7188C16.375 26.7188 13.4922 23.8281 13.4922 20.2734C13.4922 16.7109 16.375 13.8281 19.9375 13.8281ZM19.9375 16C22.2969 16 24.2109 17.9141 24.2109 20.2734C24.2109 22.6328 22.2969 24.5469 19.9375 24.5469C17.5781 24.5469 15.6641 22.6328 15.6641 20.2734C15.6641 17.9141 17.5781 16 19.9375 16ZM26.1797 12.9297C26.7578 12.9297 27.2266 13.3984 27.2266 13.9766C27.2266 14.5547 26.7578 15.0234 26.1797 15.0234C25.6016 15.0234 25.1328 14.5547 25.1328 13.9766C25.1328 13.3984 25.6016 12.9297 26.1797 12.9297ZM15.9219 10.4297H24.0859C27.1484 10.4297 29.6563 12.9219 29.6563 15.9687V24.1719C29.6563 27.2187 27.1484 29.7109 24.0859 29.7109H15.9219C12.8594 29.7109 10.3516 27.2187 10.3516 24.1719V15.9687C10.3516 12.9297 12.8594 10.4297 15.9219 10.4297Z" fill="url(#paint0_linear_905_7460)"/>
+				</g>
+				<defs>
+				<linearGradient id="paint0_linear_905_7460" x1="30.0222" y1="36.9836" x2="9.97973" y2="3.01822" gradientUnits="userSpaceOnUse">
+				<stop stop-color="#F58529"/>
+				<stop offset="0.169" stop-color="#FEDA77"/>
+				<stop offset="0.478" stop-color="#DD2A7B"/>
+				<stop offset="0.78" stop-color="#8134AF"/>
+				<stop offset="1" stop-color="#515BD4"/>
+				</linearGradient>
+				<clipPath id="clip0_905_7460">
+				<rect width="40" height="40" fill="white"/>
+				</clipPath>
+				</defs>
+			</svg>
+			Бот, помогающий в обучении
+		</a>
+
+		<div class="buttonUp">
+			<button type="button"></button>
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/media-player.js"></script>
+		<script src="js/html5sortable.min.js"></script>
+		<script src="js/wavesurfer.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/playlist.js"></script>
+	</body>
+</html>

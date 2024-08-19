@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#0B00D8">
+		<meta name="theme-color" content="#0B00D8">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+		<link rel="stylesheet" href="css/styles2.css" async>
+
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="nitifications new">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_nitifications"></use></svg>
+						</div>
+
+						<div class="account">
+							<a href="/" class="settings_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+							</a>
+
+							<div class="user">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<!-- <img data-src="" alt="" class="lozad"> -->
+								</div>
+
+								<div class="name">Модератор</div>
+							</div>
+
+							<a href="/" class="logout_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+							</a>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="row">
+						<button class="menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						</button>
+
+						<div class="page_title">Файлы</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="nitifications new">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_nitifications"></use></svg>
+						</div>
+
+						<div class="account modal_cont">
+							<button class="user btn mini_modal_btn" data-modal-id="#account_modal">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<img data-src="images/tmp/user_avatar.jpg" alt="" class="lozad">
+								</div>
+
+								<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="account_modal">
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+									<span>Настройки</span>
+								</a></div>
+
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+									<span>Выход</span>
+								</a></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="content_flex">
+					<div class="cont row">
+						<aside>
+							<button class="close_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<div class="menu">
+								<div class="item">
+									<a href="/">
+										<div class="icon icon1">
+											<svg><use xlink:href="images/sprite.svg#ic_category1"></use></svg>
+										</div>
+										<span>Сводка</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon2 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category2"></use></svg>
+										</div>
+										<span>Мои задачи</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a  href="#" class="sub_link active open">
+										<div class="icon icon3 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category3"></use></svg>
+										</div>
+										<span>Курсы</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu" style="display: block;">
+										<div><a class="active">
+											<span class="count">3</span>
+											<span>Все курсы</span>
+										</a></div>
+										<div><a href="/">Новые курсы</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="#" class="sub_link">
+										<div class="icon icon4 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category4"></use></svg>
+										</div>
+										<span>Обратная связь</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/">По тренажерам</a></div>
+										<div><a href="/">По заданиям</a></div>
+										<div><a href="/">По другому</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5">
+											<svg><use xlink:href="images/sprite.svg#ic_category5"></use></svg>
+										</div>
+										<span>Тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_2">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_2"></use></svg>
+										</div>
+										<span>Аудио тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_3">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_3"></use></svg>
+										</div>
+										<span>Тренажеры действий</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon6">
+											<svg><use xlink:href="images/sprite.svg#ic_category6"></use></svg>
+										</div>
+										<span>Новости</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon7">
+											<svg><use xlink:href="images/sprite.svg#ic_category7"></use></svg>
+										</div>
+										<span>Опросы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon8">
+											<svg><use xlink:href="images/sprite.svg#ic_category8"></use></svg>
+										</div>
+										<span>Обсуждения</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon9">
+											<svg><use xlink:href="images/sprite.svg#ic_category9"></use></svg>
+										</div>
+										<span>Вебинары</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon10">
+											<svg><use xlink:href="images/sprite.svg#ic_category10"></use></svg>
+										</div>
+										<span>Подкасты</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon11">
+											<svg><use xlink:href="images/sprite.svg#ic_category11"></use></svg>
+										</div>
+										<span>Файлы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon12">
+											<svg><use xlink:href="images/sprite.svg#ic_category12"></use></svg>
+										</div>
+										<span>Коллеги</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon13">
+											<svg><use xlink:href="images/sprite.svg#ic_category13"></use></svg>
+										</div>
+										<span>Настройки</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/" class="sub_link">
+										<div class="icon icon14">
+											<svg><use xlink:href="images/sprite.svg#ic_category14"></use></svg>
+										</div>
+										<span>Управление</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/"></a></div>
+									</div>
+								</div>
+							</div>
+						</aside>
+
+
+						<section class="content knowledgebase">
+							<div class="page_title page_title_bd">
+								<a href="https://test5.xskill.com/cabinet/user/faq" class="page_title_bd_link">
+						            <svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_left"></use></svg>
+						             Назад
+						        </a>
+						       
+
+								<div class="select_search">
+									<label><input type="radio" name="select_search" value="1" checked>Обычный поиск</label>
+									<label><input type="radio" class="checkbox_ai" name="select_search" value="2">
+										<svg class="ai"><use xlink:href="images/sprite.svg#sparkling2"></use></svg>		
+										Через нейросети
+									</label>
+								</div>
+
+								<div class="select_cats">
+									Выберите разделы:
+									<div class="select_cats_wrap modal_cont ">
+										<button class="select_cats_filter btn mini_modal_btn" data-modal-id="#filter_cats">
+											Разделы
+											<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>											                    
+										</button>
+										<div class="mini_modal" id="filter_cats">
+											<button class="filter_cats_modal_close"></button>
+					                        <div class="filter_cats_modal_title">Поиск по разделам</div>
+					                        <div class="filter_cats_buttons">
+					                        	<button class="select_cats_all">Выбрать все</button>
+					                        	<button class="deselect_cats_all">Убрать все</button>
+					                        </div>
+					                        <div class="filter_cats_filter">
+					                        	<div class="filter_cats_item" data-value="1">Техника безопасности</div>
+					                        	<div class="filter_cats_item" data-value="2">Управление станком ТБМ-343</div>
+					                        	<div class="filter_cats_item" data-value="3">Качество шин</div>
+					                        	<div class="filter_cats_item" data-value="4">Изготовление покрышек</div>
+					                        	<div class="filter_cats_item" data-value="5">Пожарная безопасность</div>
+					                        </div>
+					                    </div>					                    
+									</div>
+								</div>
+							</div>
+
+							<section class="faq">
+								<form class="search_faq">
+									<!-- <input type="text" class="js-search input" placeholder="Напишите термин"> -->
+									<textarea rows="1" class="js-search input" id="autoresize" placeholder="Напишите термин"></textarea>
+									<button>Найти</button>
+								</form>
+
+								<div class="wrap_search_default">
+									<div class="faq_fast">
+										<div class="faq_fast_title">
+											Разделы базы знаний
+										</div>
+
+										<div class="faq_fast_desc">
+											Для быстрого перехода к нужному разделу, нажмите на нужный раздел
+										</div>
+
+										<div class="faq_fast_list">
+											<button data-id="2">Термины</button>
+											<button data-id="3">Дефекты шин</button>
+											<button data-id="4">Диаметры шин</button>
+										</div>
+									</div>
+
+									<div class="title_faq_result"><span>Результаты поиска</span> <button><img src="images/reset.svg" alt=""></button></div>
+									<div class="title_faq">Информация о курсах <a href="" data-content="#pass_add" class="add_faq modal_btn">Добавить пункт</a></div>								
+
+									<div class="accordion">
+										<div class="accordion_item" id="item1">
+											<div class="head">
+												<div class="title">Обучение проходит в группе или индивидуально? 
+													<button class="copy tooltip2" data-clipboard-text="#foo" aria-label="Скопировано">
+													    <svg><use xlink:href="images/sprite.svg#copy"></use></svg><span>Скопировать ссылку</span>
+													    <span class="tooltiptext">Ссылка скопирована в буфер обмена</span>
+													</button>
+												</div>
+												<a href="#" class="knowledgebase_button modal_btn" data-content="#pass_add2">
+													<svg class="icon-redact">
+														<use xlink:href="images/sprite.svg#icon-redact"></use>
+													</svg>	
+													<span>Редактировать пункт</span>
+												</a>
+												<div class="icon"></div>
+											</div>
+
+											<div class="data">
+												<div class="text_block text_block_wrap">
+													<p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
+
+													<p>Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</p>		
+
+													<div class="audio_media">											
+														<audio
+													        controls
+													        src="images/t-rex-roar.mp3">
+													            Your browser does not support the
+													            <code>audio</code> element.
+													    </audio>
+													</div>
+													
+
+													<section class="video_player">
+														<video class="video-player" width="800" controlsList="nodownload"controls crossorigin="anonymous" poster="images/tmp/text_img.jpg">
+														    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+														    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
+														    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default></track>
+														</video>
+													</section>	
+
+													<div class="total_file">										
+														<div class="total_file_img">
+															<img src="images/attachment.svg" alt="">
+														</div>
+
+														<div class="total_file_desc">
+															<div class="name">filename.doc</div>
+
+															<div class="links">
+																<div><a href="/" class="green">Скачать</a></div>
+																<div><a href="/" class="blue">Посмотреть</a></div>
+															</div>
+														</div>									
+													</div>
+
+													<div class="edit_faq modal_btn" title="Редактировать пункт" data-content="#pass_edit" ><svg><use xlink:href="images/sprite.svg#edit_faq"></use></svg><span>Редактировать</span></div>									
+												</div>											
+											</div>
+										</div>
+
+										<div class="accordion_item" id="item2">
+											<div class="head">
+												<div class="title">
+													Какой график обучения?
+													<div class="draft_db">Черновик</div>
+												</div>
+
+												<a href="#" class="knowledgebase_button modal_btn" data-content="#pass_add2">
+													<svg class="icon-redact">
+														<use xlink:href="images/sprite.svg#icon-redact"></use>
+													</svg>	
+													<span>Редактировать пункт</span>
+												</a>
+												<div class="icon"></div>
+											</div>
+
+											<div class="data">
+												<div class="text_block text_block_wrap">
+													<p>Служба Яндекс.Рефераты предназначена для студентов и <div class="fast_link" id="fast2">Термины</div> школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
+
+													<p>Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</p>
+
+													<div class="edit_faq modal_btn" title="Редактировать пункт" data-content="#pass_edit" ><svg><use xlink:href="images/sprite.svg#edit_faq"></use></svg><span>Редактировать</span></div>	
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="title_faq">Про обучение</div>
+
+									<div class="accordion">
+										<div class="accordion_item" id="item3">
+											<div class="head">
+												<div class="title">Обучение проходит в группе или индивидуально?</div>
+												<a href="#" class="knowledgebase_button modal_btn" data-content="#pass_add2">
+													<svg class="icon-redact">
+														<use xlink:href="images/sprite.svg#icon-redact"></use>
+													</svg>	
+													<span>Редактировать пункт</span>
+												</a>
+												<div class="icon"></div>
+											</div>
+
+											<div class="data">
+												<div class="text_block text_block_wrap">
+													<p>Служба Яндекс.Рефераты предназначена для студентов <div class="fast_link" id="fast3">Дефекты шин</div> и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
+
+													<p>Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, <button class="faq_search" data-id="4">Диаметры шин</button> причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</p>
+
+													<div class="edit_faq modal_btn" title="Редактировать пункт" data-content="#pass_edit" ><svg><use xlink:href="images/sprite.svg#edit_faq"></use></svg><span>Редактировать</span></div>	
+												</div>
+											</div>
+										</div>
+
+										<div class="accordion_item" id="item4">
+											<div class="head">
+												<div class="title">Какой график обучения?</div>
+												<a href="#" class="knowledgebase_button modal_btn" data-content="#pass_add2">
+													<svg class="icon-redact">
+														<use xlink:href="images/sprite.svg#icon-redact"></use>
+													</svg>	
+													<span>Редактировать пункт</span>
+												</a>
+												<div class="icon"></div>
+											</div>
+
+											<div class="data">
+												<div class="text_block text_block_wrap">
+													<p>Служба Яндекс.Рефераты предназначена для <div class="fast_link" id="fast4">Диаметры шин</div> студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
+
+													<p>Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</p>
+
+													<div class="edit_faq modal_btn" title="Редактировать пункт" data-content="#pass_edit" ><svg><use xlink:href="images/sprite.svg#edit_faq"></use></svg><span>Редактировать</span></div>	
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<button class="search_ai">									
+									<svg class="icon"><use xlink:href="images/sprite.svg#sparkling"></use></svg>	
+									Поиск с нейросетью
+								</button>
+
+							</section>
+
+							<div class="wrap_search_ai">
+								<div class="search_ai_loading">
+									<img src="images/loading_ai.svg" alt="">
+									Выполняется поиск нейросетью. Пожалуйста подождите. Это может занять до 1-й минуты...
+									<div class="dot-flashing"></div>
+								</div>
+								<div class="search_ai_content">
+									<div class="search_ai_item">
+										<div class="search_ai_title">
+											Вы спросили: <span>на каком станке изготавливаются шины пирелли</span>
+											<div class="search_ai_not_found">												
+												<img src="images/not_found.svg" alt="">
+												К сожалению, нейросеть ничего не смогла найти по вашему запросу. Попробуйте изменить вопрос или поищите в других разделах
+											</div>
+										</div>
+										<div class="search_ai_cats">
+											<div class="search_ai_cat">Категория</div>
+											<div class="search_ai_cat">Категория</div>
+											<div class="search_ai_cat">Категория</div>
+										</div>
+
+										<div class="search_ai_result">
+											<div class="search_ai_head">
+												<img src="images/ava_ai.svg" alt="">
+												Нейросеть
+											</div>
+
+											<div class="search_ai_text">
+												<p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
+
+												<p>Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</p>
+											</div>	
+
+											<div class="search_ai_warning">
+												<img src="images/warning.svg" alt="">
+												При использовании поиска через нейросеть будьте предельно внимательны и перепроверяйте результаты
+											</div>
+										</div>
+									</div>
+
+									<div class="search_ai_history">
+										<div class="search_ai_history_title">
+											История ваших запросов к нейросети
+										</div>
+
+										<div class="search_ai_history_list">
+											<div class="search_ai_history_item">
+												<div class="search_ai_history_head">
+													<div class="search_ai_history_head_title">
+														Как нарисовать картину маслом?
+														<div class="search_ai_history_date">27 апреля 2024</div>
+													</div>
+
+													<div class="search_ai_history_btn">
+														<div class="search_ai_history_show">Посмотреть ответ</div>
+														<div class="search_ai_history_show red">Удалить</div>
+													</div>
+												</div>
+
+												<div class="search_ai_history_desc">
+													<div class="search_ai_head">
+														<img src="images/ava_ai.svg" alt="">
+														Нейросеть
+													</div>
+													<div class="search_ai_text">
+														<p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
+
+														<p>Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</p>
+													</div>	
+												</div>
+											</div>
+
+											<div class="search_ai_history_item">
+												<div class="search_ai_history_head">
+													<div class="search_ai_history_head_title">
+														Как нарисовать картину маслом?
+														<div class="search_ai_history_date">27 апреля 2024</div>
+													</div>
+
+													<div class="search_ai_history_btn">
+														<div class="search_ai_history_show">Посмотреть ответ</div>
+														<div class="search_ai_history_show red">Удалить</div>
+													</div>
+												</div>
+
+												<div class="search_ai_history_desc">
+													<div class="search_ai_head">
+														<img src="images/ava_ai.svg" alt="">
+														Нейросеть
+													</div>
+													<div class="search_ai_text">
+														<p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
+
+														<p>Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</p>
+													</div>	
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<footer>
+								<div class="logo">
+									<img src="images/logo.svg" alt="">
+
+									<div class="desc">Описание первой компании 123</div>
+								</div>
+
+								<div class="contacts location">
+									<div class="name">Адрес</div>
+
+									<div class="val">г. Москва, ул. Ломоносова, д. 75</div>
+								</div>
+
+								<div class="contacts email">
+									<div class="name">Электронная почта</div>
+
+									<div class="val">
+										<div><a href="mailto:company1@gmail.com">company1@gmail.com</a></div>
+									</div>
+								</div>
+
+								<div class="contacts phone">
+									<div class="name">Телефон</div>
+
+									<div class="val">
+										<div><a href="tel:+79219879988">+79219879988</a></div>
+									</div>
+								</div>
+							</footer>
+						</section>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+		<section class="trainer_modal2" id="pass_edit">			
+			<div class="trainer_modal-title">Введите пароль</div>											
+			<form>
+				<div class="line">
+					<div class="field">
+						<label for="password">Пароль</label>
+						<input type="password" id="password" placeholder="*********">
+					</div>
+					<button class="trainer_item-btn">
+						<span>Редактировать</span>
+					</button>
+				</div>
+			</form>		
+		</section>
+
+		<section class="trainer_modal2" id="pass_add">			
+			<div class="trainer_modal-title">Введите пароль</div>											
+			<form>
+				<div class="line">
+					<div class="field">
+						<label for="password">Пароль</label>
+						<input type="password" id="password" placeholder="*********">						
+					</div>
+					<button class="trainer_item-btn">
+						<span>Добавить</span>
+					</button>
+				</div>
+			</form>		
+		</section>
+
+		<section class="trainer_modal2" id="pass_add2">			
+			<div class="trainer_modal-title">Введите пароль</div>											
+			<form class="form">
+				<div class="line">
+					<div class="field">
+						<label for="password">Пароль</label>
+						<input type="password" id="password-input" placeholder="*********">
+						<a href="#" class="password-control">
+							<svg class="pass_add-icon">
+								<use xlink:href="images/sprite.svg#eye"></use>
+							</svg>	
+						</a>						
+					</div>
+					<button class="trainer_item-btn">
+						<span>Редактировать</span>
+					</button>
+				</div>
+			</form>		
+		</section>
+
+		
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/media-player.js"></script>
+		<script src="js/html5sortable.min.js"></script>
+		<script src="js/wavesurfer.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/search_database.js"></script>
+	</body>
+</html>

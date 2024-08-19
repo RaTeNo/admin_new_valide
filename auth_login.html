@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#0B00D8">
+		<meta name="theme-color" content="#0B00D8">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap white">
+			<div class="main">
+
+				<section class="mobile_logo">
+					<div class="logo">
+						<img src="images/logo.svg" alt="">
+					</div>
+				</section>
+
+				<section class="auth">
+					<section class="data">
+						<div class="login">
+
+							<div class="info_data">
+								<div class="info_data_title">Данные для входа</div>
+								<div class="info_data_desc">
+									Ваш логин и пароль вы можете получить у сотрудника отдела кадров 
+									<span>Иванова Петра Николаевича</span>
+								</div>
+								<div class="info_data_close">
+									<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1L9 9M9 1L1 9" stroke="#9594AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</div>
+							<div class="title">Вход в систему</div>
+
+							<form action="" class="form">
+								<div class="field">
+									<input type="text" name="" value="" class="input" placeholder="Введите логин">
+									<div class="label">Логин</div>
+								</div>
+
+								<div class="field">
+									<input type="password" name="" value="" class="input" placeholder="Введите пароль">
+									<div class="label">Пароль</div>
+								</div>
+
+								<div class="submit">
+									<button type="submit" class="submit_btn">Войти</button>
+								</div>
+
+								<div class="bottom">
+									<div class="remember">
+										<input type="checkbox" name="remember" id="remember_check" checked>
+										<label for="remember_check">Запомнить меня</label>
+									</div>
+
+									<div class="recovery_link">
+										<a href="/">Забыли пароль?</a>
+									</div>
+								</div>
+
+								<div class="links">
+									<div class="or"><span>ИЛИ</span></div>
+
+									<div><a href="/" class="btn">Зарегестрироваться</a></div>
+
+									<div><button type="button" class="btn modal_btn" data-content="#register_code_modal">Зарегестрироваться c кодом</button></div>
+								</div>
+							</form>
+						</div>
+					</section>
+
+					<section class="contacts">
+						<div class="info">
+							<div class="logo">
+								<img src="images/logo.svg" alt="">
+
+								<div class="desc">Описание первой компании 123</div>
+							</div>
+
+							<div class="item descr">
+								<div class="name">Описание</div>
+								<div class="val">Описание первой компании 123</div>
+							</div>
+
+							<div class="item">
+								<div class="name">Адрес</div>
+								<div class="val">г. Москва, ул. Ломоносова, д. 75</div>
+							</div>
+
+							<div class="item">
+								<div class="name">Электронная почта</div>
+								<div class="val">company1@gmail.com</div>
+							</div>
+
+							<div class="item">
+								<div class="name">Телефон</div>
+								<div class="val">+79219879988</div>
+							</div>
+						</div>
+					</section>
+				</section>
+			</div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<section class="modal" id="register_code_modal">
+			<div class="modal_title">Введите код регистрации</div>
+
+			<form action="" class="form">
+				<div class="field">
+					<input type="text" name="" value="" class="input" placeholder="Введите код">
+					<div class="label">Код регистрации</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Вернуться на страницу входа</button>
+				</div>
+			</form>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/media-player.js"></script>
+		<script src="js/html5sortable.min.js"></script>
+		<script src="js/wavesurfer.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

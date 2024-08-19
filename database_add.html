@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#0B00D8">
+		<meta name="theme-color" content="#0B00D8">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/nice-select.css">
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+		<link rel="stylesheet" href="css/styles2.css" async>
+
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="sep"></div>
+
+						<div class="account">
+							<a href="/" class="settings_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+							</a>
+
+							<div class="user">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<!-- <img data-src="" alt="" class="lozad"> -->
+								</div>
+
+								<div class="name">Модератор</div>
+							</div>
+
+							<a href="/" class="logout_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+							</a>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="row">
+						<button class="menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						</button>
+
+						<div class="page_title">Сводка</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="nitifications new">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_nitifications"></use></svg>
+						</div>
+
+						<div class="account modal_cont">
+							<button class="user btn mini_modal_btn" data-modal-id="#account_modal">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<img data-src="images/tmp/user_avatar.jpg" alt="" class="lozad">
+								</div>
+
+								<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="account_modal">
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+									<span>Настройки</span>
+								</a></div>
+
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+									<span>Выход</span>
+								</a></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="content_flex">
+					<div class="cont row">
+						<aside>
+							<button class="close_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<div class="menu">
+								<div class="item">
+									<a href="/">
+										<div class="icon icon1">
+											<svg><use xlink:href="images/sprite.svg#ic_category1"></use></svg>
+										</div>
+										<span>Сводка</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon2 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category2"></use></svg>
+										</div>
+										<span>Мои задачи</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a  href="#" class="sub_link active open">
+										<div class="icon icon3 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category3"></use></svg>
+										</div>
+										<span>Курсы</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu" style="display: block;">
+										<div><a class="active">
+											<span class="count">3</span>
+											<span>Все курсы</span>
+										</a></div>
+										<div><a href="/">Новые курсы</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="#" class="sub_link">
+										<div class="icon icon4 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category4"></use></svg>
+										</div>
+										<span>Обратная связь</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/">По тренажерам</a></div>
+										<div><a href="/">По заданиям</a></div>
+										<div><a href="/">По другому</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5">
+											<svg><use xlink:href="images/sprite.svg#ic_category5"></use></svg>
+										</div>
+										<span>Тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_2">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_2"></use></svg>
+										</div>
+										<span>Аудио тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_3">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_3"></use></svg>
+										</div>
+										<span>Тренажеры действий</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon6">
+											<svg><use xlink:href="images/sprite.svg#ic_category6"></use></svg>
+										</div>
+										<span>Новости</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon7">
+											<svg><use xlink:href="images/sprite.svg#ic_category7"></use></svg>
+										</div>
+										<span>Опросы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon8">
+											<svg><use xlink:href="images/sprite.svg#ic_category8"></use></svg>
+										</div>
+										<span>Обсуждения</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon9">
+											<svg><use xlink:href="images/sprite.svg#ic_category9"></use></svg>
+										</div>
+										<span>Вебинары</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon10">
+											<svg><use xlink:href="images/sprite.svg#ic_category10"></use></svg>
+										</div>
+										<span>Подкасты</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon11">
+											<svg><use xlink:href="images/sprite.svg#ic_category11"></use></svg>
+										</div>
+										<span>Файлы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon12">
+											<svg><use xlink:href="images/sprite.svg#ic_category12"></use></svg>
+										</div>
+										<span>Коллеги</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon13">
+											<svg><use xlink:href="images/sprite.svg#ic_category13"></use></svg>
+										</div>
+										<span>Настройки</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/" class="sub_link">
+										<div class="icon icon14">
+											<svg><use xlink:href="images/sprite.svg#ic_category14"></use></svg>
+										</div>
+										<span>Управление</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/"></a></div>
+									</div>
+								</div>
+							</div>
+						</aside>
+
+
+						<section class="content">
+							
+							<section class="page_title">
+								<a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_left"></use></svg>
+								</a>
+								<span>Добавление пункта</span>
+							</section>
+
+							<form class="task-page_form">
+								<div class="task-page_head">
+									<div class="task-page_title">Добавление пункта в раздел “Качество шин”</div>
+								</div>
+								<div class="line">
+									<div class="task-page_label">Название</div>
+									<div class="field">
+										<input type="text" id="name" placeholder="Введите название">
+									</div>
+								</div>
+								<div class="line">
+									<div class="task-page_label">Описание</div>
+									<div class="field">
+										<textarea id="desc" placeholder="Введите название"></textarea>
+									</div>
+								</div>
+
+								
+								<section class="uploading-files block2">
+									<div class="block_top">
+										<div class="block_top-info">
+											<div class="block_title">Загрузка файлов</div>
+										</div>
+									</div>									
+									<div class="block_upload">
+										<div method="post" action="https://css-tricks.com/examples/DragAndDropFileUploading//?" enctype="multipart/form-data" novalidate="" class="box has-advanced-upload">
+											<div class="box__input">
+												<svg class="box__icon" width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M27.5011 29.3798H21.4986C18.9057 29.3798 17.354 30.9315 17.354 33.5244V39.5269C17.354 42.1198 18.9057 43.6715 21.4986 43.6715H27.5011C30.094 43.6715 31.6457 42.1198 31.6457 39.5269V33.5244C31.6457 30.9315 30.094 29.3798 27.5011 29.3798ZM29.4203 37.4035C29.2161 37.6077 28.9098 37.7506 28.5832 37.771H25.7044L25.7248 40.609C25.7044 40.956 25.5819 41.2419 25.3369 41.4869C25.1328 41.691 24.8265 41.834 24.4998 41.834C23.8261 41.834 23.2748 41.2827 23.2748 40.609V37.7506L20.4165 37.771C19.7428 37.771 19.1915 37.1994 19.1915 36.5256C19.1915 35.8519 19.7428 35.3006 20.4165 35.3006L23.2748 35.321V32.4627C23.2748 31.789 23.8261 31.2173 24.4998 31.2173C25.1736 31.2173 25.7248 31.789 25.7248 32.4627L25.7044 35.3006H28.5832C29.2569 35.3006 29.8082 35.8519 29.8082 36.5256C29.7878 36.8727 29.6448 37.1585 29.4203 37.4035Z" fill="#9C9C9C"/>
+												<path opacity="0.4" d="M44.386 23.9694C43.1406 19.8859 40.0372 16.9459 36.1377 16.068C34.9943 10.9638 31.8502 7.30925 27.3993 5.92092C22.5402 4.4305 16.9052 5.88009 13.3731 9.5755C10.2493 12.8218 9.2285 17.293 10.4331 22.0502C6.08433 23.1119 4.0835 26.9094 4.0835 30.3394C4.0835 34.1777 6.59475 38.4856 12.1889 38.8735H17.3543V33.5039C17.3543 30.911 18.906 29.3594 21.4989 29.3594H27.5014C30.0943 29.3594 31.646 30.911 31.646 33.5039V38.8735H33.2997C33.3202 38.8735 33.361 38.8735 33.3814 38.8735C36.2806 38.8735 39.0572 37.7914 41.1806 35.8519C44.5085 32.9527 45.7335 28.3998 44.386 23.9694Z" fill="#9C9C9C"/>
+												</svg>
+	
+												<input type="file" name="files[]" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple="">
+												<label for="file"><strong>Перетяните</strong>&nbsp;<span class="box__dragndrop"> или нажмите для загрузки</span></label>
+												<!-- <button type="submit" class="box__button">Загрузить</button> -->
+											</div>										
+											<div class="box__uploading">Загрузка…</div>
+											<div class="box__success">Готово! <a href="https://css-tricks.com/examples/DragAndDropFileUploading//?" class="box__restart" role="button">Загрузить еще?</a></div>
+											<div class="box__error">Ошибка! <span></span>. <a href="https://css-tricks.com/examples/DragAndDropFileUploading//?" class="box__restart" role="button">Попробуйте еще раз!</a></div>
+											<input type="hidden" name="ajax" value="1">
+										</div>
+									</div>	
+								</section>
+
+								<section class="uploaded-files block2">
+									<div class="uploaded-files_items">
+										<div class="uploaded-files_item">
+											<div class="uploaded-files_item-top">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#files"></use>
+												</svg>
+												<div class="uploaded-files_item-info">
+													<div class="uploaded-files_item-name">filename12345.png</div>
+													<div class="uploaded-files_item-text">Васильев Иван 18.04.2023</div>
+												</div>
+											</div>
+											<div class="uploaded-files_item-bottom">
+												<a href="" class="blau">
+													<span>Открыть</span>
+												</a>
+												<a href="" class="blau">
+													<span>Посмотреть</span>
+												</a>
+												<a href="" class="blau">
+													<span>Скачать</span>
+												</a>
+												<a href="" class="yellow">
+													<span>Переименовать</span>
+												</a>
+												<a href="" class="red">
+													<span>Удалить</span>
+												</a>
+											</div>
+										</div>
+										<div class="uploaded-files_item">
+											<div class="uploaded-files_item-top">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#files"></use>
+												</svg>
+												<div class="uploaded-files_item-info">
+													<div class="uploaded-files_item-name">filename12345.png</div>
+													<div class="uploaded-files_item-text">Васильев Иван 18.04.2023</div>
+												</div>
+											</div>
+											<div class="uploaded-files_item-bottom">
+												<a href="#" class="blau">
+													<span>Открыть</span>
+												</a>
+												<a href="#" class="blau">
+													<span>Посмотреть</span>
+												</a>
+												<a href="#" class="blau">
+													<span>Скачать</span>
+												</a>
+												<a href="#" class="yellow">
+													<span>Переименовать</span>
+												</a>
+												<a href="#" class="red">
+													<span>Удалить</span>
+												</a>
+											</div>
+										</div>
+										<div class="uploaded-files_item">
+											<div class="uploaded-files_item-top">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#files"></use>
+												</svg>
+												<div class="uploaded-files_item-info">
+													<div class="uploaded-files_item-name">filename12345.png</div>
+													<div class="uploaded-files_item-text">Васильев Иван 18.04.2023</div>
+												</div>
+											</div>
+											<div class="uploaded-files_item-bottom">
+												<a href="#" class="blau">
+													<span>Открыть</span>
+												</a>
+												<a href="#" class="blau">
+													<span>Посмотреть</span>
+												</a>
+												<a href="#" class="blau">
+													<span>Скачать</span>
+												</a>
+												<a href="#" class="yellow">
+													<span>Переименовать</span>
+												</a>
+												<a href="#" class="red">
+													<span>Удалить</span>
+												</a>
+											</div>
+										</div>
+										<div class="uploaded-files_item">
+											<div class="uploaded-files_item-top">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#files"></use>
+												</svg>
+												<div class="uploaded-files_item-info">
+													<div class="uploaded-files_item-name">filename12345.png</div>
+													<div class="uploaded-files_item-text">Васильев Иван 18.04.2023</div>
+												</div>
+											</div>
+											<div class="uploaded-files_item-bottom">
+												<a href="#" class="blau">
+													<span>Открыть</span>
+												</a>
+												<a href="#" class="blau">
+													<span>Посмотреть</span>
+												</a>
+												<a href="#" class="blau">
+													<span>Скачать</span>
+												</a>
+												<a href="#" class="yellow">
+													<span>Переименовать</span>
+												</a>
+												<a href="#" class="red">
+													<span>Удалить</span>
+												</a>
+											</div>
+										</div>										
+									</div>									
+								</section>
+									
+
+								<div class="line">
+									<div class="task-page_label">Категория</div>
+									<div class="field">
+										<select id="select">
+											<option value="punkt1">Категория №1</option>
+											<option value="punkt2">Категория №2</option>
+											<option value="punkt3">Категория №3</option>
+										</select>
+									</div>
+								</div>								
+								<div class="line">
+									<div class="task-page_label">Архивировать</div>
+									<div class="line-box">										
+										<div class="field">										
+											<input type="radio" name="radio" id="group2_check1" checked>
+											<label for="group2_check1">Да</label>
+										</div>	
+									</div>
+									<div class="line-box">
+										<div class="field">
+											<input type="radio" name="radio" id="group2_check2">
+											<label for="group2_check2">Нет</label>
+										</div>	
+									</div>
+								</div>
+								<div class="task-page_new_btn">
+									<button type="submit">Добавить</button>
+								</div>								
+							</form>
+
+
+
+							<section class="change-history block2">
+								<div class="block_title">История изменений</div>
+							
+								<div class="change-history_wrap">
+									<div class="change-history_items">
+										<div class="changes_item-box">
+											<div class="change-history_item">											
+												<div class="changes_item-text">Василий Петрович изменил описание</div>
+												<div class="changes_item-date">01 мая 2023 в 23:46</div>	
+											</div>	
+											<button>Отменить изменения</button>										
+										</div>
+										<div class="change-history_description">
+											<p><span>До изменений:</span> Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков. Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой текст получится — таким образом, авторские права на реферат принадлежат только вам.</p>
+											<p><span>После изменений:</span> Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков. Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</p>
+										</div>	
+									</div>
+									<a href="#" class="change-history_link">Показать еще</a>
+									<div class="change-history_items hide">
+										<div class="changes_item-box">
+											<div class="change-history_item">											
+												<div class="changes_item-text">Василий Петрович изменил описание</div>
+												<div class="changes_item-date">01 мая 2023 в 23:46</div>	
+											</div>	
+											<button>Отменить изменения</button>										
+										</div>
+										<div class="change-history_description">
+											<p><span>До изменений:</span> Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков. Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой текст получится — таким образом, авторские права на реферат принадлежат только вам.</p>
+											<p><span>После изменений:</span> Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков. Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</p>
+										</div>	
+									</div>
+								</div>
+							</section>
+
+
+							
+							<footer>
+								<div class="logo">
+									<img src="images/logo.svg" alt="">
+
+									<div class="desc">Описание первой компании 123</div>
+								</div>
+
+								<div class="contacts location">
+									<div class="name">Адрес</div>
+
+									<div class="val">г. Москва, ул. Ломоносова, д. 75</div>
+								</div>
+
+								<div class="contacts email">
+									<div class="name">Электронная почта</div>
+
+									<div class="val">
+										<div><a href="mailto:company1@gmail.com">company1@gmail.com</a></div>
+									</div>
+								</div>
+
+								<div class="contacts phone">
+									<div class="name">Телефон</div>
+
+									<div class="val">
+										<div><a href="tel:+79219879988">+79219879988</a></div>
+									</div>
+								</div>
+							</footer>
+						</section>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+
+		<section class="modal modal-video" id="video_modal5" style="display: none;">
+			<video class="video-player video_new" controlslist="nodownload" controls="" crossorigin="anonymous">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
+			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default="">
+			</video>
+		</section>
+
+
+		<section class="solutions-tasks_modal" id="callback_modal5">
+			<div class="solutions-tasks_modal-title">Запрос от 18 мая 2023</div>
+			<ul>
+				<li>
+					<span>Название вакансии</span>
+					Менеджер по продажам в айти компанию
+				</li>
+				<li>
+					<span>Описание</span>
+					Мы ищем энергичного и амбициозного Менеджера по продажам для нашей успешной айти компании. В эту должность требуется человек, который готов работать в команде, обладает опытом продаж в B2B, имеет опыт общения с клиентами и поставщиками, и готов стать частью нашей дружной команды.
+				</li>
+				<li>
+					<span>График</span>
+					Свободный
+				</li>
+				<li>
+					<span>Готовность к переезду</span>
+					Да
+				</li>
+			</ul>
+		</section>
+
+		<section class="solutions-tasks_modal" id="callback_modal6">
+			<div class="solutions-tasks_modal-title">Запрос от 18 мая 2023</div>
+			<ul>
+				<li>
+					<span>Название вакансии</span>
+					Менеджер по продажам в айти компанию
+				</li>
+				<li>
+					<span>Описание</span>
+					Мы ищем энергичного и амбициозного Менеджера по продажам для нашей успешной айти компании. В эту должность требуется человек, который готов работать в команде, обладает опытом продаж в B2B, имеет опыт общения с клиентами и поставщиками, и готов стать частью нашей дружной команды.
+				</li>
+				<li>
+					<span>График</span>
+					Свободный
+				</li>
+				<li>
+					<span>Готовность к переезду</span>
+					Да
+				</li>
+			</ul>
+		</section>
+
+		<section class="solutions-tasks_modal" id="callback_modal7">
+			<div class="solutions-tasks_modal-title">Запрос от 18 мая 2023</div>
+			<ul>
+				<li>
+					<span>Название вакансии</span>
+					Менеджер по продажам в айти компанию
+				</li>
+				<li>
+					<span>Описание</span>
+					Мы ищем энергичного и амбициозного Менеджера по продажам для нашей успешной айти компании. В эту должность требуется человек, который готов работать в команде, обладает опытом продаж в B2B, имеет опыт общения с клиентами и поставщиками, и готов стать частью нашей дружной команды.
+				</li>
+				<li>
+					<span>График</span>
+					Свободный
+				</li>
+				<li>
+					<span>Готовность к переезду</span>
+					Да
+				</li>
+			</ul>
+		</section>
+
+
+		<section class="solutions_modal" id="callback_modal8">
+			<div class="solutions_modal-icon">
+				<svg class="icon">
+					<use xlink:href="images/sprite.svg#ok2"></use>
+				</svg>
+			</div>	
+			<div class="solutions_modal-title">Задача выполнена</div>
+			<div class="solutions_modal-text">Ваша задача выполнена. Вы можете посмотреть результат</div>
+			<a href="#" class="solutions_modal-link">Смотреть решение</a>
+		</section>
+
+
+		<section class="solutions-tasks_modal" id="callback_modal9">
+			<div class="solutions-tasks_modal-title">Скорректировать запрос</div>
+			<form class="solutions-tasks_modal-form">
+				<div class="line">
+					<div class="field">
+						<label for="message1">Что вы хотите изменить?</label>
+						<textarea id="message1" placeholder="Например, сократи текст до 200 символов"></textarea>
+					</div>
+				</div>
+				<button>Генерировать</button>
+			</form>
+		</section>
+
+		<section class="solutions-tasks_modal" id="callback_modal10">
+			<div class="solutions-tasks_modal-title">Скорректировать запрос</div>
+			<form class="solutions-tasks_modal-form">
+				<div class="line">
+					<div class="field">
+						<label for="message1">Что вы хотите изменить?</label>
+						<textarea id="message1" placeholder="Например, сократи текст до 200 символов"></textarea>
+					</div>
+				</div>
+				<button>Генерировать</button>
+			</form>
+		</section>
+
+		<section class="solutions-tasks_modal" id="callback_modal11">
+			<div class="solutions-tasks_modal-title">Скорректировать запрос</div>
+			<form class="solutions-tasks_modal-form">
+				<div class="line">
+					<div class="field">
+						<label for="message1">Что вы хотите изменить?</label>
+						<textarea id="message1" placeholder="Например, сократи текст до 200 символов"></textarea>
+					</div>
+				</div>
+				<button>Генерировать</button>
+			</form>
+		</section>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/media-player.js"></script>
+		<script src="js/html5sortable.min.js"></script>
+		<script src="js/wavesurfer.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/clipboard.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/search_courses.js"></script>
+		<script src="js/upload.js"></script>
+	</body>
+</html>

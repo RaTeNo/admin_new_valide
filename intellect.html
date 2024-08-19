@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#0B00D8">
+		<meta name="theme-color" content="#0B00D8">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/nice-select.css">
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="sep"></div>
+
+						<div class="account">
+							<a href="/" class="settings_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+							</a>
+
+							<div class="user">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<!-- <img data-src="" alt="" class="lozad"> -->
+								</div>
+
+								<div class="name">Модератор</div>
+							</div>
+
+							<a href="/" class="logout_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+							</a>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="row">
+						<button class="menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						</button>
+
+						<div class="page_title">Сводка</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="nitifications new">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_nitifications"></use></svg>
+						</div>
+
+						<div class="account modal_cont">
+							<button class="user btn mini_modal_btn" data-modal-id="#account_modal">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<img data-src="images/tmp/user_avatar.jpg" alt="" class="lozad">
+								</div>
+
+								<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="account_modal">
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+									<span>Настройки</span>
+								</a></div>
+
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+									<span>Выход</span>
+								</a></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="content_flex">
+					<div class="cont row">
+						<aside>
+							<button class="close_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<div class="menu">
+								<div class="item">
+									<a href="/">
+										<div class="icon icon1">
+											<svg><use xlink:href="images/sprite.svg#ic_category1"></use></svg>
+										</div>
+										<span>Сводка</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon2 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category2"></use></svg>
+										</div>
+										<span>Мои задачи</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a  href="#" class="sub_link active open">
+										<div class="icon icon3 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category3"></use></svg>
+										</div>
+										<span>Курсы</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu" style="display: block;">
+										<div><a class="active">
+											<span class="count">3</span>
+											<span>Все курсы</span>
+										</a></div>
+										<div><a href="/">Новые курсы</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="#" class="sub_link">
+										<div class="icon icon4 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category4"></use></svg>
+										</div>
+										<span>Обратная связь</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/">По тренажерам</a></div>
+										<div><a href="/">По заданиям</a></div>
+										<div><a href="/">По другому</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5">
+											<svg><use xlink:href="images/sprite.svg#ic_category5"></use></svg>
+										</div>
+										<span>Тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_2">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_2"></use></svg>
+										</div>
+										<span>Аудио тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_3">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_3"></use></svg>
+										</div>
+										<span>Тренажеры действий</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon6">
+											<svg><use xlink:href="images/sprite.svg#ic_category6"></use></svg>
+										</div>
+										<span>Новости</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon7">
+											<svg><use xlink:href="images/sprite.svg#ic_category7"></use></svg>
+										</div>
+										<span>Опросы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon8">
+											<svg><use xlink:href="images/sprite.svg#ic_category8"></use></svg>
+										</div>
+										<span>Обсуждения</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon9">
+											<svg><use xlink:href="images/sprite.svg#ic_category9"></use></svg>
+										</div>
+										<span>Вебинары</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon10">
+											<svg><use xlink:href="images/sprite.svg#ic_category10"></use></svg>
+										</div>
+										<span>Подкасты</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon11">
+											<svg><use xlink:href="images/sprite.svg#ic_category11"></use></svg>
+										</div>
+										<span>Файлы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon12">
+											<svg><use xlink:href="images/sprite.svg#ic_category12"></use></svg>
+										</div>
+										<span>Коллеги</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon13">
+											<svg><use xlink:href="images/sprite.svg#ic_category13"></use></svg>
+										</div>
+										<span>Настройки</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/" class="sub_link">
+										<div class="icon icon14">
+											<svg><use xlink:href="images/sprite.svg#ic_category14"></use></svg>
+										</div>
+										<span>Управление</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/"></a></div>
+									</div>
+								</div>
+							</div>
+						</aside>
+
+
+						<section class="content intellect">
+							
+							<section class="education">
+								<h1 class="page_title">Искусственный интеллект
+									<div class="tooltip">
+										<svg class="icon_tippy">
+											<use xlink:href="images/sprite.svg#info5"></use>
+										</svg>
+										<div class="tooltiptext">Система посчитала вашу активность за последние
+											7 дней. Красные цифры означают насколько меньше вы занимались за
+											последнюю неделю в сравнении с позапрошлой, зеленые — насколько
+											больше.
+										</div>
+									</div>
+								</h1>
+
+
+								<section class="intellect-top">
+									<div class="intellect-top_wrap">
+										<div class="intellect-top_left">
+											<div class="intellect-top_icon">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#intellect_icon"></use>
+												</svg>
+											</div>
+											<div class="intellect-top_info">
+												<div class="intellect-top_title">Предложить задачу для решения</div>
+												<div class="intellect-top_text">Вы можете предложить идею для создания нового асисстента</div>
+											</div>
+										</div>
+										<a href="#" class="intellect-top_btn">Предложить</a>									
+									</div>
+									<form class="intellect_form" style="display: none;">								
+										<div class="line">
+											<div class="intellect_form-label">Название</div>
+											<div class="field">
+												<input type="text" id="name" placeholder="Введите название">
+											</div>
+										</div>
+										<div class="line">
+											<div class="intellect_form-label">Описание</div>
+											<div class="field">
+												<textarea id="desc" class="intellect_form-textarea" placeholder="Введите название"></textarea>
+											</div>
+										</div>
+										<button type="submit" class="modal_btn" data-content="modal-intellect">Отправить</button>									
+									</form>
+								</section>
+								
+								<div class="education_box">
+									<div class="education_wrap">
+										<div class="education_left">
+											<div class="education_icon">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#recomendation"></use>
+												</svg>	
+											</div>
+											<div class="education_info">
+												<div class="education_title">Как работает этот модуль?</div>												
+											</div>
+										</div>
+										<div class="education_links">
+											<a href="#">
+												<span>Прочитать инструкцию</span>
+											</a>
+											<a href="#" class="modal_btn" data-content="#video_modal5">
+												<span>Посмотреть видео</span>
+											</a>
+										</div>
+									</div>									
+								</div>
+								
+							</section>	
+
+							<form class="courses_faq">
+								<input type="text" class="js-search-courses input" placeholder="Поиск">
+								<button>Искать</button>
+							</form>
+
+							<div class="title_courses_result">Поиск: <span></span> <button><img src="images/reset.svg" alt=""></button></div>
+
+
+							<section class="courses not_my"><div class="row not_slide found_course"></div></section>
+
+
+							<section class="favourites">
+								<div class="wrapper_head">
+									<div class="block_title">Избранное</div>
+									<div class="block_text">Ваши избранные задачи</div>
+								</div>
+								<div class="favourites_items">
+									<div class="favourites_item">
+										<div class="favourites_item-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#favourites1"></use>
+											</svg>											
+										</div>
+										<a href="task-page.html" class="favourites_item-title">Создать новую вакансию в компанию</a>
+										<a href="task-page.html" class="favourites_item-text">Помощь в создании вакансии в новую компанию</a>
+										<div class="favourites_item-left">
+											<div class="favourites_item-label red">HR задачи</div>
+											<div class="favourites_item-star">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#star"></use>
+												</svg>	
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#star2"></use>
+												</svg>		
+											</div>
+										</div>
+									</div>
+									<div class="favourites_item">
+										<div class="favourites_item-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#favourites2"></use>
+											</svg>											
+										</div>
+										<a href="task-page.html" class="favourites_item-title">Ответ на вакансию</a>
+										<a href="task-page.html" class="favourites_item-text">Помощь в создании вакансии в новую компанию</a>
+										<div class="favourites_item-left">
+											<div class="favourites_item-label yellow">Маркетинг</div>
+											<div class="favourites_item-star">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#star"></use>
+												</svg>		
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#star2"></use>
+												</svg>	
+											</div>
+										</div>
+									</div>
+									<div  class="favourites_item">
+										<div class="favourites_item-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#favourites3"></use>
+											</svg>											
+										</div>
+										<a href="task-page.html" class="favourites_item-title">Письмо сотруднику</a>
+										<a href="task-page.html" class="favourites_item-text">Помощь в создании вакансии</a>
+										<div class="favourites_item-left">
+											<div class="favourites_item-label green">Обучение</div>
+											<div class="favourites_item-star">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#star"></use>
+												</svg>		
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#star2"></use>
+												</svg>	
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
+
+
+							<section class="division">
+								<div class="wrapper_head">
+									<div class="block_title">Разделы</div>
+									<div class="block_text">Перейдите в нужный раздел</div>
+								</div>
+								<div class="division_items">
+									<a href="division-page.html" class="division_item red">
+										<div class="division_item-label">15 задач</div>
+										<div class="division_item-icon">
+											<div class="icon">
+												<img src="images/Vector.png" alt="">
+											</div>																					
+										</div>
+										<div class="division_item-title">HR задачи</div>
+										<div class="division_item-text">Организации процессов найма, адаптации, развитию и управлению персоналом.</div>
+									</a>
+									<a href="division-page.html" class="division_item yellow">
+										<div class="division_item-label">15 задач</div>
+										<div class="division_item-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#division2"></use>
+											</svg>											
+										</div>
+										<div class="division_item-title">Маркетинг</div>
+										<div class="division_item-text">Инструменты и стратегии для продвижения продуктов или услуг на рынке и привлечения клиентов</div>
+									</a>
+									<a href="division-page.html" class="division_item green">
+										<div class="division_item-label">15 задач</div>
+										<div class="division_item-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#division3"></use>
+											</svg>											
+										</div>
+										<div class="division_item-title">Обучение</div>
+										<div class="division_item-text">Раздел, посвященный обучению и развитию навыков сотрудников, а также организации обучающих мероприятий и тренингов</div>
+									</a>
+									<a href="division-page.html" class="division_item blue">
+										<div class="division_item-label">15 задач</div>
+										<div class="division_item-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#division4"></use>
+											</svg>											
+										</div>
+										<div class="division_item-title">Инструкции</div>
+										<div class="division_item-text">Все необходимые инструкции и правила для выполнения рабочих задач и процессов в компании</div>
+									</a>
+									<a href="division-page.html" class="division_item violet">
+										<div class="division_item-label">15 задач</div>
+										<div class="division_item-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#division5"></use>
+											</svg>											
+										</div>
+										<div class="division_item-title">Продажи</div>
+										<div class="division_item-text">Стратегии и инструменты для продвижения продукции и увеличения объемов продаж</div>
+									</a>
+									<a href="division-page.html" class="division_item orange">
+										<div class="division_item-label">15 задач</div>
+										<div class="division_item-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#division6"></use>
+											</svg>											
+										</div>
+										<div class="division_item-title">Прочее</div>
+										<div class="division_item-text">Другие задачи и процессы, которые не вписываются в остальные категории</div>
+									</a>
+									<a href="division-page.html" class="division_item skyblue">
+										<div class="division_item-label">15 задач</div>
+										<div class="division_item-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#division7"></use>
+											</svg>											
+										</div>
+										<div class="division_item-title">Жизненные ситуации</div>
+										<div class="division_item-text">Другие задачи и процессы, которые не вписываются в остальные категории</div>
+									</a>
+								</div>
+							</section>
+
+
+							<footer>
+								<div class="logo">
+									<img src="images/logo.svg" alt="">
+
+									<div class="desc">Описание первой компании 123</div>
+								</div>
+
+								<div class="contacts location">
+									<div class="name">Адрес</div>
+
+									<div class="val">г. Москва, ул. Ломоносова, д. 75</div>
+								</div>
+
+								<div class="contacts email">
+									<div class="name">Электронная почта</div>
+
+									<div class="val">
+										<div><a href="mailto:company1@gmail.com">company1@gmail.com</a></div>
+									</div>
+								</div>
+
+								<div class="contacts phone">
+									<div class="name">Телефон</div>
+
+									<div class="val">
+										<div><a href="tel:+79219879988">+79219879988</a></div>
+									</div>
+								</div>
+							</footer>
+						</section>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+
+		<section class="modal modal-video" id="video_modal5" style="display: none;">
+			<video class="video-player video_new" controlslist="nodownload" controls="" crossorigin="anonymous">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
+			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default="">
+			</video>
+		</section>
+
+		<section class="modal-intellect" id="modal-intellect">
+			<svg class="icon">
+				<use xlink:href="images/sprite.svg#ok888"></use>
+			</svg>
+			<div class="modal-intellect_title">Заявка принята</div>
+			<div class="modal-intellect_text">Ваша заявка принята и будет рассмотрена. Спасибо!</div>
+			<a href="#" class="modal-intellect_link">Вернуться к ассиистенту</a>
+		</section>
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/media-player.js"></script>
+		<script src="js/html5sortable.min.js"></script>
+		<script src="js/wavesurfer.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/search_courses.js"></script>
+	</body>
+</html>

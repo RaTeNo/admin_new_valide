@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#0B00D8">
+		<meta name="theme-color" content="#0B00D8">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/nice-select.css">
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="sep"></div>
+
+						<div class="account">
+							<a href="/" class="settings_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+							</a>
+
+							<div class="user">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<!-- <img data-src="" alt="" class="lozad"> -->
+								</div>
+
+								<div class="name">Модератор</div>
+							</div>
+
+							<a href="/" class="logout_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+							</a>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="row">
+						<button class="menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						</button>
+
+						<div class="page_title">Сводка</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="nitifications new">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_nitifications"></use></svg>
+						</div>
+
+						<div class="account modal_cont">
+							<button class="user btn mini_modal_btn" data-modal-id="#account_modal">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<img data-src="images/tmp/user_avatar.jpg" alt="" class="lozad">
+								</div>
+
+								<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="account_modal">
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+									<span>Настройки</span>
+								</a></div>
+
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+									<span>Выход</span>
+								</a></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="content_flex">
+					<div class="cont row">
+						<aside>
+							<button class="close_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<div class="menu">
+								<div class="item">
+									<a href="/">
+										<div class="icon icon1">
+											<svg><use xlink:href="images/sprite.svg#ic_category1"></use></svg>
+										</div>
+										<span>Сводка</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon2 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category2"></use></svg>
+										</div>
+										<span>Мои задачи</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a  href="#" class="sub_link active open">
+										<div class="icon icon3 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category3"></use></svg>
+										</div>
+										<span>Курсы</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu" style="display: block;">
+										<div><a class="active">
+											<span class="count">3</span>
+											<span>Все курсы</span>
+										</a></div>
+										<div><a href="/">Новые курсы</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="#" class="sub_link">
+										<div class="icon icon4 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category4"></use></svg>
+										</div>
+										<span>Обратная связь</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/">По тренажерам</a></div>
+										<div><a href="/">По заданиям</a></div>
+										<div><a href="/">По другому</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5">
+											<svg><use xlink:href="images/sprite.svg#ic_category5"></use></svg>
+										</div>
+										<span>Тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_2">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_2"></use></svg>
+										</div>
+										<span>Аудио тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_3">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_3"></use></svg>
+										</div>
+										<span>Тренажеры действий</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon6">
+											<svg><use xlink:href="images/sprite.svg#ic_category6"></use></svg>
+										</div>
+										<span>Новости</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon7">
+											<svg><use xlink:href="images/sprite.svg#ic_category7"></use></svg>
+										</div>
+										<span>Опросы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon8">
+											<svg><use xlink:href="images/sprite.svg#ic_category8"></use></svg>
+										</div>
+										<span>Обсуждения</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon9">
+											<svg><use xlink:href="images/sprite.svg#ic_category9"></use></svg>
+										</div>
+										<span>Вебинары</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon10">
+											<svg><use xlink:href="images/sprite.svg#ic_category10"></use></svg>
+										</div>
+										<span>Подкасты</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon11">
+											<svg><use xlink:href="images/sprite.svg#ic_category11"></use></svg>
+										</div>
+										<span>Файлы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon12">
+											<svg><use xlink:href="images/sprite.svg#ic_category12"></use></svg>
+										</div>
+										<span>Коллеги</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon13">
+											<svg><use xlink:href="images/sprite.svg#ic_category13"></use></svg>
+										</div>
+										<span>Настройки</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/" class="sub_link">
+										<div class="icon icon14">
+											<svg><use xlink:href="images/sprite.svg#ic_category14"></use></svg>
+										</div>
+										<span>Управление</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/"></a></div>
+									</div>
+								</div>
+							</div>
+						</aside>
+
+
+						<section class="content">
+							
+							<section class="page_title">
+								<a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_left"></use></svg>
+								</a>
+								<span>Сборщик покрышек</span>
+								<div class="division-page_text">Паспорт профессии</div>
+							</section>
+
+
+							<section class="catalog_page">
+								<div class="catalog_page-top">								
+									<div class="catalog_page-top-img">
+										<img src="images/catalog1.png" alt="">
+									</div>
+									<div class="catalog_page-top-info">
+										<div class="catalog_page-top-title">Балансировщик шин</div>
+										<div class="catalog_page-top-text">Профессионал, который занимается укладкой и склеиванием компонентов, из которых состоит шина. Он обычно работает в производстве шинных компаний и отвечает за сборку шинных блоков, которые затем используются для создания шин различных размеров и типов. Сборщик покрышек должен иметь хорошую координацию рук, точность и внимательность, а также должен быть готов работать в условиях повышенной шумности и пыли.</div>
+										<div class="catalog_page-top-price">от 25 000 ₽ до 120 000 ₽</div>
+									</div>									
+								</div>
+
+								<div class="catalog_page-box">
+									<div class="catalog_page-box-head">
+										<div class="catalog_page-box-head-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#catalog-page1"></use>
+											</svg>	
+										</div>										
+										<div class="catalog_page-box-info">
+											<div class="catalog_page-box-title">Основные цели</div>
+										</div>
+									</div>
+									<div class="catalog_page-box-text">Сборка покрышек на сборочном станке, трудовая функция в 2 строки</div>
+								</div>
+
+								<div class="catalog_page-box">
+									<div class="catalog_page-box-head">
+										<div class="catalog_page-box-head-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#catalog-page2"></use>
+											</svg>	
+										</div>										
+										<div class="catalog_page-box-info">
+											<div class="catalog_page-box-title">Фото и видео материалы о профессии</div>
+										</div>
+									</div>
+									<div class="catalog_page-box-images">
+										<img src="images/gallery-img1.png" alt="">
+										<img src="images/gallery-img2.png" alt="">
+										<a href="#" class="modal_btn" data-content="#video_modal5">
+											<img src="images/gallery-img3.png" alt="">
+											<button>
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#icon-play5"></use>
+												</svg>	
+											</button>
+										</a>										
+									</div>		
+								</div>	
+
+								<div class="catalog_page-box">
+									<div class="catalog_page-box-head">
+										<div class="catalog_page-box-head-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#catalog-page3"></use>
+											</svg>	
+										</div>										
+										<div class="catalog_page-box-info">
+											<div class="catalog_page-box-title">Ключевые этапы</div>
+											<div class="catalog_page-box-text">Нажмите на фото для увелечения</div>
+										</div>
+									</div>
+									<div class="catalog_page-box-gallery">
+										<a href="images/gallery-img4.png" data-fancybox="gallery">
+											<img src="images/gallery-img4.png" alt="">
+											<div class="catalog_page-box-gallery-title">Приемка смены</div>
+										</a>
+										<a href="images/gallery-img5.png" data-fancybox="gallery">
+											<img src="images/gallery-img5.png" alt="">
+											<div class="catalog_page-box-gallery-title">Создание заготовки</div>
+										</a>
+										<a href="images/gallery-img6.png" data-fancybox="gallery">
+											<img src="images/gallery-img6.png" alt="">
+											<div class="catalog_page-box-gallery-title">Сдача рабочей смены</div>
+										</a>									
+									</div>		
+								</div>
+
+								<div class="catalog_page-box">
+									<div class="catalog_page-box-head">
+										<div class="catalog_page-box-head-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#catalog-page4"></use>
+											</svg>	
+										</div>										
+										<div class="catalog_page-box-info">
+											<div class="catalog_page-box-title">Оборудование</div>
+										</div>
+									</div>
+									<div class="equipment_items">
+										<div class="equipment_item">
+											<div class="equipment_item-img">
+												<img src="images/gallery-img4.png" alt="">
+											</div>
+											<div class="equipment_item-info">
+												<div class="equipment_item-info-title">Сборочные станки</div>
+												<div class="equipment_item-info-text">Предназначены для  сборки покрышек диагональной и радиальной конструкции</div>
+											</div>
+										</div>	
+										<div class="equipment_item">
+											<div class="equipment_item-img">
+												<img src="images/gallery-img5.png" alt="">
+											</div>
+											<div class="equipment_item-info">
+												<div class="equipment_item-info-title">Электрическая  таль ТЭ 100-52120-01 (грузоподъемность  1 т)</div>
+												<div class="equipment_item-info-text">Для перемещения крупногабаритных покрышек</div>
+											</div>
+										</div>
+										<div class="equipment_item">
+											<div class="equipment_item-img">
+												<img src="images/gallery-img7.png" alt="">
+											</div>
+											<div class="equipment_item-info">
+												<div class="equipment_item-info-title">Сборочные станки</div>
+												<div class="equipment_item-info-text">Для перемещения крупногабаритных покрышек</div>
+											</div>
+										</div>							
+									</div>		
+								</div>	
+
+								<div class="catalog_page-box">
+									<div class="catalog_page-box-head">
+										<div class="catalog_page-box-head-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#catalog-page5"></use>
+											</svg>	
+										</div>										
+										<div class="catalog_page-box-info">
+											<div class="catalog_page-box-title">Инструменты и приспособления</div>
+										</div>
+									</div>
+									<div class="instrument_items">
+										<div class="instrument_item">
+											<div class="instrument_item-title">Шило</div>
+											<div class="instrument_item-text">Для прокола стыка протектора и видимых пузырей</div>
+										</div>	
+										<div class="instrument_item">
+											<div class="instrument_item-title">Прикаточный ролик</div>
+											<div class="instrument_item-text">Для прикатки полуфабрикатов</div>
+										</div>
+										<div class="instrument_item">
+											<div class="instrument_item-title">Нож</div>
+											<div class="instrument_item-text">Для реза слоев корда, металлокорда, брекера</div>
+										</div>	
+										<div class="instrument_item-images">
+											<img src="images/gallery-img1.png" alt="">
+											<img src="images/gallery-img2.png" alt="">
+											<img src="images/gallery-img3.png" alt="">
+											<img src="images/gallery-img4.png" alt="">
+										</div>		
+									</div>		
+								</div>
+								
+								<div class="catalog_page-box">
+									<div class="catalog_page-box-head">
+										<div class="catalog_page-box-head-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#catalog-page6"></use>
+											</svg>	
+										</div>										
+										<div class="catalog_page-box-info">
+											<div class="catalog_page-box-title">Задачи и обязанности</div>
+										</div>
+									</div>
+									<div class="catalog_page-block_text">
+										<p>Перед началом работы  проверить:  чистоту рабочего места, исправность оборудования, отсутствие утечек энергоносителей, работу вентиляции, исправность световой и звуковой сигнализации, исправность аварийных устройств и сигнализаций,  наличие и исправность приспособлений, инструмента и средств измерений.</p>
+										<p>Подготовить полуфабрикаты необходимые для сборки покрышек</p>
+										<p>Изготовление покрышек осушествляется путем последовательной сборки заранее подготовленных деталей - слоев каркаса, брекера, деталей бортовой и крыльнвой части покрышки, протектора, боковин, герметизирующего слоя и других.</p>
+										<p>Сборка покрышек производится на сборочном станке согласно технологической инструкции и ККТ для данного размера</p>
+										<p>В зависимости габаритных размеров и конструкции шин применяются различные методы сборки: браслетный (собираютя покрышки с 2-мя или более кольцами в борту, кольцевые браслеты из прорезиненного корда последовательно надеваются на сборочный барабан); послойный (поочередное наложение всех слоев на барабан в заданной последовательности из специальных питателей); комбинированный (первые слоя в виде браслета надеваются на барабан, а последующие слои каркаса и брекера - в виде полос)</p>
+									</div>
+								</div>	
+
+								<div class="catalog_page-box">
+									<div class="catalog_page-box-head">
+										<div class="catalog_page-box-head-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#catalog-page7"></use>
+											</svg>	
+										</div>										
+										<div class="catalog_page-box-info">
+											<div class="catalog_page-box-title">Образование</div>
+										</div>
+									</div>
+									<div class="catalog_page-block_text">
+										<p>Среднее профессиональное образование <span class="green">Обязательно</span></p>
+										<p>Высшее <span class="yellow">Желательно</span></p>
+									</div>
+								</div>
+
+								<div class="catalog_page-box">
+									<div class="catalog_page-box-head">
+										<div class="catalog_page-box-head-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#catalog-page8"></use>
+											</svg>	
+										</div>										
+										<div class="catalog_page-box-info">
+											<div class="catalog_page-box-title">Обучение</div>
+										</div>
+									</div>
+									<div class="catalog_page-block_text">
+										<p>Обучение в Учебном центре АО "Волтайр-Пром" <span class="green">Обязательно</span></p>
+									</div>
+								</div>
+
+								<div class="catalog_page-box">
+									<div class="catalog_page-box-head">
+										<div class="catalog_page-box-head-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#catalog-page9"></use>
+											</svg>	
+										</div>										
+										<div class="catalog_page-box-info">
+											<div class="catalog_page-box-title">Знания и навыки</div>
+										</div>
+									</div>
+									<div class="catalog_page-block_text">
+										<p>Сборщик покрышек должен знать: технологический процесс сборки покрышек, спецификацию, размеры и конструкцию покрышек, отдельных её частей и деталей, последовательность сборки; возможные дефекты в выполнении отдельных операций; устройство сборочного станка; принцип работы установки, пультов управления и точек аварийной остановки.</p>
+									</div>
+								</div>
+
+								<div class="catalog_page-box">
+									<div class="catalog_page-box-head">
+										<div class="catalog_page-box-head-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#catalog-page10"></use>
+											</svg>	
+										</div>										
+										<div class="catalog_page-box-info">
+											<div class="catalog_page-box-title">Вредные факторы</div>
+										</div>
+									</div>
+									<div class="catalog_page-block_text">
+										<p>Бензин (растворитель, топливный); шум;  параметры световой среды;  рабочая поза - стоя 70% рабочего времени;  подъем и перемещение тяжести постоянно в течение рабочего дня (смены);  наклоны корпуса тела работника более 300.</p>
+									</div>
+								</div>
+
+								<div class="catalog_page-box">
+									<div class="catalog_page-box-head">
+										<div class="catalog_page-box-head-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#catalog-page11"></use>
+											</svg>	
+										</div>										
+										<div class="catalog_page-box-info">
+											<div class="catalog_page-box-title">Средства индивидуальной защиты</div>
+										</div>
+									</div>
+									<div class="catalog_page-block_text">
+										<p>Полукомбинезон хлопчатобумажный; ботинки кожаные; рукавицы комбинированные; футболка с коротким рукавом; беруши противошумные; жилет утеплённый; респиратор; каскетка</p>
+									</div>
+								</div>
+
+								<div class="catalog_page-box">
+									<div class="catalog_page-box-head">
+										<div class="catalog_page-box-head-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#catalog-page12"></use>
+											</svg>	
+										</div>										
+										<div class="catalog_page-box-info">
+											<div class="catalog_page-box-title">Компенсации и льготы за вредные факторы</div>
+										</div>
+									</div>
+									<div class="catalog_page-block_text">
+										<ul>
+											<li>Повышенная оплата труда работника за вредные условия труда - 4% от часовой тарифной ставки за фактически отработанное время;</li>
+											<li>Ежегодный дополнительный оплачиваемый отпуск - 7 календарных дней;</li>
+											<li>Компенсация за молоко в размере стоимости 0,5 литра молока в день;</li>
+											<li>Право на досрочное назначение страховой пенсии -Список № 2;</li>
+											<li>Проведение медицинских осмотров -1 раз в год.</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="catalog_page-box">
+									<div class="catalog_page-box-head">
+										<div class="catalog_page-box-head-icon">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#catalog-page13"></use>
+											</svg>	
+										</div>										
+										<div class="catalog_page-box-info">
+											<div class="catalog_page-box-title">Ответственность</div>
+										</div>
+									</div>
+									<div class="catalog_page-block_text">
+										<p>Сборщик покрышек несет ответственность в соответствии с действующим законодательством в зависимости от степени и характера нарушений:</p>
+										<ul>
+											<li>За нарушение требований технологической инструкции, инструкций и документов согласно перечню для данной профессии;</li>
+											<li>За качество выпускаемой продукции;</li>
+											<li>За нарушение требований Правил внутреннего трудового распорядка и иных локальных нормативных актов Общества.</li>
+										</ul>
+										<p class="mt20">Работник, причинивший ущерб, возмещает этот ущерб в соответствии с требованиями Трудового Кодекса Российской Федерации.</p>
+									</div>
+								</div>
+
+							</section>
+
+							
+							<footer>
+								<div class="logo">
+									<img src="images/logo.svg" alt="">
+
+									<div class="desc">Описание первой компании 123</div>
+								</div>
+
+								<div class="contacts location">
+									<div class="name">Адрес</div>
+
+									<div class="val">г. Москва, ул. Ломоносова, д. 75</div>
+								</div>
+
+								<div class="contacts email">
+									<div class="name">Электронная почта</div>
+
+									<div class="val">
+										<div><a href="mailto:company1@gmail.com">company1@gmail.com</a></div>
+									</div>
+								</div>
+
+								<div class="contacts phone">
+									<div class="name">Телефон</div>
+
+									<div class="val">
+										<div><a href="tel:+79219879988">+79219879988</a></div>
+									</div>
+								</div>
+							</footer>
+						</section>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+
+		<section class="modal modal-video" id="video_modal5" style="display: none;">
+			<video class="video-player video_new" controlslist="nodownload" controls="" crossorigin="anonymous">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
+			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default="">
+			</video>
+		</section>
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/media-player.js"></script>
+		<script src="js/html5sortable.min.js"></script>
+		<script src="js/wavesurfer.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/search_courses.js"></script>
+	</body>
+</html>

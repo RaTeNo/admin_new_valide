@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#0B00D8">
+		<meta name="theme-color" content="#0B00D8">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/circle.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="sep"></div>
+
+						<div class="account">
+							<a href="/" class="settings_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+							</a>
+
+							<div class="user">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<!-- <img data-src="" alt="" class="lozad"> -->
+								</div>
+
+								<div class="name">Модератор</div>
+							</div>
+
+							<a href="/" class="logout_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+							</a>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="row">
+						<button class="menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						</button>
+
+						<div class="page_title">Сводка</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="nitifications new">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_nitifications"></use></svg>
+						</div>
+
+						<div class="account modal_cont">
+							<button class="user btn mini_modal_btn" data-modal-id="#account_modal">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<img data-src="images/tmp/user_avatar.jpg" alt="" class="lozad">
+								</div>
+
+								<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="account_modal">
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+									<span>Настройки</span>
+								</a></div>
+
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+									<span>Выход</span>
+								</a></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="content_flex">
+					<div class="cont row">
+						<aside>
+							<button class="close_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<div class="menu">
+								<div class="item">
+									<a href="/">
+										<div class="icon icon1">
+											<svg><use xlink:href="images/sprite.svg#ic_category1"></use></svg>
+										</div>
+										<span>Сводка</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon2 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category2"></use></svg>
+										</div>
+										<span>Мои задачи</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a  href="#" class="sub_link active open">
+										<div class="icon icon3 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category3"></use></svg>
+										</div>
+										<span>Курсы</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu" style="display: block;">
+										<div><a class="active">
+											<span class="count">3</span>
+											<span>Все курсы</span>
+										</a></div>
+										<div><a href="/">Новые курсы</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="#" class="sub_link">
+										<div class="icon icon4 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category4"></use></svg>
+										</div>
+										<span>Обратная связь</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/">По тренажерам</a></div>
+										<div><a href="/">По заданиям</a></div>
+										<div><a href="/">По другому</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5">
+											<svg><use xlink:href="images/sprite.svg#ic_category5"></use></svg>
+										</div>
+										<span>Тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_2">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_2"></use></svg>
+										</div>
+										<span>Аудио тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_3">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_3"></use></svg>
+										</div>
+										<span>Тренажеры действий</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon6">
+											<svg><use xlink:href="images/sprite.svg#ic_category6"></use></svg>
+										</div>
+										<span>Новости</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon7">
+											<svg><use xlink:href="images/sprite.svg#ic_category7"></use></svg>
+										</div>
+										<span>Опросы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon8">
+											<svg><use xlink:href="images/sprite.svg#ic_category8"></use></svg>
+										</div>
+										<span>Обсуждения</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon9">
+											<svg><use xlink:href="images/sprite.svg#ic_category9"></use></svg>
+										</div>
+										<span>Вебинары</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon10">
+											<svg><use xlink:href="images/sprite.svg#ic_category10"></use></svg>
+										</div>
+										<span>Подкасты</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon11">
+											<svg><use xlink:href="images/sprite.svg#ic_category11"></use></svg>
+										</div>
+										<span>Файлы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon12">
+											<svg><use xlink:href="images/sprite.svg#ic_category12"></use></svg>
+										</div>
+										<span>Коллеги</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon15">
+											<svg><use xlink:href="images/sprite.svg#ic_category15"></use></svg>
+										</div>
+										<span>Статистика</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon13">
+											<svg><use xlink:href="images/sprite.svg#ic_category13"></use></svg>
+										</div>
+										<span>Настройки</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/" class="sub_link">
+										<div class="icon icon14">
+											<svg><use xlink:href="images/sprite.svg#ic_category14"></use></svg>
+										</div>
+										<span>Управление</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/"></a></div>
+									</div>
+								</div>
+							</div>
+						</aside>
+
+
+						<section class="content">
+							<h1 class="page_title">Важные советы</h1>
+
+							<section class="analytics-enabled">
+								<div class="analytics-enabled_item">
+									<div class="analytics-enabled_left">
+										<div class="analytics-enabled_icon">
+											<img src="images/analytics-disabled.svg" alt="">
+										</div>	
+										<div class="analytics-enabled_info">
+											<div class="analytics-enabled_title">Аналитика отключена</div>
+											<div class="analytics-enabled_text">Аналитика отключена для вашего аккаунта. Вы можете ее включить самостоятельно</div>
+										</div>
+									</div>									
+								</div>
+							</section>
+
+							<section class="analytics-enabled">
+								<div class="analytics-enabled_item">
+									<div class="analytics-enabled_left">
+										<div class="analytics-enabled_icon">											
+											<!-- <svg width="61" height="61" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect width="100%" height="100%" rx="21" fill="url(#paint0_linear_3687_2535)"/>
+												<path d="M47.5 57C46.849 57 46.271 56.579 46.072 55.959L43.145 46.855L34.041 43.928C33.421 43.729 33 43.151 33 42.5C33 41.849 33.421 41.271 34.041 41.072L43.145 38.145L46.072 29.041C46.271 28.421 46.849 28 47.5 28C48.151 28 48.729 28.421 48.928 29.041L51.855 38.145L60.959 41.072C61.579 41.271 62 41.849 62 42.5C62 43.151 61.579 43.729 60.959 43.928L51.855 46.855L48.928 55.959C48.729 56.579 48.151 57 47.5 57ZM28 39C27.354 39 26.781 38.587 26.577 37.975L24.689 32.311L19.025 30.423C18.413 30.219 18 29.646 18 29C18 28.354 18.413 27.781 19.025 27.577L24.689 25.689L26.577 20.025C26.781 19.413 27.354 19 28 19C28.646 19 29.219 19.413 29.423 20.025L31.311 25.689L36.975 27.577C37.587 27.781 38 28.354 38 29C38 29.646 37.587 30.219 36.975 30.423L31.311 32.311L29.423 37.975C29.219 38.587 28.646 39 28 39ZM26.5 61C25.854 61 25.281 60.587 25.077 59.975L23.563 55.436L19.025 53.923C18.413 53.719 18 53.146 18 52.5C18 51.854 18.413 51.281 19.025 51.077L23.563 49.564L25.077 45.025C25.281 44.413 25.854 44 26.5 44C27.146 44 27.719 44.413 27.923 45.025L29.436 49.564L33.975 51.077C34.587 51.281 35 51.854 35 52.5C35 53.146 34.587 53.719 33.975 53.923L29.436 55.436L27.923 59.975C27.719 60.587 27.146 61 26.5 61Z" fill="white"/>
+												<defs>
+												<linearGradient id="paint0_linear_3687_2535" x1="-1.7678e-06" y1="85.0202" x2="104.684" y2="42.3877" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#682D8C"/>
+												<stop offset="1" stop-color="#EB1E79"/>
+												</linearGradient>
+												</defs>
+											</svg> -->
+
+											<svg width="61" height="61">
+				                                <use xlink:href="#ii"></use>
+				                            </svg>
+
+										</div>	
+										<div class="analytics-enabled_info">
+											<div class="analytics-enabled_title">Рекомендации от ChatGPT</div>
+											<div class="load_anal">
+												<svg><use xlink:href="images/sprite.svg#timer"></use></svg>
+												<div class="text_load">
+													<b>Идут вычисления...</b><br>
+													Пожалуйста подождите...
+												</div>
+											</div>
+
+											<div class="analytics-enabled_text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.
+											Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</div>
+										</div>
+									</div>									
+								</div>
+							</section>
+
+							<section class="analytics-enabled">
+								<div class="analytics-enabled_item">
+									<div class="analytics-enabled_left">
+										<div class="analytics-enabled_icon">
+											<img src="images/analytics-enabled.svg" alt="">
+										</div>	
+										<div class="analytics-enabled_info">
+											<div class="analytics-enabled_title">Здесь появится ваша аналитика</div>
+											<div class="analytics-enabled_text">Аналитика в процессе создания. Обычно она создается не более 2-х минут. Пожалуйста, подождите.</div>
+											<div class=""><a href="" class="update_page">Обновить страницу</a></div>
+										</div>
+									</div>
+									<div class="analytics-enabled_time">01:43</div>
+								</div>
+							</section>
+
+							<section class="analytics-enabled">
+								<div class="analytics-enabled_item">
+									<div class="analytics-enabled_left">
+										<div class="advice_item-icon analytics-enabled_icon">
+											<img src="images/advice3.svg" alt="">
+										</div>	
+										<div class="analytics-enabled_info">
+											<div class="analytics-enabled_title">Здесь появится ваша аналитика</div>
+											<div class="analytics-enabled_text">Аналитика в процессе создания. Обычно она создается не более 2-х минут. Пожалуйста, подождите.</div>
+											<div class=""><a href="" class="update_page">Обновить страницу</a></div>
+										</div>
+									</div>
+									<div class="analytics-enabled_time">01:43</div>
+								</div>
+							</section>
+						
+
+							<section class="advice">
+								<div class="advice_items">
+									<div class="advice_item">
+										<div class="advice_item-icon">
+											<img src="images/advice1.svg" alt="">
+										</div>
+										<div class="advice_item-info">
+											<div class="advice_item-title">Обращайтесь к клиенту по имени</div>
+											<div class="advice_item-text">Клиенты больше доверяют людям, которые обращаются к ним по имени и отчеству. Старайтесь чаще называть клиента по имени</div>
+										</div>
+									</div>
+									<div class="advice_item">
+										<div class="advice_item-icon">
+											<img src="images/advice2.svg" alt="">
+										</div>
+										<div class="advice_item-info">
+											<div class="advice_item-title">Не используйте лишние слова</div>
+											<div class="advice_item-text">Клиенты больше доверяют людям, которые обращаются к ним по имени и отчеству. Старайтесь чаще называть клиента по имени</div>
+										</div>
+									</div>
+									<div class="advice_item">
+										<div class="advice_item-icon">
+											<img src="images/advice3.svg" alt="">
+										</div>
+										<div class="advice_item-info">
+											<div class="advice_item-title">Вы говорите корректно</div>
+											<div class="advice_item-text">Клиенты больше доверяют людям, которые обращаются к ним по имени и отчеству. Старайтесь чаще называть клиента по имени</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
+
+							<h1 class="page_title">Аналитика</h1>			
+
+							<section class="analitic">
+								<div class="analitic_items">
+									<div class="analitic_item">										
+										<div class="analitic_item-info">
+											<div class="analitic_item-title">Время на подготовку</div>
+											<div class="analitic_item-text">Время, которое вам требуется на подготовку к разговору</div>
+										</div>
+										<div class="analitic_item-icon yellow">15 c</div>
+									</div>
+									<div class="analitic_item">										
+										<div class="analitic_item-info">
+											<div class="analitic_item-title">Лишние слова</div>
+											<div class="analitic_item-text">Процент вопросов, для которых вы запрашиваете подсказки</div>
+										</div>
+										<div class="analitic_item-icon red">43%</div>
+									</div>
+									<div class="analitic_item">										
+										<div class="analitic_item-info">
+											<div class="analitic_item-title">Вопросы</div>
+											<div class="analitic_item-text">То, насколько точно вы отвечаете на вопросы собеседника по шкале от 1 до 5</div>
+										</div>
+										<div class="analitic_item-icon green">5</div>
+									</div>
+									<div class="analitic_item">										
+										<div class="analitic_item-info">
+											<div class="analitic_item-title">Использование подсказок</div>
+											<div class="analitic_item-text">Процент вопросов, для которых вы запрашиваете подсказки</div>
+										</div>
+										<div class="analitic_item-icon green">15%</div>
+									</div>
+								</div>
+							</section>
+
+
+							<h1 class="page_title">Самые частые ошибки</h1>
+
+							<section class="mistake">
+								<div class="mistake_items">
+									<div class="mistake_item yellow">
+										<div class="c100 p65">
+											<span>65</span>
+											<div class="slice">
+												<div class="bar"></div>
+												<div class="fill"></div>
+											</div>
+										</div>
+										<div class="mistake_item-info">
+											<div class="mistake_item_title">Имя</div>
+											<div class="mistake_item-text">Забываете обращаться по<br> имени с частотой 65%</div>
+										</div>
+									</div>
+									<div class="mistake_item red">
+										<div class="c100 p91">
+											<span>91</span>
+											<div class="slice">
+												<div class="bar"></div>
+												<div class="fill"></div>
+											</div>
+										</div>
+										<div class="mistake_item-info">
+											<div class="mistake_item_title">Вопрос</div>
+											<div class="mistake_item-text">Не задаете вопросы с частотой 91%</div>
+										</div>
+									</div>
+									<div class="mistake_item green">
+										<div class="c100 p43">
+											<span>43</span>
+											<div class="slice">
+												<div class="bar"></div>
+												<div class="fill"></div>
+											</div>
+										</div>
+										<div class="mistake_item-info">
+											<div class="mistake_item_title">Тихий голос</div>
+											<div class="mistake_item-text">Тихо говорите с частотой 43%</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
+							<h1 class="page_title">Детализация</h1>
+
+
+							<section class="details">
+								<div class="details_items">
+									<div class="details_item">
+										<div class="details_item-head">
+											<div class="details_item-left">
+												<div class="details_item-number">01</div>
+												<div class="details_item-text">Приветствие</div>	
+											</div>
+											<div class="details_item-right">
+												<a href="#" class="details_item-link-yellow active">
+													<span>Подробнее</span> 
+													<svg class="icon"><use xlink:href="images/sprite.svg#link-more"></use></svg>
+												</a>
+												<div class="details_item-status">
+													<svg class="icon"><use xlink:href="images/sprite.svg#remark"></use></svg>
+													<span>9 замечаний</span>
+												</div>
+											</div>
+										</div>
+										<div class="details_item-body" style="display: none;">
+											<div class="details_item-dialog">
+												<div class="details_item-body-title">Диалог</div>
+												<div class="dialog_items">
+													<div class="dialog_item">
+														<div class="dialog_item-avatar">
+															<img src="images/avatar1.png " alt="">
+														</div>
+														<div class="dialog_item-info">
+															<div class="dialog_item-author">Тренажер Тренажерович</div>
+															<div class="dialog_item-text">Как давно ваша компания находится на рынке?</div>
+														</div>
+													</div>
+													<div class="dialog_item">
+														<div class="dialog_item-avatar">
+															<img src="images/avatar2.png " alt="">
+														</div>
+														<div class="dialog_item-info">
+															<div class="dialog_item-author">Вы</div>
+															<div class="dialog_item-text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок?</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="details_item-dialog details_item-answer">
+												<div class="details_item-body-title">Последний ответ эксперта</div>
+												<div class="dialog_item">
+													<div class="dialog_item-avatar">
+														<img src="images/avatar3.png " alt="">
+													</div>
+													<div class="dialog_item-info">
+														<div class="dialog_item-author">Мария Сергеева</div>
+														<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+													</div>
+												</div>
+												<a href="#" class="details_item-dialog-link" data-content="#callback_modal">
+													<span>Другие ответы экспертов</span>
+												</a>
+											</div>
+
+											<div class="details_item-body-title mt_20">Замечания</div>
+
+											<div class="details_item-remarks">
+												<div class="details_item_title">Аудио и видео</div>
+												<div class="remarks_items">
+													<div class="remarks_item remarks_item-red">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no"></use></svg>
+														<span>Вы говорите слишком медленно</span>
+													</div>
+													<div class="remarks_item remarks_item-yellow">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no2"></use></svg>
+														<span>Вы говорите слишком медленно 2</span>
+													</div>
+													<div class="remarks_item remarks_item-green">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-yes"></use></svg>
+														<span>С составлением предложений у вас все отлично. Вы молодец!</span>
+														<a href="#" class="modal_content" data-content="#answer">
+															<svg class="icon"><use xlink:href="images/sprite.svg#glaz"></use></svg>
+														</a>
+													</div>
+												</div>
+											</div>
+
+											<div class="details_item-remarks">
+												<div class="details_item_title">Аудио и видео</div>
+												<div class="remarks_items">
+													<div class="remarks_item remarks_item-red">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no"></use></svg>
+														<span>Вы говорите слишком медленно</span>
+													</div>
+													<div class="remarks_item remarks_item-yellow">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no2"></use></svg>
+														<span>Вы говорите слишком медленно 2</span>
+													</div>
+													<div class="remarks_item remarks_item-green">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-yes"></use></svg>
+														<span>С составлением предложений у вас все отлично. Вы молодец!</span>
+														<a href="#" class="modal_content" data-content="#answer">
+															<svg class="icon"><use xlink:href="images/sprite.svg#glaz"></use></svg>
+														</a>
+													</div>
+													<div class="load_anal">
+														<svg><use xlink:href="images/sprite.svg#timer"></use></svg>
+														<div class="text_load">
+															<b>Идут вычисления...</b><br>
+															Пожалуйста подождите...
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="details_item-remarks">
+												<div class="details_item_title">Аудио и видео</div>
+												<div class="remarks_items">
+													<div class="remarks_item remarks_item-red">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no"></use></svg>
+														<span>Вы говорите слишком медленно</span>
+													</div>
+													<div class="remarks_item remarks_item-yellow">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no2"></use></svg>
+														<span>Вы говорите слишком медленно 2</span>
+													</div>
+													<div class="remarks_item remarks_item-green">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-yes"></use></svg>
+														<span>С составлением предложений у вас все отлично. Вы молодец!</span>
+														<a href="#" class="modal_content" data-content="#answer">
+															<svg class="icon"><use xlink:href="images/sprite.svg#glaz"></use></svg>
+														</a>
+													</div>
+												</div>
+											</div>
+
+											<a href="#" class="details_item-link-yellow mt">
+												<span>Свернуть</span> 
+												<svg class="icon"><use xlink:href="images/sprite.svg#turn"></use></svg>
+											</a>
+
+										</div>
+									</div>
+
+									<div class="details_item">
+										<div class="details_item-head">
+											<div class="details_item-left">
+												<div class="details_item-number">02</div>
+												<div class="details_item-text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок?</div>	
+											</div>
+											<div class="details_item-right">
+												<a href="#" class="details_item-link-yellow active">
+													<span>Подробнее</span> 
+													<svg class="icon"><use xlink:href="images/sprite.svg#link-more"></use></svg>
+												</a>
+												<div class="details_item-status-green">
+													<svg class="icon"><use xlink:href="images/sprite.svg#subtract"></use></svg>
+													<span>замечаний нет</span>
+												</div>
+											</div>
+										</div>
+										<div class="details_item-body"  style="display: none;">
+											<div class="details_item-dialog">
+												<div class="details_item-body-title">Диалог</div>
+												<div class="dialog_items">
+													<div class="dialog_item">
+														<div class="dialog_item-avatar">
+															<img src="images/avatar1.png " alt="">
+														</div>
+														<div class="dialog_item-info">
+															<div class="dialog_item-author">Тренажер Тренажерович</div>
+															<div class="dialog_item-text">Как давно ваша компания находится на рынке?</div>
+														</div>
+													</div>
+													<div class="dialog_item">
+														<div class="dialog_item-avatar">
+															<img src="images/avatar2.png " alt="">
+														</div>
+														<div class="dialog_item-info">
+															<div class="dialog_item-author">Вы</div>
+															<div class="dialog_item-text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок?</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="details_item-dialog details_item-answer">
+												<div class="details_item-body-title">Последний ответ эксперта</div>
+												<div class="dialog_item">
+													<div class="dialog_item-avatar">
+														<img src="images/avatar3.png " alt="">
+													</div>
+													<div class="dialog_item-info">
+														<div class="dialog_item-author">Мария Сергеева</div>
+														<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+													</div>
+												</div>
+												<a href="#" class="details_item-dialog-link" data-content="#callback_modal">
+													<span>Другие ответы экспертов</span>
+												</a>
+											</div>
+
+											<div class="details_item-remarks">
+												<div class="remarks_items">
+													<div class="remarks_item remarks_item-red">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no"></use></svg>
+														<span>Вы говорите слишком медленно</span>
+													</div>
+													<div class="remarks_item remarks_item-yellow">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no2"></use></svg>
+														<span>Вы говорите слишком медленно 2</span>
+													</div>
+													<div class="remarks_item remarks_item-green">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-yes"></use></svg>
+														<span>С составлением предложений у вас все отлично. Вы молодец!</span>
+													</div>
+												</div>
+											</div>
+
+											<a href="#" class="details_item-link-yellow mt">
+												<span>Свернуть</span> 
+												<svg class="icon"><use xlink:href="images/sprite.svg#turn"></use></svg>
+											</a>
+
+										</div>
+									</div>
+
+									<div class="details_item">
+										<div class="details_item-head bb">
+											<div class="details_item-left">
+												<div class="details_item-number">03</div>
+												<div class="details_item-text">Вы давно работаете?</div>	
+											</div>
+											<div class="details_item-right">
+												<a href="#" class="details_item-link-yellow">
+													<span>Свернуть</span> 
+													<svg class="icon"><use xlink:href="images/sprite.svg#turn"></use></svg>
+												</a>
+												<div class="details_item-status">
+													<svg class="icon"><use xlink:href="images/sprite.svg#remark"></use></svg>
+													<span>9 замечаний</span>
+												</div>
+											</div>
+										</div>
+										<div class="details_item-body">
+											<div class="details_item-dialog">
+												<div class="details_item-body-title">Диалог</div>
+												<div class="dialog_items">
+													<div class="dialog_item">
+														<div class="dialog_item-avatar">
+															<img src="images/avatar1.png " alt="">
+														</div>
+														<div class="dialog_item-info">
+															<div class="dialog_item-author">Тренажер Тренажерович</div>
+															<div class="dialog_item-text">Как давно ваша компания находится на рынке?</div>
+														</div>
+													</div>
+													<div class="dialog_item">
+														<div class="dialog_item-avatar">
+															<img src="images/avatar2.png " alt="">
+														</div>
+														<div class="dialog_item-info">
+															<div class="dialog_item-author">Вы</div>
+															<div class="dialog_item-text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок?</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="details_item-dialog details_item-answer">
+												<div class="details_item-body-title">Последний ответ эксперта</div>
+												<div class="dialog_item">
+													<div class="dialog_item-avatar">
+														<img src="images/avatar3.png " alt="">
+													</div>
+													<div class="dialog_item-info">
+														<div class="dialog_item-author">Мария Сергеева</div>
+														<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+													</div>
+												</div>
+												<a href="#" class="details_item-dialog-link" data-content="#callback_modal">
+													<span>Другие ответы экспертов</span>
+												</a>
+											</div>
+
+											<div class="details_item-remarks">
+												<div class="remarks_items">
+													<div class="remarks_item remarks_item-red">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no"></use></svg>
+														<span>Вы говорите слишком медленно</span>
+													</div>
+													<div class="remarks_item remarks_item-yellow">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no2"></use></svg>
+														<span>Вы говорите слишком медленно 2</span>
+													</div>
+													<div class="remarks_item remarks_item-green">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-yes"></use></svg>
+														<span>С составлением предложений у вас все отлично. Вы молодец!</span>
+													</div>
+												</div>
+											</div>
+
+											<a href="#" class="details_item-link-yellow mt">
+												<span>Свернуть</span> 
+												<svg class="icon"><use xlink:href="images/sprite.svg#turn"></use></svg>
+											</a>
+
+										</div>
+									</div>
+
+									<div class="details_item">
+										<div class="details_item-head bb">
+											<div class="details_item-left">
+												<div class="details_item-number">04</div>
+												<div class="details_item-text">Вы давно работаете?</div>	
+											</div>
+											<div class="details_item-right">
+												<a href="#" class="details_item-link-yellow">
+													<span>Свернуть</span> 
+													<svg class="icon"><use xlink:href="images/sprite.svg#turn"></use></svg>
+												</a>
+												<div class="details_item-status">
+													<svg class="icon"><use xlink:href="images/sprite.svg#remark"></use></svg>
+													<span>9 замечаний</span>
+												</div>
+											</div>
+										</div>
+										<div class="details_item-body">
+											<div class="details_item-dialog">
+												<div class="details_item-body-title">Диалог</div>
+												<div class="dialog_items">
+													<div class="dialog_item">
+														<div class="dialog_item-avatar">
+															<img src="images/avatar1.png " alt="">
+														</div>
+														<div class="dialog_item-info mp">
+															<div class="dialog_item-author">Тренажер Тренажерович</div>
+															<div class="audio_message">
+																<div class="audio_media">											
+																	<audio
+																		controls
+																		src="images/t-rex-roar.mp3">
+																			Your browser does not support the
+																			<code>audio</code> element.
+																	</audio>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="dialog_item">
+														<div class="dialog_item-avatar">
+															<img src="images/avatar2.png " alt="">
+														</div>
+														<div class="dialog_item-info mp">
+															<div class="dialog_item-author">Вы</div>
+															<div class="audio_message">
+																<div class="audio_media">											
+																	<audio
+																		controls
+																		src="images/t-rex-roar.mp3">
+																			Your browser does not support the
+																			<code>audio</code> element.
+																	</audio>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="details_item-answer">
+												<div class="details_item-body-title">Последний ответ эксперта</div>
+												<div class="dialog_item">
+													<div class="dialog_item-avatar">
+														<img src="images/avatar3.png " alt="">
+													</div>
+													<div class="dialog_item-info mp">
+														<div class="dialog_item-author">Мария Сергеева</div>
+														<div class="audio_message">
+															<div class="audio_media">											
+																<audio
+																	controls
+																	src="images/t-rex-roar.mp3">
+																		Your browser does not support the
+																		<code>audio</code> element.
+																</audio>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="details_item-remarks">
+												<div class="remarks_items">
+													<div class="remarks_item">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no"></use></svg>
+														<span>Вы говорите слишком медленно</span>
+													</div>
+													<div class="remarks_item">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-yes"></use></svg>
+														<span>С составлением предложений у вас все отлично. Вы молодец!</span>
+													</div>
+												</div>
+											</div>
+
+											<a href="#" class="details_item-link-yellow mt">
+												<span>Свернуть</span> 
+												<svg class="icon"><use xlink:href="images/sprite.svg#turn"></use></svg>
+											</a>
+
+										</div>
+									</div>
+
+									<div class="details_item">
+										<div class="details_item-head bb">
+											<div class="details_item-left">
+												<div class="details_item-number">05</div>
+												<div class="details_item-text">Вы давно работаете?</div>	
+											</div>
+											<div class="details_item-right">
+												<a href="#" class="details_item-link-yellow">
+													<span>Свернуть</span> 
+													<svg class="icon"><use xlink:href="images/sprite.svg#turn"></use></svg>
+												</a>
+												<div class="details_item-status">
+													<svg class="icon"><use xlink:href="images/sprite.svg#remark"></use></svg>
+													<span>9 замечаний</span>
+												</div>
+											</div>
+										</div>
+										<div class="details_item-body">
+											<div class="details_item-dialog">
+												<div class="details_item-body-title">Диалог</div>
+												<div class="dialog_items">
+													<div class="dialog_item">
+														<div class="dialog_item-avatar">
+															<img src="images/avatar1.png " alt="">
+														</div>
+														<div class="dialog_item-info mp">
+															<div class="dialog_item-author">Тренажер Тренажерович</div>
+															<div class="audio_message">
+																<div class="audio_media">											
+																	<audio
+																		controls
+																		src="images/t-rex-roar.mp3">
+																			Your browser does not support the
+																			<code>audio</code> element.
+																	</audio>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="dialog_item">
+														<div class="dialog_item-avatar">
+															<img src="images/avatar2.png " alt="">
+														</div>
+														<div class="dialog_item-info mp">
+															<div class="dialog_item-author">Вы</div>
+															<div class="audio_message">
+																<div class="audio_media">											
+																	<audio
+																		controls
+																		src="images/t-rex-roar.mp3">
+																			Your browser does not support the
+																			<code>audio</code> element.
+																	</audio>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="details_item-answer">
+												<div class="details_item-body-title">Последний ответ эксперта</div>
+												<div class="dialog_item">
+													<div class="dialog_item-avatar">
+														<img src="images/avatar3.png " alt="">
+													</div>
+													<div class="dialog_item-info mp">
+														<div class="dialog_item-author">Мария Сергеева</div>
+														<div class="audio_message">
+															<div class="audio_media">											
+																<audio
+																	controls
+																	src="images/t-rex-roar.mp3">
+																		Your browser does not support the
+																		<code>audio</code> element.
+																</audio>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="details_item-remarks">
+												<div class="remarks_items">
+													<div class="remarks_item">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no"></use></svg>
+														<span>Вы говорите слишком медленно</span>
+													</div>
+													<div class="remarks_item">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-yes"></use></svg>
+														<span>С составлением предложений у вас все отлично. Вы молодец!</span>
+													</div>
+												</div>
+											</div>
+
+											<a href="#" class="details_item-link-yellow mt">
+												<span>Свернуть</span> 
+												<svg class="icon"><use xlink:href="images/sprite.svg#turn"></use></svg>
+											</a>
+										</div>
+									</div>
+
+									<div class="details_item">
+										<div class="details_item-head bb">
+											<div class="details_item-left">
+												<div class="details_item-number">06</div>
+												<div class="details_item-text">Вы давно работаете?</div>	
+											</div>
+											<div class="details_item-right">
+												<a href="#" class="details_item-link-yellow">
+													<span>Свернуть</span> 
+													<svg class="icon"><use xlink:href="images/sprite.svg#turn"></use></svg>
+												</a>
+												<div class="details_item-status">
+													<svg class="icon"><use xlink:href="images/sprite.svg#remark"></use></svg>
+													<span>9 замечаний</span>
+												</div>
+											</div>
+										</div>
+										<div class="details_item-body">
+											<div class="details_item-dialog">
+												<div class="details_item-body-title">Диалог</div>
+												<div class="dialog_items">
+													<div class="dialog_item">
+														<div class="dialog_item-avatar">
+															<img src="images/avatar1.png " alt="">
+														</div>
+														<div class="dialog_item-info mp">
+															<div class="dialog_item-author">Тренажер Тренажерович</div>
+															<div class="video_message">
+																<button class="thumb modal_btn" data-content="#video_modal">
+																	<svg class="icon"><use xlink:href="images/sprite.svg#details-video"></use></svg>
+																	<span>Смотреть видео</span>
+																</button>
+															</div>
+														</div>
+													</div>
+													<div class="dialog_item">
+														<div class="dialog_item-avatar">
+															<img src="images/avatar2.png " alt="">
+														</div>
+														<div class="dialog_item-info mp">
+															<div class="dialog_item-author">Вы</div>
+															<div class="video_message">
+																<button class="thumb modal_btn" data-content="#video_modal">
+																	<svg class="icon"><use xlink:href="images/sprite.svg#details-video"></use></svg>
+																	<span>Смотреть видео</span>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="details_item-answer">
+												<div class="details_item-body-title">Последний ответ эксперта</div>
+												<div class="dialog_item">
+													<div class="dialog_item-avatar">
+														<img src="images/avatar3.png " alt="">
+													</div>
+													<div class="dialog_item-info mp">
+														<div class="dialog_item-author">Мария Сергеева</div>
+														<div class="video_message">
+															<button class="thumb modal_btn" data-content="#video_modal">
+																<svg class="icon"><use xlink:href="images/sprite.svg#details-video"></use></svg>
+																<span>Смотреть видео</span>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="details_item-remarks">
+												<div class="remarks_items">
+													<div class="remarks_item">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no"></use></svg>
+														<span>Вы говорите слишком медленно</span>
+													</div>
+													<div class="remarks_item">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-yes"></use></svg>
+														<span>С составлением предложений у вас все отлично. Вы молодец!</span>
+													</div>
+												</div>
+											</div>
+
+											<div class="details_gpt">
+												<div class="details_gpt_title">
+													<svg width="19" height="19">
+						                                <use xlink:href="#ii"></use>
+						                            </svg>
+							                        Рекомендации от ChatGPT по диалогу:
+							                    </div>
+												<div class="details_gpt_desc">
+													<p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
+													<p>Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст</p>
+												</div>
+											</div>
+
+											<a href="#" class="details_item-link-yellow mt">
+												<span>Свернуть</span> 
+												<svg class="icon"><use xlink:href="images/sprite.svg#turn"></use></svg>
+											</a>											
+										</div>
+									</div>
+								</div>
+							</section>
+
+
+
+							<section class="education">
+												
+								<section class="analitics">
+									<h1 class="page_title">Аналитика</h1>
+									<div class="analitics_box">
+										<div class="analitics_wrap">
+											<div class="analitics_left">
+												<div class="analitics_icon">
+													<svg width="31" height="31">
+						                                <use xlink:href="#ii"></use>
+						                            </svg>
+												</div>
+												<div class="analitics_info">
+													<div class="analitics_titles">Отчет по диалогу от нейросети</div>
+													<div class="analitics_text">Нейросеть оценила ваш диалог по нескольким критериям. Ниже вы можете ознакомится с подробным отчетам по всем критериям</div>
+												</div>
+											</div>
+										</div>	
+										<div class="analitics_box-title">Подробное описание</div>
+										<ul>
+											<li><span>Понимание продукта: 4</span> Вы ясно представили свою продукцию - создание сайтов, и предложили клиенту бесплатную услугу. Однако, вам могло бы помочь предоставление более подробной информации о преимуществах сайтов и как они могут быть полезными для клиента.</li>
+											<li><span>Навыки общения: 4</span> Вы уверенно и вежливо общаетесь с клиентом, задаете вопросы и предлагаете решение. Однако, можно было бы более активно включиться в диалог, чтобы лучше понять потребности и возражения клиента.</li>
+											<li><span>Презентация: 3</span> Вы представили свою услугу, но презентация могла бы быть более привлекательной и убедительной. Вы могли бы подготовить некоторые ключевые факты или примеры успешных проектов, чтобы продемонстрировать ценность вашего предложения.</li>
+											<li><span>Работа с возражениями: 2</span> Вы не смогли эффективно обработать возражения клиента. Вместо того, чтобы убедительно объяснить, почему сайт важен для бизнеса и как он может привлечь новых клиентов, вы больше настаивали на своем предложении и критиковали решение клиента.</li>
+											<li><span>Достижение цели разговора: 3</span> В результате разговора вы не получили прямого согласия на создание бесплатного сайта, однако клиент выразил возможность дальнейшего обсуждения. Ваша цель не была полностью достигнута, но остается шанс на успех в последующих контактах.</li>
+										</ul>
+									</div>									
+								</section>
+
+
+								<section class="analitics">
+									<h1 class="page_title">Аналитика</h1>
+									<div class="analitics_box">
+										<div class="analitics_wrap">
+											<div class="analitics_left">
+												<div class="analitics_icon">
+													<svg width="31" height="31">
+						                                <use xlink:href="#ii"></use>
+						                            </svg>
+												</div>
+												<div class="analitics_info">
+													<div class="analitics_title">Отчет по диалогу от нейросети</div>
+													<div class="analitics_text">Ваша общая оценка: <span>3.2</span>. Ниже вы можете ознакомится с подробным отчетам по всем критериям</div>
+												</div>
+											</div>
+											<div class="analitics_right">3.2</div>
+										</div>										
+										<div class="analitics_wrap green">
+											<div class="analitics_left">
+												<div class="analitics_icon">4</div>
+												<div class="analitics_info">
+													<div class="analitics_title">Понимание продука</div>
+													<div class="analitics_text">Вы ясно представили свою продукцию - создание сайтов, и предложили клиенту бесплатную услугу. Однако, вам могло бы помочь предоставление более подробной информации о преимуществах сайтов и как они могут быть полезными для клиента.</div>
+												</div>
+											</div>
+										</div>
+										<div class="analitics_wrap green">
+											<div class="analitics_left">
+												<div class="analitics_icon">4</div>
+												<div class="analitics_info">
+													<div class="analitics_title">Навыки общения</div>
+													<div class="analitics_text">Вы уверенно и вежливо общаетесь с клиентом, задаете вопросы и предлагаете решение. Однако, можно было бы более активно включиться в диалог, чтобы лучше понять потребности и возражения клиента.</div>
+												</div>
+											</div>
+										</div>
+										<div class="analitics_wrap yellow">
+											<div class="analitics_left">
+												<div class="analitics_icon">3</div>
+												<div class="analitics_info">
+													<div class="analitics_title">Презентация</div>
+													<div class="analitics_text">Вы представили свою услугу, но презентация могла бы быть более привлекательной и убедительной. Вы могли бы подготовить некоторые ключевые факты или примеры успешных проектов, чтобы продемонстрировать ценность вашего предложения.</div>
+												</div>
+											</div>
+										</div>
+										<div class="analitics_wrap red">
+											<div class="analitics_left">
+												<div class="analitics_icon">2</div>
+												<div class="analitics_info">
+													<div class="analitics_title">Работа с возражениями</div>
+													<div class="analitics_text">Вы не смогли эффективно обработать возражения клиента. Вместо того, чтобы убедительно объяснить, почему сайт важен для бизнеса и как он может привлечь новых клиентов, вы больше настаивали на своем предложении и критиковали решение клиента.</div>
+												</div>
+											</div>
+										</div>
+										<div class="analitics_wrap yellow">
+											<div class="analitics_left">
+												<div class="analitics_icon">3</div>
+												<div class="analitics_info">
+													<div class="analitics_title">Достижение цели разговора</div>
+													<div class="analitics_text">В результате разговора вы не получили прямого согласия на создание бесплатного сайта, однако клиент выразил возможность дальнейшего обсуждения. Ваша цель не была полностью достигнута, но остается шанс на успех в последующих контактах.</div>
+												</div>
+											</div>
+										</div>
+									</div>									
+								</section>
+								
+								
+
+							</section>
+							
+
+							<footer>
+								<div class="logo">
+									<img src="images/logo.svg" alt="">
+
+									<div class="desc">Описание первой компании 123</div>
+								</div>
+
+								<div class="contacts location">
+									<div class="name">Адрес</div>
+
+									<div class="val">г. Москва, ул. Ломоносова, д. 75</div>
+								</div>
+
+								<div class="contacts email">
+									<div class="name">Электронная почта</div>
+
+									<div class="val">
+										<div><a href="mailto:company1@gmail.com">company1@gmail.com</a></div>
+									</div>
+								</div>
+
+								<div class="contacts phone">
+									<div class="name">Телефон</div>
+
+									<div class="val">
+										<div><a href="tel:+79219879988">+79219879988</a></div>
+									</div>
+								</div>
+							</footer>
+						</section>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+		<section class="modal" id="test">
+			<img data-src="images/ic_warning.svg" alt="" class="icon lozad">
+
+			<div class="modal_title">Аттестация по теме “Маркетинг в IT-Сфере”</div>
+
+			<div class="modal_desc">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок. Теперь никто не сможет обвинить вас в плагиате, ибо каждый текст Яндекс.Рефератов неповторим.</div>
+
+			<div class="btns">
+				<button class="close_btn btn">Позже</button>
+
+				<a href="">Начать</a>
+			</div>
+		</section>
+
+
+		<section class="modal" id="video_modal">
+			<video class="video-player video_new" width="100%" controlsList="nodownload" controls crossorigin="anonymous">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
+			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default></track>
+			</video>
+		</section>
+
+
+
+		<section class="details-modal" id="callback_modal">
+			<div class="details-modal_title">Ответы других экспертов</div>
+			<div class="dialog_items">
+				<div class="dialog_item">
+					<div class="dialog_item-avatar">
+						<img src="images/avatar3.png " alt="">
+					</div>
+					<div class="dialog_item-info">
+						<div class="dialog_item-author">Мария Сергеева</div>
+						<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+					</div>
+				</div>
+				<div class="dialog_item">
+					<div class="dialog_item-avatar">
+						<img src="images/avatar3.png " alt="">
+					</div>
+					<div class="dialog_item-info">
+						<div class="dialog_item-author">Мария Сергеева</div>
+						<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+					</div>
+				</div>
+				<div class="dialog_item">
+					<div class="dialog_item-avatar">
+						<img src="images/avatar3.png " alt="">
+					</div>
+					<div class="dialog_item-info">
+						<div class="dialog_item-author">Мария Сергеева</div>
+						<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+					</div>
+				</div>
+				<div class="dialog_item">
+					<div class="dialog_item-avatar">
+						<img src="images/avatar3.png " alt="">
+					</div>
+					<div class="dialog_item-info">
+						<div class="dialog_item-author">Мария Сергеева</div>
+						<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+					</div>
+				</div>	
+			</div>			
+		</section>
+
+		<section class="details-modal" id="answer">
+			<div class="details-modal_title">Правильный ответ</div>
+			<div class="dialog_items">
+				<div class="dialog_item">
+					<div class="dialog_item-info">
+						<div class="dialog_item-author">Мария Сергеева</div>
+						<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+					</div>
+				</div>
+			</div>			
+		</section>
+
+
+
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+		<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <defs>
+		        <symbol id="ii" viewBox="0 0 80 80">
+		        	<rect width="100%" height="100%" rx="21" fill="url(#paint0_linear_3687_2535)"/>
+					<path d="M47.5 57C46.849 57 46.271 56.579 46.072 55.959L43.145 46.855L34.041 43.928C33.421 43.729 33 43.151 33 42.5C33 41.849 33.421 41.271 34.041 41.072L43.145 38.145L46.072 29.041C46.271 28.421 46.849 28 47.5 28C48.151 28 48.729 28.421 48.928 29.041L51.855 38.145L60.959 41.072C61.579 41.271 62 41.849 62 42.5C62 43.151 61.579 43.729 60.959 43.928L51.855 46.855L48.928 55.959C48.729 56.579 48.151 57 47.5 57ZM28 39C27.354 39 26.781 38.587 26.577 37.975L24.689 32.311L19.025 30.423C18.413 30.219 18 29.646 18 29C18 28.354 18.413 27.781 19.025 27.577L24.689 25.689L26.577 20.025C26.781 19.413 27.354 19 28 19C28.646 19 29.219 19.413 29.423 20.025L31.311 25.689L36.975 27.577C37.587 27.781 38 28.354 38 29C38 29.646 37.587 30.219 36.975 30.423L31.311 32.311L29.423 37.975C29.219 38.587 28.646 39 28 39ZM26.5 61C25.854 61 25.281 60.587 25.077 59.975L23.563 55.436L19.025 53.923C18.413 53.719 18 53.146 18 52.5C18 51.854 18.413 51.281 19.025 51.077L23.563 49.564L25.077 45.025C25.281 44.413 25.854 44 26.5 44C27.146 44 27.719 44.413 27.923 45.025L29.436 49.564L33.975 51.077C34.587 51.281 35 51.854 35 52.5C35 53.146 34.587 53.719 33.975 53.923L29.436 55.436L27.923 59.975C27.719 60.587 27.146 61 26.5 61Z" fill="white"/>
+					<defs>
+					<linearGradient id="paint0_linear_3687_2535" x1="-1.7678e-06" y1="85.0202" x2="104.684" y2="42.3877" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#682D8C"/>
+					<stop offset="1" stop-color="#EB1E79"/>
+					</linearGradient>
+					</defs>
+		        </symbol>
+		    </defs>
+		</svg>
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/media-player.js"></script>
+		<script src="js/html5sortable.min.js"></script>
+		<script src="js/wavesurfer.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<!-- Адаптирование страницы для мобильных устройств -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Запрет распознования номера телефона -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+	<!-- Заголовок страницы -->
+	<title>Заголовок страницы</title>
+
+	<!-- Данное значение часто используют(использовали) поисковые системы -->
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<!-- Изменение цвета панели моб. браузера -->
+	<meta name="msapplication-TileColor" content="#0B00D8">
+	<meta name="theme-color" content="#0B00D8">
+
+	<!-- Подключение шрифтов с гугла -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+	<!-- Подключение файлов стилей -->
+	<link rel="stylesheet" href="css/nice-select.css">	
+	<link rel="stylesheet" href="css/fancybox.css" async>
+	<link rel="stylesheet" href="css/styles.css" async>
+
+	<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+	<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+	<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+	<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+	<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="main">
+			<header>
+				<div class="cont row">
+					<div class="logo">
+						<img src="images/logo.svg" alt="">
+					</div>
+
+					<div class="wallet">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#ic_wallet"></use>
+						</svg>
+						<span>1243</span>
+					</div>
+
+					<div class="sep"></div>
+
+					<div class="account">
+						<a href="/" class="settings_link">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#ic_settings"></use>
+							</svg>
+						</a>
+
+						<div class="user">
+							<div class="avatar">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#ic_user"></use>
+								</svg>
+								<!-- <img data-src="" alt="" class="lozad"> -->
+							</div>
+
+							<div class="name">Модератор</div>
+						</div>
+
+						<a href="/" class="logout_link">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#ic_logout"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</header>
+
+
+			<section class="mob_header">
+				<div class="row">
+					<button class="menu_btn">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#ic_menu"></use>
+						</svg>
+					</button>
+
+					<div class="page_title">Сводка</div>
+
+					<div class="wallet">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#ic_wallet"></use>
+						</svg>
+						<span>1243</span>
+					</div>
+
+					<div class="nitifications new">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#ic_nitifications"></use>
+						</svg>
+					</div>
+
+					<div class="account modal_cont">
+						<button class="user btn mini_modal_btn" data-modal-id="#account_modal">
+							<div class="avatar">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#ic_user"></use>
+								</svg>
+								<img data-src="images/tmp/user_avatar.jpg" alt="" class="lozad">
+							</div>
+
+							<svg class="arrow">
+								<use xlink:href="images/sprite.svg#ic_arrow_down"></use>
+							</svg>
+						</button>
+
+						<div class="mini_modal" id="account_modal">
+							<div><a href="/">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#ic_settings"></use>
+									</svg>
+									<span>Настройки</span>
+								</a></div>
+
+							<div><a href="/">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#ic_logout"></use>
+									</svg>
+									<span>Выход</span>
+								</a></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="content_flex">
+				<div class="cont row">
+					<aside>
+						<button class="close_btn">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#ic_close"></use>
+							</svg>
+						</button>
+
+						<div class="menu">
+							<div class="item">
+								<a href="/">
+									<div class="icon icon1">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category1"></use>
+										</svg>
+									</div>
+									<span>Сводка</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon2 point">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category2"></use>
+										</svg>
+									</div>
+									<span>Мои задачи</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="#" class="sub_link open">
+									<div class="icon icon3 point">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category3"></use>
+										</svg>
+									</div>
+									<span>Курсы</span>
+									<svg class="arrow">
+										<use xlink:href="images/sprite.svg#ic_arrow_down"></use>
+									</svg>
+								</a>
+
+								<div class="sub_menu" style="display: block;">
+									<div><a class="active">
+											<span class="count">3</span>
+											<span>Все курсы</span>
+										</a></div>
+									<div><a href="/">Новые курсы</a></div>
+								</div>
+							</div>
+
+							<div class="item">
+								<a href="#" class="sub_link">
+									<div class="icon icon4 point">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category4"></use>
+										</svg>
+									</div>
+									<span>Обратная связь</span>
+									<svg class="arrow">
+										<use xlink:href="images/sprite.svg#ic_arrow_down"></use>
+									</svg>
+								</a>
+
+								<div class="sub_menu">
+									<div><a href="/">По тренажерам</a></div>
+									<div><a href="/">По заданиям</a></div>
+									<div><a href="/">По другому</a></div>
+								</div>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon5">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category5"></use>
+										</svg>
+									</div>
+									<span>Тренажеры</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon5_2">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category5_2"></use>
+										</svg>
+									</div>
+									<span>Аудио тренажеры</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon5_3">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category5_3"></use>
+										</svg>
+									</div>
+									<span>Тренажеры действий</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon6">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category6"></use>
+										</svg>
+									</div>
+									<span>Новости</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon7">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category7"></use>
+										</svg>
+									</div>
+									<span>Опросы</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon8">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category8"></use>
+										</svg>
+									</div>
+									<span>Обсуждения</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon9">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category9"></use>
+										</svg>
+									</div>
+									<span>Вебинары</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon10">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category10"></use>
+										</svg>
+									</div>
+									<span>Подкасты</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon11">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category11"></use>
+										</svg>
+									</div>
+									<span>Файлы</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon12">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category12"></use>
+										</svg>
+									</div>
+									<span>Коллеги</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon16">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category13"></use>
+										</svg>
+									</div>
+									<span>Настройки</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/" class="active">
+									<div class="icon icon17">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category105"></use>
+										</svg>
+									</div>
+									<span>Банк идей</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/" class="sub_link">
+									<div class="icon icon14">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category14"></use>
+										</svg>
+									</div>
+									<span>Управление</span>
+									<svg class="arrow">
+										<use xlink:href="images/sprite.svg#ic_arrow_down"></use>
+									</svg>
+								</a>
+
+								<div class="sub_menu">
+									<div><a href="/"></a></div>
+								</div>
+							</div>
+						</div>
+					</aside>
+
+
+					<section class="content">
+								
+						<section class="page_title">
+							<a href="/">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#ic_arrow_left"></use>
+								</svg>
+							</a>
+							<span>Добавление вопроса</span>
+						</section>
+						
+						
+						<section class="adding-question">
+							<div class="simulator-questions_title">Вопрос</div>	
+							<div class="adding-question_label">Выберите тип</div>
+							<div class="tabs_container">
+								<div class="tabs">
+									<button class="active" data-content="#tab1" data-level="level1">Текстовый вопрос</button>
+									<button data-content="#tab2" data-level="level1">Аудио вопрос</button>
+									<button data-content="#tab3" data-level="level1">Видео вопрос</button>
+								</div>
+
+								<section class="tab_content level1 active" id="tab1">										
+									<form class="task-page_form">
+										<div class="adding-question_top">
+											<div class="line">
+												<div class="task-page_label">Название вопроса<span>*</span></div>
+												<div class="field">
+													<input type="text" id="name" placeholder="Название вопроса">
+												</div>
+											</div>
+											<div class="line">
+												<div class="task-page_label">Вопрос<span>*</span></div>
+												<div class="field">
+													<textarea id="desc" class="task-page_textarea" placeholder="Например..."></textarea>
+												</div>
+											</div>
+											<div class="line">
+												<div class="task-page_label">Ответственный <span>(Начните вводить имя)</span></div>
+												<div class="field">										
+													<select id="select">
+														<option value="punkt1">Категория №1</option>
+														<option value="punkt2">Категория №2</option>
+														<option value="punkt3">Категория №3</option>
+													</select>								
+												</div>
+											</div>		
+
+											<div class="line">
+												<div class="task-page_label">Что нужно сказать ученику<span>*</span></div>
+												<div class="field">
+													<input type="text" id="name" placeholder="Совет...">
+												</div>
+											</div>	
+
+											<div class="line">
+												<div class="task-page_label">Что нужно сказать ученику<span>*</span></div>
+												<div class="field df">
+													<input type="text" id="name" placeholder="Совет...">
+													<button>Кнопка</button>
+												</div>
+											</div>	
+
+
+											<div class="line df">										
+												<div class="field">
+													<input type="checkbox" id="group1_check4">
+													<label for="group1_check4">Требуется обратная связь от ИИ</label>
+												</div>	
+												<div class="adding-question_top-text">* Поля обязательные для заполнения</div>												
+											</div>	
+										</div>	
+										
+										<div class="adding-question_bottom">
+											<div class="simulator-questions_title">									
+												Дополнительные опции
+												<a href="#" class="adding-question_btn">
+														<span>Показать</span> 
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#arrow1111"></use>
+													</svg>
+												</a>													
+											</div>
+
+											<div class="adding-question_hide">
+												<div class="line">
+													<div class="task-page_label">Подсказка</div>
+													<div class="field">
+														<input type="text" placeholder="Подсказка...">
+													</div>
+												</div>
+												<div class="adding-question_links">
+													<div class="adding-question_link">
+														<input type="file" id="file" class="adding-question_file">
+														<label for="file" class="audio-notes_btn2">
+															Загрузить аудио
+														</label>															
+													</div>												
+													<div class="adding-question_link">
+														<a href="#" class="audio-notes_btn2">
+															Записать аудио
+														</a>	
+													</div>												
+													<div class="adding-question_link">
+														<input type="file" id="file" class="adding-question_file">
+														<label for="file" class="audio-notes_btn2">
+															Загрузить видео
+														</label>
+													</div>												
+												</div>
+
+												<div class="adding-question_content">
+													<div class="task-page_label">Подсказка</div>
+													<div class="audio-notes_info">
+														<div class="audio_message">
+															<div class="audio_media">											
+																	<audio
+																	controls
+																	src="images/t-rex-roar.mp3">
+																		Your browser does not support the
+																		<code>audio</code> element.
+																</audio>
+															</div>
+														</div>
+													</div>
+													<a href="#" class="adding-question_content-btn mra">
+														Удалить аудио
+													</a>	
+												</div> 
+
+
+												<div class="adding-question_content">
+													<div class="task-page_label">Подсказка</div>
+													<div class="add_audio audio-record">
+														<input type="checkbox" id="audio_record-icon" name="">
+														<label for="audio_record-icon" class="start_btn">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_mic"></use></svg>
+														</label>
+														<div class="exp">Нажмите и отпустите, чтобы начать запись</div>
+													</div>
+													<div href="#" class="adding-question_content-btn mla">
+														<a href="#">Отменить</a>															
+													</div>													
+												</div>
+
+
+												<div class="adding-question_content">
+													<div class="task-page_label">Подсказка</div>
+													<div class="video_item">
+														<a href="https://www.youtube.com/watch?v=L256daBIAtU" data-fancybox="" class="video_link">
+															<img src="images/video55.png" alt="">
+															<svg class="icon">
+																<use xlink:href="images/sprite.svg#play1000"></use>
+															</svg>
+														</a>
+													</div>
+													<a href="#" class="adding-question_content-btn mra">
+														Удалить видео
+													</a>	
+												</div> 
+
+												<div class="line">
+													<div class="task-page_label">На что дополнительно обратить внимание ИИ</div>
+													<div class="field">
+														<input type="text" placeholder="Напишите">
+													</div>
+												</div>																										
+											</div>
+											
+										</div>
+
+										<div class="simulator-questions_bottom-btns">
+											<button>Отменить</button>
+											<button>Добавить</button>
+										</div>		
+
+									</form>																		
+								</section>
+
+								<section class="tab_content level1" id="tab2">
+									<form class="task-page_form">
+										<div class="adding-question_top">
+											<div class="line">
+												<div class="task-page_label">Название вопроса<span>*</span></div>
+												<div class="field">
+													<input type="text" id="name" placeholder="Название вопроса">
+												</div>
+											</div>
+											<div class="line">
+												<div class="task-page_label">Вопрос<span>*</span></div>
+												<div class="field">
+													<textarea id="desc" class="task-page_textarea" placeholder="Например..."></textarea>
+												</div>
+											</div>
+											<div class="adding-question_links">
+												<div class="adding-question_link">
+													<a href="#" class="audio-notes_btn2">
+														Записать вопрос
+													</a>																
+												</div>												
+												<div class="adding-question_link">
+													<input type="file" id="file" class="adding-question_file">
+													<label for="file" class="audio-notes_btn2">
+														Загрузить с диска
+													</label>													
+												</div>	 											
+											</div>
+											<div class="adding-question_content">
+												<div class="task-page_label">Вопрос<span>*</span></div>
+												<div class="audio-notes_info">
+													<div class="audio_message">
+														<div class="audio_media">											
+																<audio
+																controls
+																src="images/t-rex-roar.mp3">
+																	Your browser does not support the
+																	<code>audio</code> element.
+															</audio>
+														</div>
+													</div>
+												</div>
+												<a href="#" class="adding-question_content-btn mra">
+													Удалить аудио
+												</a>	
+											</div> 
+											<div class="adding-question_content">
+												<div class="task-page_label">Вопрос<span>*</span></div>
+												<div class="add_audio audio-record">
+													<input type="checkbox" id="audio_record-icon" name="">
+													<label for="audio_record-icon" class="start_btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_mic"></use></svg>
+													</label>
+													<div class="exp">Нажмите и отпустите, чтобы начать запись</div>
+												</div>
+												<div href="#" class="adding-question_content-btn mla">
+													<a href="#">Отменить</a>															
+												</div>													
+											</div>
+
+											<div class="line">
+												<div class="task-page_label">Что нужно сказать ученику<span>*</span></div>
+												<div class="field">
+													<input type="text" id="name" placeholder="Совет...">
+												</div>
+											</div>	
+											<div class="line df">										
+												<div class="field">
+													<input type="checkbox" id="group1_check2">
+													<label for="group1_check2">Требуется обратная связь от ИИ</label>
+												</div>	
+												<div class="adding-question_top-text">* Поля обязательные для заполнения</div>												
+											</div>	
+											<div class="simulator-questions_bottom-btns">
+												<button>Отменить</button>
+												<button>Добавить</button>
+											</div>		
+										</div>	
+									</form>
+								</section>
+
+
+								<section class="tab_content level1" id="tab3">
+									<form class="task-page_form">
+										<div class="adding-question_top">
+											<div class="line">
+												<div class="task-page_label">Название вопроса<span>*</span></div>
+												<div class="field">
+													<input type="text" id="name" placeholder="Название вопроса">
+												</div>
+											</div>
+											<div class="line">
+												<div class="task-page_label">Вопрос<span>*</span></div>
+												<div class="field">
+													<textarea id="desc" class="task-page_textarea" placeholder="Например..."></textarea>
+												</div>
+											</div>
+											<div class="adding-question_links">																							
+												<div class="adding-question_link">
+													<input type="file" id="file" class="adding-question_file">
+													<label for="file" class="audio-notes_btn2">
+														Загрузить видео с диска
+													</label>	
+												</div>	 											
+											</div>
+
+											<div class="adding-question_content">
+												<div class="task-page_label">Вопрос<span>*</span></div>
+												<div class="video_item">
+													<a href="https://www.youtube.com/watch?v=L256daBIAtU" data-fancybox="" class="video_link">
+														<img src="images/video55.png" alt="">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#play1000"></use>
+														</svg>
+													</a>
+												</div>
+												<a href="#" class="adding-question_content-btn mra">
+													Удалить видео
+												</a>													
+											</div>
+											<div class="line">
+												<div class="task-page_label">Что нужно сказать ученику<span>*</span></div>
+												<div class="field">
+													<input type="text" id="name" placeholder="Совет...">
+												</div>
+											</div>	
+											<div class="line df">										
+												<div class="field">
+													<input type="checkbox" id="group1_check3">
+													<label for="group1_check3">Требуется обратная связь от ИИ</label>
+												</div>	
+												<div class="adding-question_top-text">* Поля обязательные для заполнения</div>												
+											</div>	
+											<div class="simulator-questions_bottom-btns">
+												<button>Отменить</button>
+												<button>Добавить</button>
+											</div>	
+										</div>										
+									</form>
+								</section>
+							</div>								
+						</section>
+
+														
+						<section class="best-answer">
+							<div class="block_title">Лучшие ответы</div>
+							<div class="list">
+								<div class="comment_wrap">
+									<div class="comment">
+										<div class="avatar"><img data-src="images/avatar999.png" alt="" class="lozad"></div>
+										<div class="data">
+											<div class="name">Мария Петрова</div>
+											<div class="comment_info">
+												Оценка ответа: 75
+												<a href="#" class="comment_bottom-btn modal_btn" data-content="modal_comment">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#correct"></use>
+													</svg>
+												</a>	
+											</div>
+											<div class="text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков</div>
+											<div class="date">12 апреля в 13:55</div>														
+										</div>
+										<div class="comment_bottom">
+											<div class="comment_bottom-title">
+												<img src="images/neyro.png" alt="">
+												<span>Обратная связь от нейросети</span>
+											</div>
+											<div class="comment_bottom-text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков</div>
+											<a href="#" class="comment_bottom-btn modal_btn" data-content="modal_comment">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#correct"></use>
+												</svg>
+												<span>Редактировать обратную связь</span>
+											</a>		
+										</div>	
+									</div>
+								</div>
+
+								<div class="comment_wrap">
+									<div class="comment">
+										<div class="avatar"><img data-src="images/avatar999.png" alt="" class="lozad"></div>
+										<div class="data">
+											<div class="name">Мария Петрова</div>
+											<div class="comment_info">
+												Оценка ответа: 75
+												<a href="#" class="comment_bottom-btn modal_btn" data-content="modal_comment">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#correct"></use>
+													</svg>
+												</a>	
+											</div>
+											<div class="simulator-questions_link">
+												<div class="audio_message">	
+													<div class="audio_media">											
+														<audio
+															controls
+															src="images/t-rex-roar.mp3">
+																Your browser does not support the
+																<code>audio</code> element.
+														</audio>
+													</div>
+												</div>
+											</div>
+											<div class="text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков</div>
+											<div class="date">12 апреля в 13:55</div>
+										</div>
+										<div class="comment_bottom">
+											<div class="comment_bottom-title">
+												<img src="images/neyro.png" alt="">
+												<span>Обратная связь от нейросети</span>
+											</div>
+											<div class="comment_bottom-text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков</div>
+											<a href="#" class="comment_bottom-btn modal_btn" data-content="modal_comment">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#correct"></use>
+												</svg>
+												<span>Редактировать обратную связь</span>
+											</a>		
+										</div>	
+									</div>
+								</div>
+
+								<div class="comment_wrap">
+									<div class="comment">
+										<div class="avatar"><img data-src="images/avatar999.png" alt="" class="lozad"></div>
+										<div class="data">
+											<div class="name">Мария Петрова</div>
+											<div class="comment_info">
+												Оценка ответа: 75
+												<a href="#" class="comment_bottom-btn modal_btn" data-content="modal_comment">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#correct"></use>
+													</svg>
+												</a>	
+											</div>
+											<div class="video_item">
+												<a href="https://www.youtube.com/watch?v=L256daBIAtU" data-fancybox="" class="video_link">
+													<img data-src="images/video55.png" class="lozad" alt="">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#play1000"></use>
+													</svg>
+												</a>
+											</div>
+											<div class="text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков</div>
+											<div class="date">12 апреля в 13:55</div>
+										</div>
+										<div class="comment_bottom">
+											<div class="comment_bottom-title">
+												<img src="images/neyro.png" alt="">
+												<span>Обратная связь от нейросети</span>
+											</div>
+											<div class="comment_bottom-text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков</div>
+											<a href="#" class="comment_bottom-btn modal_btn" data-content="modal_comment">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#correct"></use>
+												</svg>
+												<span>Редактировать обратную связь</span>
+											</a>		
+										</div>	
+									</div>
+								</div>
+							</div>
+						</section>
+
+
+
+						<div class="player_fixed">
+							<div class="audio_media">
+								<div class="player_title">
+									
+								</div>
+								<div class="player_desc">
+									
+								</div>
+								<audio
+									controls
+									src="images/t-rex-roar.mp3">
+										Your browser does not support the
+										<code>audio</code> element.
+								</audio>
+							</div>
+						</div>
+						
+						<div class="new"></div>
+
+
+						<footer>
+							<div class="logo">
+								<img src="images/logo.svg" alt="">
+
+								<div class="desc">Описание первой компании 123</div>
+							</div>
+
+							<div class="contacts location">
+								<div class="name">Адрес</div>
+
+								<div class="val">г. Москва, ул. Ломоносова, д. 75</div>
+							</div>
+
+							<div class="contacts email">
+								<div class="name">Электронная почта</div>
+
+								<div class="val">
+									<div><a href="mailto:company1@gmail.com">company1@gmail.com</a></div>
+								</div>
+							</div>
+
+							<div class="contacts phone">
+								<div class="name">Телефон</div>
+
+								<div class="val">
+									<div><a href="tel:+79219879988">+79219879988</a></div>
+								</div>
+							</div>
+						</footer>
+					</section>
+				</div>
+			</section>
+		</div>
+	</div>
+
+
+
+
+	<div class="supports_error">
+		Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+	</div>
+
+
+	<section class="modal" id="video_modal">
+		<video class="video-player video_new" width="100%" controlsList="nodownload" controls crossorigin="anonymous">
+			<source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+			<source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
+			<track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default></track>
+		</video>
+	</section>
+
+
+
+	<section class="modal_comment" id="modal_comment">
+		<div class="modal_comment-title">Редактировать обратную связь</div>
+		<form>
+			<div class="line">
+				<div class="field">
+					<label for="modal_comment">Новая обратная связь</label>
+					<textarea name="modal_comment" id="modal_comment" placeholder="Описание"></textarea>
+				</div>
+			</div>
+			<button type="submit">Отправить</button>
+		</form>
+	</section>
+
+
+	<!-- Подключение javascript файлов -->
+	<script src="js/jquery-3.5.0.min.js"></script>
+	<script src="js/lozad.min.js"></script>
+	<script src="js/media-player.js"></script>
+	<script src="js/html5sortable.min.js"></script>
+	<script src="js/wavesurfer.js"></script>
+	<script src="js/fancybox.min.js"></script>
+	<script src="js/nice-select.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/playlist.js"></script>
+	<script src="https://unpkg.com/sortablejs-make/Sortable.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-sortablejs@latest/jquery-sortable.js"></script>
+
+	<script>
+		$('.simulator-questions_list ul').sortable({
+			handle: '.handle', 
+			animation: 150
+		});
+	</script>
+
+</body>
+
+</html>

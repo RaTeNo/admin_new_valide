@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#0B00D8">
+		<meta name="theme-color" content="#0B00D8">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="sep"></div>
+
+						<div class="account">
+							<a href="/" class="settings_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+							</a>
+
+							<div class="user">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<!-- <img data-src="" alt="" class="lozad"> -->
+								</div>
+
+								<div class="name">Модератор</div>
+							</div>
+
+							<a href="/" class="logout_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+							</a>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="row">
+						<button class="menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						</button>
+
+						<div class="page_title">Сводка</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="nitifications new">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_nitifications"></use></svg>
+						</div>
+
+						<div class="account modal_cont">
+							<button class="user btn mini_modal_btn" data-modal-id="#account_modal">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<img data-src="images/tmp/user_avatar.jpg" alt="" class="lozad">
+								</div>
+
+								<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="account_modal">
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+									<span>Настройки</span>
+								</a></div>
+
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+									<span>Выход</span>
+								</a></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="content_flex">
+					<div class="cont row">
+						<aside>
+							<button class="close_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<div class="menu">
+								<div class="item">
+									<a href="/">
+										<div class="icon icon1">
+											<svg><use xlink:href="images/sprite.svg#ic_category1"></use></svg>
+										</div>
+										<span>Сводка</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon2 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category2"></use></svg>
+										</div>
+										<span>Мои задачи</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a  href="#" class="sub_link active open">
+										<div class="icon icon3 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category3"></use></svg>
+										</div>
+										<span>Курсы</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu" style="display: block;">
+										<div><a class="active">
+											<span class="count">3</span>
+											<span>Все курсы</span>
+										</a></div>
+										<div><a href="/">Новые курсы</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="#" class="sub_link">
+										<div class="icon icon4 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category4"></use></svg>
+										</div>
+										<span>Обратная связь</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/">По тренажерам</a></div>
+										<div><a href="/">По заданиям</a></div>
+										<div><a href="/">По другому</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5">
+											<svg><use xlink:href="images/sprite.svg#ic_category5"></use></svg>
+										</div>
+										<span>Тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_2">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_2"></use></svg>
+										</div>
+										<span>Аудио тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_3">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_3"></use></svg>
+										</div>
+										<span>Тренажеры действий</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon6">
+											<svg><use xlink:href="images/sprite.svg#ic_category6"></use></svg>
+										</div>
+										<span>Новости</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon7">
+											<svg><use xlink:href="images/sprite.svg#ic_category7"></use></svg>
+										</div>
+										<span>Опросы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon8">
+											<svg><use xlink:href="images/sprite.svg#ic_category8"></use></svg>
+										</div>
+										<span>Обсуждения</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon9">
+											<svg><use xlink:href="images/sprite.svg#ic_category9"></use></svg>
+										</div>
+										<span>Вебинары</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon10">
+											<svg><use xlink:href="images/sprite.svg#ic_category10"></use></svg>
+										</div>
+										<span>Подкасты</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon11">
+											<svg><use xlink:href="images/sprite.svg#ic_category11"></use></svg>
+										</div>
+										<span>Файлы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon12">
+											<svg><use xlink:href="images/sprite.svg#ic_category12"></use></svg>
+										</div>
+										<span>Коллеги</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon13">
+											<svg><use xlink:href="images/sprite.svg#ic_category13"></use></svg>
+										</div>
+										<span>Настройки</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/" class="sub_link">
+										<div class="icon icon14">
+											<svg><use xlink:href="images/sprite.svg#ic_category14"></use></svg>
+										</div>
+										<span>Управление</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/"></a></div>
+									</div>
+								</div>
+							</div>
+						</aside>
+
+
+						<section class="content">
+							<section class="dialog">
+								<section class="page_title">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_left"></use></svg>
+									</a>
+									<span>Тренажер</span>
+								</section>
+
+
+								<section class="data">
+									<div class="head">
+										<div class="count">Вопрос <span class="current">3</span> из <span class="total">5</span></div>
+
+										<div class="person">
+											<div class="photo">
+												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
+											</div>
+
+											<div class="name">Василий Иванович</div>
+										</div>
+
+										<div class="what_do modal_cont">
+											<button class="btn mini_modal_btn" data-modal-id="#what_do_modal">Что делать?</button>
+
+											<div class="mini_modal" id="what_do_modal">
+												Это аудиотренажер. Прослушайте сообщение и запишите свой ответ.
+											</div>
+										</div>
+									</div>
+
+
+									<div class="messages">
+										<div class="message animate__animated animate__fadeInUp">
+											<div class="photo">
+												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
+											</div>
+
+											<div class="info">
+												<div class="name">
+													Василий Иванович  
+													<div class="list_label">
+														<button class="label_ii">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ii_new"></use></svg>
+															ИИ
+														</button>
+														<button class="label_new">
+															<svg class="icon"><use xlink:href="images/sprite.svg#label_new"></use></svg>
+															Новый
+														</button>
+													</div>
+												</div>
+
+												<div class="text_message">Прослушайте аудиосообщение и запишите свой ответПрослушайте аудиосообщение и запишите свой ответПрослушайте аудиосообщение и запишите свой ответПрослушайте аудиосообщение и запишите свой ответПрослушайте аудиосообщение и запишите свой ответу
+													<div class="checkbox">
+													    <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo">
+													    <label for="color-1">Indigo</label>
+													</div>
+
+													<div class="checkbox">
+													    <input class="custom-checkbox" type="checkbox" id="color-2" name="color-2" value="red">
+													    <label for="color-2">Red</label>
+													</div>
+
+													<div class="checkbox">
+													    <input class="custom-checkbox" type="checkbox" id="color-3" name="color-3" value="brown" disabled="disabled">
+													    <label for="color-3">Brown</label>
+													</div>
+
+													<div class="checkbox">
+													    <input class="custom-checkbox" type="checkbox" id="color-4" name="color-4" value="yellow">
+													    <label for="color-4">Yellow</label>
+													</div>
+
+													<div class="checkbox">
+													    <input class="custom-checkbox" type="checkbox" id="color-5" name="color-5" value="green">
+													    <label for="color-5">Green</label>
+													</div>
+
+												</div>
+
+
+												<!-- <button class="feedback_ai modal_btn" data-content="#correction_modal55">
+													<svg class="icon"><use xlink:href="images/sprite.svg#feedback_ai2"></use></svg>
+													Оценка: 83/100
+												</button> -->
+
+											</div>
+											<div class="correction-btn">
+												<button class="btn modal_btn" data-content="#correction_modal"><img src="images/correction_btn.svg" alt=""></button>
+												<div class="correction-btn_text">
+													Нажмите данную кнопку для предложения исправления вопроса
+												</div>
+											</div>
+										</div>
+
+										<div class="message animate__animated animate__fadeInUp">
+											<div class="photo">
+												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
+											</div>
+
+											<div class="info">
+												<div class="name">
+													Василий Иванович  
+													<div class="list_label">
+														<button class="feedback_ai modal_btn" data-content="#correction_modal55">
+															<svg class="icon"><use xlink:href="images/sprite.svg#feedback_ai2"></use></svg>
+															Оценка: 83/100
+														</button>		
+													</div>
+												</div>
+
+												<div class="text_message">Прослушайте аудиосообщение и запишите свой ответ</div>
+
+
+												<!-- <button class="feedback_ai modal_btn" data-content="#correction_modal55">
+													<svg class="icon"><use xlink:href="images/sprite.svg#feedback_ai2"></use></svg>
+													Оценка: 83/100
+												</button> -->
+
+											</div>
+											<div class="correction-btn">
+												<button class="btn modal_btn" data-content="#correction_modal"><img src="images/correction_btn.svg" alt=""></button>
+												<div class="correction-btn_text">
+													Нажмите данную кнопку для предложения исправления вопроса
+												</div>
+											</div>
+										</div>
+										
+
+										<div class="message animate__animated animate__fadeInUp">
+											<div class="photo">
+												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
+											</div>
+
+											<div class="info">
+												<div class="name">Василий Иванович</div>
+
+												<div class="text_message">
+													<div class="js-robot">
+														<i><div class="dot-flashing"></div></i>
+														<span>Ответь подготавливается</span>
+													</div>	
+													<div class="js-robot-answer" style="display: none;">
+														Прослушайте аудиосообщение и запишите свой ответПрослушайте аудиосообщение и запишите свой ответ
+														Прослушайте аудиосообщение и запишите свой ответПрослушайте аудиосообщение и запишите свой ответу
+														Прослушайте аудиосообщение и запишите свой ответПрослушайте аудиосообщение и запишите свой ответ
+
+														<div class="hide_text">
+															Прослушайте аудиосообщение и запишите свой ответПрослушайте аудиосообщение и запишите свой ответу
+															Прослушайте аудиосообщение и запишите свой ответПрослушайте аудиосообщение и запишите свой ответ
+														</div>
+														<button class="read_more_dialog">Читать все</button>
+													</div>													
+												</div>
+
+												<!-- <button class="feedback_ai new">
+													<svg class="icon"><use xlink:href="images/sprite.svg#feedback_ai"></use></svg>
+													Обр. связь от ИИ
+												</button> -->
+											</div>
+										</div>
+
+										<div class="message animate__animated animate__fadeInUp animate__delay-1s">
+											<div class="photo">
+												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
+											</div>
+
+											<div class="info">
+												<div class="name">Василий Иванович</div>
+
+												<div class="text_message">
+													<div class="js-robot">
+														<i><div class="dot-flashing"></div></i>
+														<span>Ответь подготавливается</span>
+													</div>	
+													<div class="js-robot-answer" style="display: none;">
+														<div class="audio_message">	
+															<div class="audio_media">											
+																<audio
+															        controls
+															        src="images/t-rex-roar.mp3">
+															            Your browser does not support the
+															            <code>audio</code> element.
+															    </audio>
+															</div>
+														</div>
+													</div>													
+												</div>	
+																					
+											</div>
+
+											<div class="correction-btn">
+												<button class="btn"><img src="images/load_more_gpt.svg" alt=""></button>
+												<div class="correction-btn_text">
+													Запросить новый совет
+												</div>
+											</div>
+										</div>
+
+										<div class="message">
+											<div class="photo">
+												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
+											</div>
+
+											<div class="info">
+												<div class="name">
+													Василий Иванович  
+													<div class="list_label">
+														<button class="feedback_ai modal_btn" data-content="#correction_modal55">
+															<svg class="icon"><use xlink:href="images/sprite.svg#feedback_ai2"></use></svg>
+															Оценка: 83/100
+														</button>		
+													</div>
+												</div>
+
+												<div class="video_message">
+													<button class="thumb">
+														<img data-src="images/tmp/video_message_thumb.jpg" alt="" class="lozad">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
+													</button>							
+												</div>		
+											</div>	
+										</div>
+
+										<div class="message message_video">
+											<div class="photo">
+												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
+											</div>
+
+											<div class="info">
+												<div class="name">Василий Иванович</div>
+
+												<div class="text_message">
+													<div class="js-robot">
+														<i><div class="dot-flashing"></div></i>
+														<span>Ответь подготавливается</span>
+													</div>																									
+												</div>												
+											</div>
+
+											<div class="video_message" style="display: none">
+												<button class="thumb">
+													<img data-src="images/tmp/video_message_thumb.jpg" alt="" class="lozad">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
+												</button>
+											</div>
+										</div>
+
+
+										<div class="message animate__animated animate__fadeInUp animate__delay-1s">
+											<div class="photo">
+												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
+											</div>
+
+											<div class="info">
+												<div class="name">
+													Василий Иванович
+													<div class="list_label">
+														<button class="label_ii">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ii_new"></use></svg>
+															ИИ
+														</button>
+														<button class="label_new">
+															<svg class="icon"><use xlink:href="images/sprite.svg#label_new"></use></svg>
+															Новый
+														</button>
+													</div>
+												</div>
+
+
+												<div class="audio_message">	
+													<div class="audio_media">											
+														<audio
+													        controls
+													        src="images/t-rex-roar.mp3">
+													            Your browser does not support the
+													            <code>audio</code> element.
+													    </audio>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="message animate__animated animate__fadeInUp animate__delay-2s">
+											<div class="photo">
+												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
+											</div>
+
+											<div class="info">
+												<div class="name">Василий Иванович</div>
+
+												<div class="text_message">Хотите увидеть подсказку?</div>
+											</div>
+
+
+
+											<div class="prompt">
+												<div class="btns">
+													<button class="yes_btn">
+														<span>Показать подсказку</span>
+														<span>Скрыть подсказку</span>
+													</button>
+
+													<button class="no_btn">Нет, спасибо</button>
+												</div>
+
+												<div class="prompt-box">
+													<div class="text">
+														<div class="text-information">
+															<div class="name">Подсказка</div>
+															<div class="info-hint">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов</div>	
+
+															<div class="checkbox">
+															    <input class="custom-checkbox" type="checkbox" id="color-11" name="color-1" value="indigo">
+															    <label for="color-11">Indigo</label>
+															  </div>
+
+															  <div class="checkbox">
+															    <input class="custom-checkbox" type="checkbox" id="color-22" name="color-2" value="red">
+															    <label for="color-22">Red</label>
+															  </div>
+
+															  <div class="checkbox">
+															    <input class="custom-checkbox" type="checkbox" id="color-33" name="color-3" value="brown" disabled="disabled">
+															    <label for="color-33">Brown</label>
+															  </div>
+
+															  <div class="checkbox">
+															    <input class="custom-checkbox" type="checkbox" id="color-44" name="color-4" value="yellow">
+															    <label for="color-44">Yellow</label>
+															  </div>
+
+															  <div class="checkbox">
+															    <input class="custom-checkbox" type="checkbox" id="color-55" name="color-5" value="green">
+															    <label for="color-55">Green</label>
+															  </div>
+
+														</div>
+														<div class="likes">
+															<button class="like">
+																<svg class="icon"><use xlink:href="images/sprite.svg#like"></use></svg>
+															</button>
+															<button class="dislike modal_btn" data-content="#correction_modal55">
+																<svg class="icon"><use xlink:href="images/sprite.svg#dislike"></use></svg>
+															</button>
+														</div>																
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+
+
+										<div class="message animate__animated animate__fadeInUp animate__delay-2s">
+											<div class="photo">
+												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
+											</div>
+
+											<div class="info">
+												<div class="name">Василий Иванович</div>
+
+												<div class="text_message">Хотите увидеть подсказку?</div>
+											</div>
+
+											<div class="prompt prompt_jt">
+												<div class="prompt-box">
+													<div class="text">
+														<div class="text-information">
+															<div class="name">Подсказка</div>
+															<div class="info-hint">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов</div>	
+														</div>																
+													</div>
+												</div>
+											</div>
+
+											<div class="prompt">
+												<div class="btns">
+													<button class="yes_btn">
+														<span>Показать подсказку</span>
+														<span>Скрыть подсказку</span>
+													</button>
+
+													<button class="no_btn">Нет, спасибо</button>
+												</div>
+
+												<div class="prompt-box">
+													<div class="text">
+														<div class="text-information">
+															<div class="name">Подсказка</div>
+															
+															<div class="audio_message">	
+																<div class="audio_media">											
+																	<audio
+																        controls
+																        src="images/t-rex-roar.mp3">
+																            Your browser does not support the
+																            <code>audio</code> element.
+																    </audio>
+																</div>
+															</div>
+
+														</div>
+														<div class="likes">
+															<button class="like">
+																<svg class="icon"><use xlink:href="images/sprite.svg#like"></use></svg>
+															</button>
+															<button class="dislike modal_btn" data-content="#correction_modal55">
+																<svg class="icon"><use xlink:href="images/sprite.svg#dislike"></use></svg>
+															</button>
+														</div>																
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="message animate__animated animate__fadeInUp animate__delay-2s">
+											<div class="photo">
+												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
+											</div>
+
+											<div class="info">
+												<div class="name">Василий Иванович</div>
+
+												<div class="text_message">Хотите увидеть подсказку?</div>
+											</div>
+
+											<div class="prompt">
+												<div class="btns">
+													<button class="yes_btn">
+														<span>Показать подсказку</span>
+														<span>Скрыть подсказку</span>
+													</button>
+
+													<button class="no_btn">Нет, спасибо</button>
+												</div>
+
+												<div class="prompt-box">
+													<div class="text">
+														<div class="text-information">
+															<div class="name">Подсказка</div>
+															
+															<div class="video_message">
+																<button class="thumb">
+																	<img data-src="images/tmp/video_message_thumb.jpg" alt="" class="lozad">
+																	<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
+																</button>							
+															</div>																
+														</div>
+														<div class="likes">
+															<button class="like">
+																<svg class="icon"><use xlink:href="images/sprite.svg#like"></use></svg>
+															</button>
+															<button class="dislike modal_btn" data-content="#correction_modal55">
+																<svg class="icon"><use xlink:href="images/sprite.svg#dislike"></use></svg>
+															</button>
+														</div>																
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="message animate__animated animate__fadeInUp animate__delay-2s">
+											<div class="photo">
+												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
+											</div>
+
+											<div class="info">
+												<div class="name">Василий Иванович</div>
+
+												<div class="text_message">Хотите увидеть подсказку?</div>
+											</div>
+
+											<div class="gtp_message">										
+												<div class="gpt_text_load">													
+													<div class="gtp_message_animation"><i><div class="dot-flashing"></div></i></div>	
+													<div>Скоро здесь появится рекомендация по вашему ответу</div>
+												</div>	
+
+												<div class="gtp_complete" style="display: none;">
+													<div class="gtp_complete_body">
+														<img src="images/gpt.png" alt="">
+														<span>Обратная связь готова</span>
+														<button data-content="#gpt_modal" class="modal_content">Посомтреть</button>
+													</div>	
+													
+												</div>																						
+											</div>
+										</div>
+
+
+										<div class="message animate__animated animate__fadeInUp animate__delay-2s">
+											<div class="photo">
+												<img data-src="images/ii.jpg" alt="" class="lozad">
+											</div>
+
+											<div class="info red">
+												<div class="name">Нейросеть</div>
+
+												<div class="text_message">В прошлый раз вы набрали 75 баллов. Попробуйте еще раз</div>
+											</div>
+										</div>
+
+										<div class="message animate__animated animate__fadeInUp animate__delay-2s">
+											<div class="photo">
+												<img data-src="images/ii.jpg" alt="" class="lozad">
+											</div>
+
+											<div class="info green">
+												<div class="name">Нейросеть</div>
+
+												<div class="text_message">В прошлый раз вы набрали 75 баллов. Попробуйте еще раз</div>
+											</div>
+										</div>
+
+										<div class="message animate__animated animate__fadeInUp animate__delay-2s">
+											<div class="photo">
+												<svg width="50" height="50">
+					                                <use xlink:href="#ii"></use>
+					                            </svg>
+											</div>
+
+											<div class="info yellow">
+												<div class="name">Нейросеть</div>
+
+												<div class="text_message">В прошлый раз вы набрали 75 баллов. Попробуйте еще раз</div>
+											</div>
+										</div>
+
+
+
+
+										<div class="message_load">
+											<div class="gtp_message_animation"><i><div class="dot-flashing"></div></i></div>
+										</div>
+
+										<div class="message_continue">
+											<div class="message_continue_text"><span>Вы сможете продолжить диалог после оценки совета ИИ</span></div>
+											<button class="green"><svg class="icon"><use xlink:href="images/sprite.svg#message_continue_green"></use></svg>Полезный совет от ИИ</button>
+											<button class="red"><svg class="icon"><use xlink:href="images/sprite.svg#message_continue_red"></use></svg>Плохой совет от ИИ</button>
+											<button class="blue"><svg class="icon"><use xlink:href="images/sprite.svg#message_continue_blue"></use></svg>Продолжить диалог</button>
+											<button class="yellow"><svg class="icon"><use xlink:href="images/sprite.svg#message_continue_yellow"></use></svg>Ответить заного</button>
+										</div>
+
+										<div class="message_sep"><span>Новые cообщения</span></div>
+
+										<div class="message success animate__animated animate__fadeInUp animate__delay-2s">
+
+											<div class="photo">
+												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
+											</div>
+
+											<div class="info">
+												<div class="name">Василий Иванович</div>
+
+												<div class="text_message">
+													<div>Отлично! Тренажер окончен Вы можете завершить работу с тренажером или пройти его еще раз</div>
+													<div class="buttons">
+														<a href="">Посмотреть отчет</a>
+														<a href="" >Пройти еще раз</a>
+														<a href="">Завершить</a>
+													</div>
+												</div>
+											</div>
+
+																			
+										</div>
+
+										<div class="message message_form animate__animated animate__fadeInUp animate__delay-2s">
+											<form action="">
+												<textarea  class="message_order" placeholder="Ваши предложения по улучшению"></textarea>
+												<button type="submit" class="submit_btn">
+													<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M1.0111 0.000729267C0.672064 0.0133618 0.360019 0.189007 0.173332 0.472293C-0.0133544 0.75558 -0.0516822 1.11161 0.0704316 1.42814L3.9206 11.3694C4.05543 11.7164 4.36389 11.9661 4.73137 12.0257L15.1908 13.7238C15.4514 13.766 15.426 13.8413 15.426 14C15.426 14.1587 15.4514 14.2339 15.1908 14.2762L4.73137 15.9743C4.36389 16.0339 4.05543 16.2836 3.9206 16.6306L0.0704316 26.5718C-0.085548 26.9761 0.0228213 27.4347 0.343274 27.7264C0.663727 28.0181 1.13045 28.083 1.51835 27.8899L27.4195 14.9393C27.7753 14.7614 28 14.3978 28 14C28 13.6022 27.7753 13.2386 27.4195 13.0607L1.51835 0.110109C1.36107 0.0317913 1.18667 -0.00581676 1.0111 0.000729267Z" fill="var(--main_color)"></path>
+													</svg>
+												</button>
+											</form>			
+										</div>
+
+									</div>
+
+
+									<div class="add_message">
+										<form action="dialog1_2.html" class="form">
+											<div class="field">
+												<textarea name="" placeholder="Введите ответ"></textarea>
+											</div>
+
+											<div class="submit">
+												<button type="submit" class="submit_btn">
+													<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M1.0111 0.000729267C0.672064 0.0133618 0.360019 0.189007 0.173332 0.472293C-0.0133544 0.75558 -0.0516822 1.11161 0.0704316 1.42814L3.9206 11.3694C4.05543 11.7164 4.36389 11.9661 4.73137 12.0257L15.1908 13.7238C15.4514 13.766 15.426 13.8413 15.426 14C15.426 14.1587 15.4514 14.2339 15.1908 14.2762L4.73137 15.9743C4.36389 16.0339 4.05543 16.2836 3.9206 16.6306L0.0704316 26.5718C-0.085548 26.9761 0.0228213 27.4347 0.343274 27.7264C0.663727 28.0181 1.13045 28.083 1.51835 27.8899L27.4195 14.9393C27.7753 14.7614 28 14.3978 28 14C28 13.6022 27.7753 13.2386 27.4195 13.0607L1.51835 0.110109C1.36107 0.0317913 1.18667 -0.00581676 1.0111 0.000729267Z" fill="var(--main_color)"></path>
+													</svg>
+												</button>
+											</div>
+										</form>
+									</div>
+								</section>
+							</section>
+
+
+							<footer>
+								<div class="logo">
+									<img src="images/logo.svg" alt="">
+
+									<div class="desc">Описание первой компании 123</div>
+								</div>
+
+								<div class="contacts location">
+									<div class="name">Адрес</div>
+
+									<div class="val">г. Москва, ул. Ломоносова, д. 75</div>
+								</div>
+
+								<div class="contacts email">
+									<div class="name">Электронная почта</div>
+
+									<div class="val">
+										<div><a href="mailto:company1@gmail.com">company1@gmail.com</a></div>
+									</div>
+								</div>
+
+								<div class="contacts phone">
+									<div class="name">Телефон</div>
+
+									<div class="val">
+										<div><a href="tel:+79219879988">+79219879988</a></div>
+									</div>
+								</div>
+							</footer>
+						</section>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<section class="correction_modal" id="gpt_modal">			
+			<div class="correction_modal-title">Предложить исправление</div>											
+			<div class="correction_modal-text">Вы хотите оставить предложение или комментарий:</div>
+			
+		</section>
+
+
+		<section class="correction_modal" id="correction_modal">			
+			<div class="correction_modal-title">Предложить исправление</div>											
+			<div class="correction_modal-text">Вы хотите оставить предложение или комментарий:</div>
+			<form class="correction_modal-form">
+				<div class="line">
+					<div class="field">
+						<input id="radio-1" type="radio" name="radio">
+                    	<label for="radio-1">К вопросу тренажера</label>
+					</div>
+				</div>	
+				<div class="line">
+					<div class="field">
+						<input id="radio-2" type="radio" name="radio">
+                    	<label for="radio-2">Ко всему тренажеру</label>
+					</div>
+				</div>	
+				<div class="correction_modal-btns">
+					<a href="#" class="correction_modal-form-btn active">
+						<span>Предложить</span>					
+					</a>			
+				</div>							
+			</form>
+		</section>
+
+
+
+		<section class="correction_modal" id="correction_modal5">			
+			<div class="correction_modal-title">Что вам не понравилось?</div>											
+			<div class="correction_modal-text">Причина</div>
+			<form class="correction_modal-form">
+				<div class="line">
+					<div class="field">
+						<textarea placeholder="Ведите причину"></textarea>
+					</div>
+				</div>	
+				<div class="correction_modal-btns">
+					<a href="#" class="correction_modal-form-btn active">
+						<span>Отправить</span>					
+					</a>			
+				</div>							
+			</form>
+		</section>
+
+
+		<section class="correction_modal" id="correction_modal55">			
+			<div class="correction_modal-title">Оценка: 55/100</div>											
+			<div class="correction_modal-text">
+				<p><span>Почему:</span> Твой ответ включает элемент срочности, что является хорошей техникой продаж, но звучит немного навязчиво. Ты не указываешь, как именно сайт поможет Евгению, не используешь аргументы в пользу предложения.</p>
+				<p><span>Как получить 100 баллов:</span> Сделай акцент на пользе сайта для бизнеса Евгения. Укажи, как сайт поможет ему получать новых клиентов и увеличить доход, предоставь конкретные примеры или данные. Будь более консультативным и менее настойчивым.</p>
+			</div>
+		</section>
+
+
+		<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <defs>
+		        <symbol id="ii" viewBox="0 0 80 80">
+		        	<rect width="100%" height="100%" rx="21" fill="url(#paint0_linear_3687_2535)"/>
+					<path d="M47.5 57C46.849 57 46.271 56.579 46.072 55.959L43.145 46.855L34.041 43.928C33.421 43.729 33 43.151 33 42.5C33 41.849 33.421 41.271 34.041 41.072L43.145 38.145L46.072 29.041C46.271 28.421 46.849 28 47.5 28C48.151 28 48.729 28.421 48.928 29.041L51.855 38.145L60.959 41.072C61.579 41.271 62 41.849 62 42.5C62 43.151 61.579 43.729 60.959 43.928L51.855 46.855L48.928 55.959C48.729 56.579 48.151 57 47.5 57ZM28 39C27.354 39 26.781 38.587 26.577 37.975L24.689 32.311L19.025 30.423C18.413 30.219 18 29.646 18 29C18 28.354 18.413 27.781 19.025 27.577L24.689 25.689L26.577 20.025C26.781 19.413 27.354 19 28 19C28.646 19 29.219 19.413 29.423 20.025L31.311 25.689L36.975 27.577C37.587 27.781 38 28.354 38 29C38 29.646 37.587 30.219 36.975 30.423L31.311 32.311L29.423 37.975C29.219 38.587 28.646 39 28 39ZM26.5 61C25.854 61 25.281 60.587 25.077 59.975L23.563 55.436L19.025 53.923C18.413 53.719 18 53.146 18 52.5C18 51.854 18.413 51.281 19.025 51.077L23.563 49.564L25.077 45.025C25.281 44.413 25.854 44 26.5 44C27.146 44 27.719 44.413 27.923 45.025L29.436 49.564L33.975 51.077C34.587 51.281 35 51.854 35 52.5C35 53.146 34.587 53.719 33.975 53.923L29.436 55.436L27.923 59.975C27.719 60.587 27.146 61 26.5 61Z" fill="white"/>
+					<defs>
+					<linearGradient id="paint0_linear_3687_2535" x1="-1.7678e-06" y1="85.0202" x2="104.684" y2="42.3877" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#682D8C"/>
+					<stop offset="1" stop-color="#EB1E79"/>
+					</linearGradient>
+					</defs>
+		        </symbol>
+		    </defs>
+		</svg>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/media-player.js"></script>
+		<script src="js/html5sortable.min.js"></script>
+		<script src="js/wavesurfer.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

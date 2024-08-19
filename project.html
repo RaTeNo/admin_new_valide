@@ -1,0 +1,1974 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<!-- Адаптирование страницы для мобильных устройств -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Запрет распознования номера телефона -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+	<!-- Заголовок страницы -->
+	<title>Заголовок страницы</title>
+
+	<!-- Данное значение часто используют(использовали) поисковые системы -->
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<!-- Изменение цвета панели моб. браузера -->
+	<meta name="msapplication-TileColor" content="#0B00D8">
+	<meta name="theme-color" content="#0B00D8">
+
+	<!-- Подключение шрифтов с гугла -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+	<!-- Подключение файлов стилей -->
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/fancybox.css" async>
+	<link rel="stylesheet" href="css/styles.css" async>
+	<link rel="stylesheet" href="css/styles2.css" async>
+
+	<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+	<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+	<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+	<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+	<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="main">
+			<header>
+				<div class="cont row">
+					<div class="logo">
+						<img src="images/logo.svg" alt="">
+					</div>
+
+					<div class="wallet">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#ic_wallet"></use>
+						</svg>
+						<span>1243</span>
+					</div>
+
+					<div class="sep"></div>
+
+					<div class="account">
+						<a href="/" class="settings_link">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#ic_settings"></use>
+							</svg>
+						</a>
+
+						<div class="user">
+							<div class="avatar">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#ic_user"></use>
+								</svg>
+								<!-- <img data-src="" alt="" class="lozad"> -->
+							</div>
+
+							<div class="name">Модератор</div>
+						</div>
+
+						<a href="/" class="logout_link">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#ic_logout"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</header>
+
+
+			<section class="mob_header">
+				<div class="row">
+					<button class="menu_btn">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#ic_menu"></use>
+						</svg>
+					</button>
+
+					<div class="page_title">Сводка</div>
+
+					<div class="wallet">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#ic_wallet"></use>
+						</svg>
+						<span>1243</span>
+					</div>
+
+					<div class="nitifications new">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#ic_nitifications"></use>
+						</svg>
+					</div>
+
+					<div class="account modal_cont">
+						<button class="user btn mini_modal_btn" data-modal-id="#account_modal">
+							<div class="avatar">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#ic_user"></use>
+								</svg>
+								<img data-src="images/tmp/user_avatar.jpg" alt="" class="lozad">
+							</div>
+
+							<svg class="arrow">
+								<use xlink:href="images/sprite.svg#ic_arrow_down"></use>
+							</svg>
+						</button>
+
+						<div class="mini_modal" id="account_modal">
+							<div><a href="/">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#ic_settings"></use>
+									</svg>
+									<span>Настройки</span>
+								</a></div>
+
+							<div><a href="/">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#ic_logout"></use>
+									</svg>
+									<span>Выход</span>
+								</a></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="content_flex">
+				<div class="cont row">
+					<aside>
+						<button class="close_btn">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#ic_close"></use>
+							</svg>
+						</button>
+
+						<div class="menu">
+							<div class="item">
+								<a href="/">
+									<div class="icon icon1">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category1"></use>
+										</svg>
+									</div>
+									<span>Сводка</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon2 point">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category2"></use>
+										</svg>
+									</div>
+									<span>Мои задачи</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="#" class="sub_link active open">
+									<div class="icon icon3 point">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category3"></use>
+										</svg>
+									</div>
+									<span>Курсы</span>
+									<svg class="arrow">
+										<use xlink:href="images/sprite.svg#ic_arrow_down"></use>
+									</svg>
+								</a>
+
+								<div class="sub_menu" style="display: block;">
+									<div><a class="active">
+											<span class="count">3</span>
+											<span>Все курсы</span>
+										</a></div>
+									<div><a href="/">Новые курсы</a></div>
+								</div>
+							</div>
+
+							<div class="item">
+								<a href="#" class="sub_link">
+									<div class="icon icon4 point">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category4"></use>
+										</svg>
+									</div>
+									<span>Обратная связь</span>
+									<svg class="arrow">
+										<use xlink:href="images/sprite.svg#ic_arrow_down"></use>
+									</svg>
+								</a>
+
+								<div class="sub_menu">
+									<div><a href="/">По тренажерам</a></div>
+									<div><a href="/">По заданиям</a></div>
+									<div><a href="/">По другому</a></div>
+								</div>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon5">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category5"></use>
+										</svg>
+									</div>
+									<span>Тренажеры</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon5_2">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category5_2"></use>
+										</svg>
+									</div>
+									<span>Аудио тренажеры</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon5_3">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category5_3"></use>
+										</svg>
+									</div>
+									<span>Тренажеры действий</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon6">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category6"></use>
+										</svg>
+									</div>
+									<span>Новости</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon7">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category7"></use>
+										</svg>
+									</div>
+									<span>Опросы</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon8">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category8"></use>
+										</svg>
+									</div>
+									<span>Обсуждения</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon9">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category9"></use>
+										</svg>
+									</div>
+									<span>Вебинары</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon10">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category10"></use>
+										</svg>
+									</div>
+									<span>Подкасты</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon11">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category11"></use>
+										</svg>
+									</div>
+									<span>Файлы</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon12">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category12"></use>
+										</svg>
+									</div>
+									<span>Коллеги</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon13">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category13"></use>
+										</svg>
+									</div>
+									<span>Настройки</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/" class="sub_link">
+									<div class="icon icon14">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category14"></use>
+										</svg>
+									</div>
+									<span>Управление</span>
+									<svg class="arrow">
+										<use xlink:href="images/sprite.svg#ic_arrow_down"></use>
+									</svg>
+								</a>
+
+								<div class="sub_menu">
+									<div><a href="/"></a></div>
+								</div>
+							</div>
+						</div>
+					</aside>
+
+
+					<section class="content">
+						<section class="project">	
+							<section class="page_title">
+								<a href="/" class="big">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_left"></use></svg>
+								</a>
+								<span>Проект</span>
+							</section>	
+							
+							<div class="project_line">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#project_line"></use>									
+								</svg>
+								<span>Этот проект является общедоступным</span>
+							</div>
+
+							<section class="project_block block2">
+								<div class="projects_item-info">
+									<div class="projects_item-label blau">В работе</div>
+									<div class="projects_item-title">
+										Разработать модуль “Проекты”
+										<a href="#" class="projects_item-edit">
+											<span>Редактировать проект</span>
+										</a>
+									</div>
+									<div class="projects_item-text">Разработать модуль проекты состоящий из трех страниц. Короткое описание максимум на две строки. Потом в символах посчитаем</div>
+									<div class="projects_item-box">
+										<div class="project_item_authors">
+											<div class="projects_item-author">
+												<div class="projects_item-avatar">
+													<img src="images/avatar1.png" alt="">
+												</div>
+												<div class="projects_item-desc">
+													<div class="projects_item-name">Иван Петрович</div>
+													<div class="projects_item-post">Ответственный</div>
+												</div>
+											</div>
+
+											<div class="projects_item-author">
+												<div class="projects_item-avatar">
+													<img src="images/avatar1.png" alt="">
+												</div>
+												<div class="projects_item-desc">
+													<div class="projects_item-name">Иван Петрович</div>
+													<div class="projects_item-post">Ответственный</div>
+												</div>
+											</div>
+
+											<div class="projects_item-author">
+												<div class="projects_item-avatar">
+													<img src="images/avatar1.png" alt="">
+												</div>
+												<div class="projects_item-desc">
+													<div class="projects_item-name">Иван Петрович</div>
+													<div class="projects_item-post">Ответственный</div>
+												</div>
+											</div>
+
+											<div class="projects_item-author">
+												<div class="projects_item-avatar">
+													<img src="images/avatar1.png" alt="">
+												</div>
+												<div class="projects_item-desc">
+													<div class="projects_item-name">Иван Петрович</div>
+													<div class="projects_item-post">Ответственный</div>
+												</div>												
+											</div>
+
+											
+										</div>
+										<div class="projects_item-links">
+											<a href="#participants" class="projects_item-links-list scroll">Список участников</a>
+											<a href="#comments" class="projects_item-links-comment scroll">Комментарии</a>
+										</div>
+									</div>
+									<div class="projects_item-bottom">
+										<div class="projects_item-bottom-box">
+											<div class="projects_item-bottom-text">
+												<span class="black">15</span>
+												задач	
+											</div>	
+											<div class="projects_item-bottom-text">
+												<span class="green">12</span>
+												выполнено
+											</div>	
+											<div class="projects_item-bottom-text">
+												<span class="red">12</span>
+												просрочено
+											</div>	
+										</div>										
+									</div>
+								</div>
+							</section>
+						
+							
+							<section class="task-block block2">
+								<div class="block_top">							
+									<div class="block_top-box">
+										<div class="block_top-info">
+											<div class="block_title">Задачи</div>
+											<div class="block_text">Задачи проекта</div>		
+										</div>	
+										<button class="task-block_item-btn">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#plus2"></use>
+											</svg>
+											<span>Добавить задачу</span>
+										</button>
+										<div class="select-right">
+											<span>Вид:</span>
+											<select>
+												<option>Доска с задачами</option>
+												<option>Классический</option>
+       										</select>	
+										</div>					
+									</div>
+								</div>
+								<div class="task-block_items block2">
+									<div class="task-block_item">
+										<div class="task-block_item-title">Новые <span>2</span></div>
+										<div class="task-block_item-box">
+											<div class="task-block_info">
+												<div class="task-block_top">
+													<div class="task-block-top_wrap">
+														<div class="task-block_label red">Новый</div>
+														<div class="task-block_label deadline">Дедлайн: 06.02.2024</div>
+													</div>
+													<button class="projects_item-btn">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#project_drag"></use>
+														</svg>	
+													</button>
+												</div>
+												<a href class="task-block_text">Конфиденциальность и коммерческая тайна - что является тайной, какой режим в компании</a>
+												
+												<div class="projects_item-last-active">
+													Последнее действие: 06.02.2024 в 13:55
+												</div>
+
+												<div class="projects_item-author">
+													<div class="projects_item-avatar">
+														<img src="images/avatar1.png" alt="">
+													</div>
+													<div class="projects_item-desc">
+														<div class="projects_item-name">Иван Петрович</div>
+														<div class="projects_item-post">Ответственный</div>
+													</div>
+												</div>
+
+											
+
+												<div class="task-block_comment">	
+													<div class="task-block_comment-box">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#comment2"></use>
+														</svg>
+														<span>15</span>	
+													</div>															
+												</div>											
+											</div>
+											<div class="task-block_info modal_content" data-content="#projects-modal3">
+												<div class="task-block_clossed-top">
+													<div class="task-block_clossed-label">Закрыта</div>
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#lock5"></use>
+													</svg>
+												</div>
+												<a href class="task-block_clossed-text">Нарисовать три страницы</a>
+
+												<div class="projects_item-author">
+													<div class="projects_item-avatar">
+														<img src="images/avatar1.png" alt="">
+													</div>
+													<div class="projects_item-desc">
+														<div class="projects_item-name">Иван Петрович</div>
+														<div class="projects_item-post">Ответственный</div>
+													</div>
+												</div>
+
+												<div class="task-block_clossed-comment task-block_comment">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#comment2"></use>
+													</svg>
+													<span>15</span>
+												</div>	
+											</div>	
+										</div>										
+									</div>
+
+									<div class="task-block_item">
+										<div class="task-block_item-title">В работе <span>3</span></div>
+										<div class="task-block_item-box">
+											<div class="task-block_info">
+												<div class="task-block_top">
+													<div class="task-block_label blau">В работе</div>
+													<button class="projects_item-btn">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#project_drag"></use>
+														</svg>
+													</button>
+												</div>
+												<div class="task-block_text">Пропускной режим</div>
+
+												<div class="projects_item-author">
+													<div class="projects_item-avatar">
+														<img src="images/avatar1.png" alt="">
+													</div>
+													<div class="projects_item-desc">
+														<div class="projects_item-name">Иван Петрович</div>
+														<div class="projects_item-post">Ответственный</div>
+													</div>
+												</div>
+
+												<div class="task-block_comment">	
+													<div class="task-block_comment-box">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#comment2"></use>
+														</svg>
+														<span>15</span>	
+													</div>			
+													<div class="projects_item-massage">+3 новых</div>													
+												</div>										
+											</div>
+											<div class="task-block_info">
+												<div class="task-block_top">
+													<div class="task-block_label blau">В работе</div>
+													<button class="projects_item-btn">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#project_drag"></use>
+														</svg>	
+													</button>
+												</div>
+												<div class="task-block_text">Оплата труда, принцип расчёта</div>
+
+												<div class="projects_item-author">
+													<div class="projects_item-avatar">
+														<img src="images/avatar1.png" alt="">
+													</div>
+													<div class="projects_item-desc">
+														<div class="projects_item-name">Иван Петрович</div>
+														<div class="projects_item-post">Ответственный</div>
+													</div>
+												</div>
+
+												<div class="task-block_comment">	
+													<div class="task-block_comment-box">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#comment2"></use>
+														</svg>
+														<span>15</span>	
+													</div>															
+												</div>										
+											</div>
+											<div class="task-block_info">
+												<div class="task-block_top">
+													<div class="task-block_label blau">В работе</div>
+													<button class="projects_item-btn">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#project_drag"></use>
+														</svg>
+													</button>
+												</div>
+												<div class="task-block_text">Подготовка обращения</div>
+
+												<div class="projects_item-author">
+													<div class="projects_item-avatar">
+														<img src="images/avatar1.png" alt="">
+													</div>
+													<div class="projects_item-desc">
+														<div class="projects_item-name">Иван Петрович</div>
+														<div class="projects_item-post">Ответственный</div>
+													</div>
+												</div>
+
+												<div class="task-block_comment">	
+													<div class="task-block_comment-box">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#comment2"></use>
+														</svg>
+														<span>15</span>	
+													</div>																
+												</div>										
+											</div>	
+																		
+											<a href="#" class="link-more">Показать еще 12 задач</a>
+										
+											<div class="task-block_item hide-content">												
+												<div class="task-block_info">
+													<div class="task-block_top">
+														<div class="task-block_label blau">В работе</div>
+														<button class="projects_item-btn">
+															<svg class="icon">
+																<use xlink:href="images/sprite.svg#project_drag"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="task-block_text">Пропускной режим</div>
+
+													<div class="projects_item-author">
+														<div class="projects_item-avatar">
+															<img src="images/avatar1.png" alt="">
+														</div>
+														<div class="projects_item-desc">
+															<div class="projects_item-name">Иван Петрович</div>
+															<div class="projects_item-post">Ответственный</div>
+														</div>
+													</div>
+
+													<div class="task-block_comment">	
+														<div class="task-block_comment-box">
+															<svg class="icon">
+																<use xlink:href="images/sprite.svg#comment2"></use>
+															</svg>
+															<span>15</span>	
+														</div>			
+														<div class="projects_item-massage">+3 новых</div>														
+													</div>	
+
+												</div>
+												<div class="task-block_info">
+													<div class="task-block_top">
+														<div class="task-block_label blau">В работе</div>
+														<button class="projects_item-btn">
+															<svg class="icon">
+																<use xlink:href="images/sprite.svg#project_drag"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="task-block_text">Оплата труда, принцип расчёта</div>
+
+													<div class="projects_item-author">
+														<div class="projects_item-avatar">
+															<img src="images/avatar1.png" alt="">
+														</div>
+														<div class="projects_item-desc">
+															<div class="projects_item-name">Иван Петрович</div>
+															<div class="projects_item-post">Ответственный</div>
+														</div>
+													</div>
+
+
+													<div class="task-block_comment">	
+														<div class="task-block_comment-box">
+															<svg class="icon">
+																<use xlink:href="images/sprite.svg#comment2"></use>
+															</svg>
+															<span>15</span>	
+														</div>																	
+													</div>										
+												</div>
+												<div class="task-block_info">
+													<div class="task-block_top">
+														<div class="task-block_label blau">В работе</div>
+														<button class="projects_item-btn">
+															<svg class="icon">
+																<use xlink:href="images/sprite.svg#project_drag"></use>
+															</svg>	
+														</button>
+													</div>
+													<div class="task-block_text">Подготовка обращения</div>
+
+													<div class="projects_item-author">
+														<div class="projects_item-avatar">
+															<img src="images/avatar1.png" alt="">
+														</div>
+														<div class="projects_item-desc">
+															<div class="projects_item-name">Иван Петрович</div>
+															<div class="projects_item-post">Ответственный</div>
+														</div>
+													</div>
+
+													<div class="task-block_comment">	
+														<div class="task-block_comment-box">
+															<svg class="icon">
+																<use xlink:href="images/sprite.svg#comment2"></use>
+															</svg>
+															<span>15</span>	
+														</div>																
+													</div>										
+												</div>
+											</div>	
+										</div>		
+									</div>
+
+									<div class="task-block_item">
+										<div class="task-block_item-title">На проверке <span>1</span></div>
+										<div class="task-block_item-box">
+											<div class="task-block_info">
+												<div class="task-block_top">
+													<div class="task-block_label yellow">На проверке</div>
+													<button class="projects_item-btn">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#project_drag"></use>
+														</svg>
+													</button>
+												</div>
+												<div class="task-block_text">Подготовка обращения руководителя</div>
+
+												<div class="task-block_subtask">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#icon2002"></use>
+													</svg>
+													<span>3/3 подзадач</span>	
+												</div>
+
+												<div class="projects_item-author more" title="Иван Петрович, Василий Марченко, Екатерина Седова, мария Кравченко">
+													5 ответственных
+												</div>
+
+
+
+												<div class="task-block_comment">	
+													<div class="task-block_comment-box">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#comment2"></use>
+														</svg>
+														<span>15</span>	
+													</div>																
+												</div>											
+											</div>											
+										</div>										
+									</div>
+
+									<div class="task-block_item">
+										<div class="task-block_item-title">Сделано <span>1</span></div>
+										<div class="task-block_item-box">
+											<div class="task-block_info">
+												<div class="task-block_top">
+													<div class="task-block_label green">Сделано 01.12.2023</div>
+													<button class="projects_item-btn">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#project_drag"></use>
+														</svg>	
+													</button>
+												</div>
+												<div class="task-block_text">Организация видео и фотосъёмки рабочих опера...</div>
+
+												<div class="task-block_subtask green">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#icon2002"></use>
+													</svg>
+													<span>3/3 подзадач</span>	
+												</div>
+
+												<div class="projects_item-author">
+													<div class="projects_item-avatar">
+														<img src="images/avatar1.png" alt="">
+													</div>
+													<div class="projects_item-desc">
+														<div class="projects_item-name">Иван Петрович</div>
+														<div class="projects_item-post">Ответственный</div>
+													</div>
+												</div>
+												
+												<div class="task-block_comment">	
+													<div class="task-block_comment-box">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#comment2"></use>
+														</svg>
+														<span>15</span>	
+													</div>														
+												</div>											
+											</div>											
+										</div>
+									</div>
+								</div>
+
+								<div class="task-block_items block2 col3">
+									<div class="task-block_item">
+										<div class="task-block_item-title">Новые <span>2</span></div>
+										<div class="task-block_item-box">
+											<div class="task-block_info">
+												<div class="task-block_top">
+													<div class="task-block_label red">Новый</div>
+													<button class="projects_item-btn">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#project_drag"></use>
+														</svg>	
+													</button>
+												</div>
+												<a href class="task-block_text">Конфиденциальность и коммерческая тайна - что является тайной, какой режим в компании</a>
+												<div class="projects_item-author">
+													<div class="projects_item-avatar">
+														<img src="images/avatar1.png" alt="">
+													</div>
+													<div class="projects_item-desc">
+														<div class="projects_item-name">Иван Петрович</div>
+														<div class="projects_item-post">Ответственный</div>
+													</div>
+												</div>
+
+												<div class="task-block_comment">	
+													<div class="task-block_comment-box">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#comment2"></use>
+														</svg>
+														<span>15</span>	
+													</div>															
+												</div>											
+											</div>
+											<div class="task-block_info modal_content" data-content="#projects-modal3">
+												<div class="task-block_clossed-top">
+													<div class="task-block_clossed-label">Закрыта</div>
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#lock5"></use>
+													</svg>
+												</div>
+												<div class="task-block_clossed-text">Нарисовать три страницы</div>
+
+												<div class="projects_item-author">
+													<div class="projects_item-avatar">
+														<img src="images/avatar1.png" alt="">
+													</div>
+													<div class="projects_item-desc">
+														<div class="projects_item-name">Иван Петрович</div>
+														<div class="projects_item-post">Ответственный</div>
+													</div>
+												</div>
+
+												<div class="task-block_clossed-comment">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#comment2"></use>
+													</svg>
+													<span>15</span>
+												</div>	
+											</div>	
+										</div>										
+									</div>
+
+									<div class="task-block_item">
+										<div class="task-block_item-title">В работе <span>3</span></div>
+										<div class="task-block_item-box">
+											<div class="task-block_info">
+												<div class="task-block_top">
+													<div class="task-block_label blau">В работе</div>
+													<button class="projects_item-btn">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#project_drag"></use>
+														</svg>
+													</button>
+												</div>
+												<div class="task-block_text">Пропускной режим</div>
+
+												<div class="projects_item-author">
+													<div class="projects_item-avatar">
+														<img src="images/avatar1.png" alt="">
+													</div>
+													<div class="projects_item-desc">
+														<div class="projects_item-name">Иван Петрович</div>
+														<div class="projects_item-post">Ответственный</div>
+													</div>
+												</div>
+
+												<div class="task-block_comment">	
+													<div class="task-block_comment-box">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#comment2"></use>
+														</svg>
+														<span>15</span>	
+													</div>			
+													<div class="projects_item-massage">+3 новых</div>													
+												</div>										
+											</div>
+											<div class="task-block_info">
+												<div class="task-block_top">
+													<div class="task-block_label blau">В работе</div>
+													<button class="projects_item-btn">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#project_drag"></use>
+														</svg>	
+													</button>
+												</div>
+												<div class="task-block_text">Оплата труда, принцип расчёта</div>
+
+												<div class="projects_item-author">
+													<div class="projects_item-avatar">
+														<img src="images/avatar1.png" alt="">
+													</div>
+													<div class="projects_item-desc">
+														<div class="projects_item-name">Иван Петрович</div>
+														<div class="projects_item-post">Ответственный</div>
+													</div>
+												</div>
+
+												<div class="task-block_comment">	
+													<div class="task-block_comment-box">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#comment2"></use>
+														</svg>
+														<span>15</span>	
+													</div>															
+												</div>										
+											</div>
+											<div class="task-block_info">
+												<div class="task-block_top">
+													<div class="task-block_label blau">В работе</div>
+													<button class="projects_item-btn">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#project_drag"></use>
+														</svg>
+													</button>
+												</div>
+												<div class="task-block_text">Подготовка обращения</div>
+
+												<div class="projects_item-author">
+													<div class="projects_item-avatar">
+														<img src="images/avatar1.png" alt="">
+													</div>
+													<div class="projects_item-desc">
+														<div class="projects_item-name">Иван Петрович</div>
+														<div class="projects_item-post">Ответственный</div>
+													</div>
+												</div>
+
+												<div class="task-block_comment">	
+													<div class="task-block_comment-box">
+														<svg class="icon">
+															<use xlink:href="images/sprite.svg#comment2"></use>
+														</svg>
+														<span>15</span>	
+													</div>																
+												</div>										
+											</div>	
+																		
+											<a href="#" class="link-more">Показать еще 12 задач</a>
+										
+											<div class="task-block_item hide-content">												
+												<div class="task-block_info">
+													<div class="task-block_top">
+														<div class="task-block_label blau">В работе</div>
+														<button class="projects_item-btn">
+															<svg class="icon">
+																<use xlink:href="images/sprite.svg#project_drag"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="task-block_text">Пропускной режим</div>
+
+													<div class="projects_item-author">
+														<div class="projects_item-avatar">
+															<img src="images/avatar1.png" alt="">
+														</div>
+														<div class="projects_item-desc">
+															<div class="projects_item-name">Иван Петрович</div>
+															<div class="projects_item-post">Ответственный</div>
+														</div>
+													</div>
+
+													<div class="task-block_comment">	
+														<div class="task-block_comment-box">
+															<svg class="icon">
+																<use xlink:href="images/sprite.svg#comment2"></use>
+															</svg>
+															<span>15</span>	
+														</div>			
+														<div class="projects_item-massage">+3 новых</div>														
+													</div>	
+
+												</div>
+												<div class="task-block_info">
+													<div class="task-block_top">
+														<div class="task-block_label blau">В работе</div>
+														<button class="projects_item-btn">
+															<svg class="icon">
+																<use xlink:href="images/sprite.svg#project_drag"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="task-block_text">Оплата труда, принцип расчёта</div>
+
+													<div class="projects_item-author">
+														<div class="projects_item-avatar">
+															<img src="images/avatar1.png" alt="">
+														</div>
+														<div class="projects_item-desc">
+															<div class="projects_item-name">Иван Петрович</div>
+															<div class="projects_item-post">Ответственный</div>
+														</div>
+													</div>
+
+
+													<div class="task-block_comment">	
+														<div class="task-block_comment-box">
+															<svg class="icon">
+																<use xlink:href="images/sprite.svg#comment2"></use>
+															</svg>
+															<span>15</span>	
+														</div>																	
+													</div>										
+												</div>
+												<div class="task-block_info">
+													<div class="task-block_top">
+														<div class="task-block_label blau">В работе</div>
+														<button class="projects_item-btn">
+															<svg class="icon">
+																<use xlink:href="images/sprite.svg#project_drag"></use>
+															</svg>	
+														</button>
+													</div>
+													<div class="task-block_text">Подготовка обращения</div>
+
+													<div class="projects_item-author">
+														<div class="projects_item-avatar">
+															<img src="images/avatar1.png" alt="">
+														</div>
+														<div class="projects_item-desc">
+															<div class="projects_item-name">Иван Петрович</div>
+															<div class="projects_item-post">Ответственный</div>
+														</div>
+													</div>
+
+													<div class="task-block_comment">	
+														<div class="task-block_comment-box">
+															<svg class="icon">
+																<use xlink:href="images/sprite.svg#comment2"></use>
+															</svg>
+															<span>15</span>	
+														</div>																
+													</div>										
+												</div>
+											</div>	
+										</div>		
+									</div>
+
+									<div class="task-block_item">
+										<div class="task-block_item-title">На проверке <span>1</span></div>
+										<div class="task-block_item-box">
+											<div class="task-block_item-box_empty">
+												<div class="task-block_item-box_empty_title">Здесь пока ничего нет</div>
+												<button class="task-block_item-btn">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#plus2"></use>
+													</svg>
+													<span>Добавить задачу</span>
+												</button>
+
+											</div>							
+										</div>										
+									</div>
+								</div>
+
+
+								<section class="changes block2">
+									<div class="block_top-box">
+										<div class="block_top-info">
+											<div class="block_title">Протокол изменений</div>
+										</div>
+									</div>
+									<div class="changes_wrap">
+										<div class="changes_items">
+											<div class="changes_item-box fix_line">
+												<div class="changes_item green">											
+													<div class="changes_item-text">Василий Петрович выполнил подзадачу “Проверить огнетушители в цеху №1 ”</div>
+													<div class="changes_item-date">01 мая 2023 в 23:46</div>	
+												</div>											
+											</div>
+											<div class="changes_item-box fix_line">
+												<div class="changes_item green">
+													<div class="changes_item-text">Василий Петрович выполнил подзадачу “Проверить огнетушители в цеху №2 ”</div>
+													<div class="changes_item-date">01 мая 2023 в 23:46</div>	
+												</div>	
+											</div>
+										</div>
+										<div class="changes_items">
+											<div class="changes_item-box fix_line">
+												<div class="changes_item green">											
+													<div class="changes_item-text">Василий Петрович выполнил подзадачу “Проверить огнетушители в цеху №3 ”</div>
+													<div class="changes_item-date">01 мая 2023 в 23:46</div>		
+												</div>											
+											</div>
+										</div>
+									</div>
+								</section>
+
+
+								<div class="task-block_items classic">
+									<div class="task-block_item">
+										<div class="task-block_item-top">
+											<div class="task-block_item-title">В очереди <span>1</span></div>
+										</div>			
+										<div class="task-block_item-box">
+											<div class="task-block_info">												
+												<div class="task-block_label yellow">В очереди</div>
+											</div>	
+											<div class="task-block_item-bottom">
+												<div class="task-block_text">Придумать три страницы для модуля проектов</div>												
+											</div>
+											<div class="projects_item-wrap">
+												<div class="projects_item-author">
+													<div class="projects_item-avatar">
+														<img src="images/avatar1.png" alt="">
+													</div>
+													<div class="projects_item-desc">
+														<div class="projects_item-name">Иван Петрович</div>
+														<div class="projects_item-post">Ответственный</div>
+													</div>
+												</div>	
+												<div class="projects_item-comment">
+													<div class="projects_item-massage">+3 новых</div>
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#comment2"></use>
+													</svg>
+													<span>15</span>
+												</div>
+											</div>
+										</div>												
+									</div>
+
+									<div class="task-block_item">
+										<div class="task-block_item-top">
+											<div class="task-block_item-title">В работе <span>1</span></div>
+										</div>			
+										<div class="task-block_item-box">
+											<div class="task-block_info">												
+												<div class="task-block_label blau">В работе</div>
+											</div>	
+											<div class="task-block_item-bottom">
+												<div class="task-block_text">Придумать три страницы для модуля проектов</div>												
+											</div>
+											<div class="projects_item-wrap">
+												<div class="projects_item-author">
+													<div class="projects_item-avatar">
+														<img src="images/avatar1.png" alt="">
+													</div>
+													<div class="projects_item-desc">
+														<div class="projects_item-name">Иван Петрович</div>
+														<div class="projects_item-post">Ответственный</div>
+													</div>
+												</div>	
+												<div class="projects_item-comment">
+													<div class="projects_item-massage">+3 новых</div>
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#comment2"></use>
+													</svg>
+													<span>15</span>
+												</div>
+											</div>
+										</div>												
+									</div>
+
+									<div class="task-block_item">
+										<div class="task-block_item-top">
+											<div class="task-block_item-title">Сделано частично <span>1</span></div>
+										</div>			
+										<div class="task-block_item-box">
+											<div class="task-block_info">												
+												<div class="task-block_label azure">Сделано частично</div>
+											</div>	
+											<div class="task-block_item-bottom">
+												<div class="task-block_text">Придумать три страницы для модуля проектов</div>												
+											</div>
+											<div class="projects_item-wrap">
+												<div class="projects_item-author">
+													<div class="projects_item-avatar">
+														<img src="images/avatar1.png" alt="">
+													</div>
+													<div class="projects_item-desc">
+														<div class="projects_item-name">Иван Петрович</div>
+														<div class="projects_item-post">Ответственный</div>
+													</div>
+												</div>	
+												<div class="projects_item-comment">
+													<div class="projects_item-massage">+3 новых</div>
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#comment2"></use>
+													</svg>
+													<span>15</span>
+												</div>
+											</div>
+										</div>												
+									</div>
+
+									<div class="task-block_item">
+										<div class="task-block_item-top">
+											<div class="task-block_item-title">Сделано <span>1</span></div>
+										</div>			
+										<div class="task-block_item-box">
+											<div class="task-block_info">												
+												<div class="task-block_label green">Сделано 30.12.2023</div>
+											</div>	
+											<div class="task-block_item-bottom">
+												<div class="task-block_text">Придумать три страницы для модуля проектов</div>												
+											</div>
+											<div class="projects_item-wrap">
+												<div class="projects_item-author">
+													<div class="projects_item-avatar">
+														<img src="images/avatar1.png" alt="">
+													</div>
+													<div class="projects_item-desc">
+														<div class="projects_item-name">Иван Петрович</div>
+														<div class="projects_item-post">Ответственный</div>
+													</div>
+												</div>	
+												<div class="projects_item-comment">
+													<div class="projects_item-massage">+3 новых</div>
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#comment2"></use>
+													</svg>
+													<span>15</span>
+												</div>
+											</div>
+										</div>												
+									</div>									
+								</div>
+							</section>
+
+
+							<section class="completed-tasks block2">
+								<div class="block_top">	
+									<div class="block_top-box">
+										<div class="block_top-info">
+											<div class="block_title">Выполненные задачи</div>
+											<div class="block_text">Лента выполненных задач</div>			
+										</div>				
+									</div>
+								</div>
+								<div class="completed-tasks_box">
+									<div class="completed-tasks_info">												
+										<div class="completed-tasks_label green">Сделано</div>
+										<button class="completed-tasks_btn">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#more-btn"></use>
+											</svg>
+										</button>
+									</div>	
+									<div class="completed-tasks_text">Организация видео и фотосъёмки рабочих операций</div>									
+									<div class="projects_item-comment">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#comment2"></use>
+										</svg>
+										<span>15</span>
+									</div>																	
+								</div> 
+								<div class="completed-tasks_box">
+									<div class="completed-tasks_info">												
+										<div class="completed-tasks_label green">Сделано</div>
+										<button class="completed-tasks_btn">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#more-btn"></use>
+											</svg>
+										</button>
+									</div>	
+									<div class="completed-tasks_text">Организация видео и фотосъёмки рабочих операций</div>									
+									<div class="projects_item-comment">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#comment2"></use>
+										</svg>
+										<span>15</span>
+									</div>																	
+								</div> 
+								<div class="completed-tasks_box">
+									<div class="completed-tasks_info">												
+										<div class="completed-tasks_label green">Сделано</div>
+										<button class="completed-tasks_btn">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#more-btn"></use>
+											</svg>
+										</button>
+									</div>	
+									<div class="completed-tasks_text">Организация видео и фотосъёмки рабочих операций</div>									
+									<div class="projects_item-comment">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#comment2"></use>
+										</svg>
+										<span>15</span>
+									</div>																	
+								</div> 
+							</section>
+
+
+
+							<section class="participants block2" id="participants">
+								<div class="block_top">	
+									<div class="block_top-box">
+										<div class="block_top-info">
+											<div class="block_title">Участники</div>
+											<div class="block_text">Участники проекта</div>			
+										</div>	
+										<button class="task-block_item-btn">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#plus2"></use>
+											</svg>
+											<span>Добавить участника</span>
+										</button>				
+									</div>
+								</div>
+								<div class="participants_wrap">
+									<div class="participants_title">Текущие</div>
+									<div class="participants_items">
+										<div class="participants_item">
+											<div class="participants_item-author">
+												<div class="participants_item-avatar">
+													<img src="images/avatar1.png" alt="">
+													<div class="participants_item-col">2323</div>
+													<div class="participants_item-avatar-action">23 действия в проекте adsf asdfa sdfa sdfasdf asdf adsfadsf</div>
+												</div>
+												<div class="participants_item-info">
+													<div class="participants_item-name">Дмитриенко Василий Иванович</div>
+													<div class="participants_item-post">Отдел продаж</div>
+												</div>	
+											</div>											
+											<a href="" class="participants_item-btn">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#more-btn"></use>
+												</svg>
+											</a>
+										</div>
+
+										<div class="participants_item">
+											<div class="participants_item-author">
+												<div class="participants_item-avatar">
+													<img src="images/avatar1.png" alt="">
+													<div class="participants_item-col">23</div>
+													<div class="participants_item-avatar-action">23 действия в проекте</div>
+												</div>
+												<div class="participants_item-info">
+													<div class="participants_item-name">Алексеева Дарья Петровна</div>
+													<div class="participants_item-post">Отдел руководства</div>
+												</div>	
+											</div>											
+											<div class="participants_item-btn">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#more-btn"></use>
+												</svg>
+											</div>
+										</div>
+
+										<div class="participants_item">
+											<div class="participants_item-author">
+												<div class="participants_item-avatar">
+													<img src="images/avatar1.png" alt="">
+													<div class="participants_item-col">23</div>
+													<div class="participants_item-avatar-action">23 действия в проекте</div>
+												</div>
+												<div class="participants_item-info">
+													<div class="participants_item-name">Лазуренко Дмитрий Васильевич</div>
+													<div class="participants_item-post">Маркетинговый отдел</div>
+												</div>	
+											</div>											
+											<div class="participants_item-btn">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#more-btn"></use>
+												</svg>
+											</div>
+										</div>
+
+										<div class="participants_item">
+											<div class="participants_item-author">
+												<div class="participants_item-avatar">
+													<img src="images/avatar1.png" alt="">
+													<div class="participants_item-col">23</div>
+													<div class="participants_item-avatar-action">23 действия в проекте</div>
+												</div>
+												<div class="participants_item-info">
+													<div class="participants_item-name">Петрова Лариса Ивановна</div>
+													<div class="participants_item-post">Отдел планирования</div>
+												</div>	
+											</div>											
+											<div class="participants_item-btn">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#more-btn"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+									<div class="participants_title">Запросили приглашение</div>
+									<div class="participants_items">
+										<div class="participants_item">
+											<div class="participants_item-author">
+												<div class="participants_item-avatar">
+													<img src="images/avatar1.png" alt="">
+													<div class="participants_item-col">23</div>
+													<div class="participants_item-avatar-action">23 действия в проекте</div>
+												</div>
+												<div class="participants_item-info">
+													<div class="participants_item-name">Иван Петрович</div>
+													<div class="participants_item-post">Отдел продаж</div>
+												</div>	
+											</div>											
+											<div class="participants_item-btn">
+												<button>
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#yes"></use>
+													</svg>
+												</button>
+												<button>
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#no"></use>
+													</svg>
+												</button>												
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>	
+
+
+
+							<section class="comments" id="comments">
+								<div class="block_top-box">
+									<div class="block_top-info">
+										<div class="block_title">Лента комментариев</div>
+										<div class="block_text">Комментарии внутри задач</div>		
+									</div>														
+								</div>
+								<div class="list">
+									<div class="comment_wrap">
+										<div class="comment">
+											<div class="avatar"><img data-src="images/avatar10.jpg" alt="" class="lozad"></div>
+
+											<div class="data">
+												<div class="name">Мария Петрова</div>
+
+												<div class="comment_info">
+													<span>Комментарий к шагу №3</span>
+													<a href="#">Открыть задачу</a>
+												</div>
+
+												<div class="text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</div>
+
+												<div class="date">15 марта 2023 в 15:45</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="comment_wrap">
+										<div class="comment">
+											<div class="avatar"><img data-src="images/avatar11.jpg" alt="" class="lozad"></div>
+
+											<div class="data">
+												<div class="name">Мария Петрова</div>
+
+												<div class="comment_info">
+													<span>Комментарий к шагу №3</span>
+													<a href="#">Открыть задачу</a>
+												</div>
+
+												<div class="text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</div>
+
+												<div class="date">15 марта 2023 в 15:45</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
+
+						</section>
+
+
+						
+
+
+
+
+						<div class="player_fixed">
+							<div class="audio_media">
+								<div class="player_title">
+									
+								</div>
+								<div class="player_desc">
+									
+								</div>
+								<audio
+									controls
+									src="images/t-rex-roar.mp3">
+										Your browser does not support the
+										<code>audio</code> element.
+								</audio>
+							</div>
+						</div>
+						
+						<div class="new"></div>
+
+
+						<footer>
+							<div class="logo">
+								<img src="images/logo.svg" alt="">
+
+								<div class="desc">Описание первой компании 123</div>
+							</div>
+
+							<div class="contacts location">
+								<div class="name">Адрес</div>
+
+								<div class="val">г. Москва, ул. Ломоносова, д. 75</div>
+							</div>
+
+							<div class="contacts email">
+								<div class="name">Электронная почта</div>
+
+								<div class="val">
+									<div><a href="mailto:company1@gmail.com">company1@gmail.com</a></div>
+								</div>
+							</div>
+
+							<div class="contacts phone">
+								<div class="name">Телефон</div>
+
+								<div class="val">
+									<div><a href="tel:+79219879988">+79219879988</a></div>
+								</div>
+							</div>
+						</footer>
+					</section>
+				</div>
+			</section>
+		</div>
+	</div>
+
+
+	<section class="modal" id="test">
+		<img data-src="images/ic_warning.svg" alt="" class="icon lozad">
+
+		<div class="modal_title">Аттестация по теме “Маркетинг в IT-Сфере”</div>
+
+		<div class="modal_desc">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и
+			журналистов, создателей научных заявок. Теперь никто не сможет обвинить вас в плагиате, ибо каждый текст
+			Яндекс.Рефератов неповторим.</div>
+
+		<div class="btns">
+			<button class="close_btn btn">Позже</button>
+
+			<a href="">Начать</a>
+		</div>
+	</section>
+
+
+	<section class="modal" id="video_modal">
+		<video class="video-player video_new" width="100%" controlsList="nodownload" controls crossorigin="anonymous">
+			<source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+			<source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm"
+				type="video/webm">
+			<track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt"
+				label="English subtitles" kind="captions" srclang="en" default>
+			</track>
+		</video>
+	</section>
+
+
+
+	<section class="modal-statistic modal" id="modal-statistic">
+		<div class="modal-statistic_title">Подробная статистика</div>
+		<div class="modal-statistic_items">
+			<div class="modal-statistic_item">
+				<div class="modal-statistic_item-title">Категории завершенных курсов</div>
+				<table>
+					<thead>
+						<tr>
+							<th>Категория</th>
+							<th>с 01.01 по 31.04</th>
+							<th>с 01.03 по 31.03</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>SoftSkills</td>
+							<td>734</td>
+							<td>153</td>
+						</tr>
+						<tr>
+							<td>Название папки</td>
+							<td>734</td>
+							<td>153</td>
+						</tr>
+						<tr>
+							<td>Курсы по продажам в интернете</td>
+							<td>734</td>
+							<td>153</td>
+						</tr>
+					</tbody>
+				</table>	
+			</div>
+			<div class="modal-statistic_item2">
+				<div class="modal-statistic_item-title">Список завершенных курсов</div>
+				<table>
+					<thead>
+						<tr>
+							<th>Название курса</th>
+							<th>Дата завершения</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<img src="images/check.svg" alt="">
+								<span>Как продавать в интернете. Практический курс</span>
+							</td>
+							<td>17.03.2023</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="images/check.svg" alt="">
+								<span>История одной продажи. Холодные и горячи звонки. Первый разговор с клиентом по телефону</span>
+							</td>
+							<td>17.03.2023</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="images/check.svg" alt="">
+								<span>Название курса</span> 
+							</td>
+							<td>17.03.2023</td>
+						</tr>
+					</tbody>
+				</table>	
+			</div>
+		</div>
+		
+
+	</section>
+
+
+	<div class="supports_error">
+		Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+	</div>
+
+	<section class="webinar-online_modal" id="webinar-online">
+		<div class="online-modal_title">Участники розыгрыша</div>
+		<div class="online-modal_items">
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online1.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online2.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Никонова Мария Петровна</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online3.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Бермудская Василиса Распрекрасная</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online4.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online5.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Дмитриев Николай Васильевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online6.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div><div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online1.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online2.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Никонова Мария Петровна</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online3.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Бермудская Василиса Распрекрасная</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online4.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online5.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Дмитриев Николай Васильевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online6.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div><div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online1.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online2.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Никонова Мария Петровна</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online3.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Бермудская Василиса Распрекрасная</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online4.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online5.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Дмитриев Николай Васильевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online6.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div><div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online1.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online2.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Никонова Мария Петровна</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online3.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Бермудская Василиса Распрекрасная</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online4.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online5.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Дмитриев Николай Васильевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online6.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div><div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online1.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online2.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Никонова Мария Петровна</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online3.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Бермудская Василиса Распрекрасная</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online4.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online5.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Дмитриев Николай Васильевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online6.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div><div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online1.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online2.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Никонова Мария Петровна</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online3.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Бермудская Василиса Распрекрасная</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online4.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online5.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Дмитриев Николай Васильевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online6.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div><div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online1.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online2.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Никонова Мария Петровна</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online3.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Бермудская Василиса Распрекрасная</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online4.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online5.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Дмитриев Николай Васильевич</div>
+			</div>
+			<div class="online-modal_item">
+				<div class="online-modal_item-img">
+					<img src="images/tmp/online6.jpg" alt="">
+				</div>
+				<div class="online-modal_item-name">Петров Василий Николаевич</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	
+	<section class="projects-modal" id="projects-modal3">
+		<div class="projects-modal_icon">
+			<svg class="icon">
+				<use xlink:href="images/sprite.svg#lock7"></use>
+			</svg>
+		</div>	
+		<div class="projects-modal_title">Эта задача закрыта</div>
+		<div class="projects-modal_text">Пока что, эта задача закрыта. Вы сможете приступить к ее выполнению, когда ответственный откроет доступ к задаче</div>
+		<button type="submit" class="projects-modal_btn">
+			<span>Понял</span>
+		</button>			
+	</section>
+
+
+	<!-- Подключение javascript файлов -->
+	<script src="js/jquery-3.5.0.min.js"></script>
+	<script src="js/lozad.min.js"></script>
+	<script src="js/media-player.js"></script>
+	<script src="js/html5sortable.min.js"></script>
+	<script src="js/wavesurfer.js"></script>
+	<script src="js/fancybox.min.js"></script>
+	<script src="js/nice-select.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/playlist.js"></script>
+
+	<script src="https://unpkg.com/sortablejs-make/Sortable.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-sortablejs@latest/jquery-sortable.js"></script>
+
+	<script type="text/javascript">
+		$('.task-block_item-box').sortable({
+			// group: 'shared',
+			handle: '.projects_item-btn', // handle's class
+		    animation: 150
+		});
+
+	</script>
+
+</body>
+
+</html>
