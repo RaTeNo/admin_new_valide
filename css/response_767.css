@@ -3347,7 +3347,20 @@
     }
     .call-dialog_audio {
         width: 100%;
+    }   
+
+     .inforamation-calls .table-wrap {
+        overflow-y: scroll;
+        overflow: -moz-scrollbars-none; 
+        -ms-overflow-style: none;
     }
+    .inforamation-calls table {
+        width: 760px;
+    }
+    .inforamation-calls .table-wrap::-webkit-scrollbar { 
+        width: 0; 
+    }
+    
 
 
 }
