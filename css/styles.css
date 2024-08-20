@@ -39310,3 +39310,9 @@ bottom: 20px;
 .custom-radio:disabled+label::before {
     background-color: #e9ecef;
 }
+
+.chekboxses_title, .radios_title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
