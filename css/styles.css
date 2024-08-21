@@ -38340,10 +38340,20 @@ bottom: 20px;
 
 .message_continue .blue{
     background: #0B00D8;
+    display: none;
 }
 
 .message_continue .yellow{
     background: #FA9B2D;
+    display: none;
+}
+
+.message_continue .blue.active{
+    display: flex;
+}
+
+.message_continue .yellow.active{
+    display: flex;
 }
 .message_continue_text{
     width: 100%;    

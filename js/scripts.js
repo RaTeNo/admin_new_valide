@@ -31,6 +31,11 @@ $(() => {
 		document.getElementById('imgInp').addEventListener('change', handleFileSelect, false);
 	}
 
+	$(".message_continue .green, .message_continue .red").click(function (e) {
+		$(".message_continue .green, .message_continue .red").hide();
+		$(".message_continue .blue, .message_continue .yellow").addClass("active");
+	});
+	
 
 	// $(".learning-paths .training-plan_item ul li span").click(function (e) {
 	// 	e.preventDefault();
