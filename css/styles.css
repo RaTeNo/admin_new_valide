@@ -38341,12 +38341,19 @@ bottom: 20px;
 .message_continue .blue{
     background: #0B00D8;
     display: none;
+    animation: fadeIn 1s ;
 }
 
 .message_continue .yellow{
     background: #FA9B2D;
     display: none;
+    animation: fadeIn 1s ;
 }
+
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+} 
 
 .message_continue .blue.active{
     display: flex;
