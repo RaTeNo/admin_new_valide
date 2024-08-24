@@ -2078,6 +2078,25 @@
     }
 
 
+    .income_item-text,
+    .income_item .icon {
+        display: none;
+    }
+    .irs--flat .irs-single {
+        display: none;
+    }
+    .income_item {
+        margin-top: 0;
+    }
+    .income {
+        padding: 16px 20px;
+    }
+    .income2 {
+        padding: 16px 20px;
+    }
+    
+
+
     
 
 }

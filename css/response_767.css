@@ -3360,6 +3360,10 @@
     .inforamation-calls .table-wrap::-webkit-scrollbar { 
         width: 0; 
     }
+
+    .income_item-text {
+        font-size: 12px;
+    }
     
 
 

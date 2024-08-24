@@ -300,6 +300,10 @@ $(() => {
 	});
 
 
+
+
+
+
 	/*$('body').on("keyup", '.js-search-courses', function(event) {
 		let value = $(this).val();
 	  
@@ -522,6 +526,9 @@ $(() => {
 		}
 
 	});
+
+
+
 
 	$(".options li").on("click", function () {
 		if ($(".options").hasClass("ready")) {
