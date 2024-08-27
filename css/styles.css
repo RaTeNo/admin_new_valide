@@ -16936,7 +16936,7 @@ background: #64C841;
     margin-top: 10px;
 }
 .dialog .message .prompt .text-information {
-    width: 368px;
+    max-width: 100%;
     background: #F0F0FC;
     border: 1px solid #E7E7F2;
     border-radius: 21px;
@@ -34779,6 +34779,21 @@ bottom: 20px;
     display: flex;
     align-items: center;
     gap: 3px;
+}
+
+.shop_top .shop_link{
+    text-decoration: none;
+    padding: 10px 12px;
+    background: var(--main_color);
+    border-radius: 60px;    
+    margin-left: auto;
+    display: block;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    text-align: center;
 }
 
 

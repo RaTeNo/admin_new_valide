@@ -3365,6 +3365,12 @@
         font-size: 12px;
     }
     
+    .shop_top{
+        flex-wrap: wrap;
+    }
 
+    .shop_info{
+        width: calc(100% - 90px);
+    }
 
 }
