@@ -52,12 +52,6 @@ $(() => {
 
 
 
-	$(".js-range-slider").ionRangeSlider({});
-
-
-	$(".js-range-slider2").ionRangeSlider({});
-
-
 	$(".create-report_wrap_hide").each(function (index) {
 		if ($(this).outerHeight() > 46) {
 			$(this).css("height", "46px");
@@ -69,6 +63,12 @@ $(() => {
 		e.preventDefault();
 		$(this).hide().prev().css("height", "100%");
 	});
+
+	$('body').on('click', '.shop_modal-btn', function (e) {
+		e.preventDefault()
+		Fancybox.close()
+	});
+
 
 	$('.addition_btn').click(function (e) {
 		e.preventDefault();
@@ -156,6 +156,12 @@ $(() => {
 		});
 	});
 
+
+	$('.event-feed .idea-block_item-link').click(function(e) {
+		e.preventDefault()
+		$('.content_block').addClass('active');      
+		$(this).css('display', 'none')
+	});
 
 
 

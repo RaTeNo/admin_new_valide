@@ -16936,7 +16936,7 @@ background: #64C841;
     margin-top: 10px;
 }
 .dialog .message .prompt .text-information {
-    max-width: 100%;
+    width: 368px;
     background: #F0F0FC;
     border: 1px solid #E7E7F2;
     border-radius: 21px;
@@ -34781,21 +34781,6 @@ bottom: 20px;
     gap: 3px;
 }
 
-.shop_top .shop_link{
-    text-decoration: none;
-    padding: 10px 12px;
-    background: var(--main_color);
-    border-radius: 60px;    
-    margin-left: auto;
-    display: block;
-    font-family: 'Ubuntu';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #FFFFFF;
-    text-align: center;
-}
-
 
 .shop_items {
     display: flex;
@@ -39504,4 +39489,263 @@ bottom: 20px;
     height: 7px;
     background-color: var(--main_color);
     border-radius: 36px;
+}
+
+
+.tabs-container_event-feed {
+    padding: 0;
+    border-radius: 0;
+    background: none;
+}
+.event-feed .tabs_container .tabs {
+    gap: 10px;
+    display: flex;
+    margin-bottom: 27px;
+}
+.event-feed .page_title {
+    margin-bottom: 25px;
+}
+.tabs_container .event-feeв_head button.active {
+    background: var(--main_color);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 55px;
+    transition: all .4s;
+    display: inline-block;
+    line-height: normal;
+    opacity: 1;
+    margin-right: 0;
+    letter-spacing: inherit;
+}
+.tabs_container .event-feeв_head button {
+    background: #D5D2EE;
+    color: #3A3379;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 55px;
+    transition: all .4s;
+    display: inline-block;
+    line-height: normal;
+    opacity: 1;
+    margin-right: 0;
+    letter-spacing: inherit;
+}
+.event-feed_item {
+    padding: 16px;
+    border-radius: 15px;
+    background: #fff;
+    margin-bottom: 15px;    
+}
+.event-feed_item.green {
+    border: 1px solid #49B05F;
+}
+.event-feed_item.red {
+    border: 1px solid #E33333;
+}
+.event-feed_item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 14px;
+}
+.event-feed_item-left {
+    width: calc(100% - 270px);
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+}
+.event-feed_item-title {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: -0.5px;
+    color: #121213;
+}
+.event-feed_item-date {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #353C76;
+}
+.event-feed_item-right {
+    display: flex;
+    gap: 7px;
+}
+.event-feed_item .event-feed_item-label {
+    position: relative;
+    border-radius: 59px;
+    padding: 3px 6px 3px 16px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    display: block;
+    height: 20px;
+}
+.event-feed_item.green .event-feed_item-label {
+    background: #49B05F;
+    color: #FFFFFF;
+}
+.event-feed_item.red .event-feed_item-label {
+    background: #E33333;
+    color: #FFFFFF;
+}
+.event-feed_item.green .event-feed_item-label:before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6px;
+}
+.event-feed_item.red .event-feed_item-label:before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6px;
+}
+.event-feed_item-tag {
+    padding: 3px 6px;
+    background: var(--main_color);
+    border-radius: 59px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    display: block;
+    color: #FFFFFF;
+    height: 20px;
+}
+.event-feed_item-text {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3F4572;
+}
+.event-feed_item-text p +p {
+    margin-top: 15px;
+}
+.event-feed_item-bottom {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.event-feed_item-avatar {
+    width: 33px;
+    height: 33px;
+}
+.event-feed_item-avatar img {
+    width: 100%;
+    height: 100%;
+}
+.event-feed_item-name {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+}
+.event-feed  .idea-block_item-link {
+    margin-top: 8px;
+}
+.event-feed_item-images {
+    display: flex;
+    gap: 10px;
+}
+.event-feed .trainer_step_video a img {
+    width: 132px;
+    height: 88px;
+}
+.event-feed .trainer_step_video a:after {
+    display: none;
+}
+.event-feed .trainer_step_video svg {
+    position: absolute;
+    top: calc(50% - 16px);
+    left: calc(50% - 16px);
+    width: 32px;
+    height: 32px;
+    z-index: 100;
+}
+.event-feed_item-images {
+    margin-top: 15px;
+}
+.content_block {
+    display: none;
+}
+.content_block.active {
+    display: block;
+    margin-top: 15px;
+}
+.event-feed_item-wrap {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.event-feed_item-wrap .icon {
+    width: 50px;
+    height: 50px;
+}
+.event-feed_item-info-title {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.5px;
+    color: #121213;
+    margin-bottom: 6px;
+}
+.event-feed_item-info-text {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3F4572;
+}
+
+
+
+.shop_modal-greeting .shop_modal-icon {
+    width: 115px;
+    height: 115px;
+    margin: 0 auto 13px;
+}
+.shop_modal-greeting {
+    padding: 44px 24px 28px;
+}
+.shop_modal-btns {
+    display: flex;
+    gap: 10px;
+}
+.shop_modal-btn {
+    border-radius: 71px;
+    background: var(--main_color);
+    text-decoration: none;
+    color: #fff;
+    padding: 9px 20px;
+    font-weight: 500;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+.shop_modal-btn:last-child {
+    background: #D5D2EE;
+    color: #3A3379;
 }

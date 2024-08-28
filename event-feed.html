@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<!-- Адаптирование страницы для мобильных устройств -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Запрет распознования номера телефона -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+	<!-- Заголовок страницы -->
+	<title>Заголовок страницы</title>
+
+	<!-- Данное значение часто используют(использовали) поисковые системы -->
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<!-- Изменение цвета панели моб. браузера -->
+	<meta name="msapplication-TileColor" content="#0B00D8">
+	<meta name="theme-color" content="#0B00D8">
+
+	<!-- Подключение шрифтов с гугла -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+	<!-- Подключение файлов стилей -->
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/fancybox.css" async>
+	<link rel="stylesheet" href="css/styles.css" async>
+	<link rel="stylesheet" href="css/styles2.css" async>
+
+	<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+	<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+	<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+	<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+	<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="main">
+			<header>
+				<div class="cont row">
+					<div class="logo">
+						<img src="images/logo.svg" alt="">
+					</div>
+
+					<div class="wallet">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#ic_wallet"></use>
+						</svg>
+						<span>1243</span>
+					</div>
+
+					<div class="sep"></div>
+
+					<div class="account">
+						<a href="/" class="settings_link">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#ic_settings"></use>
+							</svg>
+						</a>
+
+						<div class="user">
+							<div class="avatar">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#ic_user"></use>
+								</svg>
+								<!-- <img data-src="" alt="" class="lozad"> -->
+							</div>
+
+							<div class="name">Модератор</div>
+						</div>
+
+						<a href="/" class="logout_link">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#ic_logout"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</header>
+
+
+			<section class="mob_header">
+				<div class="row">
+					<button class="menu_btn">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#ic_menu"></use>
+						</svg>
+					</button>
+
+					<div class="page_title">Сводка</div>
+
+					<div class="wallet">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#ic_wallet"></use>
+						</svg>
+						<span>1243</span>
+					</div>
+
+					<div class="nitifications new">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#ic_nitifications"></use>
+						</svg>
+					</div>
+
+					<div class="account modal_cont">
+						<button class="user btn mini_modal_btn" data-modal-id="#account_modal">
+							<div class="avatar">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#ic_user"></use>
+								</svg>
+								<img data-src="images/tmp/user_avatar.jpg" alt="" class="lozad">
+							</div>
+
+							<svg class="arrow">
+								<use xlink:href="images/sprite.svg#ic_arrow_down"></use>
+							</svg>
+						</button>
+
+						<div class="mini_modal" id="account_modal">
+							<div><a href="/">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#ic_settings"></use>
+									</svg>
+									<span>Настройки</span>
+								</a></div>
+
+							<div><a href="/">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#ic_logout"></use>
+									</svg>
+									<span>Выход</span>
+								</a></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="content_flex">
+				<div class="cont row">
+					<aside>
+						<button class="close_btn">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#ic_close"></use>
+							</svg>
+						</button>
+
+						<div class="menu">
+							<div class="item">
+								<a href="/">
+									<div class="icon icon1">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category1"></use>
+										</svg>
+									</div>
+									<span>Сводка</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon2 point">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category2"></use>
+										</svg>
+									</div>
+									<span>Мои задачи</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="#" class="sub_link open">
+									<div class="icon icon3 point">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category3"></use>
+										</svg>
+									</div>
+									<span>Курсы</span>
+									<svg class="arrow">
+										<use xlink:href="images/sprite.svg#ic_arrow_down"></use>
+									</svg>
+								</a>
+
+								<div class="sub_menu" style="display: block;">
+									<div><a class="active">
+											<span class="count">3</span>
+											<span>Все курсы</span>
+										</a></div>
+									<div><a href="/">Новые курсы</a></div>
+								</div>
+							</div>
+
+							<div class="item">
+								<a href="#" class="sub_link">
+									<div class="icon icon4 point">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category4"></use>
+										</svg>
+									</div>
+									<span>Обратная связь</span>
+									<svg class="arrow">
+										<use xlink:href="images/sprite.svg#ic_arrow_down"></use>
+									</svg>
+								</a>
+
+								<div class="sub_menu">
+									<div><a href="/">По тренажерам</a></div>
+									<div><a href="/">По заданиям</a></div>
+									<div><a href="/">По другому</a></div>
+								</div>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon5">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category5"></use>
+										</svg>
+									</div>
+									<span>Тренажеры</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon5_2">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category5_2"></use>
+										</svg>
+									</div>
+									<span>Аудио тренажеры</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon5_3">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category5_3"></use>
+										</svg>
+									</div>
+									<span>Тренажеры действий</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon6">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category6"></use>
+										</svg>
+									</div>
+									<span>Новости</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon7">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category7"></use>
+										</svg>
+									</div>
+									<span>Опросы</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon8">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category8"></use>
+										</svg>
+									</div>
+									<span>Обсуждения</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon9">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category9"></use>
+										</svg>
+									</div>
+									<span>Вебинары</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon10">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category10"></use>
+										</svg>
+									</div>
+									<span>Подкасты</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon11">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category11"></use>
+										</svg>
+									</div>
+									<span>Файлы</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon12">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category12"></use>
+										</svg>
+									</div>
+									<span>Коллеги</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon16">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category13"></use>
+										</svg>
+									</div>
+									<span>Настройки</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/" class="active">
+									<div class="icon icon17">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category105"></use>
+										</svg>
+									</div>
+									<span>Банк идей</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/" class="sub_link">
+									<div class="icon icon14">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category14"></use>
+										</svg>
+									</div>
+									<span>Управление</span>
+									<svg class="arrow">
+										<use xlink:href="images/sprite.svg#ic_arrow_down"></use>
+									</svg>
+								</a>
+
+								<div class="sub_menu">
+									<div><a href="/"></a></div>
+								</div>
+							</div>
+						</div>
+					</aside>
+
+
+					<section class="content">
+						<section class="event-feed">			
+							<section class="page_title">
+								<span>Лента событий</span>
+							</section>
+							
+							<div class="tabs_container tabs-container_event-feed">
+								<section class="event-feeв_head">
+									<div class="event-feed_left tabs">
+										<button class="active" data-content="#tab1" data-level="level1">Все посты</button>
+										<button data-content="#tab2" data-level="level1">Отдел продаж</button>
+										<button data-content="#tab3" data-level="level1">Маркетинговый отдел</button>
+										<button data-content="#tab4" data-level="level1">Бухгалтерский отдел</button>
+									</div>							
+								</section>
+
+
+								<section class="tab_content level1 active" id="tab1">
+									<div class="event-feed_items">
+										<div class="event-feed_item green">
+											<div class="event-feed_item-top">
+												<div class="event-feed_item-left">
+													<div class="event-feed_item-title">Во франции задержан Павел Дуров</div>
+													<div class="event-feed_item-date">25.08.2024</div>
+												</div>
+												<div class="event-feed_item-right">
+													<div class="event-feed_item-label">Закреплен</div>
+													<div class="event-feed_item-tag">Маркетинговый отдел</div>
+												</div>
+											</div>
+											<div class="event-feed_item-text">
+												<p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
+												<p>Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</p>
+											</div>
+											<div class="event-feed_item-bottom">
+												<div class="event-feed_item-avatar">
+													<img src="images/avatar1.png" alt="">
+												</div>
+												<div class="event-feed_item-name">Василий Иванович</div>
+											</div>
+										</div>
+
+										<div class="event-feed_item red">
+											<div class="event-feed_item-top">
+												<div class="event-feed_item-left">
+													<div class="event-feed_item-title">Новости месяца</div>
+													<div class="event-feed_item-date">25.08.2024</div>
+												</div>
+												<div class="event-feed_item-right">
+													<div class="event-feed_item-label">Важно</div>
+													<div class="event-feed_item-tag">Маркетинговый отдел</div>
+												</div>
+											</div>
+											<div class="event-feed_item-text">
+												<p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
+												<a href="#" class="idea-block_item-link">Читать далее</a>	
+												<p class="content_block">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</p>
+											</div>											
+											<div class="event-feed_item-bottom">
+												<div class="event-feed_item-avatar">
+													<img src="images/avatar1.png" alt="">
+												</div>
+												<div class="event-feed_item-name">Василий Иванович</div>
+											</div>
+										</div>
+
+										<div class="event-feed_item">
+											<div class="event-feed_item-top">
+												<div class="event-feed_item-left">
+													<div class="event-feed_item-title">Прошедшие события</div>
+													<div class="event-feed_item-date">25.08.2024 в 11:43</div>
+												</div>
+												<div class="event-feed_item-right">
+													<div class="event-feed_item-tag">Отдел продаж</div>
+												</div>
+											</div>
+											<div class="event-feed_item-text">
+												<p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
+												<div class="event-feed_item-images">
+													<a data-fancybox href="images/event1.png">
+														<img data-src="images/event1.png" alt="" class="lozad">
+													</a>
+													<a data-fancybox href="images/event2.png">
+														<img data-src="images/event2.png" alt="" class="lozad">
+													</a>
+													<div class="trainer_step_video mb0">
+														<a data-fancybox href="https://www.youtube.com/watch?v=L256daBIAtU">
+															<svg class="icon"><use xlink:href="images/sprite.svg#play4"></use></svg>
+															<img data-src="images/event3.png" alt="" class="lozad">
+														</a>
+													</div>
+												</div>
+											</div>											
+											<div class="event-feed_item-bottom">
+												<div class="event-feed_item-avatar">
+													<img src="images/avatar1.png" alt="">
+												</div>
+												<div class="event-feed_item-name">Мария Иванова</div>
+											</div>
+										</div>
+
+										<div class="event-feed_item">
+											<div class="event-feed_item-top">
+												<div class="event-feed_item-left">
+													<div class="event-feed_item-title">Прошедшие события</div>
+													<div class="event-feed_item-date">25.08.2024</div>
+												</div>
+												<div class="event-feed_item-right">
+													<div class="event-feed_item-tag">Отдел продаж</div>
+												</div>
+											</div>
+											<div class="event-feed_item-text">
+												<section class="files">
+													<div class="list">
+														<div class="file">
+															<div class="icon">
+																<svg><use xlink:href="images/sprite.svg#files"></use></svg>
+															</div>		
+															<div>
+																<div class="name">filename.doc</div>
+		
+																<div class="links">
+																	<div><a href="/" class="blue">Посмотреть</a></div>
+																	<div><a href="/" class="blue">Посмотреть</a></div>
+																	<div><a href="/" class="blue">Скачать</a></div>																	
+																</div>
+															</div>
+														</div>
+													</div>
+												</section>
+											</div>											
+											<div class="event-feed_item-bottom">
+												<div class="event-feed_item-avatar">
+													<img src="images/avatar1.png" alt="">
+												</div>
+												<div class="event-feed_item-name">Мария Иванова</div>
+											</div>
+										</div>
+									</div>
+								</section>
+
+								<section class="tab_content level1  idea-block" id="tab2">
+									<div class="event-feed_items">
+										<div class="event-feed_item green">
+											<div class="event-feed_item-top">
+												<div class="event-feed_item-left">
+													<div class="event-feed_item-title">Во франции задержан Павел Дуров</div>
+													<div class="event-feed_item-date">25.08.2024</div>
+												</div>
+												<div class="event-feed_item-right">
+													<div class="event-feed_item-label">Закреплен</div>
+													<div class="event-feed_item-tag">Маркетинговый отдел</div>
+												</div>
+											</div>
+											<div class="event-feed_item-text">
+												<p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
+												<p>Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</p>
+											</div>
+											<div class="event-feed_item-bottom">
+												<div class="event-feed_item-avatar">
+													<img src="images/avatar1.png" alt="">
+												</div>
+												<div class="event-feed_item-name">Василий Иванович</div>
+											</div>
+										</div>
+
+										<div class="event-feed_item red">
+											<div class="event-feed_item-top">
+												<div class="event-feed_item-left">
+													<div class="event-feed_item-title">Новости месяца</div>
+													<div class="event-feed_item-date">25.08.2024</div>
+												</div>
+												<div class="event-feed_item-right">
+													<div class="event-feed_item-label">Важно</div>
+													<div class="event-feed_item-tag">Маркетинговый отдел</div>
+												</div>
+											</div>
+											<div class="event-feed_item-text">
+												<p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
+												<a href="#" class="idea-block_item-link">Читать далее</a>	
+												<p class="content_block">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</p>
+											</div>											
+											<div class="event-feed_item-bottom">
+												<div class="event-feed_item-avatar">
+													<img src="images/avatar1.png" alt="">
+												</div>
+												<div class="event-feed_item-name">Василий Иванович</div>
+											</div>
+										</div>
+
+										<div class="event-feed_item">
+											<div class="event-feed_item-top">
+												<div class="event-feed_item-left">
+													<div class="event-feed_item-title">Прошедшие события</div>
+													<div class="event-feed_item-date">25.08.2024 в 11:43</div>
+												</div>
+												<div class="event-feed_item-right">
+													<div class="event-feed_item-tag">Отдел продаж</div>
+												</div>
+											</div>
+											<div class="event-feed_item-text">
+												<p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
+												<div class="event-feed_item-images">
+													<a data-fancybox href="images/event1.png">
+														<img data-src="images/event1.png" alt="" class="lozad">
+													</a>
+													<a data-fancybox href="images/event2.png">
+														<img data-src="images/event2.png" alt="" class="lozad">
+													</a>
+													<div class="trainer_step_video mb0">
+														<a data-fancybox href="https://www.youtube.com/watch?v=L256daBIAtU">
+															<svg class="icon"><use xlink:href="images/sprite.svg#play4"></use></svg>
+															<img data-src="images/event3.png" alt="" class="lozad">
+														</a>
+													</div>
+												</div>
+											</div>											
+											<div class="event-feed_item-bottom">
+												<div class="event-feed_item-avatar">
+													<img src="images/avatar1.png" alt="">
+												</div>
+												<div class="event-feed_item-name">Мария Иванова</div>
+											</div>
+										</div>
+
+										<div class="event-feed_item">
+											<div class="event-feed_item-top">
+												<div class="event-feed_item-left">
+													<div class="event-feed_item-title">Прошедшие события</div>
+													<div class="event-feed_item-date">25.08.2024</div>
+												</div>
+												<div class="event-feed_item-right">
+													<div class="event-feed_item-tag">Отдел продаж</div>
+												</div>
+											</div>
+											<div class="event-feed_item-text">
+												<section class="files">
+													<div class="list">
+														<div class="file">
+															<div class="icon">
+																<svg><use xlink:href="images/sprite.svg#files"></use></svg>
+															</div>		
+															<div>
+																<div class="name">filename.doc</div>
+		
+																<div class="links">
+																	<div><a href="/" class="blue">Посмотреть</a></div>
+																	<div><a href="/" class="blue">Посмотреть</a></div>
+																	<div><a href="/" class="blue">Скачать</a></div>																	
+																</div>
+															</div>
+														</div>
+													</div>
+												</section>
+											</div>											
+											<div class="event-feed_item-bottom">
+												<div class="event-feed_item-avatar">
+													<img src="images/avatar1.png" alt="">
+												</div>
+												<div class="event-feed_item-name">Мария Иванова</div>
+											</div>
+										</div>
+									</div>
+								</section>
+
+								<section class="tab_content level1  idea-block" id="tab3">
+									<div class="event-feed_items">
+										<div class="event-feed_item">
+											<div class="event-feed_item-wrap">
+												<svg class="icon"><use xlink:href="images/sprite.svg#icon785"></use></svg>
+												<div class="event-feed_item-info">
+													<div class="event-feed_item-info-title">Пока здесь ничего нет</div>
+													<div class="event-feed_item-info-text">В этом разделе пока ничего нет</div>
+												</div>		
+											</div>
+										</div>
+									</div>									
+								</section>
+
+								<section class="tab_content level1  idea-block" id="tab4">
+									<div class="event-feed_items">
+										<div class="event-feed_item">
+											<div class="event-feed_item-wrap">
+												<svg class="icon"><use xlink:href="images/sprite.svg#icon785"></use></svg>
+												<div class="event-feed_item-info">
+													<div class="event-feed_item-info-title">Пока здесь ничего нет</div>
+													<div class="event-feed_item-info-text">В этом разделе пока ничего нет</div>
+												</div>		
+											</div>
+										</div>
+									</div>	
+								</section>
+
+
+						</section>
+
+
+						
+
+
+
+
+						<div class="player_fixed">
+							<div class="audio_media">
+								<div class="player_title">
+									
+								</div>
+								<div class="player_desc">
+									
+								</div>
+								<audio
+									controls
+									src="images/t-rex-roar.mp3">
+										Your browser does not support the
+										<code>audio</code> element.
+								</audio>
+							</div>
+						</div>
+						
+						<div class="new"></div>
+
+
+						<footer>
+							<div class="logo">
+								<img src="images/logo.svg" alt="">
+
+								<div class="desc">Описание первой компании 123</div>
+							</div>
+
+							<div class="contacts location">
+								<div class="name">Адрес</div>
+
+								<div class="val">г. Москва, ул. Ломоносова, д. 75</div>
+							</div>
+
+							<div class="contacts email">
+								<div class="name">Электронная почта</div>
+
+								<div class="val">
+									<div><a href="mailto:company1@gmail.com">company1@gmail.com</a></div>
+								</div>
+							</div>
+
+							<div class="contacts phone">
+								<div class="name">Телефон</div>
+
+								<div class="val">
+									<div><a href="tel:+79219879988">+79219879988</a></div>
+								</div>
+							</div>
+						</footer>
+					</section>
+				</div>
+			</section>
+		</div>
+	</div>
+
+
+
+
+	<div class="supports_error">
+		Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+	</div>
+
+
+
+
+	<!-- Подключение javascript файлов -->
+	<script src="js/jquery-3.5.0.min.js"></script>
+	<script src="js/lozad.min.js"></script>
+	<script src="js/media-player.js"></script>
+	<script src="js/html5sortable.min.js"></script>
+	<script src="js/wavesurfer.js"></script>
+	<script src="js/fancybox.min.js"></script>
+	<script src="js/nice-select.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/playlist.js"></script>
+</body>
+
+</html>
