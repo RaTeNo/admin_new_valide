@@ -35,7 +35,7 @@ $(() => {
 		$(".message_continue .green, .message_continue .red").hide();
 		$(".message_continue .blue, .message_continue .yellow").addClass("active");
 	});
-	
+
 
 	// $(".learning-paths .training-plan_item ul li span").click(function (e) {
 	// 	e.preventDefault();
@@ -64,10 +64,10 @@ $(() => {
 		$(this).hide().prev().css("height", "100%");
 	});
 
-	$('body').on('click', '.shop_modal-btn', function (e) {
-		e.preventDefault()
-		Fancybox.close()
-	});
+	// $('body').on('click', '.shop_modal-btn', function (e) {
+	// 	e.preventDefault()
+	// 	Fancybox.close()
+	// });
 
 
 	$('.addition_btn').click(function (e) {
@@ -159,7 +159,7 @@ $(() => {
 
 	$('.event-feed .idea-block_item-link').click(function(e) {
 		e.preventDefault()
-		$('.content_block').addClass('active');      
+		$('.content_block').addClass('active');
 		$(this).css('display', 'none')
 	});
 
