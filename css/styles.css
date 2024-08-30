@@ -39490,13 +39490,7 @@ bottom: 20px;
 .income2 .irs--flat .irs-single {
     display: none;
 }
-.income .irs--flat .irs-max,
-.income2 .irs--flat .irs-max {
-    visibility: visible !important;
-}
-.income .irs--flat .irs-min {
-    visibility: visible !important;
-}
+
 .irs--flat .irs-handle {
     top: 25px;
     width: 18px;
