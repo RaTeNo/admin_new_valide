@@ -867,6 +867,7 @@
     
     .dialog .message .prompt .text-information {
         width: 200px;
+        flex-shrink: 0;
     }
 
 

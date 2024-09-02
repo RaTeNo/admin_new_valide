@@ -16967,8 +16967,8 @@ background: #64C841;
     display: flex;
 }
 .dialog .message .prompt .likes button {
-    width: 28px;
-    height: 28px;
+    width: 39px;
+    height: 39px;
     border-radius: 50%;
     background: #ECEBF5;
     display: flex;
@@ -16977,8 +16977,8 @@ background: #64C841;
     padding: 6px;
 }
 .dialog .message .prompt .likes .icon {
-    width: 17px;
-    height: 19px;
+    width: 24px;
+    height: 24px;
     fill: #64698F;
 }
 .dialog .message .prompt .likes .like.active {
@@ -39756,4 +39756,12 @@ bottom: 20px;
 .shop_modal-btn:last-child {
     background: #D5D2EE;
     color: #3A3379;
+}
+
+.shop_accrual_title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
 }
