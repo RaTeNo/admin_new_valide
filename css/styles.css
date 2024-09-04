@@ -35099,7 +35099,7 @@ bottom: 20px;
 }
 
 .shop_modal {
-    max-width: 360px;
+    max-width: 420px;
     width: 100%;
     padding: 47px 35px 34px;
     border-radius: 15px;
@@ -35113,8 +35113,8 @@ bottom: 20px;
     margin: 0 auto 30px;
 }
 .shop_modal-title {
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 24px;
+    line-height: 27px;
     font-style: normal;
     font-weight: 700;
     margin-bottom: 6px;
@@ -39731,9 +39731,14 @@ bottom: 20px;
 
 
 .shop_modal-greeting .shop_modal-icon {
-    width: 115px;
-    height: 115px;
-    margin: 0 auto 13px;
+    width: 175px;
+    height: 175px;
+    margin: 0 auto 25px;
+}
+.shop_modal-greeting .shop_modal-icon img{
+	background: #F3F4F9;
+    padding: 30px;
+    border-radius: 48px;
 }
 .shop_modal-greeting {
     padding: 64px 24px 44px;
@@ -39747,9 +39752,9 @@ bottom: 20px;
     background: var(--main_color);
     text-decoration: none;
     color: #fff;
-    padding: 9px 20px;
+    padding: 12px 23px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 17px;
     display: block;
     text-align: center;
 }
