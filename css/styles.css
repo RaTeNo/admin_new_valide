@@ -39513,7 +39513,7 @@ bottom: 20px;
 .event-feed .page_title {
     margin-bottom: 25px;
 }
-.tabs_container .event-feeв_head button.active {
+.tabs_container .event-feed_head button.active {
     background: var(--main_color);
     color: #fff;
     font-size: 14px;
@@ -39527,7 +39527,7 @@ bottom: 20px;
     margin-right: 0;
     letter-spacing: inherit;
 }
-.tabs_container .event-feeв_head button {
+.tabs_container .event-feed_head button {
     background: #D5D2EE;
     color: #3A3379;
     font-size: 14px;
@@ -39705,6 +39705,9 @@ bottom: 20px;
     width: 32px;
     height: 32px;
     z-index: 100;
+}
+.event-feed .trainer_step_video{
+    max-width: 100%;
 }
 .event-feed_item-images {
     margin-top: 15px;
