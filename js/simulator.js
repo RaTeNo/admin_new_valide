@@ -1,48 +1,48 @@
 $(document).ready(function() {
 
-    $('body').on('click', '.steps_stage .step_stage:not(.active) .icon_change', function (e) {
-        var target =  $(e.target).closest(".step_stage");
-        if(target.closest(".step_stage_img").length !== 0 || target.closest(".step_stage_video").length !== 0)
-        {
-            return;
-        }
-        var date = new Date();
-        // $(this).addClass("active").find(".icon_change use").attr("xlink:href","/images/sprite.svg#training_ok");
-        $(this).closest(".step_stage").addClass("active").find(".icon_change use").attr("xlink:href","/images/sprite.svg#training_ok");
-        let min = date.getMinutes();
-        if(min<10)
-        {
-            min = "0"+min;
-        }
-        $(this).closest(".step_stage").find(".step_stage_time").text("Выполнено в " +  date.getHours() + ":"+  min);
-
-        if($(".steps_stage .step_stage:not(.active)").length==0)
-        {
-            let id = $(this).closest(".steps_data_js").data("id");
-            $(".inner_steps .step[data-id='"+id+"']").removeClass("error").addClass("complete").find("use").attr("xlink:href","/images/sprite.svg#step_complete");
-
-        }
-    });
-
-
-    $('body').on('click', '.steps_stage .step_stage.active .icon_change', function (e) {
-        var target =  $(e.target).closest(".step_stage");
-        if(target.closest(".step_stage_img").length !== 0 || target.closest(".step_stage_video").length !== 0)
-        {
-            return;
-        }
-        var date = new Date();
-        // $(this).addClass("active").find(".icon_change use").attr("xlink:href","/images/sprite.svg#training_ok");
-        $(this).closest(".step_stage").removeClass("active").find(".icon_change use").attr("xlink:href","/images/sprite.svg#training_not");
-      
-        $(this).closest(".step_stage").find(".step_stage_time").html($(this).closest(".step_stage").find(".step_stage_time").data("lost"));
-
-        /*if($(".steps_stage .step_stage:not(.active)").length==0)
-        {
-            let id = $(this).closest(".steps_data_js").data("id");
-            $(".inner_steps .step[data-id='"+id+"']").removeClass("error").addClass("complete").find("use").attr("xlink:href","/images/sprite.svg#step_complete");
-        }*/
-    });
+    // $('body').on('click', '.steps_stage .step_stage:not(.active) .icon_change', function (e) {
+    //     var target =  $(e.target).closest(".step_stage");
+    //     if(target.closest(".step_stage_img").length !== 0 || target.closest(".step_stage_video").length !== 0)
+    //     {
+    //         return;
+    //     }
+    //     var date = new Date();
+    //     // $(this).addClass("active").find(".icon_change use").attr("xlink:href","/images/sprite.svg#training_ok");
+    //     $(this).closest(".step_stage").addClass("active").find(".icon_change use").attr("xlink:href","/images/sprite.svg#training_ok");
+    //     let min = date.getMinutes();
+    //     if(min<10)
+    //     {
+    //         min = "0"+min;
+    //     }
+    //     $(this).closest(".step_stage").find(".step_stage_time").text("Выполнено в " +  date.getHours() + ":"+  min);
+    //
+    //     if($(".steps_stage .step_stage:not(.active)").length==0)
+    //     {
+    //         let id = $(this).closest(".steps_data_js").data("id");
+    //         $(".inner_steps .step[data-id='"+id+"']").removeClass("error").addClass("complete").find("use").attr("xlink:href","/images/sprite.svg#step_complete");
+    //
+    //     }
+    // });
+    //
+    //
+    // $('body').on('click', '.steps_stage .step_stage.active .icon_change', function (e) {
+    //     var target =  $(e.target).closest(".step_stage");
+    //     if(target.closest(".step_stage_img").length !== 0 || target.closest(".step_stage_video").length !== 0)
+    //     {
+    //         return;
+    //     }
+    //     var date = new Date();
+    //     // $(this).addClass("active").find(".icon_change use").attr("xlink:href","/images/sprite.svg#training_ok");
+    //     $(this).closest(".step_stage").removeClass("active").find(".icon_change use").attr("xlink:href","/images/sprite.svg#training_not");
+    //
+    //     $(this).closest(".step_stage").find(".step_stage_time").html($(this).closest(".step_stage").find(".step_stage_time").data("lost"));
+    //
+    //     /*if($(".steps_stage .step_stage:not(.active)").length==0)
+    //     {
+    //         let id = $(this).closest(".steps_data_js").data("id");
+    //         $(".inner_steps .step[data-id='"+id+"']").removeClass("error").addClass("complete").find("use").attr("xlink:href","/images/sprite.svg#step_complete");
+    //     }*/
+    // });
 
 
 
