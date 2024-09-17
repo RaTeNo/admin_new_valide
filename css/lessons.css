@@ -15,6 +15,8 @@
 .lesson-container .videoContainer {
     position: relative;
     width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
 }
 .lesson-container video {
     width: 100%;
@@ -39,8 +41,8 @@
     z-index: 10;
 }
 .lesson-container .video-loader .spinner {
-    border: 5px solid var(--main_color);
-    border-top: 5px solid #3498db;
+    border: 5px solid #fff;
+    border-top: 5px solid var(--main_color);
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -57,7 +59,7 @@
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 15px;
+    padding: 5px;
     display: flex;
     justify-content: center;
     border-radius: 0 0 8px 8px;
@@ -86,8 +88,8 @@
     background-color: var(--main_color);
     border: none;
     color: white;
-    padding: 10px 20px;
-    margin: 10px;
+    padding: 5px 20px;
+    margin: 5px;
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
