@@ -230,3 +230,15 @@ const lessonsData = [
 			        document.getElementById('lessonsContainer').appendChild(lessonElement);
 			        initializeLesson(lesson, lessonElement, index);
 			    });
+
+			    lessonsData.forEach((lesson2, index) => {
+			        const lessonElement2 = createLessonElement(lesson2, index);
+			        document.getElementById('lessonsContainer2').appendChild(lessonElement2);
+			        initializeLesson(lesson2, lessonElement2, index);
+			    });
+
+			    lessonsData.forEach((lesson3, index) => {
+			        const lessonElement3 = createLessonElement(lesson3, index);
+			        document.getElementById('lessonsContainer3').appendChild(lessonElement3);
+			        initializeLesson(lesson3, lessonElement3, index);
+			    });
