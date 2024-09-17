@@ -1,0 +1,154 @@
+.lesson-container {
+    max-width: 100%;
+    padding: 20px 0;
+}
+.lesson-container h2 {
+    text-align: center;
+    color: #333;
+}
+.lesson-container .video-description {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #666;
+}
+
+.lesson-container .videoContainer {
+    position: relative;
+    width: 100%;
+}
+.lesson-container video {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+}
+
+.lesson-container .hidden {
+    display: none !important;
+}
+
+.lesson-container .video-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.lesson-container .video-loader .spinner {
+    border: 5px solid var(--main_color);
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.lesson-container .videoControls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 8px 8px;
+}
+.lesson-container .questionContainer, .finalMessageContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+.lesson-container .finalMessageContainer h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.lesson-container button {
+    background-color: var(--main_color);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.lesson-container button:hover {
+    background-color: color-mix(in oklab, var(--main_color) 80%, white);
+}
+
+.lesson-container h3{
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 30px;
+	color: #FFFFFF;
+	margin-bottom: 50px;
+}
+
+.questionContainer button{
+	background: rgba(0, 0, 0, 0.67);
+    border-radius: 94px;
+    width: 100%;
+    text-align: left;
+	font-size: 14px;
+	line-height: 16px;
+	color: #FFFFFF;
+	margin: 0;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.questionContainer button:hover{
+	background: rgba(255, 255, 255, 0.22);
+}
+
+@media print, (max-width: 767px)
+{
+	.lesson-container video {
+	    width: 100%;
+	    display: block;
+	    max-width: 100%;
+	    height: 300px;
+	    object-fit: cover;
+	}
+
+	.lesson-container h3 {
+	    font-weight: 700;
+	    font-size: 12px;
+	    color: #FFFFFF;
+	    margin-bottom: 15px;
+	    line-height: 1;
+	}
+
+	.questionContainer button {
+	    background: rgba(0, 0, 0, 0.67);
+	    border-radius: 94px;
+	    width: 100%;
+	    text-align: left;
+	    font-size: 12px;
+	    line-height: 12px;
+	    color: #FFFFFF;
+	    margin: 0;
+	    margin-bottom: 5px;
+	}
+}
