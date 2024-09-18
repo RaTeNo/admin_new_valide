@@ -89,7 +89,7 @@
                 <p class="video-description">${lesson.description}</p>
             ` : ''}
             <div class="videoContainer">
-                <video id="video${index}" playsinline webkit-playsinline>
+                <video id="video${index}" playsinline webkit-playsinline width="100%">
                     <source src="" type="video/mp4">
                     Ваш браузер не поддерживает видео тег.
                 </video>
