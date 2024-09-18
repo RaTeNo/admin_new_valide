@@ -4,6 +4,9 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
     border-radius: 15px;
 }*/
+div[id^="lesson"]{
+	width: 100%;
+}
 .slick-slide:nth-child(2n) .presentation_quest .presentation_wrap, .slick-slide .presentation_quest .presentation_wrap
 {
     background: #F3F2FC !important;
@@ -166,5 +169,9 @@
 	    color: #FFFFFF;
 	    margin: 0;
 	    margin-bottom: 5px;
+	}
+
+	.lesson-container .videoContainer{
+		height: auto;
 	}
 }
