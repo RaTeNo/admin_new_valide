@@ -27,19 +27,25 @@ div[id^="lesson"]{
 }
 
 .lesson-container .videoContainer {
-    position: relative;
+	position: relative;
     width: 100%;
     border-radius: 10px;
     overflow: hidden;
     max-width: 100%;
-    height: 600px;
+    padding-bottom: 56.25%;
+    height: 0;
 }
 .lesson-container video {
-    width: 100%;
     display: block;
     max-width: 100%;
     object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
+    border-width: 0;
+    outline-width: 0;
 }
 
 .lesson-container .hidden {
@@ -140,7 +146,7 @@ div[id^="lesson"]{
 }
 
 .questionContainer button:hover{
-	background: color-mix(in oklab, var(--main_color) 60%, white);
+	background: color-mix(in srgb, var(--main_color), transparent 60%);
 }
 
 @media print, (max-width: 767px)
@@ -149,13 +155,12 @@ div[id^="lesson"]{
 	    width: 100%;
 	    display: block;
 	    max-width: 100%;
-	    height: 300px;
 	    object-fit: cover;
 	}
 
 	.lesson-container h3 {
 	    font-weight: 700;
-	    font-size: 12px;
+	    font-size: 16px;
 	    color: #FFFFFF;
 	    margin-bottom: 15px;
 	    line-height: 1;
@@ -174,6 +179,7 @@ div[id^="lesson"]{
 	}
 
 	.lesson-container .videoContainer{
-		height: auto;
+		padding-bottom: 100%;
 	}
+
 }
