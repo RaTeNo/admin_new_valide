@@ -38,6 +38,8 @@ div[id^="lesson"]{
     width: 100%;
     display: block;
     max-width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
 
 .lesson-container .hidden {
@@ -138,7 +140,7 @@ div[id^="lesson"]{
 }
 
 .questionContainer button:hover{
-	background: rgba(255, 255, 255, 0.22);
+	background: color-mix(in oklab, var(--main_color) 60%, white);
 }
 
 @media print, (max-width: 767px)
@@ -164,8 +166,8 @@ div[id^="lesson"]{
 	    border-radius: 94px;
 	    width: 100%;
 	    text-align: left;
-	    font-size: 14px;
-	    line-height: 14px;
+	    font-size: 15px;
+	    line-height: 15px;
 	    color: #FFFFFF;
 	    margin: 0;
 	    margin-bottom: 5px;
