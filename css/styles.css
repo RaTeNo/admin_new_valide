@@ -29513,15 +29513,21 @@ bottom: 20px;
 }
 
 .step_stage_img{
-	width: 100%;
-	margin-top: 50px;		
+    width: 100%;
+    margin-top: 50px;
     position: relative;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .step_stage_video{
     width: 100%;
-    margin-top: 50px;       
+    margin-top: 50px;
     position: relative;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .step_stage_video:before {
