@@ -39807,3 +39807,16 @@ bottom: 20px;
     margin-top: 0;
     width: 140px;
 }
+
+.simulator-quiz_images{
+    display: flex;
+    gap:15px;
+    margin-top: 15px;
+}
+
+.content_flex.content_flex_full_action .simulator-quiz_images img, 
+.content_flex.content_flex_full_action .simulator-quiz_images img{
+    height: auto;
+}
+
+.simulator-quiz_images a{width: 100%;}
