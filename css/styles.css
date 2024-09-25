@@ -39828,7 +39828,7 @@ bottom: 20px;
 }
 
 
-.fix_video.step_stage_img_wrap:after{
+.fix_video.step_stage_img_wrap a:after{
     content: "";
     position: absolute;
     top: 0;
