@@ -29719,6 +29719,7 @@ bottom: 20px;
 .trainer_step_video a img{
 	display: block;
     height: 137px;
+    object-fit: cover;
 }
 
 .trainer_step_video a:after{
@@ -39855,4 +39856,8 @@ bottom: 20px;
     z-index: 1;
     width: 57px;
     height: 57px;
+}
+
+.simulator-quiz_img_wrap{
+    position: relative;
 }
