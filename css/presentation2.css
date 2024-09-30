@@ -1786,7 +1786,7 @@
     object-fit: cover;
     height: 100%;
 }
-.presentation33:before {
+/* .presentation33:before {
     position: absolute;
     content: "";
     border-radius: 50%;
@@ -1797,7 +1797,7 @@
     background: var(--bg2);
     z-index: 1;
     opacity: .2;
-}
+} */
 .presentation33 .icon1 {
     width: 615px;
     height: 495px;

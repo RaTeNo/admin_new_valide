@@ -3387,4 +3387,42 @@
         width: calc(100% - 90px);
     }
 
+
+
+    .communication_test6 {
+        flex-direction: column;
+    }
+    .communication_test-box {
+        margin-right: 0;
+    }
+    .communication_test-box .communication_test-title {
+        text-align: center;
+        margin-top: 18px;
+    }
+    .communication_test-box .communication_test-text {
+        text-align: center;
+        margin: 20px auto 29px;
+    }
+    .communication_test6 .communication_test-btn {
+        margin: 0 auto;
+    }
+    .communication_test-btns > * {
+        width: 100%;
+    }
+    .communication_test-btns {
+        margin-top: 18px;
+    }
+    .communication_wrap {
+        padding: 12px;
+        margin-top: 18px;
+    }
+
+
+
+
+
+
+
+
+
 }
