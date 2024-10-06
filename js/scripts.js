@@ -780,19 +780,19 @@ $(() => {
 
 
 
-	$('.communications_test-btn').click(function(e){
+	$('.ask-questions_btn').click(function(e){
 		e.preventDefault()
-		$('.communications_test-btn').toggleClass('active');	
+		$('.ask-questions_btn').toggleClass('active');	
 	});
 
 
-	$('.communications_test-btn').click(function(e){
+	$('.ask-questions_btn').click(function(e){
 		e.preventDefault()
-		$('.communication_test-form').slideToggle(20, function(){
+		$('.ask-questions_form').slideToggle(20, function(){
 			if ($(this).is(':hidden')) {
-				$('.communications_test-btn').html('Задать вопрос');
+				$('.ask-questions_btn').html('Задать вопрос');
 			} else {
-				$('.communications_test-btn').html('Скрыть');
+				$('.ask-questions_btn').html('Скрыть');
 			}							
 		});
 	});
