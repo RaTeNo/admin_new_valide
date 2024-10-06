@@ -40059,24 +40059,22 @@ bottom: 20px;
 }
 
 
-.communication_test7 .icon {
-    margin-right: 15px;
-    margin-left: 0;
+
+.ask-questions {
+    border-radius: 15px;
+    padding: 24px;
+    background: #fff;
 }
-.communication_test-wrap {
+.ask-questions .icon {
+    margin-right: 15px;
+}
+.ask-questions_wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-.communication_test7 {
-    flex-direction: column;
-    align-items: flex-start;
-}
-.communications_test-btn {
-    margin-left: auto;
-}
-.communications_test-btn {
+.ask-questions_btn {
     color: #fff !important;
     font-size: 12px;
     font-weight: 500;
@@ -40087,11 +40085,12 @@ bottom: 20px;
     text-decoration: none;
     display: block;
     text-align: center;  
+    margin-left: auto;
 }
-.communication_test-form {
+.ask-questions_form {
     display: none;
 }
-.communications_test-btn.active {
+.ask-questions_btn.active {
     font-family: 'Ubuntu';
     font-weight: 400;
     font-size: 12px;
@@ -40104,16 +40103,16 @@ bottom: 20px;
     padding: 0;
     
 }
-.communications_test-btn:hover {
+.ask-questions_btn:hover {
     text-decoration: none !important;
 }
-.communication_test-form {
+.ask-questions_form {
     position: relative;
     margin-top: 32px;
     padding-top: 20px;
     width: 100%;
 }
-.communication_test-form:before {
+.ask-questions_form:before {
     position: absolute;
     content: "";
     width: calc(100% + 36px);
@@ -40122,11 +40121,11 @@ bottom: 20px;
     top: 0;
     background: #C7C4E2;
 }
-.communication_test-form .line .field {
+.ask-questions_form .line .field {
     display: flex;
     flex-direction: column;
 }
-.communication_test-form .line .field label {
+.ask-questions_form .line .field label {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
@@ -40135,7 +40134,7 @@ bottom: 20px;
     opacity: 0.8;
     margin-bottom: 10px;  
 }
-.communication_test-form .line .field textarea {
+.ask-questions_form .line .field textarea {
     padding: 15px 12px;
     font-family: 'Ubuntu';
     font-weight: 500;
@@ -40148,7 +40147,7 @@ bottom: 20px;
     height: 106px;
     margin-bottom: 24px;
 }
-.communication_test-form button {
+.ask-questions_form button {
     color: #fff !important;
     font-size: 12px;
     font-weight: 500;
@@ -40161,3 +40160,19 @@ bottom: 20px;
     text-align: center;
     margin-left: auto;
 }
+.ask-questions_title {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 6px;
+}
+.ask-questions_text {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #26214F;    
+}
+
+
