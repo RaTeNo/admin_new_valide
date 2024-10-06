@@ -777,6 +777,28 @@ $(() => {
 	});
 
 
+
+
+
+	$('.communications_test-btn').click(function(e){
+		e.preventDefault()
+		$('.communications_test-btn').toggleClass('active');	
+	});
+
+
+	$('.communications_test-btn').click(function(e){
+		e.preventDefault()
+		$('.communication_test-form').slideToggle(20, function(){
+			if ($(this).is(':hidden')) {
+				$('.communications_test-btn').html('Задать вопрос');
+			} else {
+				$('.communications_test-btn').html('Скрыть');
+			}							
+		});
+	});
+
+
+
 	// Клик по лайку
 	$(document).on('click', '.likes button', function (e) {
 		e.preventDefault();
