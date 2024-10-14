@@ -2101,6 +2101,51 @@
         font-size: 12px;
     }
 
+    .trainer_ai_desc{
+        flex-direction: column;
+        gap:15px;
+        padding: 20px;
+    }
+
+    .trainer_ai_desc_left, .trainer_ai_desc_right{
+        width: 100%;
+    }
+
+    .trainer_ai_sep:before{
+        border-right: none;
+        border-bottom: 1px solid #D3D3D3;
+        width: calc(100% + 40px);
+        height: 1px;
+        top: 0;
+        left: -20px;
+    }
+
+    .trainer_ai_loading i{
+        width: 75px;
+        height: 75px;
+    }
+
+    .trainer_ai_loading i .dot-flashing::before{
+        left: -15px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .trainer_ai_loading i .dot-flashing::after{
+        left: 15px;
+        width: 10px;
+        height: 10px;     
+    }
+
+    .trainer_ai_loading i .dot-flashing{
+        width: 10px;
+        height: 10px;     
+    }
+
+    .trainer_ai_content{
+        min-height: 300px;
+    }
+
 
     
 

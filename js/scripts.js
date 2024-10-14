@@ -1,6 +1,40 @@
 WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
 WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
 $(() => {
+
+	if($(".loading").length>0){
+		setTimeout(() => {
+			$(".loading").removeClass("loading");
+			$(".trainer_ai_loading").hide();
+			$(".trainer_ai_body").removeClass("hide");
+		}, 3000);	
+	}
+
+	$('.play_text .inner').click(function (e) {
+		$('.play_text').find(".inner").hide();
+		$('.play_text').find(".load").show();
+		setTimeout(() => {
+			$('.play_text').find(".load").hide();
+			$('.play_text').find(".player").show();
+		}, 3000);	
+	});
+	
+	$(".js-trainer_ai_button-record").click(function (e) {
+		$(this).toggleClass("active");
+		$(".trainer_ai_record").toggleClass("hide");
+		$(".trainer_ai_textedit").addClass("hide");
+		$(".js-trainer_ai_button-textedit").removeClass("active");
+	});
+
+	$(".js-trainer_ai_button-textedit").click(function (e) {
+		$(this).toggleClass("active");
+		$(".trainer_ai_textedit").toggleClass("hide");
+		$(".trainer_ai_record").addClass("hide");
+		$(".js-trainer_ai_button-record").removeClass("active");
+	});
+
+
+
 	// tippy('[data-tippy-content]');
 	function handleFileSelect(evt) {
 	    var files = evt.target.files; // FileList object
