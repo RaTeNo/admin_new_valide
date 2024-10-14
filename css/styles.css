@@ -40330,12 +40330,16 @@ bottom: 20px;
     border-radius: 15px;
     width: 100%;
     max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 .trainer_ai_body_left video{
     border-radius: 15px;
     width: 100%;
     max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 .trainer_ai_online{
