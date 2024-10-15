@@ -40384,6 +40384,15 @@ bottom: 20px;
     color:#fff;
 }
 
+.trainer_ai_body_right .lds-ring{
+    border: 3px solid #fff;
+}
+
+.trainer_ai_body_right .lds-ring div{
+    border: 6px solid #fff;
+    border-color: #fff transparent transparent transparent;
+}
+
 .trainer_ai_player .play_text .inner{
     padding: 10px;
     background: rgba(255,255,255,0.24);
