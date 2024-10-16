@@ -29568,7 +29568,7 @@ bottom: 20px;
 
 .step_stage_img_wrap{
 	position: relative;
-	width: 230px;
+
 	height: 230px;
     display: block;
 }
@@ -29584,7 +29584,7 @@ bottom: 20px;
 }
 
 .step_stage_img img{
-	width: 230px;
+
 	height: 230px;
 	border-radius: 8px;
 	object-fit: cover;
@@ -40302,6 +40302,10 @@ bottom: 20px;
     color: var(--main_color);
     margin-left: 20px;
     transition: 0.3s;
+}
+
+.trainer_ai.loading .trainer_ai_content{
+    justify-content: center;
 }
 
 .trainer_ai.loading .trainer_ai_footer{
