@@ -2,23 +2,23 @@ WW = window.innerWidth || document.clientWidth || document.getElementsByTagName(
 WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
 $(() => {
 
-	// if($(".loading").length>0){
-	// 	setTimeout(() => {
-	// 		$(".loading").removeClass("loading");
-	// 		$(".trainer_ai_loading").hide();
-	// 		$(".trainer_ai_body").removeClass("hide");
-	// 	}, 3000);
-	// }
-    //
-	// $('.play_text .inner').click(function (e) {
-	// 	$('.play_text').find(".inner").hide();
-	// 	$('.play_text').find(".load").show();
-	// 	setTimeout(() => {
-	// 		$('.play_text').find(".load").hide();
-	// 		$('.play_text').find(".player").show();
-	// 	}, 3000);
-	// });
-	//
+	if($(".loading").length>0){
+		setTimeout(() => {
+			$(".loading").removeClass("loading");
+			$(".trainer_ai_loading").hide();
+			$(".trainer_ai_body").removeClass("hide");
+		}, 3000);	
+	}
+
+	$('.play_text .inner').click(function (e) {
+		$('.play_text').find(".inner").hide();
+		$('.play_text').find(".load").show();
+		setTimeout(() => {
+			$('.play_text').find(".load").hide();
+			$('.play_text').find(".player").show();
+		}, 3000);	
+	});
+	
 	$(".js-trainer_ai_button-record").click(function (e) {
 		$(this).toggleClass("active");
 		$(".trainer_ai_record").toggleClass("hide");
@@ -816,7 +816,7 @@ $(() => {
 
 	$('.ask-questions_btn').click(function(e){
 		e.preventDefault()
-		$('.ask-questions_btn').toggleClass('active');
+		$('.ask-questions_btn').toggleClass('active');	
 	});
 
 
@@ -827,7 +827,7 @@ $(() => {
 				$('.ask-questions_btn').html('Задать вопрос');
 			} else {
 				$('.ask-questions_btn').html('Скрыть');
-			}
+			}							
 		});
 	});
 
