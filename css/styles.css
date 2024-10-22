@@ -40570,7 +40570,7 @@ bottom: 20px;
 
 .chat_item_title {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 17px;
     letter-spacing: -0.3px;
     color: #020027;
@@ -40579,6 +40579,7 @@ bottom: 20px;
 
 .chat_item_desc {
     margin-top: 15px;
+    font-size: 12px;
 }
 
 .chat_item_counter {
