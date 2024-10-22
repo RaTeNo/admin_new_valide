@@ -40531,3 +40531,101 @@ bottom: 20px;
 .chekboxses .checkbox{
     margin-bottom: 5px;
 }
+
+.chats_items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    container-type: inline-size;
+    container-name: presentations;
+}
+
+.chat_item {
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 15px;
+    width: calc(100% / 4 - 60px / 4);
+}
+
+.chat_item_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat_item_logo {
+}
+
+.chat_item_logo img {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+
+.chat_item_head .icon {
+    color:#A6A4BD;
+    width: 20px;
+    height: 20px;
+}
+
+.chat_item_title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 17px;
+    letter-spacing: -0.3px;
+    color: #020027;
+    margin-top: 15px;
+}
+
+.chat_item_desc {
+    margin-top: 15px;
+}
+
+.chat_item_counter {
+    margin-top: 12px;
+    color: #fff;
+    background: #35B064;
+    padding: 10px;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+.chat_item_time {
+    position: relative;
+    margin-top:20px;
+}
+
+.chat_item_time:before{
+    position: absolute;
+    top:-10px;
+    width: calc(100% + 30px);
+    left:-15px;
+    content:"";
+    height: 1px;
+    background: #EDEDED;
+
+}
+
+.chat_item_link {
+    color: #0583DF;
+    margin-top: 10px;
+    display: block;
+}
+
+@container presentations (max-width: 1200px) {
+    .chat_item{        
+        width: calc(100% / 3 - 40px / 3);
+    }
+}
+
+@container presentations (max-width: 900px) {
+    .chat_item{        
+        width: calc(100% / 2 - 20px / 2);
+    }
+}
+
+@container presentations (max-width: 500px) {
+    .chat_item{        
+        width: calc(100%);
+    }
+}
