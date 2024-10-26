@@ -40268,6 +40268,7 @@ bottom: 20px;
     padding: 20px;
     position: relative;
     align-items: center;
+    justify-content: space-between;
 }
 
 .trainer_ai_footer:before{
