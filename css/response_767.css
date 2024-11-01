@@ -3449,4 +3449,9 @@
     }
 
 
+    .person_items > * {
+        width: calc(100%/2 - 8px);
+    }
+
+
 }

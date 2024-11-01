@@ -9,7 +9,7 @@ $(() => {
 	// 		$(".trainer_ai_body").removeClass("hide");
 	// 	}, 3000);
 	// }
-    //
+	//
 	// $('.play_text .inner').click(function (e) {
 	// 	$('.play_text').find(".inner").hide();
 	// 	$('.play_text').find(".load").show();
@@ -37,31 +37,30 @@ $(() => {
 
 	// tippy('[data-tippy-content]');
 	function handleFileSelect(evt) {
-	    var files = evt.target.files; // FileList object
-	    // Loop through the FileList and render image files as thumbnails.
-	    for (var i = 0, f; f = files[i]; i++) {
-	        // Only process image files.
-	        if (!f.type.match('image.*')) {
-	            alert("Image only please....");
-	        }
-	        var reader = new FileReader();
-	        // Closure to capture the file information.
-	        reader.onload = (function (theFile) {
-	            return function (e) {
-	                // Render thumbnail.
-	                var span = document.createElement('span');
-	                span.innerHTML = ['<img class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
-	                $("#outputMulti").append(span);
-	                $(".img_file").show();
-	                $(".clear_input").show();
-	            };
-	        })(f);
-	        // Read in the image file as a data URL.
-	        reader.readAsDataURL(f);
-	    }
+		var files = evt.target.files; // FileList object
+		// Loop through the FileList and render image files as thumbnails.
+		for (var i = 0, f; f = files[i]; i++) {
+			// Only process image files.
+			if (!f.type.match('image.*')) {
+				alert("Image only please....");
+			}
+			var reader = new FileReader();
+			// Closure to capture the file information.
+			reader.onload = (function (theFile) {
+				return function (e) {
+					// Render thumbnail.
+					var span = document.createElement('span');
+					span.innerHTML = ['<img class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
+					$("#outputMulti").append(span);
+					$(".img_file").show();
+					$(".clear_input").show();
+				};
+			})(f);
+			// Read in the image file as a data URL.
+			reader.readAsDataURL(f);
+		}
 	}
-	if(document.getElementById('imgInp'))
-	{
+	if (document.getElementById('imgInp')) {
 		document.getElementById('imgInp').addEventListener('change', handleFileSelect, false);
 	}
 
@@ -191,7 +190,7 @@ $(() => {
 	});
 
 
-	$('.event-feed .idea-block_item-link').click(function(e) {
+	$('.event-feed .idea-block_item-link').click(function (e) {
 		e.preventDefault()
 		$('.content_block').addClass('active');
 		$(this).css('display', 'none')
@@ -491,7 +490,7 @@ $(() => {
 		}
 	}
 
-	if($(".shop-new_leader .swiper").length>0){
+	if ($(".shop-new_leader .swiper").length > 0) {
 		var swiper = new Swiper('.shop-new_leader .swiper', {
 			slidesPerView: 3,
 			spaceBetween: 13,
@@ -768,6 +767,10 @@ $(() => {
 	// });
 
 
+
+
+
+
 	$(".test").on("click", function (e) {
 		e.preventDefault();
 		$(".messages").append('<div class="message"><div class="photo"><img src="images/tmp/person_photo.jpg"></div><div class="info"><div class="name">Василий Иванович</div><div class="audio_message"><button class="btn btn_new" data-index="1" data-action="play"><svg class="icon"><use xlink:href="images/sprite.svg#ic_play"></use></svg><svg class="icon"><use xlink:href="images/sprite.svg#ic_pause"></use></svg></button><div class="audio_wave audio_wave_new" data-file="https://wavesurfer-js.org/example/media/demo.wav"></div><div class="duration duration_new"></div></div></div>					</div>');
@@ -814,15 +817,15 @@ $(() => {
 
 
 
-	$('.ask-questions_btn').click(function(e){
+	$('.ask-questions_btn').click(function (e) {
 		e.preventDefault()
 		$('.ask-questions_btn').toggleClass('active');
 	});
 
 
-	$('.ask-questions_btn').click(function(e){
+	$('.ask-questions_btn').click(function (e) {
 		e.preventDefault()
-		$('.ask-questions_form').slideToggle(20, function(){
+		$('.ask-questions_form').slideToggle(20, function () {
 			if ($(this).is(':hidden')) {
 				$('.ask-questions_btn').html('Задать вопрос');
 			} else {

@@ -2132,6 +2132,12 @@
     }
 
 
+
+    .person_items > * {
+        width: calc(100%/3 - 11px);
+    }
+
+
 }
 
 

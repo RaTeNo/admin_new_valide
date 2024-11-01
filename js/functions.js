@@ -26,6 +26,7 @@ $(() => {
 	}
 		
 	
+	
 
 
 	// Fancybox
@@ -114,6 +115,7 @@ $(() => {
 			if (is_touch_device()) $('body').css('cursor', 'pointer')
 		}
 	})
+
 
 	// Закрываем всплывашку при клике за её пределами
 	$(document).click((e) => {

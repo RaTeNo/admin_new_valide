@@ -2147,6 +2147,18 @@
     }
 
 
+
+    .person_items > * {
+        width: 100%;
+    }
+    .person_edit .langs_wrap {
+        min-width: 290px;
+    }
+    .person_edit .modal_cont .mini_modal_btn {
+        min-width: 290px;
+    }
+
+
     
 
 }

@@ -27,7 +27,6 @@
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
 		<!-- Подключение файлов стилей -->
-		<link rel="stylesheet" href="css/nice-select.css">
 		<link rel="stylesheet" href="css/fancybox.css" async>
 		<link rel="stylesheet" href="css/styles.css" async>
 
@@ -52,7 +51,9 @@
 							<span>1243</span>
 						</div>
 
-						<div class="sep"></div>
+						<div class="nitifications new">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_nitifications"></use></svg>
+						</div>
 
 						<div class="account">
 							<a href="/" class="settings_link">
@@ -82,7 +83,7 @@
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
 						</button>
 
-						<div class="page_title">Сводка</div>
+						<div class="page_title">Файлы</div>
 
 						<div class="wallet">
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
@@ -295,177 +296,86 @@
 						</aside>
 
 
-						<section class="content division-page intellect">
-							
-							<section class="page_title">
-								<a href="/">
+						<section class="content">
+							<section class="back_link">
+								<a href="/" class="big">
 									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_left"></use></svg>
+									<span>Персоны</span>
 								</a>
-								<span>HR задачи</span>
-								<div class="division-page_text">Организации процессов найма, адаптации, развитию и управлению персоналом.</div>
 							</section>
 
-							<form class="courses_faq">
-								<input type="text" class="js-search-courses input" placeholder="Поиск">
-								<button>Искать</button>
-							</form>
-
-							<div class="title_courses_result">Поиск: <span></span> <button><img src="images/reset.svg" alt=""></button></div>
-
-
-							<section class="courses not_my"><div class="row not_slide found_course"></div></section>
-
-
-							<section class="chats">
-								<div class="wrapper_head">
-									<div class="block_title">Все задачи</div>
-								</div>
-
-								<div class="chats_items">
-									<div class="chat_item">
-										<div class="chat_item_head">
-											<div class="chat_item_logo">
-												<img src="images/ii5.png" alt="">
-											</div>
-											<div class="chat_item-right">
-												<div class="chat_item-right-photo">
-													<img src="images/person1.png" alt="">
-												</div>
-												<a href=""><svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg></a>
-											</div>											
+							<section class="person">
+								<div class="person_items">
+									<div class="person_item">
+										<div class="person_item-photo">
+											<img src="images/person1.png" alt="">
 										</div>
-										<div class="chat_item_title"><a href="">Название диалога в две строки</a></div>
-										<div class="chat_item_desc">Описание диалога. Асссистент, который поможет вам</div>
-										<div class="chat_item_counter">Всего: 22</div><div class="chat_item_counter">Завершено: 6</div>
-										<div class="chat_item_time">Последнее сообщение: 15.10.2023 в в 22:45</div>
-										<a href="" class="chat_item_link">Открыть</a>
+										<div class="person_item-name">Екатерина Петрова</div>
+										<div class="person_item-text">Очень грубый клиент, вечно всем недовольный. Не рекомендуется для новичков</div>
+										<a href="#" class="person_item-link modal_btn" data-content="#person_add">Подробнее</a>
+										<a href="#" class="person_item-settings">
+											<img src="images/setting.svg" alt="">
+										</a>
 									</div>
-
-									<div class="chat_item">
-										<div class="chat_item_head">
-											<div class="chat_item_logo">
-												<img src="images/ii5.png" alt="">
-											</div>
-											<div class="chat_item-right">
-												<div class="chat_item-right-photo">
-													<img src="images/icon-default.svg" alt="">
-												</div>
-												<a href=""><svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg></a>
-											</div>
+									<div class="person_item">
+										<div class="person_item-photo">
+											<img src="images/person2.png" alt="">
 										</div>
-										<div class="chat_item_title">Название диалога в две строки</div>
-										<div class="chat_item_desc">Описание диалога. Асссистент, который поможет вам</div>
-										<div class="chat_item_counter">Всего: 22</div><div class="chat_item_counter">Завершено: 6</div>
-										<div class="chat_item_time">Последнее сообщение: 15.10.2023 в в 22:45</div>
-										<a href="" class="chat_item_link">Открыть</a>
+										<div class="person_item-name">Александр Смирнов</div>
+										<div class="person_item-text">Энергичный и жизнерадостный. Этот человек всегда полон энтузиазма и оптимизма</div>
+										<a href="#" class="person_item-link modal_btn" data-content="#person_add">Подробнее</a>
+										<a href="#" class="person_item-settings">
+											<img src="images/setting.svg" alt="">
+										</a>
 									</div>
-
-									<div class="chat_item">
-										<div class="chat_item_head">
-											<div class="chat_item_logo">
-												<img src="images/ii5.png" alt="">
-											</div>
-											<div class="chat_item-right">
-												<div class="chat_item-right-photo">
-													<img src="images/person1.png" alt="">
-												</div>
-												<a href=""><svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg></a>
-											</div>
+									<div class="person_item">
+										<div class="person_item-photo">
+											<img src="images/person3.png" alt="">
 										</div>
-										<div class="chat_item_title">Название диалога в две строки</div>
-										<div class="chat_item_desc">Описание диалога. Асссистент, который поможет вам</div>
-										<div class="chat_item_counter">Всего: 22</div><div class="chat_item_counter">Завершено: 6</div>
-										<div class="chat_item_time">Последнее сообщение: 15.10.2023 в в 22:45</div>
-										<a href="" class="chat_item_link">Открыть</a>
+										<div class="person_item-name">Анастасия Фёдорова</div>
+										<div class="person_item-text">Умный и творческий. Обладает развитым интеллектом и нестандартным мышлением</div>
+										<a href="#" class="person_item-link modal_btn" data-content="#person_add">Подробнее</a>
+										<a href="#" class="person_item-settings">
+											<img src="images/setting.svg" alt="">
+										</a>
 									</div>
-
-									<div class="chat_item">
-										<div class="chat_item_head">
-											<div class="chat_item_logo">
-												<img src="images/ii5.png" alt="">
-											</div>
-											<div class="chat_item-right">
-												<div class="chat_item-right-photo">
-													<img src="images/person1.png" alt="">
-												</div>
-												<a href=""><svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg></a>
-											</div>
+									<div class="person_item">
+										<div class="person_item-photo">
+											<img src="images/person4.png" alt="">
 										</div>
-										<div class="chat_item_title">Название диалога в две строки</div>
-										<div class="chat_item_desc">Описание диалога. Асссистент, который поможет вам</div>
-										<div class="chat_item_counter">Всего: 22</div><div class="chat_item_counter">Завершено: 6</div>
-										<div class="chat_item_time">Последнее сообщение: 15.10.2023 в в 22:45</div>
-										<a href="" class="chat_item_link">Открыть</a>
+										<div class="person_item-name">Андрей Кузнецов</div>
+										<div class="person_item-text">Ответственный и надёжный. Всегда выполняет свои обязательства и держит слово, на него можно положиться</div>
+										<a href="#" class="person_item-link modal_btn" data-content="#person_add">Подробнее</a>
+										<a href="#" class="person_item-settings">
+											<img src="images/setting.svg" alt="">
+										</a>
 									</div>
-
-									<div class="chat_item">
-										<div class="chat_item_head">
-											<div class="chat_item_logo">
-												<img src="images/ii5.png" alt="">
-											</div>
-											<div class="chat_item-right">
-												<div class="chat_item-right-photo">
-													<img src="images/icon-default.svg" alt="">
-												</div>
-												<a href=""><svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg></a>
-											</div>
+									<div class="person_item">
+										<div class="person_item-photo">
+											<img src="images/person5.png" alt="">
 										</div>
-										<div class="chat_item_title">Название диалога в две строки</div>
-										<div class="chat_item_desc">Описание диалога. Асссистент, который поможет вам</div>
-										<div class="chat_item_counter">Всего: 22</div><div class="chat_item_counter">Завершено: 6</div>
-										<div class="chat_item_time">Последнее сообщение: 15.10.2023 в в 22:45</div>
-										<a href="" class="chat_item_link">Открыть</a>
+										<div class="person_item-name">Дарья Сидорова</div>
+										<div class="person_item-text">Уравновешенный и спокойный. Умеет контролировать свои эмоции и не поддаваться стрессу</div>
+										<a href="#" class="person_item-link modal_btn" data-content="#person_add">Подробнее</a>
+										<a href="#" class="person_item-settings">
+											<img src="images/setting.svg" alt="">
+										</a>
+									</div>
+									<div class="person_item">
+										<div class="person_item-photo">
+											<img src="images/person6.png" alt="">
+										</div>
+										<div class="person_item-name">Максим Фёдоров</div>
+										<div class="person_item-text">Открытый и дружелюбный. Легко находит общий язык с людьми, умеет располагать к себе</div>
+										<a href="#" class="person_item-link modal_btn" data-content="#person_add">Подробнее</a>
+										<a href="#" class="person_item-settings">
+											<img src="images/setting.svg" alt="">
+										</a>
 									</div>
 								</div>
 							</section>
 
-							<section class="favourites">
-								<div class="wrapper_head">
-									<div class="block_title">Все задачи</div>
-								</div>
-								<div class="favourites_items">
-									<div class="favourites_item">
-										<div class="favourites_item-icon">
-											<svg class="icon">
-												<use xlink:href="images/sprite.svg#favourites1"></use>
-											</svg>											
-										</div>
-										<a href="task-page.html" class="favourites_item-title">Создать новую вакансию в компанию</a>
-										<a href="task-page.html" class="favourites_item-text">Помощь в создании вакансии в новую компанию</a>
-										<div class="favourites_item-left">
-											<div class="favourites_item-star active">
-												<svg class="icon">
-													<use xlink:href="images/sprite.svg#star"></use>
-												</svg>
-												<svg class="icon">
-													<use xlink:href="images/sprite.svg#star2"></use>
-												</svg>			
-											</div>
-										</div>
-									</div>
-									<div class="favourites_item">
-										<div class="favourites_item-icon">
-											<svg class="icon">
-												<use xlink:href="images/sprite.svg#favourites1"></use>
-											</svg>											
-										</div>
-										<a href="task-page.html" class="favourites_item-title">Создать новую вакансию в компанию</a>
-										<a href="task-page.html" class="favourites_item-text">Помощь в создании вакансии в новую компанию</a>
-										<div class="favourites_item-left">
-											<div class="favourites_item-star">
-												<svg class="icon">
-													<use xlink:href="images/sprite.svg#star"></use>
-												</svg>
-												<svg class="icon">
-													<use xlink:href="images/sprite.svg#star2"></use>
-												</svg>		
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
 
-							
 							<footer>
 								<div class="logo">
 									<img src="images/logo.svg" alt="">
@@ -502,18 +412,41 @@
 		</div>
 
 
-
-		<section class="modal modal-video" id="video_modal5" style="display: none;">
-			<video class="video-player video_new" controlslist="nodownload" controls="" crossorigin="anonymous">
-			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
-			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
-			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default="">
-			</video>
-		</section>
-
 		<div class="supports_error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
+
+
+
+		<section class="person_modal" id="person_add">			
+			<div class="person_modal-top">
+				<div class="person_modal-photo">
+					<img src="images/person1.png" alt="">
+				</div>
+				<div class="person_modal-info">
+					<div class="person_modal-name">
+						Максим Федоров <a href="#"><img src="images/setting.svg" alt=""></a>
+					</div>
+					<div class="person_modal-text">Описание персоны</div>
+				</div>
+			</div>
+			<div class="person_modal-items">
+				<div class="person_modal-item">
+					<div class="person_modal-item_title">Описание</div>
+					<div class="person_modal-item_text">Открытый и дружелюбный. Легко находит общий язык с людьми, умеет располагать к себе и вызывать доверие. Он общительный и отзывчивый, всегда готов помочь и поддержать</div>
+				</div>
+				<div class="person_modal-item">
+					<div class="person_modal-item_title">Характер</div>
+					<div class="person_modal-item_text">Злые клиенты часто ведут себя агрессивно, критикуют сотрудников и пытаются манипулировать ими. Они могут быть грубыми, высокомерными и пренебрежительными к окружающим.</div>
+				</div>
+				<div class="person_modal-item">
+					<div class="person_modal-item_title">Поведение в переговорах</div>
+					<div class="person_modal-item_text">Вспыльчивость и раздражительность: злой клиент может проявлять гнев и раздражение, повышать голос и вести себя агрессивно.</div>
+					<div class="person_modal-item_text">Нетерпеливость и требовательность: такой клиент ожидает мгновенных результатов и требует выполнения своих условий без учёта возможностей и ресурсов компании. </div>
+					<div class="person_modal-item_text">Склонность к конфликтам и спорам: злой клиент может провоцировать конфликты, чтобы добиться своего, и не готов идти на компромисс.</div>
+				</div>
+			</div>
+		</section>
 
 
 		<!-- Подключение javascript файлов -->
@@ -526,6 +459,5 @@
 		<script src="js/nice-select.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
-		<script src="js/search_courses.js"></script>
 	</body>
 </html>
