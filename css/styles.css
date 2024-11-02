@@ -40949,3 +40949,22 @@ bottom: 20px;
 .person_edit .modal_cont.langs .btn .icon {
     margin-left: auto;
 }
+
+a.back_link_right{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 34px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 146px;
+    height: 34px;
+    background: var(--main_color);
+    border-radius: 55px;
+    display: block;
+}
+
+.back_link:has(.back_link_right){
+    display: flex;
+    justify-content: space-between;
+}
