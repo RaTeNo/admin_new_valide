@@ -40670,6 +40670,7 @@ bottom: 20px;
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    object-fit: cover;
 }
 .person_item-name {
     margin-top: 17px;
@@ -40849,8 +40850,8 @@ bottom: 20px;
     gap: 8px;
 }
 .chat_item-right-photo {
-    width: 22px;
-    height: 22px;
+    width: 36px;
+    height: 36px;
     flex-shrink: 0;
 }
 .chat_item-right-photo img {
