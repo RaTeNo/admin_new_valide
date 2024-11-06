@@ -3454,4 +3454,16 @@
     }
 
 
+    .passing_items {
+        column-count: 1;
+    }
+    .passing-head {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .passing .page_title-info-text {
+        margin-top: 8px;
+    }
+
+
 }

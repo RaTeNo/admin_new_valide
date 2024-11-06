@@ -24,12 +24,12 @@
 		<!-- Подключение шрифтов с гугла -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-	
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 		<!-- Подключение файлов стилей -->
 		<link rel="stylesheet" href="css/nice-select.css">
 		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/circle.css">
 		<link rel="stylesheet" href="css/styles.css" async>
 		<link rel="stylesheet" href="css/styles2.css" async>
 
@@ -298,193 +298,141 @@
 
 
 						<section class="content">
-							<section class="bank_page">							
-
-								<section class="page_title">
-									<a href="/">
-										<svg class="icon">
-											<use xlink:href="images/sprite.svg#ic_arrow_left"></use>
-										</svg>
-									</a>
-									<span>Мария Иванова</span>
-								</section>							
-								
-								<section class="trainer_ai loading">
-									<div class="trainer_ai_content">
-										<div class="trainer_ai_loading">
-											<i><div class="dot-flashing"></div></i>
-											<div class="trainer_ai_loading_text">ИИ думает, пожалуйста подождите</div>
+							<section class="passing">										
+								<section class="passing-head">
+									<section class="page_title">
+										<a href="/">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_left"></use></svg>
+										</a>
+										<div class="page_title-info">
+											<span>Лучшие практики прохождения</span>
+											<div class="page_title-info-text">Задача: Выявить текущие проблемы и потребности сети в ассортименте</div>
 										</div>
-										<div class="trainer_ai_body hide">
-											<div class="trainer_ai_body_left">
-												<img src="images/maria.jpg" alt="">
-												<div class="trainer_ai_online">Мария Иванова</div>
-											</div>
+									</section>	
+									<div class="select-left">
+										<span>Сортировать:</span>
+										<select>
+											<option>По рейтингу</option>
+											<option>По рейтингу</option>
+											<option>По рейтингу</option>
+											<option>По рейтингу</option>
+										</select>	
+									</div>	
+								</section>
 
-											<div class="trainer_ai_body_right">
-												<div class="trainer_ai_player">
-													<div class="play_text">
-														<div class="inner">
-															<svg class="icon"><use xlink:href="images/sprite.svg#play_text"></use></svg>
-															Озвучить текст
-														</div>
-														<div class="load">
-															<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-															Идет обработка текста, пожалуйста подождите
-														</div>
-														<div class="player">
-															<div class="audio_media">
-																<audio controls src="images/t-rex-roar.mp3">
-															            Your browser does not support the
-															            <code>audio</code> element.
-															    </audio>
-															</div>
-														</div>		
-													</div>
-
-													<div class="trainer_ai_text">
-														Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.
-													</div>
+								<section class="passing_items">
+									<div class="passing_item">
+										<div class="passing_item-top">
+											<div class="passing_item-box">
+												<div class="passing_item-avatar">
+													<img src="images/avatar1000.png" alt="">
 												</div>
+												<div class="passing_item-info">
+													<div class="passing_item-name">Мария Иванова</div>
+													<div class="passing_item-date">20.10.2024 в 12:15</div>
+												</div>	
 											</div>
+											<div class="passing_item-rating">10</div>
+										</div>
+										<div class="passing_item-text">Менеджер представился, назвал компанию и спросил об удобстве разговора. Однако не уточнил имя клиента.</div>
+										<div class="passing_item-bottom">
+											<div class="passing_item-bottom-title">Как получить высшую оценку</div>
+											<div class="passing_item-bottom-text">Все отлично!</div>
 										</div>
 									</div>
-									<div class="trainer_ai_footer">
-										<div class="trainer_ai_time">
-											05:45
-										</div>
-										<button class="trainer_ai_stop">Стоп</button>
 
-										<button class="trainer_ai_button js-trainer_ai_button-record">
-											<svg class="icon">
-												<use xlink:href="images/sprite.svg#ic_trainer_ai_button"></use>
-											</svg>
-										</button>
-										<button class="trainer_ai_button js-trainer_ai_button-textedit">
-											<svg class="icon">
-												<use xlink:href="images/sprite.svg#ic_trainer_ai_button2"></use>
-											</svg>
-										</button>
+									<div class="passing_item">
+										<div class="passing_item-top">
+											<div class="passing_item-box">
+												<div class="passing_item-avatar">
+													<img src="images/avatar1000.png" alt="">
+												</div>
+												<div class="passing_item-info">
+													<div class="passing_item-name">Мария Иванова</div>
+													<div class="passing_item-date">20.10.2024 в 12:15</div>
+												</div>	
+											</div>
+											<div class="passing_item-rating">7</div>
+										</div>
+										<div class="passing_item-text">Менеджер представился, назвал компанию и спросил об удобстве разговора. Однако не уточнил имя клиента.</div>
+										<div class="passing_item-bottom">
+											<div class="passing_item-bottom-title">Как получить высшую оценку</div>
+											<div class="passing_item-bottom-text">Для максимального балла стоит уточнить, правильно ли менеджер назвал имя клиента, и использовать его в разговоре</div>
+										</div>
 									</div>
+
+									<div class="passing_item">
+										<div class="passing_item-top">
+											<div class="passing_item-box">
+												<div class="passing_item-avatar">
+													<img src="images/avatar1000.png" alt="">
+												</div>
+												<div class="passing_item-info">
+													<div class="passing_item-name">Мария Иванова</div>
+													<div class="passing_item-date">20.10.2024 в 12:15</div>
+												</div>	
+											</div>
+											<div class="passing_item-rating">8</div>
+										</div>
+										<div class="passing_item-text">Менеджер представился, назвал компанию и спросил об удобстве разговора. Однако не уточнил имя клиента.</div>
+										<div class="passing_item-bottom">
+											<div class="passing_item-bottom-title">Как получить высшую оценку</div>
+											<div class="passing_item-bottom-text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к текст</div>
+										</div>
+									</div>
+
+									<div class="passing_item">
+										<div class="passing_item-top">
+											<div class="passing_item-box">
+												<div class="passing_item-avatar">
+													<img src="images/avatar1000.png" alt="">
+												</div>
+												<div class="passing_item-info">
+													<div class="passing_item-name">Мария Иванова</div>
+													<div class="passing_item-date">20.10.2024 в 12:15</div>
+												</div>	
+											</div>
+											<div class="passing_item-rating">10</div>
+										</div>
+										<div class="passing_item-text">Менеджер представился, назвал компанию и спросил об удобстве разговора. Однако не уточнил имя клиента.</div>
+										<div class="passing_item-bottom">
+											<div class="passing_item-bottom-title">Как получить высшую оценку</div>
+											<div class="passing_item-bottom-text">Все отлично!</div>
+										</div>
+									</div>
+
+									<div class="passing_item">
+										<div class="passing_item-top">
+											<div class="passing_item-box">
+												<div class="passing_item-avatar">
+													<img src="images/avatar1000.png" alt="">
+												</div>
+												<div class="passing_item-info">
+													<div class="passing_item-name">Мария Иванова</div>
+													<div class="passing_item-date">20.10.2024 в 12:15</div>
+												</div>	
+											</div>
+											<div class="passing_item-rating">7</div>
+										</div>
+										<div class="passing_item-text">Менеджер представился, назвал компанию и спросил об удобстве разговора. Однако не уточнил имя клиента.</div>
+										<div class="passing_item-bottom">
+											<div class="passing_item-bottom-title">Как получить высшую оценку</div>
+											<div class="passing_item-bottom-text">Для максимального балла стоит уточнить, правильно ли менеджер назвал имя клиента, и использовать его в разговореДля максимального балла стоит уточнить, правильно ли менеджер назвал имя клиента, и использовать его в разговоре</div>
+										</div>
+									</div>
+
+									
 								</section>
 
-								<section class="trainer_ai_record hide">
-									<div class="dialog">
-										<div class="add_audio audio-record">
-											<input type="checkbox" id="audio_record-icon" name="">
-											<label for="audio_record-icon" class="start_btn">
-												<svg class="icon"><use xlink:href="images/sprite.svg#ic_mic"></use></svg>
-											</label>
 
-											<div class="exp">Нажмите и отпустите, чтобы начать запись</div>
-
-											<div class="time">0:01</div>
-										</div>
-									</div>
-								</section>
-
-								<section class="trainer_ai_textedit hide">
-									<form action="" class="form">
-										<div class="field">
-											<textarea name="" placeholder="Введите ответ"></textarea>
-										</div>												
-
-										<div class="submit">
-											<button type="submit" class="submit_btn">
-												<svg class="icon"><use xlink:href="images/sprite.svg#ic_submit"></use></svg>
-											</button>
-										</div>													
-									</form>
-								</section>
-
-								<!-- <section class="trainer_ai_desc">
-									<div class="trainer_ai_desc_left">
-										<div class="trainer_ai_desc_title">Описание тренажера</div>
-										<div class="trainer_ai_desc_text">
-											<p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
-
-											<p>Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</p>
-
-											<p>Теперь никто не сможет обвинить вас в плагиате, ибо каждый текст Яндекс.Рефератов неповторим.
-											Текстами рефератов можно пользоваться совершенно бесплатно, однако при транслировании и предоставлении текстов в массовое пользование ссылка на Яндекс.Рефераты обязательна.</p>
-										</div>
-									</div>
-									<div class="trainer_ai_sep"></div>
-									<div class="trainer_ai_desc_right">
-										<div class="trainer_ai_desc_title">План разговора</div>
-										<div class="trainer_ai_desc_text">
-											<p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
-										</div>
-										<div class="chekboxses">
-											<div class="checkbox">
-											    <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo">
-											    <label for="color-1">Indigo</label>
-											</div>
-
-											<div class="checkbox">
-											    <input class="custom-checkbox" type="checkbox" id="color-2" name="color-2" value="red">
-											    <label for="color-2">Red</label>
-											</div>
-
-											<div class="checkbox">
-											    <input class="custom-checkbox" type="checkbox" id="color-3" name="color-3" value="brown" disabled="disabled">
-											    <label for="color-3">Brown</label>
-											</div>
-
-											<div class="checkbox">
-											    <input class="custom-checkbox" type="checkbox" id="color-4" name="color-4" value="yellow">
-											    <label for="color-4">Yellow</label>
-											</div>
-
-											<div class="checkbox">
-											    <input class="custom-checkbox" type="checkbox" id="color-5" name="color-5" value="green">
-											    <label for="color-5">Green</label>
-											</div>
-										</div>
-									</div>
-								</section> -->
-
-							</section>
-
-
-							<section class="trainer_ai-task">
-								<div class="trainer_ai-task_head">
-									<div class="trainer_ai-task_title">Задачи</div>
-									<div class="trainer_ai-task_text">Вы можете посмотреть лучшие практики для каждой задачи</div>
-								</div>
-
-								<div class="chekboxses">
-									<div class="checkbox">
-										<input class="custom-checkbox" type="checkbox" id="color-21" name="color-21">
-										<label for="color-21">Привлечь внимание Ирины Владимировны и избежать мгновенного отказа</label>	
-										<div class="chekboxses_links">
-											<a href="#">Лучшие практики</a>
-											<a href="#">Худшие практики</a>
-										</div>											
-									</div>
-
-									<div class="checkbox">
-										<input class="custom-checkbox" type="checkbox" id="color-22" name="color-22 checked">
-										<label for="color-22" >Выявить текущие проблемы и потребности сети в ассортименте</label>	
-										<div class="chekboxses_links">
-											<a href="#">Лучшие практики</a>
-											<a href="#">Худшие практики</a>
-										</div>											
-									</div>
-
-									<div class="checkbox">
-										<input class="custom-checkbox" type="checkbox" id="color-23" name="color-23">
-										<label for="color-23">Кратко презентовать уникальное торговое предложение VVP Group</label>	
-										<div class="chekboxses_links">
-											<a href="#">Лучшие практики</a>
-											<a href="#">Худшие практики</a>
-										</div>											
-									</div>							
-								</div>	
-							</section>
-
-
+								
+							</section>	
+					
+								
 							
+
+
+
 						
 							<footer>
 								<div class="logo">
@@ -522,6 +470,30 @@
 		</div>
 
 
+		<section class="modal" id="test">
+			<img data-src="images/ic_warning.svg" alt="" class="icon lozad">
+
+			<div class="modal_title">Аттестация по теме “Маркетинг в IT-Сфере”</div>
+
+			<div class="modal_desc">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок. Теперь никто не сможет обвинить вас в плагиате, ибо каждый текст Яндекс.Рефератов неповторим.</div>
+
+			<div class="btns">
+				<button class="close_btn btn">Позже</button>
+
+				<a href="">Начать</a>
+			</div>
+		</section>
+
+
+		<section class="modal" id="video_modal">
+			<video class="video-player video_new" width="100%" controlsList="nodownload" controls crossorigin="anonymous">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
+			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default></track>
+			</video>
+		</section>
+
+
 		<div class="supports_error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
@@ -531,12 +503,10 @@
 		<script src="js/jquery-3.5.0.min.js"></script>
 		<script src="js/lozad.min.js"></script>
 		<script src="js/media-player.js"></script>
-		<script src="js/ion.rangeSlider.min.js"></script>
 		<script src="js/html5sortable.min.js"></script>
 		<script src="js/wavesurfer.js"></script>
 		<script src="js/fancybox.min.js"></script>
 		<script src="js/nice-select.js"></script>
-		<script src="js/file.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>

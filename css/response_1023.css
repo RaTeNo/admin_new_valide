@@ -523,4 +523,11 @@
         display: none;
     }
 
+
+    .passing_items {
+        column-count: 2;
+    }
+
+
+
 }

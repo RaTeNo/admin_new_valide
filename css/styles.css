@@ -40969,3 +40969,286 @@ a.back_link_right{
     display: flex;
     justify-content: space-between;
 }
+
+
+.passing .select-left {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #655F95;
+}
+.passing .select-left span {
+    margin-right: 8px;
+}
+.passing .nice-select {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #0A00C5;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #332894;
+    width: 134px;
+    height: 35px;
+    border: 1px solid #4D4A8D;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 14px;
+}
+.passing .nice-select:after {
+    border-bottom: 2px solid #332894;
+    border-right: 2px solid #332894;
+}
+.passing .nice-select .option {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.passing .nice-select .list {
+    padding: 10px;
+    top: calc(100% + 5px);
+    left: 0;
+    border-radius: 15px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #0A00C5;
+}
+.passing-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+.passing_items {
+    column-count: 3;   
+    column-gap: 15px; 
+}
+.passing_item {
+    padding: 15px 15px 20px 15px;
+    border-radius: 15px;
+    background: #fff;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+.passing_item + .passing_item {
+    margin-top: 15px;
+}
+.passing_item-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    position: relative;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+.passing_item-top:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 30px);
+    height: 1px;
+    background: #E0DEF4;
+    bottom: 0;
+    left: -15px;
+}
+.passing_item-box {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.passing_item-avatar {
+    width: 37px;
+    height: 37px;
+    flex-shrink: 0;
+}
+.passing_item-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.passing_item-name {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #2D335B;
+}
+.passing_item-date {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    color: #7178AD;
+}
+.passing_item-rating {
+    width: 45px;
+    height: 45px;
+    border-radius: 11px;
+    background: #60C73026;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #5EC62D;
+    flex-shrink: 0;
+}
+.passing_item-text {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #1C2038;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.passing_item-text:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 30px);
+    height: 1px;
+    background: #E0DEF4;
+    bottom: 0;
+    left: -15px;
+}
+.passing_item-bottom-title {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 19px;
+    color: #7178AD;
+    margin-bottom: 5px;
+}
+.passing_item-bottom-text {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #1C2038;
+}
+.page_title {
+    flex-wrap: nowrap;
+}
+
+
+.trainer_ai-task .custom-checkbox+label::before {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;  
+    background: #FFFFFF;
+    border: 2px solid #EAEAEA;
+}
+.trainer_ai-task .custom-checkbox:checked+label::before {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    border-color: #479E1E;
+    background-color: #479E1E;
+    background-image: url(../images/arrow1000.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.trainer_ai-task {
+    padding: 15px 20px 30px;
+    border-radius: 15px;
+    background: #fff;
+}
+.trainer_ai-task_head {
+    padding-bottom: 15px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.trainer_ai-task_head:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 40px);
+    height: 1px;
+    background: #E0DEF4;
+    bottom: 0;
+    left: -20px;
+}
+.trainer_ai-task_title {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000;
+    opacity: 0.8;
+    margin-bottom: 7px;
+}
+.trainer_ai-task_text {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #625E88;
+}
+.trainer_ai-task .custom-checkbox.custom-checkbox:checked ~ label {
+    color: #479E1E;
+}
+
+.trainer_ai-task .custom-checkbox+label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000; 
+}
+.trainer_ai-task .chekboxses_links {
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+}
+.trainer_ai-task .chekboxses_links a:nth-child(1) {
+    padding: 10px;
+    background: #5EAA3A;
+    color: #fff;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 55px;
+}
+.trainer_ai-task .chekboxses_links a:nth-child(2) {
+    padding: 10px;
+    background: #C73033;
+    color: #fff;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 55px;
+}
+.chekboxses .checkbox + .checkbox {
+    margin-top: 20px;
+}
+.trainer_ai-task .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: color-mix(in srgb, #479E1E 50%, white);
+}
+.trainer_ai-task .custom-checkbox:not(:disabled):active+label::before {
+    background-color: color-mix(in srgb, #479E1E 50%, white);
+    border-color: color-mix(in srgb, #479E1E 50%, white);
+}
+.trainer_ai-task .custom-checkbox:focus+label::before {
+    box-shadow: 0 0 0 0.2rem color-mix(in srgb, #479E1E 20%, white);
+}
+.trainer_ai-task .custom-checkbox:focus:not(:checked)+label::before {
+    border-color: color-mix(in srgb, #479E1E 50%, white);
+}
+.trainer_ai-task .custom-checkbox:checked+label::before {
+    border-color: #479E1E;
+    background-color: #479E1E;
+}
+.trainer_ai-task .custom-checkbox:disabled+label::before {
+    background-color: #e9ecef;
+}

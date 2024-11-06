@@ -2157,6 +2157,14 @@
     .person_edit .modal_cont .mini_modal_btn {
         min-width: 290px;
     }
+    .trainer_ai-task .chekboxses_links {
+        align-items: flex-start;
+    }
+    .trainer_ai-task .chekboxses_links a:nth-child(1),
+    .trainer_ai-task .chekboxses_links a:nth-child(2) {
+        
+        text-align: center;
+    }
 
 
     
