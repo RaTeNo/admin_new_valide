@@ -41207,25 +41207,23 @@ a.back_link_right{
 }
 .trainer_ai-task .chekboxses_links a:nth-child(1) {
     padding: 10px;
-    background: #5EAA3A;
-    color: #fff;
+    background: #eeedff;
     font-family: 'Ubuntu';
     font-weight: 500;
     font-size: 13px;
     line-height: 15px;
-    color: #FFFFFF;
+    color: #514993;
     text-decoration: none;
     border-radius: 55px;
 }
 .trainer_ai-task .chekboxses_links a:nth-child(2) {
     padding: 10px;
-    background: #C73033;
-    color: #fff;
+    background: #eeedff;
+    color: #514993;
     font-family: 'Ubuntu';
     font-weight: 500;
     font-size: 13px;
     line-height: 15px;
-    color: #FFFFFF;
     text-decoration: none;
     border-radius: 55px;
 }
