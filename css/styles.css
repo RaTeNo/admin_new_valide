@@ -41019,18 +41019,18 @@ a.back_link_right{
     gap: 20px;
 }
 .passing_items {
-    column-count: 3;   
-    column-gap: 15px; 
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
 }
 .passing_item {
     padding: 15px 15px 20px 15px;
     border-radius: 15px;
     background: #fff;
-    page-break-inside: avoid;
-    break-inside: avoid;
+    width: calc(100% / 3 - 10px);
 }
 .passing_item + .passing_item {
-    margin-top: 15px;
+
 }
 .passing_item-top {
     display: flex;
@@ -41097,6 +41097,10 @@ a.back_link_right{
     color: #5EC62D;
     flex-shrink: 0;
 }
+.passing_item-rating.red{
+    background:#C62D2D26;
+    color:#C62D2D;
+}
 .passing_item-text {
     font-family: 'Ubuntu';
     font-weight: 400;
@@ -41132,10 +41136,6 @@ a.back_link_right{
     line-height: 14px;
     color: #1C2038;
 }
-.page_title {
-    flex-wrap: nowrap;
-}
-
 
 .trainer_ai-task .custom-checkbox+label::before {
     width: 23px;

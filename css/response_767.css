@@ -3454,9 +3454,6 @@
     }
 
 
-    .passing_items {
-        column-count: 1;
-    }
     .passing-head {
         flex-direction: column;
         gap: 32px;
@@ -3465,5 +3462,8 @@
         margin-top: 8px;
     }
 
+    .passing_item{
+        width: 100%;
+    }
 
 }
