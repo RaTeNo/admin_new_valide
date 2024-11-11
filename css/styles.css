@@ -1869,13 +1869,36 @@ aside .menu .sub_menu a.active
     letter-spacing: -.375px;
 }
 
+.text_block h1{
+    color: #061058;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 100%;
 
-.text_block * + h2
+    margin-bottom: 14px;
+
+    letter-spacing: -.375px;
+}
+
+.text_block h3{
+    color: #061058;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 100%;
+
+    margin-bottom: 14px;
+
+    letter-spacing: -.375px;
+}
+
+
+
+.text_block * + h2, .text_block * + h3, .text_block * + h1
 {
     margin-top: 40px;
 }
 
-.text_block h2 + *
+.text_block h2 + *, .text_block h1 + *, .text_block h1 + *
 {
     margin-top: 0 !important;
 }
