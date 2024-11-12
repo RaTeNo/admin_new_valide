@@ -997,5 +997,16 @@
         line-height: 20px;
     }
 
+    .separator {
+        background: var(--bg);
+        height: 20px;
+        width: calc(100% + 50px);
+        margin-left: -25px;
+    }
+
+    .reaction blockquote{
+        padding-right: 60px;
+    }
+
 
 }

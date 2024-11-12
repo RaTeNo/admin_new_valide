@@ -41374,8 +41374,8 @@ a.back_link_right{
 .text_block .reassurance ol li:before {
     position: absolute;
     content: "";
-    width: 13px;
-    height: 13px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background: var(--main_color);
     left: -20px;
@@ -41596,6 +41596,7 @@ a.back_link_right{
 .reaction_item-answer .icon {
     width: 24px;
     height: 24px;
+    flex-shrink: 0;
 }
 
 .objection_item-client {
@@ -41821,6 +41822,7 @@ a.back_link_right{
 .substantial_box .icon {
     width: 38px;
     height: 38px;
+    flex-shrink: 0;
 }
 .substantial_title {
     font-family: 'Ubuntu';
@@ -41965,12 +41967,12 @@ a.back_link_right{
     font-size: 14px;
     line-height: 19px;
     color: #7D7BB8;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 .surveys_item-text {
     font-family: 'Ubuntu';
     font-weight: 700;
-    font-size: 34px;
+    font-size: 27px;
     line-height: 19px;
     letter-spacing: -1.3px;
     color: #1D1D1D;
@@ -42582,4 +42584,11 @@ a.back_link_right{
 }
 .modal-voter-list ul li {
     margin-top: 7px;
+}
+
+.separator{
+    background: var(--bg);
+    height: 20px;
+    width: calc(100% + 44px);
+    margin-left: -22px;
 }
