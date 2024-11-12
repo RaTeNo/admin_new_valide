@@ -528,6 +528,14 @@
         column-count: 2;
     }
 
+    .voter-list_desc {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .voter-list_items {
+        margin-bottom: 15px;
+    }
+
 
 
 }

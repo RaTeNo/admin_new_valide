@@ -3465,4 +3465,54 @@
         width: 100%;
     }
 
+    .alternative_top {
+        flex-direction: column;
+    }
+    .alternative_label {
+        margin-top: 20px;
+    }
+    .alternative_title {
+        width: 100%;
+    }
+    .skill-bars .bar .info {
+        flex-direction: column;
+    }
+    .progress-line_text {
+        margin-left: 0;
+    }
+    .voter-list_items {
+        flex-direction: column;
+    }
+    .surveys_items {
+        gap: 10px;
+    }
+    .surveys_items > * {
+        width: 100%;
+    }
+    .surveys .faq_btn {
+        padding: 1px;
+    }
+    .surveys .accordion_item-left {
+        width: calc(100% - 40px);
+    }
+    .dynamic_item-top {
+        flex-direction: column;
+    }
+    .surveys .accordion_item .data .accordion-block_item {
+        padding: 14px;
+    }
+    .dynamic_item-title {
+        width: 100%;
+    }
+    .surveys .accordion_item .data {
+        padding: 12px;
+    }
+    .surveys_items > * {
+        padding: 12px;
+    }
+    .learning-paths_info {
+        padding: 16px;
+    }
+
+
 }
