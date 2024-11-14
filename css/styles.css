@@ -40324,6 +40324,7 @@ bottom: 20px;
     font-size: 18px;
     line-height: 21px;
     color: #1A1B2F;
+    margin-right: auto;
 }
 
 .trainer_ai_stop{
@@ -42591,4 +42592,6 @@ a.back_link_right{
     height: 20px;
     width: calc(100% + 44px);
     margin-left: -22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
