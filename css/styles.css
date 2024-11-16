@@ -8406,6 +8406,8 @@ aside .menu .sub_menu a.active
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+
+    margin: 5px;
 }
 
 .dialog .add_audio .btns .btn + .btn
@@ -8430,12 +8432,12 @@ aside .menu .sub_menu a.active
 
 .dialog .exp
 {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 130%;
 
     margin-top: 10px;
 
-    opacity: .5;
+    /*opacity: .5;*/
 }
 
 
