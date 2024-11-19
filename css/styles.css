@@ -42621,3 +42621,7 @@ a.back_link_right{
 .passing-head .page_title{
 	flex-wrap:nowrap;
 }
+
+.content_flex .content .surveys > * + * {
+    margin-top: 40px;
+}
