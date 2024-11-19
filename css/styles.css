@@ -42139,6 +42139,8 @@ a.back_link_right{
     padding: 21px 18px;
     background: #F7F6FF;
     border-radius: 20px;
+    display: block;
+    text-decoration: none;
 }
 .surveys .accordion-block_item-bottom {
     display: flex;
