@@ -42025,6 +42025,10 @@ a.back_link_right{
     margin-bottom: 12px;
     width: calc(100% - 180px);
 }
+.dynamic_item-title a{
+	color: #1D1D1D;
+	text-decoration: none;	
+}
 .dynamic_item-label {
     font-family: 'Ubuntu';
     font-weight: 500;
