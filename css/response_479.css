@@ -2166,6 +2166,12 @@
         text-align: center;
     }
 
+    .dynamic_item-bottom{
+        flex-direction: column;
+        gap:10px;
+        align-items: flex-start;
+    }
+
 
     
 

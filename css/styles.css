@@ -6103,7 +6103,8 @@ aside .menu .sub_menu a.active
     transition: opacity .2s linear;
 
     opacity: 0;
-    background: url(../images/ic_check_blue.svg) 50%/10px 8px no-repeat;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='var(--main_color)' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+
 }
 
 
@@ -6120,13 +6121,26 @@ aside .menu .sub_menu a.active
     height: 10px;
 
     border-radius: 50%;
-    background: #0800c7;
+    background: var(--main_color);
 }
 
 
 .test_data .step .answers input:checked + label .name:after
 {
     opacity: 1;
+}
+
+.test_data .step .answers input[type="checkbox"]:checked + label .name:after{
+    opacity: 1;
+    left: 12px;
+    top: 12px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--main_color);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    bottom: initial;
+    background: none;
 }
 
 
@@ -42059,6 +42073,9 @@ a.back_link_right{
     gap: 11px;
     align-items: center;
 }
+.dynamic_item-bottom + .dynamic_item-bottom{
+    margin-top: 15px;
+}
 .dynamic_item-comment {
     display: flex;
     gap: 5px;
@@ -42269,19 +42286,20 @@ a.back_link_right{
     transform-origin: left;
     background: var(--main_color);
     animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    width: attr(data-parent);
 }
 .bar:nth-child(2n) .progress-line span {
     background: #87CC15;
-}
+}/*
 .bar .progress-line.item1 span {
-    width: 75%;
+    width: attr(data-parent);
 }
 .bar .progress-line.item2 span {
-    width: 43%;
+    width: attr(data-parent);
 }
 .bar .progress-line.item3 span {
-    width: 12%;
-}
+    width: attr(data-parent);
+}*/
 .bar .info {
     position: relative;
 }
@@ -42429,6 +42447,7 @@ a.back_link_right{
     border-radius: 15px;
     width: 83px;
     height: 83px;
+    object-fit: cover;
 }
 
 .skill-bars {
