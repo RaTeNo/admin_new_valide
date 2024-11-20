@@ -40381,7 +40381,7 @@ bottom: 20px;
     padding: 20px;
     display: flex;
     gap:20px;    
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .trainer_ai_body_left{
@@ -40396,6 +40396,7 @@ bottom: 20px;
     max-width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
+    height: 100%;
 }
 
 .trainer_ai_body_left video{
