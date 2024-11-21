@@ -42288,7 +42288,7 @@ a.back_link_right{
     animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
     width: attr(data-parent);
 }
-.bar:nth-child(2n) .progress-line span {
+.bar.active .progress-line span {
     background: #87CC15;
 }/*
 .bar .progress-line.item1 span {
@@ -42337,14 +42337,8 @@ a.back_link_right{
     opacity: 1;
     }
 }
-.bar .info.item1 span::after {
-    content: "75%";
-}
-.bar .info.item2 span::after {
-    content: "43%";
-}
-.bar .info.item3 span::after {
-    content: "12%";
+.bar .info span::after {
+    content: attr(data-procent);
 }
 .skill-bars_button {
     background: #625BA126;
