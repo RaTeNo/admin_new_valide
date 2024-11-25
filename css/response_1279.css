@@ -2138,6 +2138,11 @@
     }
 
 
+    .note_items > * {
+        width: calc(100%/2 - 15px);
+    }
+
+
 }
 
 

@@ -42645,3 +42645,140 @@ a.back_link_right{
 .content_flex .content .surveys > * + * {
     margin-top: 40px;
 }
+
+
+
+.note_items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px;
+}
+.note_items > * {
+    padding: 20px 22px 24px;
+    border-radius: 15px;
+    background: #fff;
+    width: calc(100%/3 - 20px);
+}
+.note_item-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+.note_item .icon {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+}
+.note_item-title {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: #1D1D1D;   
+}
+.note_item-text {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: #61648F;
+}
+.note_item ul li {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: #61648F;
+}
+.note_item ul {
+    margin-left: 25px;
+}
+
+
+
+.evaluation-simulator {
+    padding: 15px 20px 30px;
+    border-radius: 15px;
+    background: #fff;
+}
+.evaluation-simulator_item + .evaluation-simulator_item {
+    margin-top: 12px;
+}
+.evaluation-simulator_item-title {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #1A1B2F;
+    margin-bottom: 4px;
+}
+.rating-area2 {
+	overflow: hidden;
+	width: 211px;
+}
+.rating-area2:not(:checked) > input {
+	display: none;
+}
+.rating-area2:not(:checked) > label {
+	float: right;
+	width: 42px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 42px;
+}
+.rating-area2:not(:checked) > label:before {
+	content: '★';
+}
+.rate-area2 > label:active {
+	position: relative;
+}
+.rating-area2:not(:checked) > label:before {
+    content: '';
+    display: block;
+    background: url(../images/star-black2.svg);
+    width: 28px;
+    height: 27px;
+}
+.rating-area2 > input:checked ~ label:before {
+    background: url(../images/star10.svg);
+}
+.rating-area2:not(:checked) > label:hover:before,
+.rating-area2:not(:checked) > label:hover ~ label:before {
+    background: url(../images/star10.svg);
+}
+
+
+.thanks-assessment {
+    padding: 40px 30px 60px;
+    border-radius: 15px;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.thanks-assessment_icon {
+    width: 161px;
+    height: 161px;
+    border-radius: 19px;
+    border: 1px solid #C7C5F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.thanks-assessment_icon .icon {
+    width: 79px;
+    height: 79px;
+}
+.thanks-assessment_title {
+    max-width: 520px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -1px;
+}

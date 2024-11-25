@@ -3515,4 +3515,21 @@
     }
 
 
+    .note_items > * {
+        width: 100%;
+    }
+    .note_items {
+        gap: 15px;
+    }
+    .thanks-assessment {
+        padding: 20px;
+    }
+    .evaluation-simulator_item-title {
+        font-size: 18px;
+    }
+    .thanks-assessment_title {
+        font-size: 20px;
+    }
+
+
 }
