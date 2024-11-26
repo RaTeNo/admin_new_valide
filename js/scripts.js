@@ -33,6 +33,11 @@ $(() => {
 		$(".js-trainer_ai_button-record").removeClass("active");
 	});
 
+	$(".rating-area2 > label:nth-child(n+5)").click(function (e) {
+		alert("ЧТО НЕ НРАВИТСЯ, ХУЙЛО?");
+	});
+	
+
 
 
 	// tippy('[data-tippy-content]');
