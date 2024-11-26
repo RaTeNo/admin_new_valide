@@ -34,7 +34,7 @@ $(() => {
 	});
 
 	$(".rating-area2 > label:nth-child(n+5)").click(function (e) {
-		alert("ЧТО НЕ НРАВИТСЯ, ХУЙЛО?");
+		alert("модалку сюда");
 	});
 	
 
