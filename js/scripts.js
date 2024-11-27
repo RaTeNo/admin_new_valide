@@ -34,9 +34,9 @@ $(() => {
 	});
 
 	$(".rating-area2 > label:nth-child(n+5)").click(function (e) {
-		
+		console.log($(this).parent().data("modal"));
 		Fancybox.show([{
-			src: "#correction_modal",
+			src: $(this).parent().data("modal"),
 			type: 'inline'
 		}])
 	});

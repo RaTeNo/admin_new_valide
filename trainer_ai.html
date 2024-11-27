@@ -546,7 +546,7 @@
 								<div class="evaluation-simulator_items">
 									<div class="evaluation-simulator_item">
 										<div class="evaluation-simulator_item-title">Насколько вам было комфортно?</div>
-										<div class="rating-area2">
+										<div class="rating-area2" data-modal="#correction_modal">
 											<input type="radio" id="star-1.5" name="rating1" value="5">
 											<label for="star-1.5" title="Оценка «5»"></label>	
 											<input type="radio" id="star-1.4" name="rating1" value="4">
@@ -559,9 +559,9 @@
 											<label for="star-1.1" title="Оценка «1»"></label>
 										</div>										
 									</div>
-									<div class="evaluation-simulator_item">
+									<div class="evaluation-simulator_item" >
 										<div class="evaluation-simulator_item-title">Насколько урок был полезен</div>
-										<div class="rating-area2">
+										<div class="rating-area2" data-modal="#correction_modal2">
 											<input type="radio" id="star-2.5" name="rating2" value="5">
 											<label for="star-2.5" title="Оценка «5»"></label>	
 											<input type="radio" id="star-2.4" name="rating2" value="4">
@@ -574,9 +574,9 @@
 											<label for="star-2.1" title="Оценка «1»"></label>
 										</div>
 									</div>
-									<div class="evaluation-simulator_item">
+									<div class="evaluation-simulator_item" >
 										<div class="evaluation-simulator_item-title">Насколько клиент был реалистичен</div>
-										<div class="rating-area2">
+										<div class="rating-area2" data-modal="#correction_modal3">
 											<input type="radio" id="star-3.5" name="rating3" value="5">
 											<label for="star-3.5" title="Оценка «5»"></label>	
 											<input type="radio" id="star-3.4" name="rating3" value="4">
@@ -645,6 +645,41 @@
 		</div>
 
 		<section class="correction_modal" id="correction_modal">			
+			<div class="correction_modal-title">Почему?</div>											
+			<div class="correction_modal-text">Ты?</div>
+			<form class="correction_modal-form">
+				<div class="line">
+					<div class="field">
+						<textarea placeholder="Текст"></textarea>
+					</div>
+				</div>	
+				<div class="correction_modal-btns">
+					<a href="#" class="correction_modal-form-btn active">
+						<span>Отправить</span>					
+					</a>			
+				</div>							
+			</form>
+		</section>
+
+		<section class="correction_modal" id="correction_modal2">			
+			<div class="correction_modal-title">Почему?</div>											
+			<div class="correction_modal-text">Ты?</div>
+			<form class="correction_modal-form">
+				<div class="line">
+					<div class="field">
+						<textarea placeholder="Текст"></textarea>
+					</div>
+				</div>	
+				<div class="correction_modal-btns">
+					<a href="#" class="correction_modal-form-btn active">
+						<span>Отправить</span>					
+					</a>			
+				</div>							
+			</form>
+		</section>
+
+
+		<section class="correction_modal" id="correction_modal3">			
 			<div class="correction_modal-title">Почему?</div>											
 			<div class="correction_modal-text">Ты?</div>
 			<form class="correction_modal-form">
