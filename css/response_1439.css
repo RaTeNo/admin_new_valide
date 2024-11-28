@@ -1008,5 +1008,9 @@
         padding-right: 60px;
     }
 
+    .feedback .col_date2{
+        width: 180px;
+        min-width: 180px;
+    }
 
 }

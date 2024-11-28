@@ -40237,7 +40237,7 @@ bottom: 20px;
 }
 
 .trainer_ai_content{
-    min-height: 500px;
+    /*min-height: 500px;*/
     display: flex;
     align-items: center;
 
@@ -42682,8 +42682,7 @@ a.back_link_right{
     font-family: 'Ubuntu';
     font-weight: 400;
     font-size: 15px;
-    line-height: 17px;
-    color: #61648F;
+    line-height: 22px;
 }
 .note_item ul li {
     font-family: 'Ubuntu';
