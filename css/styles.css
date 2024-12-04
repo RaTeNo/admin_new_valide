@@ -15161,7 +15161,10 @@ background: #64C841;
     justify-content: center;  
 }
 .modul_item .modul_item-top-icon svg {
-     fill: var(--main_color);
+    fill: var(--main_color);
+    width: 60%;
+    height: 100%;
+    color: var(--main_color);
 }
 .modul_item:nth-child(1) .modul_item-top-icon svg {   
     width: 42px;
@@ -15274,6 +15277,7 @@ background: #64C841;
 }
 .modul_item:hover .modul_item-top-icon svg {
     fill: #fff;
+    color:#fff;
 }
 .modul_item:hover .modul_item-bottom-val {
     color: #fff;
