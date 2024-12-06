@@ -2098,7 +2098,6 @@
     }
 
     .page_title_bd{
-        flex-direction: column;
         gap:15px;
         align-items: baseline;
     }
