@@ -14947,7 +14947,7 @@ background: #64C841;
 .activity_item:hover .activity_item-description {
     display: block;
     position: absolute;
-    top: -118px;
+    bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -15040,7 +15040,7 @@ background: #64C841;
 .rating-block_item-tooltip {
     display: none;    
     position: absolute;
-    top: -150px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
