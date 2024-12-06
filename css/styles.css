@@ -42796,3 +42796,11 @@ a.back_link_right{
     text-align: center;
     letter-spacing: -1px;
 }
+
+.dynamic_item_button{
+    padding: 10px 12px;
+    background: var(--main_color);
+    border-radius: 59px;
+    color: #fff;
+    margin-bottom: 10px;
+}
