@@ -15035,7 +15035,6 @@ background: #64C841;
 .rating-block_item-text button {
     margin-left: 7px;
     position: relative;
-    z-index: 2;
 }
 .rating-block_item-tooltip {
     display: none;    
