@@ -5,7 +5,7 @@
     -------------------*/
     :root
     {
-        --sidebar_width: 280px;
+        --sidebar_width: 90px;
     }
 
 
@@ -1013,4 +1013,23 @@
         min-width: 180px;
     }
 
+    aside .menu .sub_menu{
+        display: none !important;
+    }
+
+    aside .menu .item .icon{
+        flex-shrink: 0;
+    }
+
+    aside .menu .item > a{
+        flex-wrap: nowrap;
+    }
+
+    aside .menu .item .icon + span{
+        display: none;
+    }
+
+    aside .menu .item .arrow{
+        display: none;
+    }
 }
