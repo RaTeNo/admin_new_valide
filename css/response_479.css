@@ -2172,7 +2172,13 @@
         align-items: flex-start;
     }
 
+    .trainer_ai_stop{
+        margin-left: 0;
+    }
 
+    .trainer_ai_button .icon{
+        margin-left: 10px;
+    }
     
 
 }

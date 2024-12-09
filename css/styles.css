@@ -40666,11 +40666,11 @@ bottom: 20px;
 
 .chat_item_counter {
     margin-top: 12px;
-    color: #fff;
-    background: #35B064;
+    color: var(--main_color);
     padding: 7px 11px;
-    border-radius: 25px;
+    border-radius: 5px;
     display: inline-block;
+    border:1px solid var(--main_color);
     font-size: 10px;
 }
 
@@ -40695,14 +40695,26 @@ bottom: 20px;
 
 }
 
+.chat_item_buttons{
+    display: flex;
+    gap:10px;
+}
+
 .chat_item_link {
-    color: #0583DF;
+    color: #fff;
     margin-top: 10px;
     display: inline-block;
     font-size: 11px;
-    border-bottom: 1px dashed #0583DF;
     text-decoration: none;
+    background: var(--main_color);
+    padding: 10px;
+    border-radius: 25px;
 }
+.chat_item_link.history{
+    background: #EDEBFB;
+    color:#3A3379;
+}
+
 
 @container presentations (max-width: 1200px) {
     .chat_item{        
