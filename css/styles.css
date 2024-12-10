@@ -458,6 +458,7 @@ button
     width: calc(100% - var(--sidebar_width));
     padding: 52px 40px 0;
     overflow: hidden;
+    transition: 0.2s;
 }
 
 .content_flex .content > *
@@ -1359,6 +1360,7 @@ aside
 
     background: linear-gradient(0deg, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), var(--main_color);
     scrollbar-width: thin;
+    transition: 0.2s;
 }
 
 

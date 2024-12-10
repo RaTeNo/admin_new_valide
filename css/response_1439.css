@@ -1013,6 +1013,7 @@
         min-width: 180px;
     }
 
+      
     aside .menu .sub_menu{
         display: none !important;
     }
@@ -1031,5 +1032,26 @@
 
     aside .menu .item .arrow{
         display: none;
+    }
+   
+
+    aside:hover{
+        --sidebar_width: 270px;
+    }
+
+    aside:hover .menu .sub_menu{
+        display: block !important;
+    }
+
+    aside:hover .menu .item .icon + span{
+        display: block;
+    }
+
+    aside:hover .menu .item .arrow{
+        display: block;
+    }
+
+    .content_flex:has(aside:hover) .content{
+        --sidebar_width: 270px;
     }
 }
