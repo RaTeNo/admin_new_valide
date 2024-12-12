@@ -41,6 +41,10 @@ $(() => {
 		}])
 	});
 	
+	$(".trainer_ai_hint_title").click(function (e) {	
+		$(this).next().show();
+		$(this).find("span").text("Подсказка");
+	});
 
 
 

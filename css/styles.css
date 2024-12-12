@@ -39626,6 +39626,12 @@ bottom: 20px;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 14px;
+    margin-top: 15px;
+}
+.event-feed_item-avatar-wrap{
+    display: flex;
+    gap:10px;
+    align-items: center;
 }
 .event-feed_item-left {
     width: calc(100% - 270px);
@@ -39642,15 +39648,19 @@ bottom: 20px;
     color: #121213;
 }
 .event-feed_item-date {
+    padding: 5px 10px;
     font-family: 'Ubuntu';
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     color: #353C76;
+    background: var(--color_light);
+    border-radius: 20px;
 }
 .event-feed_item-right {
     display: flex;
     gap: 7px;
+    margin-left: auto;
 }
 .event-feed_item .event-feed_item-label {
     position: relative;
@@ -39718,18 +39728,18 @@ bottom: 20px;
     margin-top: 15px;
 }
 .event-feed_item-bottom {
-    margin-top: 16px;
     display: flex;
     align-items: center;
     gap: 8px;
 }
 .event-feed_item-avatar {
-    width: 33px;
-    height: 33px;
+    width: 26px;
+    height: 26px;
 }
 .event-feed_item-avatar img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .event-feed_item-name {
     font-family: 'Ubuntu';
@@ -39755,8 +39765,7 @@ bottom: 20px;
 }
 
 .event-feed_item-images a{  
-    width: 225px;
-    height: 140px;
+    height: 200px;
 
 }
 .event-feed .trainer_step_video a img {
@@ -42834,4 +42843,86 @@ a.back_link_right{
     border-radius: 59px;
     color: #fff;
     margin-bottom: 10px;
+}
+
+
+.trainer_ai_title{
+    background: #fff;
+    color:var(--main_color);
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.trainer_ai_hint_title .icon{
+    width: 15px;
+    height: 15px;
+}
+
+.trainer_ai_text blockquote{
+    background: url(../images/ic_quote.svg) no-repeat;
+    padding-left: 40px;
+    margin: 20px 0;
+}
+
+.trainer_ai_hint{    
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.trainer_ai_hint_title{
+    display: flex;
+    gap: 15px;
+    cursor:pointer;
+}
+
+.trainer_ai_hint_title .icon{
+    width: 25px;
+    height: 25px;
+}
+
+.trainer_ai_hint_text{
+    margin-top: 15px;
+    display: none;
+}
+
+.trainer_ai_task{
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0;   
+}
+
+.trainer_ai_task_title{
+    display: flex;
+    gap: 15px;
+    cursor:pointer;
+}
+
+.trainer_ai_task_title .icon{
+    width: 25px;
+    height: 25px;
+}
+
+.trainer_ai_task_text{
+    margin-top: 15px;
+}
+
+.trainer_ai_hint_new{
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.trainer_ai_hint_new .trainer_ai_hint_title{
+    flex-direction: column;
+    align-items: center;
+}
+
+.trainer_ai_hint_new .icon{
+    width: 57px;
+    height: 30px;
 }
