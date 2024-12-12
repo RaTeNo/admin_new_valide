@@ -39769,7 +39769,7 @@ bottom: 20px;
 
 }
 .event-feed .trainer_step_video a img {
-    width: 100%;
+    width: initial;
     height: 100%;
 }
 .event-feed .trainer_step_video a:after {
