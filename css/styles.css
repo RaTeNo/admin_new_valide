@@ -42851,7 +42851,7 @@ a.back_link_right{
     color:var(--main_color);
     margin: 20px 0;
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .trainer_ai_hint_title .icon{
@@ -42863,6 +42863,7 @@ a.back_link_right{
     background: url(../images/ic_quote.svg) no-repeat;
     padding-left: 40px;
     margin: 20px 0;
+    background-position: 0px 6px;
 }
 
 .trainer_ai_hint{    
@@ -42874,8 +42875,9 @@ a.back_link_right{
 
 .trainer_ai_hint_title{
     display: flex;
-    gap: 15px;
+    gap: 10px;
     cursor:pointer;
+    align-items: center;
 }
 
 .trainer_ai_hint_title .icon{
@@ -42884,7 +42886,7 @@ a.back_link_right{
 }
 
 .trainer_ai_hint_text{
-    margin-top: 15px;
+    margin-top: 5px;
     display: none;
 }
 
@@ -42897,8 +42899,9 @@ a.back_link_right{
 
 .trainer_ai_task_title{
     display: flex;
-    gap: 15px;
+    gap: 10px;
     cursor:pointer;
+    align-items: center;
 }
 
 .trainer_ai_task_title .icon{
@@ -42907,7 +42910,7 @@ a.back_link_right{
 }
 
 .trainer_ai_task_text{
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .trainer_ai_hint_new{
@@ -42920,6 +42923,7 @@ a.back_link_right{
 .trainer_ai_hint_new .trainer_ai_hint_title{
     flex-direction: column;
     align-items: center;
+    font-weight: bold;
 }
 
 .trainer_ai_hint_new .icon{
