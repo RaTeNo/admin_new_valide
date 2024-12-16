@@ -1066,4 +1066,8 @@
     .content_flex:has(aside:hover) .content{
         --sidebar_width: 270px;
     }
+
+    aside .menu .item > a.sub_link{
+        margin-right: 0;
+    }
 }
