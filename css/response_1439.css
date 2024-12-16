@@ -1014,9 +1014,21 @@
         transition: 0.2s;
     }
 
-    aside .menu .sub_menu{
-        display: none !important;
+    .content_flex:has(aside) .sub_menu{
+        height: 0;
+        padding: 0;
+        opacity: 0;
     }
+
+    .content_flex:has(aside:hover) .sub_menu{
+        height: auto;
+        padding: 2px 20px 15px 67px;
+        opacity: 1;
+    }
+
+    /*aside .menu .sub_menu{
+        display: none !important;
+    }*/
 
     aside .menu .item .icon{
         flex-shrink: 0;
@@ -1039,9 +1051,9 @@
         --sidebar_width: 270px;
     }
 
-    aside:hover .menu .sub_menu{
+    /*aside:hover .menu .sub_menu{
         display: block !important;
-    }
+    }*/
 
     aside:hover .menu .item .icon + span{
         display: block;
