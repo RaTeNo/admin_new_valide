@@ -1005,7 +1005,15 @@
         min-width: 180px;
     }
 
-      
+
+}
+
+@media print, (max-width: 1439px) and (min-width: 1024px)
+{   
+    aside{
+        transition: 0.2s;
+    }
+
     aside .menu .sub_menu{
         display: none !important;
     }

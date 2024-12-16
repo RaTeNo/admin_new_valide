@@ -1360,7 +1360,7 @@ aside
 
     background: linear-gradient(0deg, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), var(--main_color);
     scrollbar-width: thin;
-    transition: 0.2s;
+    
 }
 
 
