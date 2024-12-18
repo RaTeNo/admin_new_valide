@@ -32910,7 +32910,7 @@ bottom: 20px;
 
 
 .add_faq {
-    margin-left: auto;
+   /* margin-left: auto;*/
 }
 .knowledgebase .icon-redact {
     width: 24px;
@@ -40952,6 +40952,7 @@ bottom: 20px;
     width: 35px;
     height: 35px;
     margin-right: 9px;
+    object-fit: cover;
 }
 
 
@@ -41067,6 +41068,7 @@ bottom: 20px;
     height: 50px;
     border-radius: 50%;
     margin-right: 15px;
+    object-fit: cover;
 }
 .person_edit .modal_cont .mini_modal_btn span {
     font-family: 'Ubuntu';
@@ -43008,4 +43010,141 @@ a.back_link_right{
     line-height: 33px;
     flex-shrink: 0;
     margin-left: auto;
+}
+
+.knowledgebase_buttons{
+    display: flex;
+    gap:10px;
+}
+
+.knowledgebase_buttons a{
+    border-bottom: 1px dashed;
+    font-size: 12px;
+}
+
+.knowledgebase_buttons a:hover{
+    text-decoration: none;
+}
+
+.knowledgebase_buttons a.yellow{
+    color: #E07800;
+}
+
+.knowledgebase_buttons a.green{
+    color: #36B11E;
+}
+
+.knowledgebase_buttons a.blue{
+    color: #007BE0;
+    
+}
+
+.ii_button{
+    padding: 9px 10px;
+    background: linear-gradient(67.84deg, #682D8C -1.82%, #EB1E79 106.59%);
+    border-radius: 73px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: auto;
+    font-weight: 500;
+}
+
+.ii_button .icon{
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+.files_upload{
+    padding: 15px 20px 30px;
+    border-radius: 15px;
+    background: #fff;
+}
+
+.add_ii{
+    padding: 20px 15px 16px;
+    max-width: 750px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 15px;
+    display: none;
+}
+
+.trainer_modal-title:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 30px);
+    height: 1px;
+    background: #EBEBEB;
+    left: -15px;
+    bottom: 0;
+}
+
+.add_ii_block{
+    border-radius: 9px;
+    border:1px solid #DFDFDF;
+    padding: 15px;
+}
+
+.add_ii_block + .add_ii_block{
+    margin-top: 15px;
+}
+
+.add_ii_block_head label{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 119% */
+    letter-spacing: -0.375px;
+}
+
+.add_ii_block_head{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+
+.add_ii_block_complete, .add_ii_block_error{
+    margin-left: auto;
+    background: #1FBB53;
+    color: #fff;
+    padding: 7px;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    display: flex;
+    gap:5px;
+}
+
+.add_ii_block_complete .icon, .add_ii_block_error .icon{
+    width: 11px;
+    height: 11px;
+}
+
+.add_ii_block_error{
+    background: #D63242;
+}
+
+.add_ii_block_content{
+    margin-top: 10px;
+}
+
+.add_ii_button{
+    border-radius: 55px;
+    background: var(--main_color);
+    font-size: 14px;
+    color: #FFF;
+    font-weight: 500;
+    text-decoration: none;
+    height: 33px;
+    display: block;
+    text-align: center;
+    line-height: 33px;
+    flex-shrink: 0;
+    padding: 0 15px;
+    width: max-content;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-bottom: 10px;
 }

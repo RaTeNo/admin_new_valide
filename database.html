@@ -364,7 +364,15 @@
 									</div>
 
 									<div class="title_faq_result"><span>Результаты поиска</span> <button><img src="images/reset.svg" alt=""></button></div>
-									<div class="title_faq">Информация о курсах <a href="" data-content="#pass_add" class="add_faq modal_btn">Добавить пункт</a></div>								
+									<div class="title_faq">Информация о курсах 
+
+										<button class="ii_button modal_btn" data-content="#add_ii">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ii_new"></use></svg>
+											Добавить от ИИ
+										</button>
+										<a href="" data-content="#pass_add" class="add_faq modal_btn">Добавить пункт</a>
+
+									</div>								
 
 									<div class="accordion">
 										<div class="accordion_item" id="item1">
@@ -423,7 +431,13 @@
 														</div>									
 													</div>
 
-													<div class="edit_faq modal_btn" title="Редактировать пункт" data-content="#pass_edit" ><svg><use xlink:href="images/sprite.svg#edit_faq"></use></svg><span>Редактировать</span></div>									
+													<div class="edit_faq modal_btn" title="Редактировать пункт" data-content="#pass_edit" ><svg><use xlink:href="images/sprite.svg#edit_faq"></use></svg><span>Редактировать</span></div>	
+
+													<div class="knowledgebase_buttons">
+														<a href="" class="yellow">Редактировать</a>
+														<a href="" class="green">Одобрить</a>
+														<a href="" class="blue">Архивировать</a>
+													</div>								
 												</div>											
 											</div>
 										</div>
@@ -715,6 +729,73 @@
 					</button>
 				</div>
 			</form>		
+		</section>
+
+		<section class="add_ii" id="add_ii">			
+			<div class="trainer_modal-title">Добавить от ИИ</div>											
+			<div class="trainer_ai_loading">
+				<i><div class="dot-flashing"></div></i>
+				<div class="trainer_ai_loading_text">ИИ думает, пожалуйста подождите</div>
+			</div>
+
+			<div class="add_ii_blocks">
+				<div class="add_ii_block">
+					<div class="add_ii_block_head">
+						<div>
+							<input type="checkbox"  class="custom-checkbox" id="color-1">
+							<label for="color-1">Индекс нормальной скорости</label>
+						</div>
+
+						<div class="add_ii_block_complete">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#add_ii1"></use>
+							</svg>	
+							Добавляем
+						</div>
+					</div>
+					<div class="add_ii_block_content">
+						Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков
+					</div>
+				</div>
+				<div class="add_ii_block">
+					<div class="add_ii_block_head">
+						<div>
+							<input type="checkbox" class="custom-checkbox" id="color-2">
+							<label for="color-2">Сезонность</label>
+						</div>
+
+						<div class="add_ii_block_complete">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#add_ii1"></use>
+							</svg>	
+							Добавляем
+						</div>
+					</div>
+					<div class="add_ii_block_content">
+						Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков
+					</div>
+				</div>
+				<div class="add_ii_block">
+					<div class="add_ii_block_head">
+						<div>
+							<input type="checkbox"  class="custom-checkbox" id="color-3">
+							<label for="color-3">Мастерская</label>
+						</div>
+
+						<div class="add_ii_block_error">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#add_ii2"></use>
+							</svg>	
+							Не добавляем
+						</div>
+					</div>
+					<div class="add_ii_block_content">
+						Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков
+					</div>
+				</div>
+			</div>
+
+			<button class="add_ii_button">Добавить выбранное</button>
 		</section>
 
 		

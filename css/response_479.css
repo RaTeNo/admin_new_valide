@@ -1739,6 +1739,7 @@
 
     .title_faq{
         flex-direction: column;
+        gap:10px;
     }
 
     .accordion_item .head{
