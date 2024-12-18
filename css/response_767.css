@@ -3544,4 +3544,16 @@
         height: 120px;
     }
 
+    .you_boss{
+        flex-wrap: wrap;
+    }
+
+    .you_boss_text{
+        width: calc(100% - 55px);
+    }
+
+    .you_boss button{
+        width: calc(100% - 55px);
+    }
+
 }

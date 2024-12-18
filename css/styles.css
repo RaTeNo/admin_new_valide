@@ -37835,6 +37835,19 @@ bottom: 20px;
     margin-left: 10px;
 }
 
+.archive_db{
+    background: #424242;
+    border-radius: 15px;
+    padding: 6px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+}
+
 
 .page_title_bd_link{
     display: flex;
@@ -42940,4 +42953,59 @@ a.back_link_right{
         font-size: 16px;
         line-height: 20px;
     }
+}
+
+.you_boss{
+    display: flex;
+    gap:15px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.you_boss_icon{
+    background: var(--color_light);
+    padding: 5px;
+    border-radius: 9px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.you_boss_icon .icon{
+    width: 30px;
+    height: 30px;
+}
+
+.you_boss_head{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.3px;
+    color: #212121;
+}
+
+.you_boss_footer{
+    line-height: 19px; 
+    color: #3D3D3D;
+    margin-top: 3px;
+}
+
+.you_boss button{
+    border-radius: 55px;
+    background: var(--main_color);
+    font-size: 14px;
+    color: #FFF;
+    font-weight: 500;
+    text-decoration: none;
+    width: 146px;
+    height: 33px;
+    display: block;
+    text-align: center;
+    line-height: 33px;
+    flex-shrink: 0;
+    margin-left: auto;
 }
