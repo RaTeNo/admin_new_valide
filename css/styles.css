@@ -43204,6 +43204,7 @@ a.back_link_right{
 .courses_not_complete_list.active{
     margin-top: 20px;
     opacity: 1;
+    height: auto;
     height: calc-size(max-content, size);
 }
 /*
