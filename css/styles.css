@@ -40953,6 +40953,7 @@ bottom: 20px;
     height: 35px;
     margin-right: 9px;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 
