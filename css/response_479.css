@@ -2181,5 +2181,7 @@
         margin-left: 10px;
     }
     
-
+    .courses_not_complete_item{
+        width: calc(100%)
+    }
 }

@@ -2,6 +2,14 @@ WW = window.innerWidth || document.clientWidth || document.getElementsByTagName(
 WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
 $(() => {
 
+	$(".training-course .wrapper_head_courses").click(function (e) {
+		$(".training-course_items").toggleClass("open");
+	});
+
+	$(".show_courses_not_complete").click(function (e) {
+		$(".show_courses_not_complete").toggleClass("active");
+		$(".courses_not_complete_list").toggleClass("active");
+	});
 	// if($(".loading").length>0){
 	// 	setTimeout(() => {
 	// 		$(".loading").removeClass("loading");

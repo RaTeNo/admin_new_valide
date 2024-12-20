@@ -43149,3 +43149,140 @@ a.back_link_right{
     margin-left: auto;
     margin-bottom: 10px;
 }
+
+.courses_not_complete{
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.courses_not_complete_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #1D1D1D;
+}
+
+.show_courses_not_complete .icon{
+    width: 22px;
+    height: 22px;
+    transition: 0.3s;
+}
+
+.show_courses_not_complete{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    cursor: pointer;
+}
+
+.show_courses_not_complete.active .icon{
+    transform: rotate(90deg);
+}
+
+.show_courses_not_complete span{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #312F5A;
+}
+
+.courses_not_complete_list{
+    display: flex;
+    gap:12px;
+    flex-wrap: wrap;
+    opacity: 0;
+    height: 0; 
+    transition: all 0.25s;
+    transition: all 0.25s allow-discrete;
+}
+
+.courses_not_complete_list.active{
+    margin-top: 20px;
+    opacity: 1;
+    height: calc-size(max-content, size);
+}
+/*
+@starting-style {
+    .courses_not_complete_list.active {
+        opacity: 0;
+    }
+}*/
+
+.courses_not_complete_item{
+    border: 1px solid #DFDFDF;
+    padding: 15px;
+    border-radius: 10px;
+    width: calc(100% / 4 - 9px);
+}
+
+.courses_not_complete_item_title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    margin-bottom: 12px;
+}
+
+.courses_not_complete_item_desc{
+    font-size: 14px;
+    line-height: 130%;
+    color: #4B4F75;
+    margin-bottom: 15px;
+}
+
+.courses_not_complete_item_line{
+    height: 12px;
+    width: 100%;
+    background: #F3F2FC;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 12px;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    margin-bottom: 15px;
+}
+
+.courses_not_complete_item_line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: var(--main_color);
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    color: #fff;
+    font-size: 11px;
+    padding-left: 10px;
+}
+
+.courses_not_complete_item_button:before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    height: 1px;
+    background: #DFDFDF;
+}
+
+.courses_not_complete_item_button{
+    position: relative;
+}
+
+.courses_not_complete_item_button button{
+    padding: 8px 21px;
+    background: var(--main_color);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border-radius: 55px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+}
