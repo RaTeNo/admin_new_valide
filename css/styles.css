@@ -27102,7 +27102,13 @@ form .form_btns input[type=file] + label,
     left: -19px;
     top: 1px;
     border-radius: 50%;
-    background: var(--main_color);
+    background: #38AC10;
+}
+.history-training_step.yellow:before{
+    background: #E8AF19;
+}
+.history-training_step.red:before{
+    background: #D62222;
 }
 .history-training_success {
     font-weight: 700;
@@ -27128,7 +27134,22 @@ form .form_btns input[type=file] + label,
     padding: 11px 12px 9px 35px;  
     background: #F3F3FF;
     border-radius: 6px;  
-    display: inline-block;
+    display: flex;
+    gap:20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.history-training_box ul li button{
+    padding: 8px 21px;
+    background: var(--main_color);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border-radius: 55px;
+    text-decoration: none;
+    text-align: center;
 }
 .history-training_box ul li + li {
     margin-top: 8px;
