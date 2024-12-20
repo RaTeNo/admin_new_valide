@@ -2,13 +2,16 @@ WW = window.innerWidth || document.clientWidth || document.getElementsByTagName(
 WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
 $(() => {
 
-	$(".training-course .wrapper_head_courses").click(function (e) {
-		$(".training-course_items").toggleClass("open");
-	});
-
+	
 	$(".show_courses_not_complete").click(function (e) {
 		$(".show_courses_not_complete").toggleClass("active");
 		$(".courses_not_complete_list").toggleClass("active");
+		if($(".show_courses_not_complete").hasClass("active")){
+			$(".show_courses_not_complete span").text("Скрыть курсы")
+		}
+		else{
+			$(".show_courses_not_complete span").text("Показать курсы")
+		}
 	});
 	// if($(".loading").length>0){
 	// 	setTimeout(() => {

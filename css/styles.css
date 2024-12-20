@@ -43190,7 +43190,7 @@ a.back_link_right{
     line-height: 16px;
     color: #312F5A;
 }
-
+/*
 .courses_not_complete_list{
     display: flex;
     gap:12px;
@@ -43206,13 +43206,26 @@ a.back_link_right{
     opacity: 1;
     height: auto;
     height: calc-size(max-content, size);
+}*/
+
+.courses_not_complete_list{
+    display: none;
+    gap:12px;
+    flex-wrap: wrap;
+    opacity: 0;
+    transition: all 0.5s allow-discrete;
 }
-/*
+
+.courses_not_complete_list.active{
+    margin-top: 20px;
+    opacity: 1;
+    display: flex;
+}
 @starting-style {
     .courses_not_complete_list.active {
         opacity: 0;
     }
-}*/
+}
 
 .courses_not_complete_item{
     border: 1px solid #DFDFDF;
