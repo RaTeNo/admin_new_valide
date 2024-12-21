@@ -2184,4 +2184,15 @@
     .courses_not_complete_item{
         width: calc(100%)
     }
+
+
+    .chat_box .line .fields > * {
+        width: 100%;
+    }
+
+
+
+
+
+
 }
