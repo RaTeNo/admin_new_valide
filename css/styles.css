@@ -43391,7 +43391,7 @@ a.back_link_right{
     width: 100%;
 }
 .custom-checkbox_text {
-    padding: 11px 42px 16px 12px;
+    padding: 15px;
     font-family: 'Ubuntu';
     font-weight: 400;
     font-size: 11px;
@@ -43460,6 +43460,14 @@ a.back_link_right{
     background-size: 100%;
     border: none;
 }
+
+.chat_box .custom-checkbox[type="radio"]:checked+label::before{
+    background: none;
+    border: 3px solid #fff;
+    width: 16px;
+    height: 16px;
+}
+
 .chat_box .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
     border-color:  #DFDFDF;
 }
@@ -43483,8 +43491,6 @@ a.back_link_right{
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    color: #7874A3;
-    opacity: 0.6; 
     padding: 15px 14px;
     background: #FFFFFF;
     border: 1px solid #AEABD1;
@@ -43499,8 +43505,6 @@ a.back_link_right{
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    color: #7874A3;
-    opacity: 0.6; 
     padding: 15px 14px;
     background: #FFFFFF;
     border: 1px solid #AEABD1;
