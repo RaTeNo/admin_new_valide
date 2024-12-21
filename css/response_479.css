@@ -2190,7 +2190,17 @@
         width: 100%;
     }
 
+    .courses_not_complete_title{
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
 
+    .history-training_box ul li{
+        flex-direction: column;
+        align-items: flex-start;
+        gap:10px;
+    }
 
 
 

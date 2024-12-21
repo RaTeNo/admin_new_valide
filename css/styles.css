@@ -43271,7 +43271,8 @@ a.back_link_right{
 }
 
 .courses_not_complete_item_line{
-    height: 12px;
+    height: 14px;
+    line-height: 14px;
     width: 100%;
     background: #F3F2FC;
     position: relative;
