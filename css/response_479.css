@@ -2202,6 +2202,23 @@
         gap:10px;
     }
 
+    .trainer_ai, .files_upload, .trainer_ai-task, .note, .evaluation-simulator, .thanks-assessment{
+        background: #fff;
+        box-shadow: none;
+        width: calc(100% + 44px) !important;
+        margin-left: -22px;
+        padding: 20px;
+        border-radius: 0;
+    }
+
+    .trainer_ai_body{
+        padding: 0;
+    }
+
+    .trainer_ai_footer:before{
+        display: none;
+    }
+
 
 
 

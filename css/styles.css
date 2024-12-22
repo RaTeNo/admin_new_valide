@@ -43070,6 +43070,8 @@ a.back_link_right{
     line-height: 16px;
     margin-left: auto;
     font-weight: 500;
+    width: 146px;
+    flex-shrink: 0;
 }
 
 .ii_button .icon{
@@ -43424,7 +43426,7 @@ a.back_link_right{
 .chat_box .checkbox {
     height: 100%;
 }
-.custom-checkbox+label::before {
+.chat_box .custom-checkbox+label::before {
     content: '';
     display: inline-block;
     width: 16px;
