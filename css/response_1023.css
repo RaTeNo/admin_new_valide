@@ -541,6 +541,10 @@
         width: calc(100% / 2 - 15px);
     }
 
+    .mission_item {
+        width: calc(100% / 2 - 20px);
+    }
+
 
 
 
