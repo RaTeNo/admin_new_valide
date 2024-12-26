@@ -44001,6 +44001,8 @@ a.back_link_right{
     padding: 20px 20px 23px 20px;
     border-radius: 20px;
     background: #fff;
+    margin-top: 20px;
+    color: #000;
 }
 .outcomes_text {
     font-family: 'Ubuntu';
