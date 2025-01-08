@@ -29655,6 +29655,7 @@ bottom: 20px;
 	height: 230px;
 	border-radius: 8px;
 	object-fit: cover;
+    max-width: 100%;
 }
 
 .step_stage_img .full_screen{
