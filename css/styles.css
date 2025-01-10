@@ -457,7 +457,7 @@ button
 
     width: calc(100% - var(--sidebar_width));
     padding: 52px 40px 0;
-    overflow: hidden;
+    overflow: clip;
     transition: 0.2s;
 }
 
@@ -4463,6 +4463,8 @@ aside .menu .sub_menu a.active
 
     border-radius: 15px;
     background: #fff;
+    position: sticky;
+    top: 10px;
 }
 
 
@@ -44143,4 +44145,20 @@ a.back_link_right{
     text-decoration: none;
     display: block;
     white-space: nowrap;
+}
+
+.event-feed_item-button{
+    background: var(--main_color);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 55px;
+    transition: all .4s;
+    display: inline-block;
+    line-height: normal;
+    opacity: 1;
+    margin-right: 0;
+    letter-spacing: inherit;
+    margin-top: 15px;
 }
