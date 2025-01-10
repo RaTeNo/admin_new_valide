@@ -1562,6 +1562,18 @@ aside .menu .item .icon999
     height: 32px;
 }
 
+aside .menu .item .icon9999
+{
+    height: 32px;
+    width: 32px;
+}
+
+aside .menu .item .icon9999 svg
+{
+    height: 32px;
+    width: 32px;
+}
+
 aside .menu .item .icon + span
 {
     max-width: calc(100% - 48px);
