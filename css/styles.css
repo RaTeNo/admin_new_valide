@@ -3758,6 +3758,8 @@ aside .menu .sub_menu a.active
 }
 
 
+
+
 .files .row
 {
     margin-bottom: -30px;
@@ -27707,7 +27709,7 @@ form .form_btns input[type=file] + label,
     font-weight: 700;
     font-size: 11px;
     line-height: 10px;
-    color:var(--main_color);
+    color:var(--c);
 }
 
 .pie:before, .pie:after {
@@ -44046,7 +44048,7 @@ a.back_link_right{
 .outcomes_item-top {
     padding-bottom: 15px;
     position: relative;
-    width: calc(100% - 60px);
+    /*width: calc(100% - 60px);*/
 }
 .outcomes_item-top:before {
     position: absolute;
@@ -44173,4 +44175,30 @@ a.back_link_right{
     margin-right: 0;
     letter-spacing: inherit;
     margin-top: 15px;
+    text-decoration: none;
+}
+
+.event-feed_item-images + .files{
+	margin-top: 20px;
+}
+
+.outcomes_item-balls{
+	display: flex;
+	gap:15px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.outcomes_item-balls-to{
+	color:#D04345;
+	background: #D0434526;
+	padding: 5px;
+	border-radius:5px;
+}
+
+.outcomes_item-balls-be{
+	color:#5EC62D;
+	background: #60C73026;
+	padding: 5px;
+	border-radius:5px;
 }
