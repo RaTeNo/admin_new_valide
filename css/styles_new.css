@@ -1,0 +1,14 @@
+.outcomes_item-balls-item{    
+    padding: 5px;
+    border-radius:5px;
+}
+
+.outcomes_item-balls-item.red{
+    color:#D04345;
+    background: #D0434526;
+}
+
+.outcomes_item-balls-item.green{
+    color:#5EC62D;
+    background: #60C73026;
+}
