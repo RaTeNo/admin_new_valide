@@ -2219,6 +2219,25 @@
         display: none;
     }
 
+    .board_item-top {
+        flex-direction: column;
+    }
+    .board_item-photo {
+        width: 113px;
+        height: 113px;
+    }
+    .tool_object-item {
+        line-height: 210%;
+    }
+
+    .bearing .accordion_item .head .title {
+        padding-right: 15px;
+        margin-bottom: 10px;
+    }
+    .bearing .accordion2 .data {
+        padding-top: 10px;
+        margin-top: 10px;
+    }
 
 
 

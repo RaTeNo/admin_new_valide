@@ -546,6 +546,31 @@
     }
 
 
+    .machine_items > * {
+        width: 100%;
+    }
+
+
+    .board_item-labels {
+        position: relative;
+        margin-bottom: 15px;
+        top: 0;
+        right: 0;
+    }
+    .board_item-info {
+        width: 100%;
+    }
+
+    .bearing_box {
+        flex-direction: column-reverse;
+    }
+    .bearing-nav {
+        width: 100%;
+    }
+    .bearing_left {
+        width: 100%;
+    }
+
 
 
 }

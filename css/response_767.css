@@ -3589,7 +3589,74 @@
     }
 
 
+    .repair_top-items > * {
+        width: 100%;
+    }
+    .repair_items > * {
+        width: 100%;
+    }
+
+    .region_top-items > * {
+        width: 100%;
+    }
+    .region_items > * {
+        width: 100%;
+    }
+
+    .breadcrumbs {
+        margin-left: 40px;
+    }
 
 
+    .question-ai .line {
+        flex-wrap: wrap;
+    }
+    .question-ai .line .field {
+        width: 100%;
+    }
+
+    .board_item-name {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .board_item-top {
+        align-items: flex-start;
+    }
+    .board_item-photo {
+        width: 70px;
+        height: 70px;
+    }
+    .navigation_link {
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .navigation_link a + a {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .navigation_link a {
+        border-bottom: none;
+    }
+
+
+    .bearing .tabs_container .tabs {
+        flex-direction: row;
+        margin-left: 0;
+    }
+    .bearing .accordion_item .head {
+        flex-direction: column;
+    }
+    .bearing .tabs_container .tabs button {
+        width: 50%;
+    }
+    .bearing .faq_btns {
+        display: none;
+    }
+    .bearing .accordion2 .data {
+        display: block !important;
+    }
+    .bearing-nav_title-btn {
+        display: flex;
+    }
 
 }

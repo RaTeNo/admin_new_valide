@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#0B00D8">
+		<meta name="theme-color" content="#0B00D8">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/nice-select.css">
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="sep"></div>
+
+						<div class="account">
+							<a href="/" class="settings_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+							</a>
+
+							<div class="user">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<!-- <img data-src="" alt="" class="lozad"> -->
+								</div>
+
+								<div class="name">Модератор</div>
+							</div>
+
+							<a href="/" class="logout_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+							</a>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="row">
+						<button class="menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						</button>
+
+						<div class="page_title">Сводка</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="nitifications new">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_nitifications"></use></svg>
+						</div>
+
+						<div class="account modal_cont">
+							<button class="user btn mini_modal_btn" data-modal-id="#account_modal">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<img data-src="images/tmp/user_avatar.jpg" alt="" class="lozad">
+								</div>
+
+								<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="account_modal">
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+									<span>Настройки</span>
+								</a></div>
+
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+									<span>Выход</span>
+								</a></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="content_flex">
+					<div class="cont row">
+						<aside>
+							<button class="close_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<div class="menu">
+								<div class="item">
+									<a href="/">
+										<div class="icon icon1">
+											<svg><use xlink:href="images/sprite.svg#ic_category1"></use></svg>
+										</div>
+										<span>Сводка</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon2 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category2"></use></svg>
+										</div>
+										<span>Мои задачи</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a  href="#" class="sub_link active open">
+										<div class="icon icon3 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category3"></use></svg>
+										</div>
+										<span>Курсы</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu" style="display: block;">
+										<div><a class="active">
+											<span class="count">3</span>
+											<span>Все курсы</span>
+										</a></div>
+										<div><a href="/">Новые курсы</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="#" class="sub_link">
+										<div class="icon icon4 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category4"></use></svg>
+										</div>
+										<span>Обратная связь</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/">По тренажерам</a></div>
+										<div><a href="/">По заданиям</a></div>
+										<div><a href="/">По другому</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5">
+											<svg><use xlink:href="images/sprite.svg#ic_category5"></use></svg>
+										</div>
+										<span>Тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_2">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_2"></use></svg>
+										</div>
+										<span>Аудио тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_3">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_3"></use></svg>
+										</div>
+										<span>Тренажеры действий</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon6">
+											<svg><use xlink:href="images/sprite.svg#ic_category6"></use></svg>
+										</div>
+										<span>Новости</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon7">
+											<svg><use xlink:href="images/sprite.svg#ic_category7"></use></svg>
+										</div>
+										<span>Опросы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon8">
+											<svg><use xlink:href="images/sprite.svg#ic_category8"></use></svg>
+										</div>
+										<span>Обсуждения</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon9">
+											<svg><use xlink:href="images/sprite.svg#ic_category9"></use></svg>
+										</div>
+										<span>Вебинары</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon10">
+											<svg><use xlink:href="images/sprite.svg#ic_category10"></use></svg>
+										</div>
+										<span>Подкасты</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon11">
+											<svg><use xlink:href="images/sprite.svg#ic_category11"></use></svg>
+										</div>
+										<span>Файлы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon12">
+											<svg><use xlink:href="images/sprite.svg#ic_category12"></use></svg>
+										</div>
+										<span>Коллеги</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon13">
+											<svg><use xlink:href="images/sprite.svg#ic_category13"></use></svg>
+										</div>
+										<span>Настройки</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/" class="sub_link">
+										<div class="icon icon14">
+											<svg><use xlink:href="images/sprite.svg#ic_category14"></use></svg>
+										</div>
+										<span>Управление</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/"></a></div>
+									</div>
+								</div>
+							</div>
+						</aside>
+
+
+						<section class="content">								
+							<div class="bearing">
+								<div class="head_box">
+									<section class="page_title">
+										<a href="/">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_left"></use></svg>
+										</a>
+										<span>Износ подшипников прикатных роликов</span>
+									</section>
+									<div class="breadcrumbs">
+										<a href="#">Ремонты</a> <span class="sep">/</span>
+										<a href="#">Цех по переработке старых шин</a> <span class="sep">/</span>
+										<a href="#">Участок начала переработки и утилизации</a> <span class="sep">/</span>
+										<span class="current">Станок ТБМ-300</span>
+									</div>	
+								</div>	
+
+								<div class="bearing_box">
+									<div class="bearing_left">							
+
+										<div class="accordion2">
+
+											<div class="accordion_item">
+												<div class="head">
+													<div class="title"> <img src="images/bearing1.svg" alt=""> Справочник ремонтов ТБМ-300</div>
+													<div class="faq_btns">
+														<div class="faq_btn">
+															<div class="faq_btn-icon1">
+																<img src="images/btn102.svg" alt="">
+															</div>
+														</div>
+														<div class="faq_btn">
+															<div class="faq_btn-icon1">
+																<img src="images/btn101.svg" alt="">
+															</div>																
+														</div>															
+													</div>														
+												</div>													
+												<div class="data" style="display: none;">
+													<div class="bearings_box">
+														<div class="bearing_title">Карта ремонта №1</div>
+														<div class="bearing_items">
+															<div class="bearing_item">
+																<span>Проблема:</span> Износ подшипников прикатных роликов
+															</div>
+															<div class="bearing_item">
+																<span>Узел:</span> Ролики прикатчика TBM-85
+															</div>
+															<div class="bearing_item">
+																<span>Тип неисправности:</span> Механический износ
+															</div>
+															<div class="bearing_item">
+																<span>Сложность ремонта:</span>  Средняя
+															</div>
+															<div class="bearing_item">
+																<span>Срочность:</span> Высокая (влияет на качество)
+															</div>
+														</div>
+														<div class="bearing_title">Признаки неисправности</div>
+														<ul>
+															<li>Повышенная температура корпуса (>45°С)</li>
+															<li>Вибрация >4.5 мм/с</li>
+															<li>Нехарактерный гул</li>
+															<li>Люфт в опоре</li>
+															<li>Брак по непрокату</li>
+														</ul>	
+													</div>												
+												</div>
+											</div>						
+											
+											
+											
+											<div class="accordion_item">
+												<div class="head">
+													<div class="title"> <img src="images/bearing2.svg" alt=""> Фото и Видео</div>
+													<div class="faq_btns">
+														<div class="faq_btn">
+															<div class="faq_btn-icon1">
+																<img src="images/btn102.svg" alt="">
+															</div>
+														</div>
+														<div class="faq_btn">
+															<div class="faq_btn-icon1">
+																<img src="images/btn101.svg" alt="">
+															</div>																
+														</div>															
+													</div>														
+												</div>														
+												<div class="data" style="display: none;">
+													<div class="bearing_box-item">
+														<div class="message_img">
+															<a href="images/tmp/lisa.jpg" data-fancybox>
+																<img src="images/tmp/lisa.jpg" alt="">																
+															</a>
+															<svg class="icon"><use xlink:href="images/sprite.svg#zoom100"></use></svg>
+														</div>	
+														<div class="bearing_box-text">В процессе замены подшипников можно использовать только индукционный нагреватель, нельзя греть феном или огнем из-за риска перегрева и деформации</div>
+													</div>
+													<div class="bearing_box-item">
+														<div class="video_message">
+															<button class="thumb modal_btn" data-content="#video_modal">
+																<img src="images/video_message_thumb100.png" alt="">
+																<svg class="icon"><use xlink:href="images/sprite.svg#play123"></use></svg>
+															</button>
+														</div>	
+														<div class="bearing_box-text">В процессе замены подшипников можно использовать только индукционный нагреватель, нельзя греть феном или огнем из-за риска перегрева и деформации</div>
+													</div>
+												</div>
+											</div>
+
+
+
+											<div class="accordion_item">
+												
+												<div class="tabs_container">
+
+													<div class="head">
+														<div class="title"><img src="images/bearing3.svg" alt=""> Первичная информация</div>
+														
+														<div class="tabs">
+															<button class="active" data-content="#tab1" data-level="level1">Для опытных</button>
+															<button data-content="#tab2" data-level="level1">Для новичков</button>
+														</div>	
+														
+														<div class="faq_btns">
+															<div class="faq_btn">
+																<div class="faq_btn-icon1">
+																	<img src="images/btn102.svg" alt="">
+																</div>
+															</div>
+															<div class="faq_btn">
+																<div class="faq_btn-icon1">
+																	<img src="images/btn101.svg" alt="">
+																</div>																
+															</div>															
+														</div>	
+													</div>	
+
+																	
+													<section class="tab_content level1 active" id="tab1">										
+														<div class="data" style="display: none;">
+															<div class="diagnostic_items">
+																<div class="diagnostic_item-btn">
+																	<img src="images/diagnostic_btn.svg" alt="">
+																</div>
+																<div class="diagnostic_item">
+																	<div class="diagnostic_item-title">Вызов</div>
+																	<ul>
+																		<li>Цех: Сборочный №3</li>
+																		<li>Станок: TBM-85 (сборка шин 85")</li>
+																		<li>Оператор сообщает: вибрация роликов, гул, перегрев, брак по непрокату</li>
+																	</ul>
+																</div>
+																<div class="diagnostic_item">
+																	<div class="diagnostic_item-title">Критические вопросы</div>
+																	<ol>
+																		<li>Время развития симптомов</li>
+																		<li>Температура корпуса подшипника</li>
+																		<li>Характер вибрации (постоянная/периодическая)</li>
+																		<li>% брака в продукции</li>
+																		<li>Последняя замена подшипников</li>
+																	</ol>														
+																</div>
+																<div class="diagnostic_item">
+																	<div class="diagnostic_item-title">Минимальный набор</div>
+																	<ul>
+																		<li>Виброметр</li>
+																		<li>Термометр/тепловизор</li>
+																		<li>Съемник СГ-15</li>
+																		<li>Ключи 13мм, 24мм</li>
+																		<li>Динамометрический ключ</li>
+																	</ul>														
+																</div>
+																<div class="diagnostic_item">
+																	<div class="diagnostic_item-title">Приоритетность</div>
+																	<div class="diagnostic_item-subtitle">АВАРИЯ (немедленно):</div>
+																	<ul>
+																		<li>Т° корпуса >60°С</li>
+																		<li>Сильный металлический шум</li>
+																		<li>Явный люфт</li>
+																		<li>100% брак</li>
+																	</ul>														
+																</div>
+																<div class="diagnostic_item">
+																	<div class="diagnostic_item-title">Приоритетность</div>
+																	<div class="diagnostic_item-subtitle">Срочно (в течении смены):</div>
+																	<ul>
+																		<li>Т° корпуса 45-60°С</li>
+																		<li>Повышенная вибрация</li>
+																		<li>Периодический брак</li>
+																	</ul>														
+																</div>
+															</div>
+														</div>												
+													</section>
+					
+													<section class="tab_content level1" id="tab2">
+														<div class="data" style="display: none;">
+															<div class="diagnostic_items">
+																<div class="diagnostic_item-btn">
+																	<img src="images/diagnostic_btn.svg" alt="">
+																</div>
+																<div class="diagnostic_item">
+																	<div class="diagnostic_item-title">Вызов2</div>
+																	<ul>
+																		<li>Цех: Сборочный №3</li>
+																		<li>Станок: TBM-85 (сборка шин 85")</li>
+																		<li>Оператор сообщает: вибрация роликов, гул, перегрев, брак по непрокату</li>
+																	</ul>
+																</div>
+																<div class="diagnostic_item">
+																	<div class="diagnostic_item-title">Критические вопросы</div>
+																	<ol>
+																		<li>Время развития симптомов</li>
+																		<li>Температура корпуса подшипника</li>
+																		<li>Характер вибрации (постоянная/периодическая)</li>
+																		<li>% брака в продукции</li>
+																		<li>Последняя замена подшипников</li>
+																	</ol>														
+																</div>
+																<div class="diagnostic_item">
+																	<div class="diagnostic_item-title">Минимальный набор</div>
+																	<ul>
+																		<li>Виброметр</li>
+																		<li>Термометр/тепловизор</li>
+																		<li>Съемник СГ-15</li>
+																		<li>Ключи 13мм, 24мм</li>
+																		<li>Динамометрический ключ</li>
+																	</ul>														
+																</div>
+																<div class="diagnostic_item">
+																	<div class="diagnostic_item-title">Приоритетность</div>
+																	<div class="diagnostic_item-subtitle">АВАРИЯ (немедленно):</div>
+																	<ul>
+																		<li>Т° корпуса >60°С</li>
+																		<li>Сильный металлический шум</li>
+																		<li>Явный люфт</li>
+																		<li>100% брак</li>
+																	</ul>														
+																</div>
+																<div class="diagnostic_item">
+																	<div class="diagnostic_item-title">Приоритетность</div>
+																	<div class="diagnostic_item-subtitle">Срочно (в течении смены):</div>
+																	<ul>
+																		<li>Т° корпуса 45-60°С</li>
+																		<li>Повышенная вибрация</li>
+																		<li>Периодический брак</li>
+																	</ul>														
+																</div>
+															</div>
+														</div>
+													</section>					
+												</div>
+												
+											</div>
+
+
+
+											<div class="accordion_item">
+												<div class="tabs_container">
+													<div class="head">
+														<div class="title"><img src="images/bearing4.svg" alt=""> Диагностика</div>
+														
+														<div class="tabs">
+															<button class="active" data-content="#tab3" data-level="level1">Для опытных</button>
+															<button data-content="#tab4" data-level="level1">Для новичков</button>
+														</div>	
+														
+														<div class="faq_btns">
+															<div class="faq_btn">
+																<div class="faq_btn-icon1">
+																	<img src="images/btn102.svg" alt="">
+																</div>
+															</div>
+															<div class="faq_btn">
+																<div class="faq_btn-icon1">
+																	<img src="images/btn101.svg" alt="">
+																</div>																
+															</div>															
+														</div>	
+													</div>	
+
+													<section class="tab_content level1 active" id="tab3">
+														<div class="data" style="display: none;">
+															<div class="diagnostic_items">
+																<div class="diagnostic_item-btn">
+																	<img src="images/diagnostic_btn.svg" alt="">
+																</div>
+																<div class="diagnostic_item">
+																	<div class="diagnostic_item-title">Экспресс-проверка</div>
+																	<ul>
+																		<li>Температура корпуса (норма до 45°С)</li>
+																		<li>Вибрация (норма до 4.5 мм/с)</li>
+																		<li>Люфт опор</li>
+																		<li>Характер шума</li>
+																		<li>Равномерность прикатки</li>
+																	</ul>
+																</div>
+																<div class="diagnostic_item">
+																	<div class="diagnostic_item-title">Замеры:</div>
+																	<div class="diagnostic_item-subtitle">1. Температура:</div>
+																	<ul class="mb30">
+																		<li>Норма: до 45°С</li>
+																		<li>Предупреждение: 45-60°С</li>
+																		<li>Авария: >60°С</li>
+																	</ul>
+																	<div class="diagnostic_item-subtitle">2. Вибрация:</div>
+																	<ul>
+																		<li>Норма: до 4.5 мм/с</li>
+																		<li>Предупреждение: 4.5-8 мм/с</li>
+																		<li>Авария: >8 мм/с</li>
+																	</ul>
+																</div>
+															</div>
+														</div>		
+													</section>
+													
+													<section class="tab_content level1" id="tab4">
+														<div class="data" style="display: none;">
+															<div class="diagnostic_items">
+																<div class="diagnostic_item-btn">
+																	<img src="images/diagnostic_btn.svg" alt="">
+																</div>
+																<div class="diagnostic_item">
+																	<div class="diagnostic_item-title">Экспресс-проверка2</div>
+																	<ul>
+																		<li>Температура корпуса (норма до 45°С)</li>
+																		<li>Вибрация (норма до 4.5 мм/с)</li>
+																		<li>Люфт опор</li>
+																		<li>Характер шума</li>
+																		<li>Равномерность прикатки</li>
+																	</ul>
+																</div>
+																<div class="diagnostic_item">
+																	<div class="diagnostic_item-title">Замеры:</div>
+																	<div class="diagnostic_item-subtitle">1. Температура:</div>
+																	<ul class="mb30">
+																		<li>Норма: до 45°С</li>
+																		<li>Предупреждение: 45-60°С</li>
+																		<li>Авария: >60°С</li>
+																	</ul>
+																	<div class="diagnostic_item-subtitle">2. Вибрация:</div>
+																	<ul>
+																		<li>Норма: до 4.5 мм/с</li>
+																		<li>Предупреждение: 4.5-8 мм/с</li>
+																		<li>Авария: >8 мм/с</li>
+																	</ul>
+																</div>
+															</div>
+														</div>		
+													</section>
+													
+												</div>
+												
+											</div>
+
+
+											<div class="accordion_item">
+												<div class="tabs_container">
+													<div class="head">
+														<div class="title"><img src="images/bearing5.svg" alt=""> Ремонт</div>
+														
+														<div class="tabs">
+															<button class="active" data-content="#tab5" data-level="level1">Для опытных</button>
+															<button data-content="#tab6" data-level="level1">Для новичков</button>
+														</div>	
+														
+														<div class="faq_btns">
+															<div class="faq_btn">
+																<div class="faq_btn-icon1">
+																	<img src="images/btn102.svg" alt="">
+																</div>
+															</div>
+															<div class="faq_btn">
+																<div class="faq_btn-icon1">
+																	<img src="images/btn101.svg" alt="">
+																</div>																
+															</div>															
+														</div>	
+													</div>	
+													
+													
+													<section class="tab_content level1 active" id="tab5">
+														<div class="data" style="display: none;">
+															<div class="diagnostic_items">
+																<div class="diagnostic_item-btn">
+																	<img src="images/diagnostic_btn.svg" alt="">
+																</div>
+																<div class="remont_wrap bfr">
+																	<div class="remont_wrap-title">Установка нового подшипника</div>
+																	<div class="remont_wrap-text">Шаг 1: Подготовка (20 мин)</div>
+																	<div class="remont_items">
+																		<div class="remont_item">
+																			<span>Очистить посадочные места</span>
+																		</div>
+																		<div class="remont_item">
+																			<span>Проверить микрометром размеры</span>
+																		</div>
+																		<div class="remont_item">
+																			<span>Обезжирить все поверхности</span>
+																			<div class="remont_item-box">
+																				<div class="message_img">
+																					<a href="images/tmp/lisa.jpg" data-fancybox>
+																						<img src="images/tmp/lisa.jpg" alt="">
+																					</a>
+																					<svg class="icon"><use xlink:href="images/sprite.svg#zoom100"></use></svg>
+																				</div>
+																				<div class="video_message">
+																					<button class="thumb modal_btn" data-content="#video_modal">
+																						<img src="images/video_message_thumb100.png" alt="">
+																						<svg class="icon"><use xlink:href="images/sprite.svg#play123"></use></svg>
+																					</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+			
+																<div class="remont_wrap">														
+																	<div class="remont_wrap-text">Шаг 2: Снятие кожухов (15 мин)</div>
+																	<div class="remont_items">
+																		<div class="remont_item">
+																			<span>Болты М8 (ключ 13мм)</span>
+																		</div>
+																		<div class="remont_item">
+																			<span>Складывать болты по порядку</span>
+																		</div>
+																		<div class="remont_item">
+																			<span>Помечать где какой стоял</span>
+																			<div class="remont_item-box">																	
+																				<div class="video_message">
+																					<button class="thumb modal_btn" data-content="#video_modal">
+																						<img src="images/video_message_thumb100.png" alt="">
+																						<svg class="icon"><use xlink:href="images/sprite.svg#play123"></use></svg>
+																					</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																
+															</div>
+														</div>
+													</section>
+
+													<section class="tab_content level1 active" id="tab6">
+														<div class="data" style="display: none;">
+															<div class="diagnostic_items">
+																<div class="diagnostic_item-btn">
+																	<img src="images/diagnostic_btn.svg" alt="">
+																</div>
+																<div class="remont_wrap bfr">
+																	<div class="remont_wrap-title">Установка нового подшипника2</div>
+																	<div class="remont_wrap-text">Шаг 1: Подготовка (20 мин)</div>
+																	<div class="remont_items">
+																		<div class="remont_item">
+																			<span>Очистить посадочные места</span>
+																		</div>
+																		<div class="remont_item">
+																			<span>Проверить микрометром размеры</span>
+																		</div>
+																		<div class="remont_item">
+																			<span>Обезжирить все поверхности</span>
+																			<div class="remont_item-box">
+																				<div class="message_img">
+																					<a href="images/tmp/lisa.jpg" data-fancybox>
+																						<img src="images/tmp/lisa.jpg" alt="">
+																					</a>
+																					<svg class="icon"><use xlink:href="images/sprite.svg#zoom100"></use></svg>
+																				</div>
+																				<div class="video_message">
+																					<button class="thumb modal_btn" data-content="#video_modal">
+																						<img src="images/video_message_thumb100.png" alt="">
+																						<svg class="icon"><use xlink:href="images/sprite.svg#play123"></use></svg>
+																					</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+			
+																<div class="remont_wrap">														
+																	<div class="remont_wrap-text">Шаг 2: Снятие кожухов (15 мин)</div>
+																	<div class="remont_items">
+																		<div class="remont_item">
+																			<span>Болты М8 (ключ 13мм)</span>
+																		</div>
+																		<div class="remont_item">
+																			<span>Складывать болты по порядку</span>
+																		</div>
+																		<div class="remont_item">
+																			<span>Помечать где какой стоял</span>
+																			<div class="remont_item-box">																	
+																				<div class="video_message">
+																					<button class="thumb modal_btn" data-content="#video_modal">
+																						<img src="images/video_message_thumb100.png" alt="">
+																						<svg class="icon"><use xlink:href="images/sprite.svg#play123"></use></svg>
+																					</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																
+															</div>
+														</div>
+													</section>
+												</div>
+																								
+												
+											</div>
+
+
+											
+
+										</div>				
+																		
+									</div>
+
+
+
+									<section class="bearing-nav">
+										<div class="bearing-nav_wrap">
+											<div class="bearing-nav_title">
+												Навигация
+												<a href="#" class="bearing-nav_title-btn">
+													<span>Показать</span> 
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#arrow1111"></use>
+													</svg>
+												</a>	
+											</div>
+											<ul class="bearing-nav_hide">
+												<li>
+													<a href="#">
+														<img src="images/bearing1.svg" alt="">
+														<span>Справочник ремонтов ТБМ-300</span>
+													</a>												
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/bearing2.svg" alt="">
+														<span>Фото и Видео</span>
+													</a>												
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/bearing3.svg" alt="">
+														<span>1. Первичная информация</span>
+													</a>												
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/bearing4.svg" alt="">
+														<span>2. Диагностика</span>
+													</a>												
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/bearing5.svg" alt="">
+														<span>3. Ремонт</span>
+													</a>												
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/bearing6.svg" alt="">
+														<span>4. Проверка работы</span>	
+													</a>												
+												</li>
+											</ul>
+										</div>
+									</section>	
+								</div>
+									
+
+							</div>
+							
+							
+						
+							
+							
+
+
+							<footer>
+								<div class="logo">
+									<img src="images/logo.svg" alt="">
+
+									<div class="desc">Описание первой компании 123</div>
+								</div>
+
+								<div class="contacts location">
+									<div class="name">Адрес</div>
+
+									<div class="val">г. Москва, ул. Ломоносова, д. 75</div>
+								</div>
+
+								<div class="contacts email">
+									<div class="name">Электронная почта</div>
+
+									<div class="val">
+										<div><a href="mailto:company1@gmail.com">company1@gmail.com</a></div>
+									</div>
+								</div>
+
+								<div class="contacts phone">
+									<div class="name">Телефон</div>
+
+									<div class="val">
+										<div><a href="tel:+79219879988">+79219879988</a></div>
+									</div>
+								</div>
+							</footer>
+						</section>
+
+						
+
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<section class="modal" id="video_modal">
+			<video class="video-player video_new" width="100%" controlsList="nodownload" controls crossorigin="anonymous">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
+			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default></track>
+			</video>
+		</section>
+
+		<section class="modal modal-video" id="video_modal5" style="display: none;">
+			<video class="video-player video_new" controlslist="nodownload" controls="" crossorigin="anonymous">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
+			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default="">
+			</video>
+		</section>
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/media-player.js"></script>
+		<script src="js/html5sortable.min.js"></script>
+		<script src="js/wavesurfer.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/search_courses.js"></script>
+	</body>
+</html>

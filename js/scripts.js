@@ -213,6 +213,19 @@ $(() => {
 		});
 	});
 
+	$('.bearing-nav_title-btn').click(function (e) {
+		e.preventDefault()
+		$('.bearing-nav_hide').slideToggle(300, function () {
+			if ($(this).is(':hidden')) {
+				$('.bearing-nav_title-btn span').html('Показать');
+				$(".bearing-nav_title-btn").removeClass("active");
+			} else {
+				$('.bearing-nav_title-btn span').html('Скрыть');
+				$(".bearing-nav_title-btn").addClass("active");
+			}
+		});
+	});
+
 
 	$('.event-feed .idea-block_item-link').click(function (e) {
 		e.preventDefault()
@@ -425,6 +438,13 @@ $(() => {
 		
 
 
+	$('.tool_more').click(function(e){
+		e.preventDefault()
+		$('.tool_hide').addClass('active');
+		$('.tool_more').css('display', 'none');		
+	});
+
+
 	// Видео плеер
 	/*if ('function' === typeof MediaPlayer) {
 		[].forEach.call(document.querySelectorAll('audio[controls], video[controls]'), function (media) {
@@ -480,9 +500,26 @@ $(() => {
 
 			$item.addClass('active').find('.data').slideDown(300)
 		}
-
-
 	})
+
+
+	$('body').on('click', '.bearing .accordion2 .accordion_item .head .faq_btns', function (e) {
+		e.preventDefault()
+
+		const $item = $(this).closest('.bearing .accordion2 .accordion_item'),
+			$accordion = $(this).closest('.bearing .accordion2')
+
+		if ($item.hasClass('active')) {
+			$item.removeClass('active').find('.data').slideUp(300)
+		} else {
+			$accordion.find('.bearing .accordion2 .accordion_item').removeClass('active')
+			$accordion.find('.data').slideUp(300)
+
+			$item.addClass('active').find('.data').slideDown(300)
+		}
+	})
+
+
 
 	$(".title_faq_result button").on("click", function () {
 		$(".js-search").val("");
