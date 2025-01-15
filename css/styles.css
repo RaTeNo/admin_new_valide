@@ -39785,9 +39785,10 @@ bottom: 20px;
     height: 26px;
 }
 .event-feed_item-avatar img {
-    /*width: 100%;*/
+    width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 50%;
 }
 .event-feed_item-name {
     font-family: 'Ubuntu';
@@ -41570,6 +41571,17 @@ a.back_link_right{
     margin-top: 10px;
 }
 .conversation ul li:before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url(../images/ok3.svg);
+    left: -20px;
+    top: 0px;
+    border: none;
+}
+
+.conversation ul li:hover:before{
     position: absolute;
     content: "";
     width: 16px;
@@ -43404,7 +43416,6 @@ a.back_link_right{
     line-height: 16px;
     letter-spacing: -0.3px;
     color: #1D1D1D;
-    border-bottom: 1px solid #DFDFDF;
     width: 100%;
 }
 .custom-checkbox_text {
@@ -43414,6 +43425,7 @@ a.back_link_right{
     font-size: 11px;
     line-height: 13px;
     color: #534F77;
+    border-top: 1px solid #DFDFDF;
 }
 .chat_box .line {
     margin-bottom: 20px;
@@ -43431,6 +43443,9 @@ a.back_link_right{
     position: relative;
     background: #fff;
     border-radius: 9px; 
+    justify-content: space-between;
+    align-content: flex-start;
+    height: 100%;
 }
 .chat_box .line .fields {
     display: flex;
@@ -45174,13 +45189,11 @@ a.back_link_right{
 }
 .bearing_item {
     font-weight: 400;
-    font-size: 13px;
     line-height: 20px;
     color: #2E2D3C;
 }
 .bearing_box ul li {
     font-weight: 400;
-    font-size: 13px;
     line-height: 20px;
     color: #2E2D3C;  
 }
@@ -45257,7 +45270,7 @@ a.back_link_right{
 }
 .bearing_box-text {
     font-weight: 400;
-    font-size: 13px;
+    
     line-height: 18px;
     color: #2E2D3C; 
     margin-top: 13px;   
@@ -45307,7 +45320,7 @@ a.back_link_right{
 }
 .diagnostic_item-subtitle {
     font-weight: 400;
-    font-size: 13px;
+
     line-height: 20px;
     color: #2E2D3C;
 }
@@ -45450,6 +45463,7 @@ a.back_link_right{
     margin-right: 0;
     height: 100%;
     color: #585683;
+    letter-spacing: 0;
 }
 .bearing .tabs_container .tabs button.active {
     color: #fff;

@@ -503,16 +503,16 @@ $(() => {
 	})
 
 
-	$('body').on('click', '.bearing .accordion2 .accordion_item .head .faq_btns', function (e) {
+	$('body').on('click', '.bearing .accordion2 .accordion_item .head .faq_btns, .bearing .accordion2 .accordion_item .title', function (e) {
 		e.preventDefault()
 
-		const $item = $(this).closest('.bearing .accordion2 .accordion_item'),
-			$accordion = $(this).closest('.bearing .accordion2')
+		const $item = $(this).closest('.accordion_item'),
+			$accordion = $(this).closest('.accordion2')
 
 		if ($item.hasClass('active')) {
 			$item.removeClass('active').find('.data').slideUp(300)
 		} else {
-			$accordion.find('.bearing .accordion2 .accordion_item').removeClass('active')
+			$accordion.find('.accordion_item').removeClass('active')
 			$accordion.find('.data').slideUp(300)
 
 			$item.addClass('active').find('.data').slideDown(300)
