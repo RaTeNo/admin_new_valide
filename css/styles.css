@@ -4477,10 +4477,13 @@ aside .menu .sub_menu a.active
 
     border-radius: 15px;
     background: #fff;
+    
+}
+
+.col_right_inner{
     position: sticky;
     top: 10px;
 }
-
 
 .lecture_steps .title
 {
