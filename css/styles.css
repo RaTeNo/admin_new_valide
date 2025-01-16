@@ -45103,6 +45103,7 @@ a.back_link_right{
     position: relative;
     text-decoration: none;
     color: #000;
+    font-weight: bold;
 }
 .bearing-nav ul li {
     position: relative;
@@ -45465,6 +45466,7 @@ a.back_link_right{
     height: 100%;
     color: #585683;
     letter-spacing: 0;
+    opacity: 1;
 }
 .bearing .tabs_container .tabs button.active {
     color: #fff;
