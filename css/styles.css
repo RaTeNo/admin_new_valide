@@ -16,10 +16,6 @@
     }
 }
 
-
-
-
-
 @font-face {
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-Black.eot');
@@ -43429,6 +43425,7 @@ a.back_link_right{
     line-height: 13px;
     color: #534F77;
     border-top: 1px solid #DFDFDF;
+    width: 100%;
 }
 .chat_box .line {
     margin-bottom: 20px;
@@ -45373,6 +45370,7 @@ a.back_link_right{
 .bearing .remont_item-box .message_img {
     max-width: 128px;
     margin-top: 0;
+    height: 116px;
 }
 .bearing .remont_item-box .message_img a {
     height: 100%;

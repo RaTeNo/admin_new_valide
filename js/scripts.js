@@ -519,6 +519,24 @@ $(() => {
 		}
 	})
 
+	$('body').on('click', '.bearing-nav_hide a', function (e) {
+		e.preventDefault()
+
+		let id = $(this).data("id");
+
+		const $item = $(".accordion_item").eq(id),
+			$accordion = $('.accordion2');
+
+		if ($item.hasClass('active')) {
+			$item.removeClass('active').find('.data').slideUp(300)
+		} else {
+			$accordion.find('.accordion_item').removeClass('active')
+			$accordion.find('.data').slideUp(300)
+
+			$item.addClass('active').find('.data').slideDown(300)
+		}
+	})
+
 
 
 	$(".title_faq_result button").on("click", function () {
