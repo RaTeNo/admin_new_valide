@@ -45367,6 +45367,8 @@ a.back_link_right{
 }
 .remont_item-box {
     display: flex;
+    gap:6px;
+    flex-wrap: wrap;
 }
 .bearing .remont_item-box .message_img {
     max-width: 128px;
@@ -45388,7 +45390,6 @@ a.back_link_right{
     max-width: calc(100%);
     border-radius: 6px;
     margin-top: 0px;
-    margin-left: 6px;
 }
 .bearing .remont_item-box .video_message .thumb {
     width: 184px;
