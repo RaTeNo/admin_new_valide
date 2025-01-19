@@ -45523,3 +45523,23 @@ a.back_link_right{
     color:#5EC62D;
     background: #60C73026;
 }
+.shop-warning{
+    padding: 19px 15px;
+    border-radius: 15px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.shop-warning img{
+    width: 29px;
+    height: 29px;
+}
+
+.shop-warning-text{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    margin-right: 12px;
+}
