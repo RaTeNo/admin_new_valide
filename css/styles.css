@@ -37409,6 +37409,7 @@ bottom: 20px;
 .shop-new_history-item-photo {
     width: 24px;
     height: 24px;
+    flex-shrink: 0;
 }
 .shop-new_history-item-photo img {
     border-radius: 50%;
