@@ -45544,3 +45544,18 @@ a.back_link_right{
     line-height: 19px;
     margin-right: 12px;
 }
+
+.mission_item_fix{
+    color: #000;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.mission_item_fix .mission_item-btn-box{
+    margin-bottom: 0;
+}
+
+aside .menu .item .icon141 > * {
+    height: 24px;
+    width: 24px;
+}
