@@ -45559,3 +45559,31 @@ aside .menu .item .icon141 > * {
     height: 24px;
     width: 24px;
 }
+
+.trainer_ai-task_item{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    font-weight: bold;
+}
+
+.trainer_ai-task_item svg{
+    width: 31px;
+    height: 31px;
+}
+
+.rating_qoute{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    padding: 14px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    font-size: 16px;
+    color:#555EA4;
+}
+
+.rating_qoute svg{
+    width: 40px;
+    height: 40px;
+}
