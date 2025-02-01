@@ -14746,6 +14746,7 @@ background: #64C841;
 .greeting_left {
     display: flex;
     padding: 3px;
+    align-items: center;
 }
 .greeting_left-mob {
     display: none;
@@ -26265,7 +26266,7 @@ form .form_btns input[type=file] + label,
     color: #6B60CB;
     margin-bottom: 20px;
     display: inline-block;
-    width: 71px;
+    width: fit-content;
 }
 .division_item-icon {
     width: 177px;
@@ -45586,4 +45587,5 @@ aside .menu .item .icon141 > * {
 .rating_qoute svg{
     width: 40px;
     height: 40px;
+    flex-shrink: 0;
 }
