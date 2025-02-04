@@ -43553,6 +43553,7 @@ a.back_link_right{
 .chat_box .line-boxs {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 .chat_box .line-boxs label {
     color: #4d4f60;
