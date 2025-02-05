@@ -41960,6 +41960,7 @@ a.back_link_right{
     padding: 25px 15px;
     background: var(--main_color);
     border-radius: 6px;
+    margin-top: 24px;
 }
 .substantial_box .icon {
     width: 38px;
