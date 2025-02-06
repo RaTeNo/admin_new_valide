@@ -41875,7 +41875,9 @@ a.back_link_right{
 .acquaintance ul li + li {
     margin-top: 10px;
 }
-
+.scheme > *{
+    margin-bottom: 15px;
+}
 .scheme p {
     font-family: 'Ubuntu';
     font-weight: 400;
