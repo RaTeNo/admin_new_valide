@@ -45595,16 +45595,19 @@ aside .menu .item .icon141 > * {
 }
 
 .accordion_sort .accordion_item{
-    padding-left: 30px;
     position: relative;
+
 }
 
 .accordion_sort .accordion_item > .icon{
-    width: 20px;
-    height: 25px;
-    margin-right: 8px;
     flex-shrink: 0;
-    left: 6px;
+    left: 19px;
     position: absolute;
-    top: 11px;
+    top: 3px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.accordion_sort .accordion_item .head{
+    padding-left: 25px;
 }
