@@ -41597,6 +41597,9 @@ a.back_link_right{
     padding-bottom: 24px;
     margin-bottom: 24px;
 }
+.conversation_list > * {
+    margin-bottom: 15px;
+}
 .conversation_list + .conversation_list {
     margin-top: 18px;
 }
@@ -41941,6 +41944,9 @@ a.back_link_right{
     background-color: color-mix(in srgb, var(--main_color) 5%, #fff);
     border-radius: 6px;
     margin-top: 20px;
+}
+.scheme_box > * {
+    margin-bottom: 15px;
 }
 .scheme_box p {
     font-family: 'Ubuntu';
