@@ -483,8 +483,12 @@
 
 								<div class="title_faq">Про обучение</div>
 
-								<div class="accordion">
+								<div class="accordion accordion_sort">
 									<div class="accordion_item" id="item3">
+										<svg class="icon my-handle">
+											<use xlink:href="images/sprite.svg#icon99"></use>
+										</svg>
+
 										<div class="head">
 											<div class="title">Обучение проходит в группе или индивидуально?</div>
 
@@ -503,6 +507,9 @@
 									</div>
 
 									<div class="accordion_item" id="item4">
+										<svg class="icon my-handle">
+											<use xlink:href="images/sprite.svg#icon99"></use>
+										</svg>
 										<div class="head">
 											<div class="title">Какой график обучения?</div>
 
@@ -672,6 +679,17 @@
 
 		<script>
 			tippy('[data-tippy-content]');
+		</script>
+
+		<script src="https://unpkg.com/sortablejs-make/Sortable.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery-sortablejs@latest/jquery-sortable.js"></script>
+
+		<script type="text/javascript">
+			$('.accordion_sort').sortable({
+				animation: 150,
+				handle: ".my-handle",
+			});
+	
 		</script>
 	</body>
 </html>
