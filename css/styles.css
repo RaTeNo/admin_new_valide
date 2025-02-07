@@ -45614,6 +45614,8 @@ aside .menu .item .icon141 > * {
     top: 3px;
     cursor: pointer;
     z-index: 100;
+    width: 26px;
+    height: 40px;
 }
 
 .accordion_sort .accordion_item .head{
