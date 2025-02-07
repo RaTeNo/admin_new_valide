@@ -41451,6 +41451,7 @@ a.back_link_right{
     line-height: 16px;
     color: var(--text_page1);
     margin-bottom: 15px;
+    margin-top: 15px;
 }
 .text_block .reassurance ul {
     list-style: none;  
@@ -41545,7 +41546,7 @@ a.back_link_right{
     color: var(--text_page2);
     position: relative;
     margin-bottom: 20px;
-    margin-top: 0;
+    margin-top: 15px;
 }
 .conversation blockquote .icon {
     width: 42px;
