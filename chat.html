@@ -25,9 +25,7 @@
 	<!-- Подключение шрифтов с гугла -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
 	<!-- Подключение файлов стилей -->
 	<link rel="stylesheet" href="css/fancybox.css" async>
@@ -39,6 +37,8 @@
 	<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
 	<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
 	<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+
+	<link rel="stylesheet" href="css/nice-select.css">
 </head>
 
 <body>
@@ -360,14 +360,27 @@
 					</aside>
 
 
-					<section class="content">						
+					<section class="content">		
+						<div class="wrapper_head_courses wrapper_head_page_title" >
 							<section class="page_title">
 						        <a href="#">
 						            <svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_left"></use></svg>
 						        </a>
 						        <span>Чат от 19.12.2024 15:20</span>
-						        <div class="division-page_text">1</div>
+						        <div class="division-page_text">1</div>						        
 						    </section>
+						    <div class="select-right">
+			                    <form action="https://demo.xskill.com/cabinet/user/edu/change_sorting_courses" method="POST">
+			                        <input type="hidden" name="_token" value="HZEemnu5ePtsq3P7ag6hv6hAfXxlUdxGcrfFCs78" autocomplete="off">
+			                        <select name="edu_order_by_created_at">
+			                            <option value="priority">Стандартно фыва фвафва</option>
+			                            <option value="desc" >Новые афыв афыва ф</option>
+			                            <option value="asc" >Старыеыва фываф ывафыва </option>
+			                        </select>
+			                    </form>
+			                </div>
+						</div>				
+							
 												
 
 							<section class="chat_box">

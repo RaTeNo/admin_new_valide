@@ -721,7 +721,7 @@ button
 .mini_modal
 {
     position: absolute;
-    z-index: 100;
+    z-index: 10000;
     top: calc(100% + 30px);
     left: 0;
 
@@ -45675,4 +45675,27 @@ aside .menu .item .icon141 > * {
     font-size: 16px;
     line-height: 19px;
     color: #787878;
+}
+
+.wrapper_head_page_title{
+    margin-top: 0;
+}
+
+.wrapper_head_page_title .nice-select{
+    width: auto;
+    padding: 0 30px 0px 10px;
+}
+
+.wrapper_head_page_title .nice-select .list{
+    width: calc(100% + 2px);
+    border-color: #999 !important;
+}
+.wrapper_head_page_title .nice-select .list .option
+{
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+.wrapper_head_page_title{
+    gap:20px;
 }
