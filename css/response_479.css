@@ -2239,6 +2239,10 @@
         margin-top: 10px;
     }
 
+    .wrapper_head_page_title .select-right{
+        margin-left: inherit;
+    }   
+
 
 
 }
