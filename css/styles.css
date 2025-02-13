@@ -45682,8 +45682,7 @@ aside .menu .item .icon141 > * {
 }
 
 .wrapper_head_page_title .nice-select{
-    width: auto;
-    padding: 0 30px 0px 10px;
+    width: 250px;
 }
 
 .wrapper_head_page_title .nice-select .list{

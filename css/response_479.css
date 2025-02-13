@@ -2241,6 +2241,10 @@
 
     .wrapper_head_page_title .select-right{
         margin-left: inherit;
+    }
+
+    .wrapper_head_page_title{
+        gap:35px;
     }   
 
 
