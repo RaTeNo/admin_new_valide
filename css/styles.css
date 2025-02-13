@@ -45699,3 +45699,12 @@ aside .menu .item .icon141 > * {
 .wrapper_head_page_title{
     gap:20px;
 }
+
+.end_trainer{
+    background: #fff;
+    border-radius: 55px;
+    width: 152px;
+    height: 54px;
+    color: var(--main_color);
+    margin-top: 20px;
+}
