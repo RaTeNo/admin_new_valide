@@ -169,11 +169,12 @@ $(() => {
 	});
 
 	$('.intellect-top_btn').click(function () {
-		$('.intellect_form').slideToggle(300, function () {
+		el = $(this)
+		$(this).parent().next().slideToggle(300, function () {
 			if ($(this).is(':hidden')) {
-				$('.intellect-top_btn').html('Предложить');
+				el.html('Предложить');
 			} else {
-				$('.intellect-top_btn').html('Отменить');
+				el.html('Отменить');
 			}
 		});
 	});

@@ -25612,6 +25612,9 @@ form .form_btns input[type=file] + label,
     display: block;
     margin-left: auto;
 }
+.education form button:disabled{
+    opacity: 0.7;
+}
 .education_no {
     display: none;
 }
@@ -35587,7 +35590,44 @@ bottom: 20px;
     font-style: normal;
     font-weight: 700;
     letter-spacing: -1px;
-    margin-bottom: 4px;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.intellect-top.error .intellect_form-label, .intellect-top.error .intellect_form input, .intellect-top.error .intellect_form input::placeholder,
+.intellect-top.error .intellect_form textarea, .intellect-top.error .intellect_form textarea::placeholder{
+    color: rgba(224, 32, 32, 1);
+    border-color:rgba(224, 32, 32, 1);
+}
+.intellect-top_title span {   
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px;
+    gap: 4px;
+    border-radius: 59px;
+    color:#fff;
+    letter-spacing: 0;
+}
+
+.intellect-top_title span:before{
+    content:"";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+}
+.intellect-top_title span.red {
+    background: rgba(227, 51, 51, 1);
+}
+.intellect-top_title span.blue {
+    background: rgba(11, 0, 216, 1);
 }
 .intellect-top_text {
     color: #000;
@@ -35596,6 +35636,7 @@ bottom: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-top: 10px;
 }
 .intellect-top_btn {
     padding: 8px 18px;
