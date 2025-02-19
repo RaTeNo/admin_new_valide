@@ -41822,6 +41822,7 @@ a.back_link_right{
 .objection_item-answer .objection_item-head .icon {
     width: 24px;
     height: 24px;
+    flex-shrink: 0;
 }
 .objection_item + .objection_item {
     margin-top: 10px;
