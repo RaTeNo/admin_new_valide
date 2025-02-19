@@ -45748,3 +45748,7 @@ aside .menu .item .icon141 > * {
     color: var(--main_color);
     margin-top: 20px;
 }
+
+.span_flex{
+    display: flex;
+}
