@@ -45754,3 +45754,7 @@ aside .menu .item .icon141 > * {
 .span_flex{
     display: flex;
 }
+
+.pinning{
+    margin-top: 20px;
+}
