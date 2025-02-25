@@ -228,6 +228,7 @@ $(() => {
 	});
 
 
+
 	$('.event-feed .idea-block_item-link').click(function (e) {
 		e.preventDefault()
 		$('.content_block').addClass('active');

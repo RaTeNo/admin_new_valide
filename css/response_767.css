@@ -3659,4 +3659,13 @@
         display: flex;
     }
 
+
+    .job-description_items > * {
+        width: calc(100% / 2 - 12px);
+    }
+    .job-description_box_title {
+        font-size: 19px;
+    }
+
+
 }
