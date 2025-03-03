@@ -2809,6 +2809,530 @@
 }
 
 
+.presentation52 .presentation_img img {
+    height: 100%;
+    object-fit: cover;
+}
+.presentation52.presentation-two .presentation_right {
+    padding: 0;
+}
+.presentation52.presentation-two .presentation_right .presentation_img{
+    height: 100%;
+}
+.presentation52.presentation-two .presentation_right .presentation_img img{
+    object-fit: cover;
+    height: 100%;
+}
+.presentation_title span {
+    color: #08527F;
+}
+.presentation-two ol li {
+    overflow: visible;
+}
+.presentation-two ol li:before {
+    top: -7px;
+}
+
+.presentation53 .presentation_wrap:after {
+    position: absolute;
+    content: "";
+    width: 261px;
+    height: 261px;
+    border-radius: 100%;
+    border: 78px solid color-mix(in oklab, var(--bg3), white 14%);
+    right: 0%;
+    top: -20%;
+    z-index: 0;
+}
+.presentation53 .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 235px;
+    height: 235px;
+    border-radius: 100%;
+    border: 78px solid color-mix(in oklab, var(--bg3), white 14%);
+    right: 33%;
+    top: 73%;
+    z-index: 0;
+}
+
+.presentation54.presentation-two .presentation_right {
+    padding: 0;
+}
+.presentation54.presentation-two .presentation_right .presentation_img{
+    height: 100%;
+}
+.presentation54.presentation-two .presentation_right .presentation_img img{
+    object-fit: cover;
+    height: 100%;
+}
+.landing .presentation:nth-child(2n) .presentation_title span {
+    color: #73c9fd;
+}
+
+
+.presentation55 .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 1050px;
+    height: 1050px;
+    border-radius: 100%;
+    border: 168px solid color-mix(in oklab, var(--bg3), white 14%);
+    right: -23%;
+    top: -50%;
+    z-index: 0;
+}
+
+.presentation56 .icon {
+    width: 101px;
+    height: 101px;
+    fill: #08527F;
+}
+.presentation:nth-child(2n) .presentation_wrap .presentation_right .icon {
+    fill: #fff;
+}
+.presentation56 .presentation_right {
+    width: 100%;
+    max-width: 70%;
+}
+.presentation56 .presentation_author {
+    margin-top: 55px;
+}
+.presentation56 .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 624px;
+    height: 624px;
+    border-radius: 100%;
+    border: 168px solid color-mix(in oklab, var(--bg3), white 14%);
+    right: -28%;
+    top: -12%;
+    z-index: 0;
+}
+
+.presentation57 .icon {
+    width: 101px;
+    height: 101px;
+    fill: #08527F;
+}
+.presentation57.presentation-two .presentation_left {
+    padding: 0;
+    max-width: 30%;
+}
+.presentation57.presentation-two .presentation_right {
+    padding: 53px;
+    max-width: 70%;
+}
+.presentation57.presentation-two .presentation_left .presentation_img{
+    height: 100%;
+}
+.presentation57.presentation-two .presentation_left .presentation_img img{
+    object-fit: cover;
+    height: 100%;
+}
+.presentation57 .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 624px;
+    height: 624px;
+    border-radius: 100%;
+    border: 168px solid color-mix(in oklab, var(--bg3), white 14%);
+    right: -28%;
+    top: -12%;
+    z-index: 0;
+}
+
+
+.presentation58 .presentation_left {
+    background: var(--bg3);
+    padding: 200px 80px;
+}
+.presentation58.presentation-two:nth-child(2n + 1) .presentation_wrap:before {
+    opacity: 1;
+}
+.presentation58 .presentation_left,
+.presentation58 .presentation_right {
+    padding: 200px 80px;
+}
+.presentation58 .presentation_left .presentation_text {
+    text-align: center;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 50px;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+.presentation58 .presentation_right .presentation_text {
+    color: #000;
+    text-align: center;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 50px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+}
+.presentation58.presentation-two .presentation_wrap {
+    justify-content: space-between;
+}
+.presentation58.presentation-two:nth-child(2n + 1) .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 624px;
+    height: 624px;
+    border-radius: 100%;
+    border: 168px solid color-mix(in oklab, var(--bg3), white 14%);
+    left: -22%;
+    top: -43%;
+    z-index: 0;
+    opacity: 0.1;
+}
+.presentation58.presentation-two:nth-child(2n + 1) .presentation_wrap:after {
+    position: absolute;
+    content: "";
+    width: 624px;
+    height: 624px;
+    border-radius: 100%;
+    border: 168px solid color-mix(in oklab, var(--bg3), white 14%);
+    right: -22%;
+    bottom: -43%;
+    z-index: 0;
+    opacity: 0.1;
+}
+.presentation58.presentation:nth-child(2n) .presentation_left {
+    background: #fff;
+    position: relative;
+}
+.presentation58.presentation:nth-child(2n) .presentation_left .presentation_text {
+    color: #000;
+}
+.presentation58.presentation:nth-child(2n) .presentation_right .presentation_text {
+    color: #fff;
+}
+.presentation58.presentation-two:nth-child(2n) .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 624px;
+    height: 624px;
+    border-radius: 100%;
+    border: 168px solid color-mix(in oklab, var(--bg3), white 14%);
+    left: -22%;
+    top: -43%;
+    z-index: 7;
+    opacity: 0.1;
+}
+.presentation58.presentation-two:nth-child(2n) .presentation_wrap:after {
+    position: absolute;
+    content: "";
+    width: 624px;
+    height: 624px;
+    border-radius: 100%;
+    border: 168px solid color-mix(in oklab, var(--bg3), white 14%);
+    right: -22%;
+    bottom: -43%;
+    z-index: 0;
+    opacity: 1;
+}
+
+
+
+.presentation59.presentation-two .presentation_left {
+    padding: 0;
+}
+.presentation59.presentation-two .presentation_left .presentation_img{
+    height: 100%;
+}
+.presentation59.presentation-two .presentation_left .presentation_img img{
+    object-fit: cover;
+    height: 100%;
+}
+.presentation59 .icon {
+    width: 101px;
+    height: 101px;
+    fill: #fff;
+}
+.presentation59.presentation-two .presentation_right {
+    padding: 62px 45px;
+}
+.presentation59.presentation-two .presentation_right-box {
+    padding: 37px 74px 72px 47px;
+    background: var(--bg3);
+}
+.presentation59.presentation-two .presentation_title {
+    margin-bottom: 0px;
+    color: #fff;
+}
+.presentation59.presentation:nth-child(2n) .presentation_wrap {
+    background: #fff;
+}
+.presentation59.presentation:nth-child(2n) .presentation_title {
+    color: #000;
+}
+.presentation59.presentation:nth-child(2n) .presentation_wrap .presentation_right .icon {
+    fill: #08527F;
+}
+.presentation59.presentation:nth-child(2n) .presentation_right-box {
+    padding: 20px;
+    background: #fff;
+}
+
+
+.presentation60_items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.presentation60_item {
+    width: calc(100%/2 - 12px);
+    padding-left: 31px;
+    position: relative;
+}
+.presentation60_item:before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 100%;
+    background: var(--bg3);
+    top: 0;
+    left: 0;
+}
+.presentation60_item-procent {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    color: #292929;
+    margin-bottom: 7px;
+}
+.presentation60_item-text {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #173A60;
+}
+.presentation60 .presentation_wrap:after {
+    position: absolute;
+    content: "";
+    width: 1116px;
+    height: 1116px;
+    border-radius: 100%;
+    border: 168px solid color-mix(in oklab, var(--bg3), white 14%);
+    right: -26%;
+    bottom: -94%;
+    z-index: 0;
+    opacity: 0.1;
+}
+.presentation60.presentation-two .presentation_left {
+    padding: 69px;
+}
+.landing .presentation:nth-child(2n) .presentation60_item-procent {
+    color: #fff;
+}
+.landing .presentation:nth-child(2n) .presentation60_item-text {
+    color: #fff;
+}
+.landing .presentation:nth-child(2n) .presentation60_item:before {
+    background: #fff;
+}
+
+.presentation61 .presentation_left {
+    text-align: center;
+}
+.presentation61 .presentation_right {
+    max-width: 35%;
+    padding: 77px 71px 77px 71px;
+}
+.presentation61 .icon {
+    width: 101px;
+    height: 101px;
+    fill: #08527F;
+}
+.presentation61 .presentation_author span {
+    color: #090909;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    font-family: "SF Pro Display";
+}
+.presentation61 .presentation_text p {
+    font-family: "SF Pro Display";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #090909;
+}
+.presentation61 .presentation_author {
+    position: relative;
+    margin-top: 65px;
+}
+.presentation61 .presentation_author:before {
+    position: absolute;
+    content: "";
+    width: 151px;
+    height: 12px;
+    background: var(--bg3);
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.presentation61.presentation-two .presentation_right .presentation_img{
+    height: 100%;
+}
+.presentation61.presentation-two .presentation_right .presentation_img img{
+    object-fit: cover;
+    height: 100%;
+}
+.presentation61 .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 624px;
+    height: 624px;
+    border-radius: 100%;
+    border: 168px solid color-mix(in oklab, var(--bg3), white 14%);
+    right: -9%;
+    top: 45%;
+    z-index: 0;
+}
+.landing .presentation61.presentation:nth-child(2n) .icon {
+    fill: #fff;
+} 
+.landing .presentation61.presentation:nth-child(2n) .presentation_author:before {
+    background: #fff;
+}
+
+
+.presentation62.presentation-two .presentation_wrap {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../images/photo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -111;
+    position: relative;
+}
+.presentation62.presentation:nth-child(2n) .presentation_wrap {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url(../images/photo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -111;
+    position: relative;
+}
+.presentation62 .presentation_title {
+    color: #fff;
+    position: relative;
+}
+.presentation62 .presentation_text {
+    margin-bottom: 0;
+    z-index: 666;
+    position: relative;    
+}
+.presentation62 .presentation_text p {
+    color: #fff;
+}
+.presentation62 .presentation_left {
+    padding: 260px 122px 139px 74px;
+    z-index: 555;
+}
+.presentation62 .presentation_title:before {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 13px solid #fff;
+    top: -135px;
+    left: 0;
+}
+.landing .presentation62.presentation:nth-child(2n) {
+    background: none;
+}
+
+
+.presentation63.presentation-two .presentation_left {
+    padding: 0px;
+}
+.presentation63.presentation-two .presentation_left .presentation_img{
+    height: 100%;
+}
+.presentation63.presentation-two .presentation_left .presentation_img img{
+    object-fit: cover;
+    height: 100%;
+}
+
+
+.presentation64.presentation-two .presentation_left {
+    padding: 0px;
+}
+.presentation64.presentation-two .presentation_left .presentation_img{
+    height: 100%;
+}
+.presentation64.presentation-two .presentation_left .presentation_img img{
+    object-fit: cover;
+    height: 100%;
+}
+
+
+
+.presentation65 .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 624px;
+    height: 624px;
+    border-radius: 100%;
+    border: 168px solid color-mix(in oklab, var(--bg3), white 14%);
+    right: -26%;
+    top: -60%;
+    z-index: 0;
+}
+.presentation65.presentation-two .presentation_left {
+    padding: 227px 69px 172px;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+}
+.presentation65.presentation-two .presentation_left .presentation_text {
+    max-width: 530px;
+    margin: 0 auto;
+} 
+
+
+.presentation66 .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 624px;
+    height: 624px;
+    border-radius: 100%;
+    border: 168px solid color-mix(in oklab, var(--bg3), white 14%);
+    right: -26%;
+    top: -60%;
+    z-index: 0;
+}
+.presentation66 .presentation_wrap:after {
+    position: absolute;
+    content: "";
+    width: 536px;
+    height: 536px;
+    border-radius: 100%;
+    border: 168px solid color-mix(in oklab, var(--bg3), white 14%);
+    left: -21%;
+    bottom: -49%;
+    z-index: 0;
+}
+.presentation66.presentation-two .presentation_left {
+    padding: 227px 69px 172px;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+}
+.presentation66.presentation-two .presentation_left .presentation_text {
+    max-width: 530px;
+    margin: 0 auto;
+} 
+
+
+
 /**/
 .slick-slide:nth-child(2n) .presentation-two .presentation_wrap:before,
 .slick-slide:nth-child(2n) .presentation-two .presentation_wrap:after  {
@@ -3134,6 +3658,15 @@
         top: -420px;
     }
 
+    .presentation-two .presentation_left {
+        padding: 30px;
+    }
+    .presentation58 .presentation_left,
+    .presentation58 .presentation_right {
+        padding: 120px 40px;
+    }
+
+
 
 
 
@@ -3316,6 +3849,64 @@
         line-height: 24px;
     }
 
+    .presentation52 .presentation_wrap {
+        flex-direction: column-reverse;
+    }
+    .presentation52.presentation-two .presentation_right {
+        max-width: 100%;
+    }
+    .presentation-two .presentation_left {
+        max-width: 100%;
+    }
+    .presentation56 .presentation_right {
+        padding: 30px;
+    }
+    .presentation57.presentation-two .presentation_left {
+        max-width: 45%;
+    }
+    .presentation57.presentation-two .presentation_right {
+        max-width: 55%;
+        padding: 30px;
+    }
+    .presentation61.presentation-two .presentation_right {
+        padding: 0;
+    }
+    .presentation62.presentation-two .presentation_left {
+        padding: 190px 30px 70px;
+    }
+    .presentation63.presentation-two .presentation_right {
+        padding: 30px;
+    }
+    .presentation64.presentation-two .presentation_right {
+        padding: 30px;
+    }
+    .presentation59.presentation-two .presentation_right-box {
+        padding: 20px;
+    }
+    .presentation59.presentation-two .presentation_right {
+        padding: 30px;
+    }
+    .presentation56 .presentation_right {
+        max-width: 100%;
+    }
+    .presentation57.presentation-two .presentation_right {
+        max-width: 100%;
+    }
+    .presentation57.presentation-two .presentation_left {
+        max-width: 100%;
+    }
+    .presentation58.presentation-two .presentation_wrap {
+        flex-direction: column;
+    }
+    .presentation58 .presentation_left, 
+    .presentation58 .presentation_right {
+        padding: 40px 30px;
+        max-width: 100%;
+    }
+    .presentation60.presentation-two .presentation_left {
+        padding: 30px;
+    }
+
 
 
 }
@@ -3472,6 +4063,19 @@
 
     .presentation48 .presentation_img{
         margin-top: 20px;
+    }
+    .presentation59.presentation-two .presentation_right {
+        padding: 0px;
+    }
+    .presentation60_item {
+        width: 100%;
+    }
+    .presentation61 .presentation_right {
+        max-width: 100%;
+    }
+    .presentation65.presentation-two .presentation_left,
+    .presentation66.presentation-two .presentation_left {
+        padding: 60px 30px;
     }
 
 
@@ -3675,6 +4279,44 @@
         outline-width: 30px;
         border-width: 30px;
     }
+
+    .presentation60_item-procent {
+        font-size: 26px;
+        margin-bottom: 6px;
+    }
+    .presentation60_item-text {
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .presentation61 .presentation_author span {
+        font-size: 20px;
+    }
+    .presentation61 .presentation_text p {
+        font-size: 19px;
+    }
+    .presentation60_item:before {
+        width: 10px;
+    }
+    .presentation60_item {
+        padding-left: 22px;
+    }
+    .presentation58 .presentation_right .presentation_text,
+    .presentation58 .presentation_left .presentation_text {
+        font-size: 26px;
+        line-height: 1.1;
+    }
+    .presentation56 .presentation_author {
+        margin-top: 0;
+    }
+    .presentation64.presentation-two .presentation_right,
+    .presentation63.presentation-two .presentation_right,
+    .presentation57.presentation-two .presentation_right,
+    .presentation56 .presentation_right {
+        padding: 20px;
+    }
+
+
+
 
 }
 
