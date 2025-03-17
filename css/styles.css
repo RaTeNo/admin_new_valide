@@ -41476,6 +41476,7 @@ a.back_link_right{
     padding: 20px 18px;
     background-color: color-mix(in srgb, var(--main_color) 15%, #fff);
     border-radius: 6px;
+    margin-top: 10px;
 }
 .text-page_subtitle {
     font-family: 'Ubuntu';
