@@ -45306,7 +45306,7 @@ a.back_link_right{
 }
 .bearing .message_img a {
     position: relative;
-    height: 200.bearing .video_message .thumb imgpx;
+    height: 200px;
     display: block;
 }
 .bearing .message_img a:after {
