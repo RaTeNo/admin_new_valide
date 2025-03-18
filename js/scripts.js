@@ -505,7 +505,7 @@ $(() => {
 	})
 
 
-	$('body').on('click', '.bearing .accordion2 .accordion_item .head .faq_btns, .bearing .accordion2 .accordion_item .title', function (e) {
+	$('body').on('click', '.bearing .accordion2 .accordion_item:not(:has(.tabs)), .bearing .accordion2 .accordion_item .head .faq_btns, .bearing .accordion2 .accordion_item .title', function (e) {
 		e.preventDefault()
 
 		const $item = $(this).closest('.accordion_item'),

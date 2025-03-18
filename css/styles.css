@@ -45264,8 +45264,8 @@ a.back_link_right{
 .bearing .video_message {
     position: relative;
     overflow: hidden;
-    width: 107px;
-    height: 80px;
+    width: 200px;
+    height: 160px;
     max-width: calc(100%);
     border-radius: 6px;
     margin-top: 15px;
@@ -45274,8 +45274,8 @@ a.back_link_right{
     position: relative;
     display: block;
     overflow: hidden;
-    width: 107px;
-    padding-bottom: 80px;
+    width: 200px;
+    padding-bottom: 160px;
     background: url(../images/ic_no_video.png) 50% no-repeat #696969;
     border-radius: 10px;
 }
@@ -45302,11 +45302,11 @@ a.back_link_right{
 .bearing .message_img{
     margin-top: 10px;
     position: relative;
-    max-width: 88px;
+    max-width: 200px;
 }
 .bearing .message_img a {
     position: relative;
-    height: 80px;
+    height: 200.bearing .video_message .thumb imgpx;
     display: block;
 }
 .bearing .message_img a:after {
