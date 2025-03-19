@@ -41852,6 +41852,15 @@ a.back_link_right{
     border-radius: 6px;
     background: var(--main_color);
 }
+
+.text_block .momentous_box ul li{
+    color:#fff;
+}
+
+.text_block .momentous_box ul li:before{
+    border-color:#fff;
+}
+
 .momentous_title {
     font-family: 'Ubuntu';
     font-weight: 700;
