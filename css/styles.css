@@ -44627,10 +44627,16 @@ a.back_link_right{
     flex-wrap: wrap;
     gap: 24px;
 }
+.machine_item-img{
+    aspect-ratio: 1;    
+    margin-bottom: 10px;
+}
 .machine_item img{
     max-width: 100%;
     border-radius: 10px;
-    margin-bottom: 10px;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
 .machine_items > * {
     width: calc(100%/3 - 16px);
