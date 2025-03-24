@@ -44627,6 +44627,11 @@ a.back_link_right{
     flex-wrap: wrap;
     gap: 24px;
 }
+.machine_item img{
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
 .machine_items > * {
     width: calc(100%/3 - 16px);
     padding: 22px 15px 26px;
@@ -44677,7 +44682,9 @@ a.back_link_right{
     text-decoration: none;
     margin-top: 17px;
 }
-
+.machine_item_desc{
+    margin-top: 10px;
+}
 
 .question-ai {
     padding: 20px;
