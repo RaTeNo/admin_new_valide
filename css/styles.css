@@ -45909,3 +45909,83 @@ aside .menu .item .icon141 > * {
     margin-bottom: 15px;
 }
 
+
+
+.denied_title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 1;
+    letter-spacing: -0.3px;
+}
+.denied {
+    display: flex;
+    width: 1448px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+    flex: 1 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.denied_info {
+    width: 702px;
+    max-width: 100%;
+}
+.denied_desc {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1;
+    color: #505261;
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+.denied .link {
+    color: #fff;
+    display: inline-block;
+    margin-top: 45px;
+    padding: 22px 20px;
+    vertical-align: top;
+    text-decoration: none;
+    border-radius: 55px;
+    background: var(--main_color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.denied_contact-items {
+    display: flex;
+    gap: 37px;
+}
+.denied_contact-title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1;
+    color: #000000;
+    opacity: 0.8; 
+    margin-bottom: 15px;
+}
+.denied_contact-phone {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1;
+    color: #555555;
+    opacity: 0.8;
+    text-decoration: none;
+}
+.denied_contact-mail {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1;
+    color: #4193FD;
+    opacity: 0.8;
+    text-decoration: none;
+}
+.denied_title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 1;
+    letter-spacing: -0.3px;
+}

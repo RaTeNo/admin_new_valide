@@ -577,5 +577,43 @@
     }
 
 
+    .denied_title {
+        text-align: center;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .denied_desc {
+        text-align: center;
+        font-size: 22px;
+        line-height: 1.4;
+        margin-bottom: 33px;
+    }
+    .denied_contact-title {
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    .denied_contact-items {
+        justify-content: center;
+    }
+    .denied_info {
+        text-align: center;
+        width: 100%;
+    }
+    .denied .code {
+        margin: 0 auto;
+    }
+    .denied {
+        padding: 24px 52px;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        flex: 0;
+    }
+    .denied_contact-phone,
+    .denied_contact-mail {
+        font-size: 22px;
+    }
+
+
 
 }

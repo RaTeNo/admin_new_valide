@@ -3666,6 +3666,13 @@
     .job-description_box_title {
         font-size: 19px;
     }
+    .denied .code svg {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+
 
 
 }
