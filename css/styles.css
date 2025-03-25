@@ -44628,7 +44628,7 @@ a.back_link_right{
     gap: 24px;
 }
 .machine_item-img{
-    aspect-ratio: 1;    
+    aspect-ratio: 3/2;    
     margin-bottom: 10px;
 }
 .machine_item img{
