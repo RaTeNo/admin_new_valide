@@ -41601,6 +41601,8 @@ a.back_link_right{
 .conversation ul {
     list-style: none;  
     padding-left: 27px;  
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .conversation ul li {
     font-family: 'Ubuntu';
@@ -41772,6 +41774,11 @@ a.back_link_right{
     line-height: 16px;
     color: var(--text_page2);
     margin-left: 22px;
+}
+
+.reaction_item-answer ul{
+    margin-top:  15px;
+    margin-bottom: 15px;
 }
 .reaction_item-answer:before {
     position: absolute;
