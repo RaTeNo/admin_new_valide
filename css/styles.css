@@ -46002,3 +46002,9 @@ aside .menu .item .icon141 > * {
     line-height: 1;
     letter-spacing: -0.3px;
 }
+
+.video_upload {
+    padding: 15px 20px 15px;
+    border-radius: 15px;
+    background: #fff;
+}
