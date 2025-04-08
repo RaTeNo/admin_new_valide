@@ -46012,3 +46012,20 @@ aside .menu .item .icon141 > * {
 .momentous_text b{
     color:#fff;
 }
+
+.momentous_text li{
+	color:#fff !important;
+}
+
+.text_block blockquote .icon{
+	    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: 6px;
+    right: 11px;
+}
+
+.text_block blockquote:has(.icon){
+	padding: 14px 60px 14px 16px !important;
+	position: relative;
+}
