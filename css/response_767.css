@@ -3674,5 +3674,41 @@
 
 
 
+    .mentor_item-contacts > * {
+        width: 100%;
+    }
+    .mentor_item {
+        padding: 14px;
+    }
+    .mentor_item-top:before {
+        width: calc(100% + 28px);
+        left: -14px;
+    }
+
+
+
+    .your-mentor {
+        padding: 14px;
+    }
+    .your-mentor_contacts {
+        flex-direction: column;
+        gap: 6px;
+    }
+    .your-mentor_label {
+        top: -10px;
+        right: 10px;
+    }
+    .your-mentor_author {
+        width: 100%;
+        align-items: flex-start;
+    }
+    .your-mentor_contact {
+        font-size: 15px;
+    }
+    .your-mentor_name {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
 
 }

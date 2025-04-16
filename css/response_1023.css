@@ -616,4 +616,19 @@
 
 
 
+    .mentor_item-contacts {
+        flex-wrap: wrap;
+    }
+    .mentor_item-contacts > * {
+        width: calc(100%/2 - 15px);
+    }
+    .mentor_bottom {
+        flex-wrap: wrap;
+    }
+    .mentor_bottom > * {
+        width: 100%;
+    }
+
+
+
 }

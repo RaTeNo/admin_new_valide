@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#0B00D8">
+		<meta name="theme-color" content="#0B00D8">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/circle.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="sep"></div>
+
+						<div class="account">
+							<a href="/" class="settings_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+							</a>
+
+							<div class="user">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<!-- <img data-src="" alt="" class="lozad"> -->
+								</div>
+
+								<div class="name">Модератор</div>
+							</div>
+
+							<a href="/" class="logout_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+							</a>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="row">
+						<button class="menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						</button>
+
+						<div class="page_title">Сводка</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="nitifications new">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_nitifications"></use></svg>
+						</div>
+
+						<div class="account modal_cont">
+							<button class="user btn mini_modal_btn" data-modal-id="#account_modal">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<img data-src="images/tmp/user_avatar.jpg" alt="" class="lozad">
+								</div>
+
+								<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="account_modal">
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+									<span>Настройки</span>
+								</a></div>
+
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+									<span>Выход</span>
+								</a></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="content_flex">
+					<div class="cont row">
+						<aside>
+							<button class="close_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<div class="menu">
+								<div class="item">
+									<a href="/">
+										<div class="icon icon1">
+											<svg><use xlink:href="images/sprite.svg#ic_category1"></use></svg>
+										</div>
+										<span>Сводка</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon2 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category2"></use></svg>
+										</div>
+										<span>Мои задачи</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a  href="#" class="sub_link active open">
+										<div class="icon icon3 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category3"></use></svg>
+										</div>
+										<span>Курсы</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu" style="display: block;">
+										<div><a class="active">
+											<span class="count">3</span>
+											<span>Все курсы</span>
+										</a></div>
+										<div><a href="/">Новые курсы</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="#" class="sub_link">
+										<div class="icon icon4 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category4"></use></svg>
+										</div>
+										<span>Обратная связь</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/">По тренажерам</a></div>
+										<div><a href="/">По заданиям</a></div>
+										<div><a href="/">По другому</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5">
+											<svg><use xlink:href="images/sprite.svg#ic_category5"></use></svg>
+										</div>
+										<span>Тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_2">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_2"></use></svg>
+										</div>
+										<span>Аудио тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_3">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_3"></use></svg>
+										</div>
+										<span>Тренажеры действий</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon6">
+											<svg><use xlink:href="images/sprite.svg#ic_category6"></use></svg>
+										</div>
+										<span>Новости</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon7">
+											<svg><use xlink:href="images/sprite.svg#ic_category7"></use></svg>
+										</div>
+										<span>Опросы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon8">
+											<svg><use xlink:href="images/sprite.svg#ic_category8"></use></svg>
+										</div>
+										<span>Обсуждения</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon9">
+											<svg><use xlink:href="images/sprite.svg#ic_category9"></use></svg>
+										</div>
+										<span>Вебинары</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon10">
+											<svg><use xlink:href="images/sprite.svg#ic_category10"></use></svg>
+										</div>
+										<span>Подкасты</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon11">
+											<svg><use xlink:href="images/sprite.svg#ic_category11"></use></svg>
+										</div>
+										<span>Файлы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon12">
+											<svg><use xlink:href="images/sprite.svg#ic_category12"></use></svg>
+										</div>
+										<span>Коллеги</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon15">
+											<svg><use xlink:href="images/sprite.svg#ic_category15"></use></svg>
+										</div>
+										<span>Статистика</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon13">
+											<svg><use xlink:href="images/sprite.svg#ic_category13"></use></svg>
+										</div>
+										<span>Настройки</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/" class="sub_link">
+										<div class="icon icon14">
+											<svg><use xlink:href="images/sprite.svg#ic_category14"></use></svg>
+										</div>
+										<span>Управление</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/"></a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon13">
+											<svg><use xlink:href="images/sprite.svg#ic_category13"></use></svg>
+										</div>
+										<span>Я наставник</span>
+									</a>
+								</div>
+							</div>
+						</aside>
+
+
+						<section class="content">
+							<h1 class="page_title">Я наставник</h1>
+
+							<section class="mentor">
+								<div class="mentor_items">
+									<div class="mentor_item">
+										<div class="mentor_item-top">
+											<div class="mentor_item-author">
+												<div class="mentor_item-avatar">
+													<img src="images/mentor_avatar1.jpg" alt="">
+												</div>
+												<div class="mentor_item-info">
+													<div class="mentor_item-name">Регина Дмитриенко</div>
+													<div class="mentor_item-time">Заходил(а) 16 апреля в 15:45</div>
+												</div>
+											</div>
+											<div class="mentor_item-contacts">
+												<div class="mentor_item-contact">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#mentor1"></use>
+													</svg>
+													<span>1 января 2025</span>
+												</div>	
+												<a href="tel:79050987653" class="mentor_item-contact">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#mentor2"></use>
+													</svg>
+													<span>+7 (905) 098-76-53</span>
+												</a>
+												<a href="mailto:reginadmitienko@xskil.com" class="mentor_item-contact">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#mentor3"></use>
+													</svg>
+													<span>reginadmitienko@xskil.com</span>
+												</a>
+												<a href="#" class="mentor_item-contact">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#mentor4"></use>
+													</svg>
+													<span>dmitienko_regina</span>
+												</a>
+											</div>
+											
+										</div>
+
+										<div class="mentor_bottom">
+											<div class="mentor_bottom-item">
+												<div class="mentor_bottom-item_info">
+													<div class="mentor_bottom-item_title">Протокол обучения</div>
+													<div class="mentor_bottom-item_time">Последнее действие: 16 апреля в 9:45</div>
+												</div>
+												<a href="#" class="mentor_bottom-item_btn">Открыть</a>
+											</div>
+											<div class="mentor_bottom-item">
+												<div class="mentor_bottom-item_info">
+													<div class="mentor_bottom-item_title">Протокол ассистентов</div>
+													<div class="mentor_bottom-item_time">Последнее действие: 16 апреля в 9:45</div>
+												</div>
+												<a href="#" class="mentor_bottom-item_btn">Открыть</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="mentor_item">
+										<div class="mentor_item-top">
+											<div class="mentor_item-author">
+												<div class="mentor_item-avatar">
+													<img src="images/mentor_avatar2.jpg" alt="">
+												</div>
+												<div class="mentor_item-info">
+													<div class="mentor_item-name">Василий Петрович Иванов</div>
+													<div class="mentor_item-time">Заходил(а) 16 апреля в 15:45</div>
+												</div>
+											</div>
+											<div class="mentor_item-contacts">
+												<div class="mentor_item-contact">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#mentor1"></use>
+													</svg>
+													<span>1 января 2025</span>
+												</div>	
+												<a href="tel:79050987653" class="mentor_item-contact">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#mentor2"></use>
+													</svg>
+													<span>+7 (905) 098-76-53</span>
+												</a>
+												<a href="mailto:reginadmitienko@xskil.com" class="mentor_item-contact">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#mentor3"></use>
+													</svg>
+													<span>reginadmitienko@xskil.com</span>
+												</a>
+												<a href="#" class="mentor_item-contact">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#mentor4"></use>
+													</svg>
+													<span>dmitienko_regina</span>
+												</a>
+											</div>
+											
+										</div>
+
+										<div class="mentor_bottom">
+											<div class="mentor_bottom-item">
+												<div class="mentor_bottom-item_info">
+													<div class="mentor_bottom-item_title">Протокол обучения</div>
+													<div class="mentor_bottom-item_time">Последнее действие: 16 апреля в 9:45</div>
+												</div>
+												<a href="#" class="mentor_bottom-item_btn">Открыть</a>
+											</div>
+											<div class="mentor_bottom-item">
+												<div class="mentor_bottom-item_info">
+													<div class="mentor_bottom-item_title">Протокол ассистентов</div>
+													<div class="mentor_bottom-item_time">Последнее действие: 16 апреля в 9:45</div>
+												</div>
+												<a href="#" class="mentor_bottom-item_btn">Открыть</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
+							
+
+							<footer>
+								<div class="logo">
+									<img src="images/logo.svg" alt="">
+
+									<div class="desc">Описание первой компании 123</div>
+								</div>
+
+								<div class="contacts location">
+									<div class="name">Адрес</div>
+
+									<div class="val">г. Москва, ул. Ломоносова, д. 75</div>
+								</div>
+
+								<div class="contacts email">
+									<div class="name">Электронная почта</div>
+
+									<div class="val">
+										<div><a href="mailto:company1@gmail.com">company1@gmail.com</a></div>
+									</div>
+								</div>
+
+								<div class="contacts phone">
+									<div class="name">Телефон</div>
+
+									<div class="val">
+										<div><a href="tel:+79219879988">+79219879988</a></div>
+									</div>
+								</div>
+							</footer>
+
+						</section>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+		<section class="modal" id="test">
+			<img data-src="images/ic_warning.svg" alt="" class="icon lozad">
+
+			<div class="modal_title">Аттестация по теме “Маркетинг в IT-Сфере”</div>
+
+			<div class="modal_desc">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок. Теперь никто не сможет обвинить вас в плагиате, ибо каждый текст Яндекс.Рефератов неповторим.</div>
+
+			<div class="btns">
+				<button class="close_btn btn">Позже</button>
+
+				<a href="">Начать</a>
+			</div>
+		</section>
+
+
+		<section class="modal" id="video_modal">
+			<video class="video-player video_new" width="100%" controlsList="nodownload" controls crossorigin="anonymous">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
+			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default></track>
+			</video>
+		</section>
+
+
+
+		<section class="details-modal" id="callback_modal">
+			<div class="details-modal_title">Ответы других экспертов</div>
+			<div class="dialog_items">
+				<div class="dialog_item">
+					<div class="dialog_item-avatar">
+						<img src="images/avatar3.png " alt="">
+					</div>
+					<div class="dialog_item-info">
+						<div class="dialog_item-author">Мария Сергеева</div>
+						<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+					</div>
+				</div>
+				<div class="dialog_item">
+					<div class="dialog_item-avatar">
+						<img src="images/avatar3.png " alt="">
+					</div>
+					<div class="dialog_item-info">
+						<div class="dialog_item-author">Мария Сергеева</div>
+						<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+					</div>
+				</div>
+				<div class="dialog_item">
+					<div class="dialog_item-avatar">
+						<img src="images/avatar3.png " alt="">
+					</div>
+					<div class="dialog_item-info">
+						<div class="dialog_item-author">Мария Сергеева</div>
+						<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+					</div>
+				</div>
+				<div class="dialog_item">
+					<div class="dialog_item-avatar">
+						<img src="images/avatar3.png " alt="">
+					</div>
+					<div class="dialog_item-info">
+						<div class="dialog_item-author">Мария Сергеева</div>
+						<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+					</div>
+				</div>	
+			</div>			
+		</section>
+
+		<section class="details-modal" id="answer">
+			<div class="details-modal_title">Правильный ответ</div>
+			<div class="dialog_items">
+				<div class="dialog_item">
+					<div class="dialog_item-info">
+						<div class="dialog_item-author">Мария Сергеева</div>
+						<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+					</div>
+				</div>
+			</div>			
+		</section>
+
+
+
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+		<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <defs>
+		        <symbol id="ii" viewBox="0 0 80 80">
+		        	<rect width="100%" height="100%" rx="21" fill="url(#paint0_linear_3687_2535)"/>
+					<path d="M47.5 57C46.849 57 46.271 56.579 46.072 55.959L43.145 46.855L34.041 43.928C33.421 43.729 33 43.151 33 42.5C33 41.849 33.421 41.271 34.041 41.072L43.145 38.145L46.072 29.041C46.271 28.421 46.849 28 47.5 28C48.151 28 48.729 28.421 48.928 29.041L51.855 38.145L60.959 41.072C61.579 41.271 62 41.849 62 42.5C62 43.151 61.579 43.729 60.959 43.928L51.855 46.855L48.928 55.959C48.729 56.579 48.151 57 47.5 57ZM28 39C27.354 39 26.781 38.587 26.577 37.975L24.689 32.311L19.025 30.423C18.413 30.219 18 29.646 18 29C18 28.354 18.413 27.781 19.025 27.577L24.689 25.689L26.577 20.025C26.781 19.413 27.354 19 28 19C28.646 19 29.219 19.413 29.423 20.025L31.311 25.689L36.975 27.577C37.587 27.781 38 28.354 38 29C38 29.646 37.587 30.219 36.975 30.423L31.311 32.311L29.423 37.975C29.219 38.587 28.646 39 28 39ZM26.5 61C25.854 61 25.281 60.587 25.077 59.975L23.563 55.436L19.025 53.923C18.413 53.719 18 53.146 18 52.5C18 51.854 18.413 51.281 19.025 51.077L23.563 49.564L25.077 45.025C25.281 44.413 25.854 44 26.5 44C27.146 44 27.719 44.413 27.923 45.025L29.436 49.564L33.975 51.077C34.587 51.281 35 51.854 35 52.5C35 53.146 34.587 53.719 33.975 53.923L29.436 55.436L27.923 59.975C27.719 60.587 27.146 61 26.5 61Z" fill="white"/>
+					<defs>
+					<linearGradient id="paint0_linear_3687_2535" x1="-1.7678e-06" y1="85.0202" x2="104.684" y2="42.3877" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#682D8C"/>
+					<stop offset="1" stop-color="#EB1E79"/>
+					</linearGradient>
+					</defs>
+		        </symbol>
+		    </defs>
+		</svg>
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/media-player.js"></script>
+		<script src="js/html5sortable.min.js"></script>
+		<script src="js/wavesurfer.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
