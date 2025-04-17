@@ -1564,6 +1564,19 @@ aside .menu .item .icon9999
     width: 32px;
 }
 
+aside .menu .item .icon1414
+{
+    height: 35px;
+    width: 35px;
+}
+
+
+aside .menu .item .icon1414 svg
+{
+    height: 35px;
+    width: 35px;
+}
+
 aside .menu .item .icon9999 svg
 {
     height: 32px;
