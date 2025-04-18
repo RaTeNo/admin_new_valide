@@ -46120,6 +46120,7 @@ aside .menu .item .icon141 > * {
     margin-top: 24px;
     display: flex;
     gap: 19px;
+    flex-wrap: wrap;
 }
 .mentor_bottom > * {
     width: calc(100%/2 - 10px);
