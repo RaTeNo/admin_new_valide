@@ -2,6 +2,8 @@ WW = window.innerWidth || document.clientWidth || document.getElementsByTagName(
 WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
 $(() => {
 
+	
+
 
 	$(".show_courses_not_complete").click(function (e) {
 		$(".show_courses_not_complete").toggleClass("active");
@@ -1456,3 +1458,18 @@ function handle_audio() {
 	});
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+  	const video = document.querySelector('.trainer_ai_body_left video');
+  	const loader = document.querySelector('.trainer_ai_body_left .spinner');
+  	
+  	video.addEventListener('loadeddata', function() {
+  		console.log(1);
+  	  	video.classList.add('loaded');
+  	  	loader.style.display = 'none';
+  	});
+
+  	// На случай ошибки загрузки
+  	video.addEventListener('error', function() {
+  	  	loader.textContent = 'Ошибка загрузки видео';
+  	});
+});

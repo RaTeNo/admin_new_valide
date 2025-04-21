@@ -46229,3 +46229,53 @@ aside .menu .item .icon141 > * {
     top: 24px;
     right: 24px;
 }
+
+
+
+.trainer_ai_body_left .video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.trainer_ai_body_left .video-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  z-index: 10;
+}
+
+.trainer_ai_body_left video {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.trainer_ai_body_left video.loaded {
+  opacity: 1;
+}
+
+.trainer_ai_body_left .spinner {
+    width: 40px;
+    height: 40px;
+     border: 4px solid rgb(18 18 18 / 30%);
+    border-radius: 50%;
+    border-top: 4px solid var(--main_color);
+    animation: spin 1s linear infinite;
+     left: calc(50% - 20px);
+    top: calc(50% - 20px);
+    position: absolute;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
