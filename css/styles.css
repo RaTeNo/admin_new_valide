@@ -25058,7 +25058,7 @@ form .form_btns input[type=file] + label,
     display: flex;
     align-items: center;
 }
-.rating-top_item:first-child {
+.rating-top_item{
     margin-right: 18px;
 }
 .rating-top_item-text {
