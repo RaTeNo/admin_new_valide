@@ -14,6 +14,17 @@
     padding: 32px;
     border-radius: 20px;
     position: relative;
+    
+}
+
+.text-page_block strong{
+    color:inherit;
+}
+
+.text-page_block ul li:before{
+    display: none !important;
+}
+.text-page_block + .text-page_block{
     margin-top: 48px;
 }
 .text-page1_label {
@@ -460,9 +471,9 @@
     border-radius: 12px;
     background-color: color-mix(in srgb, var(--main_color) 10%, #fff);
 }
-.text-page9_item:last-child {
+/*.text-page9_item:last-child {
     width: 100%;
-}
+}*/
 .text-page9_icon {
     width: 44px;
     height: 44px;
@@ -632,9 +643,9 @@
     background-color: color-mix(in srgb, var(--main_color) 30%, #fff);
     position: relative;
 }
-.text-page12_item:last-child {
+/*.text-page12_item:last-child {
     width: 100%;
-}
+}*/
 .text-page12_item-title {
     font-weight: 700;
     font-size: 18px;
@@ -717,9 +728,9 @@
     background-color: color-mix(in srgb, var(--main_color) 30%, #fff);
     position: relative;
 }
-.text-page13_item:last-child {
+/*.text-page13_item:last-child {
     width: 100%;
-}
+}*/
 .text-page13_item-title {
     font-weight: 700;
     font-size: 18px;
@@ -1217,6 +1228,12 @@
     padding: 20px;    
     border-radius: 12px;
 }
+.text-page18_items:not(:has(.green)) > *{
+    width: 100%;
+}
+.text-page18_items:not(:has(.red)) > *{
+    width: 100%;
+}
 .text-page18_circle .icon {
     width: 18px;
     height: 18px;
@@ -1473,11 +1490,11 @@
     padding: 24px;
     background: rgba(151, 183, 6, 0.1);
     border-radius: 12px;
-    background-color: color-mix(in srgb, var(--main_color) 85%, #fff);
+    background-color: color-mix(in srgb, var(--main_color) 80%, #424242);
 }
-.text-page20_item:last-child {
+/*.text-page20_item:last-child {
     width: 100%;
-}
+}*/
 .text-page20_icon {
     width: 44px;
     height: 44px;
@@ -2532,8 +2549,7 @@
 .text-page39_item + .text-page39_item {
     margin-top: 16px;
 }
-.text-page39_item:before {
-    content: "";
+.text-page39_item_icon {
     position: absolute;
     width: 44px;
     height: 44px;
@@ -2547,7 +2563,7 @@
     transform: translateY(-50%);
     z-index: 100;
 }
-.text-page39_item:nth-child(1):before {
+/*.text-page39_item:nth-child(1):before {
     content: "📝";
 }
 .text-page39_item:nth-child(2):before {
@@ -2558,7 +2574,7 @@
 }
 .text-page39_item:nth-child(4):before {
     content: "💬";
-}
+}*/
 .text-page39_items:after {
     position: absolute;
     content: "";
