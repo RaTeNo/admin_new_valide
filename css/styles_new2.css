@@ -22,7 +22,7 @@
 }
 
 .text-page_block ul li:before{
-    display: none !important;
+    /*display: none !important;*/
 }
 .text-page_block + .text-page_block{
     margin-top: 48px;
@@ -336,7 +336,7 @@
     padding: 0;
     display: flex;
     align-items: stretch;
-    gap: 23px;
+    gap: 28px;
     background-color: color-mix(in srgb, var(--main_color) 10%, #fff);
 }
 .text-page6_number {
@@ -381,7 +381,7 @@
     color: #383838;
 }
 .text-page6_info {
-    padding: 20px;
+    padding: 20px 20px 20px 0;
 }
 
 
@@ -698,6 +698,7 @@
     background: var(--main_color);
     left: 6px;
     top: 6px;
+    border:none;
 }
 .text-page12 ul li + li {
     margin-top: 10px;
@@ -2338,6 +2339,7 @@
     background: var(--main_color);
     left: 6px;
     top: 6px;
+    border:none;
 }
 .text-page34 ul li + li {
     margin-top: 10px;
@@ -2461,7 +2463,9 @@
     height: 14px;
     flex-shrink: 0;
 }
-
+.text_block .text-page37 ul li:before{
+    display: none;
+}
 
 .text-page38 {
     background-color: color-mix(in srgb, var(--main_color) 10%, #fff);
