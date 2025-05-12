@@ -2356,9 +2356,7 @@
     .rating-top_items {
         flex-direction: column;
         align-items: flex-start;
-    }
-    .rating-top_item:first-child {
-        margin-bottom: 7px;
+        gap:7px;
     }
     .rating-top {
         align-items: flex-start;
