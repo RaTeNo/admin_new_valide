@@ -252,7 +252,10 @@
     margin-bottom: 10px;
 }
 
-
+.text-page5_1 .text-page_hint{
+    background-color: transparent;
+    color: var(--main_color);
+}
 .text-page5 {
     background-color: color-mix(in srgb, var(--main_color) 10%, #fff);
 }
