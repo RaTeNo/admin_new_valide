@@ -29533,6 +29533,9 @@ bottom: 20px;
 .training-plan_top .rating-top_title {
     margin-left: 22px;
 }
+.training-plan_item:last-child:nth-child(even){
+     width: 100%;
+}
 .training-plan_items {
     display: flex;
     flex-wrap: wrap;
