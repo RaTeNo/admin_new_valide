@@ -3708,5 +3708,11 @@
         line-height: 1.3;
     }
 
+    .training-plan_item:last-child:nth-child(odd) {
+        width: 100%;
+    }
+    .training-plan_item:last-child:nth-child(even){
+        width: 100%;
+    }
 
 }
