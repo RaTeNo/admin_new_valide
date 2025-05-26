@@ -46284,3 +46284,89 @@ aside .menu .item .icon141 > * {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+.popular_template{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 90%;
+    align-items: center;
+}
+
+.popular_template span{
+    cursor: pointer;  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    gap: 10px;
+    background: #FFFFFF;
+    border: 1.5px solid var(--main_color);
+    border-radius: 90px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    color: var(--main_color);
+}
+
+.comments .comment.comment_open_ai .data{
+    background: var(--main_color);
+    border-top-left-radius: 0px;
+}
+
+.comments .comment.comment_open_ai .name{
+    color:#fff;
+    opacity: 0.5;
+}
+
+.comments .comment.comment_open_ai .icon{
+    width: 24px;
+    height: 24px;
+}
+
+.comments .comment.comment_open_ai .text{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    color:#fff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.apen_ai_process{
+    margin-top: 15px;
+    display: flex;
+    gap:10px;
+    font-weight: bold;
+    align-items: center;
+    background: #fff;
+    color:var(--main_color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.apen_ai_process .loader {
+    width: 30px;
+    aspect-ratio: 1;
+    --c: no-repeat radial-gradient(farthest-side, var(--main_color) 92%, #0000);
+    background: var(--c) 50% 0, var(--c) 50% 100%, var(--c) 100% 50%, var(--c) 0 50%;
+    background-size: 6px 6px;
+    animation: l18 1s infinite;
+    position: relative;
+}
+.apen_ai_process .loader::before {    
+    content:"";
+    position: absolute;
+    inset:0;
+    margin: 3px;
+    background: repeating-conic-gradient(#0000 0 35deg,var(--main_color) 0 90deg);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 3px),#000 0);
+    border-radius: 50%;
+}
+@keyframes l18 { 
+    100%{
+        transform: rotate(.5turn)
+    }
+}
