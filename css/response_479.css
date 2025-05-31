@@ -2271,6 +2271,26 @@
     }
 
 
+    .call-analysis_button {
+        position: relative;
+        right: 0px;
+        bottom: 0px;
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .call-analysis_item-info {
+        width: 100%;
+    }
+    .call-analysis_item-desc {
+        max-width: 100%;
+    }
+    .call-analysis_item-text {
+        width: 100%;
+        text-align: center;
+    }
+
+
 
 
 

@@ -3715,4 +3715,21 @@
         width: 100%;
     }
 
+
+    .passing_items.two .passing_item {
+        width: 100%;
+    }
+    .call-analysis_item-top {
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .knowledge-catalog_items> * {
+        width: 100%;
+    }
+    .test-folder_items > * {
+        width: 100%;
+    }
+ 
+
+
 }

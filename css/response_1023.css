@@ -643,4 +643,13 @@
     }
 
 
+
+    .knowledge-catalog_items {
+        gap: 18px;
+    }
+    .test-folder_item-name {
+        display: inline-block;
+    }
+
+
 }
