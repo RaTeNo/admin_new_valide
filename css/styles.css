@@ -41254,7 +41254,7 @@ a.back_link_right{
     padding: 15px 15px 20px 15px;
     border-radius: 15px;
     background: #fff;
-    width: calc(100% / 3 - 10px);
+    width: calc((100% - 15px * 1) / 2);
 }
 .passing_item + .passing_item {
 
@@ -41327,6 +41327,10 @@ a.back_link_right{
 .passing_item-rating.red{
     background:#C62D2D26;
     color:#C62D2D;
+}
+.passing_item-rating.yellow{
+    background: rgba(231, 176, 37, 0.15);
+    color: #E7B025;
 }
 .passing_item-text {
     font-family: 'Ubuntu';
