@@ -44178,7 +44178,7 @@ a.back_link_right{
 .outcomes_item-text {
     font-family: 'Ubuntu';
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 19px;
     color: #1C2038;
 }
@@ -46500,6 +46500,7 @@ aside .menu .item .icon141 > * {
     right: 16px;
     bottom: 24px;
     margin-left: 20px;
+    text-decoration: none;
 }
 
 
