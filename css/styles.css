@@ -41364,7 +41364,7 @@ a.back_link_right{
     font-family: 'Ubuntu';
     font-weight: 400;
     font-size: 16px;
-    line-height: 16px;
+    line-height: 20px;
     color: #1C2038;
 }
 
@@ -44179,7 +44179,7 @@ a.back_link_right{
     font-family: 'Ubuntu';
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 20px;
     color: #1C2038;
 }
 .outcomes_item-bottom {
@@ -44188,8 +44188,8 @@ a.back_link_right{
 .outcomes_item-subtitle {
     font-family: 'Ubuntu';
     font-weight: 700;
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 16px;
+    line-height: 20px;
     color: #7178AD;
     margin-bottom: 10px;
 }
