@@ -41296,15 +41296,15 @@ a.back_link_right{
 .passing_item-name {
     font-family: 'Ubuntu';
     font-weight: 700;
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 16px;
+    line-height: 24px;
     color: #2D335B;
 }
 .passing_item-date {
     font-family: 'Ubuntu';
     font-weight: 400;
-    font-size: 12px;
-    line-height: 19px;
+    font-size: 16px;
+    line-height: 28px;
     color: #7178AD;
 }
 .passing_item-rating {
@@ -41335,8 +41335,8 @@ a.back_link_right{
 .passing_item-text {
     font-family: 'Ubuntu';
     font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 20px;
     color: #1C2038;
     padding-bottom: 15px;
     margin-bottom: 15px;
@@ -41355,16 +41355,16 @@ a.back_link_right{
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 19px;
+    font-size: 16px;
+    line-height: 25px;
     color: #7178AD;
     margin-bottom: 5px;
 }
 .passing_item-bottom-text {
     font-family: 'Ubuntu';
     font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
     color: #1C2038;
 }
 
