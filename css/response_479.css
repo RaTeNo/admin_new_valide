@@ -2292,6 +2292,23 @@
         text-align: center;
     }
 
+    .coach_items > * {
+        padding: 30px 16px 16px 16px;
+    }
+    .attestation-active_item-labels {
+        gap: 10px;
+    }
+    .attestation-active_item-label {
+        display: inline-block;
+    }
+
+    .attestation-head_items > * {
+        width: 100%;
+    }
+    .attestation-active_btn {
+        padding: 6px 10px;
+    }
+
 
 
 

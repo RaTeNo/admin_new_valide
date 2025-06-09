@@ -650,6 +650,9 @@
     .test-folder_item-name {
         display: inline-block;
     }
+    .attestation-head_items > * {
+        width: calc(100% / 2 - 5px);
+    }
 
 
 }

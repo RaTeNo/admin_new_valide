@@ -3729,6 +3729,44 @@
     .test-folder_items > * {
         width: 100%;
     }
+
+    .job-head_items {
+        gap: 12px;
+    }
+    .job-head_items > * {
+        width: 100%;
+    }
+    .schedule_head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .schedule_items > * {
+        width: 100%;
+    }
+
+    .coach-head_contact {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .coach_items > * {
+        width: 100%;
+    }
+    .coach_item-status {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .attestation-active_item-btns {
+        margin-top: 12px;
+        justify-content: flex-start;
+    }
+
+    .attestation-active_title {
+        flex-direction: column;
+        gap: 10px;
+    }
  
 
 
