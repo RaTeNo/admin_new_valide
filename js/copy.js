@@ -9,24 +9,20 @@ $(() => {
 
     // Функция для показа кнопки
     const showButton = (selection) => {
-        const range = selection.getRangeAt(0); // Получаем диапазон выделения
-        const rect = range.getBoundingClientRect(); // Получаем его координаты и размеры
+        const range = selection.getRangeAt(0);
+        const rect = range.getBoundingClientRect();
 
-        // Если выделение пустое или схлопнутое, ничего не делаем
         if (rect.width === 0 && rect.height === 0) {
             hideButton();
             return;
         }
 
-        // Позиционируем кнопку над центром выделенного текста
-        // window.scrollX/Y нужны, чтобы позиция была правильной при прокрутке страницы
         const top = rect.top + window.scrollY - commentButton.offsetHeight - 10;
         const left = rect.left + window.scrollX + (rect.width / 2) - (commentButton.offsetWidth / 2);
         
         commentButton.style.top = `${top}px`;
         commentButton.style.left = `${left}px`;
         
-        // Показываем кнопку с плавной анимацией
         commentButton.classList.add('visible');
     };
 
@@ -35,8 +31,8 @@ $(() => {
         commentButton.classList.remove('visible');
     };
 
-    // 1. Слушаем событие "отпускания кнопки мыши" в области контента
-    contentArea.addEventListener('mouseup', (event) => {
+    // 1. Слушаем событие "pointerup" - это универсальное событие для "отпускания" (мыши или пальца)
+    contentArea.addEventListener('pointerup', (event) => {
          // Используем небольшую задержку, чтобы браузер успел обработать выделение
         setTimeout(() => {
             const selection = window.getSelection();
@@ -51,20 +47,19 @@ $(() => {
         }, 10);
     });
 
-    // 2. Слушаем клик по самой кнопке
+    // 2. Слушаем клик по самой кнопке (событие 'click' универсально и работает везде)
     commentButton.addEventListener('click', () => {
-        // Здесь будет ваша логика для открытия модального окна или отправки комментария
         alert(`Вы хотите прокомментировать:\n\n"${selectedText}"`);
         
-        // После клика скрываем кнопку и убираем выделение с текста
         hideButton();
         window.getSelection().removeAllRanges();
     });
 
-    // 3. Слушаем клик по всему документу, чтобы скрыть кнопку, если кликнули мимо
-    document.addEventListener('mousedown', (event) => {
-        // Проверяем, что клик был не по самой кнопке
-        // и не внутри контента (чтобы не конфликтовать с mouseup)
+    // 3. Слушаем событие "pointerdown" по всему документу, чтобы скрыть кнопку
+    // Это универсальный аналог "mousedown" для мыши и "touchstart" для пальца
+    document.addEventListener('pointerdown', (event) => {
+        // Проверяем, что клик/тап был не по самой кнопке
+        // и не внутри контента (чтобы не конфликтовать с pointerup)
         if (!commentButton.contains(event.target) && !contentArea.contains(event.target)) {
             hideButton();
         }
