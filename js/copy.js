@@ -17,7 +17,7 @@ $(() => {
             return;
         }
 
-        const top = rect.top + window.scrollY - commentButton.offsetHeight - 10;
+        const top = rect.bottom + window.scrollY + 10;
         const left = rect.left + window.scrollX + (rect.width / 2) - (commentButton.offsetWidth / 2);
         
         commentButton.style.top = `${top}px`;
