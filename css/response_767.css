@@ -3767,6 +3767,45 @@
         flex-direction: column;
         gap: 10px;
     }
+
+
+    .knowledge_items > * {
+        width: 100%;
+    }
+    .knowledge_wrap-top {
+        flex-direction: column;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+    }
+    .knowledge_wrap {
+        padding: 12px;
+    }
+    .proposal_box-title {
+        font-size: 18px;
+    }
+    .knowledge-base_box_title {
+        font-size: 20px;
+    }
+    .proposal_accordion .accordion_item {
+        padding: 12px;
+    }
+    .proposal_right {
+        align-items: flex-end;
+        flex-direction: column-reverse;
+    }
+    .supervisor-panel_top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .proposal_info-items > * {
+        width: 100%;
+    }
+    .proposal_btns {
+        flex-direction: column;
+    }
+    .supervisor-panel_btn {
+        width: 100%;
+    }
  
 
 
