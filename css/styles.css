@@ -1504,7 +1504,7 @@ aside .menu .item .icon > *
     max-width: 100%;
     height: 28px;
     max-height: 100%;
-    /*fill: rgba(255, 255, 255, .6);*/
+    fill: rgba(255, 255, 255, .6);
 }
 
 aside .menu .item .icon1 > *
@@ -47654,6 +47654,7 @@ aside .menu .item .icon141 > * {
     font-size: 12px;
     line-height: 14px;
     color: #7874A3;
+    width: fit-content;
 }
 .knowledge_wrap-date {
     font-weight: 400;
@@ -47733,7 +47734,7 @@ aside .menu .item .icon141 > * {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    margin-bottom: 24px;
+    /*margin-bottom: 24px;*/
 }
 .supervisor-panel_desc {
     display: flex;
