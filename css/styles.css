@@ -7957,7 +7957,7 @@ aside .menu .sub_menu a.active
     border-radius: 10px;
 }
 
-.dialog .message .video_message .thumb img
+.dialog .message .video_message .thumb img, .dialog .message .video_message .thumb video
 {
     position: absolute;
     top: 0;
@@ -47973,4 +47973,112 @@ aside .menu .item .icon141 > * {
 }
 .proposal_accordion .accordion_item .data > * {
     margin-top: 24px;
+}
+
+.training_start{
+    border: 2px solid var(--main_color);
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.training_start + .training_start{
+    margin-top: 20px;
+}
+
+.training_start_status{
+    display: flex;
+    gap:10px;
+    margin-bottom: 20px;
+}
+
+.training_start_status div{
+    color:#fff;
+    background: #FF5C00;
+    border-radius: 60px;
+    padding: 5px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.training_start_status div:before{
+    content:"";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    background: #fff;
+    left: 9px;
+    top: calc(50% - 3px);
+}
+
+.training_start_status button{   
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px; 
+    color: #8484B2;
+    border-bottom: 1px dashed #8484B2;
+
+}
+
+.training_start_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.training_start_img{
+    text-align: center;
+}
+
+.training_start_img img{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+
+.training_start_type{
+    background: var(--main_color);
+    border-radius: 60px;
+    color:#fff;
+    padding: 10px;
+    position: relative;
+    top: -20px;
+    border: 4px solid #fff;
+}
+
+.training_start_name{
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 19px;
+    color: #1D1D1D;
+    margin-bottom: 15px;
+}
+
+.training_start_desc{
+    text-align: center;
+}
+
+.training_start_button{
+    font-size: 17px;
+    background: var(--main_color);
+    border-radius: 60px;
+    color:#fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.training_start_status_end{
+    font-weight: bold;
+    color:#419F2E;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.training_start_status_end .icon{
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
 }
