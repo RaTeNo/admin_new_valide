@@ -47778,6 +47778,8 @@ aside .menu .item .icon141 > * {
     border-radius: 12px;
     gap: 8px;
     display: flex;
+    margin-top: 12px;
+
 }
 .supervisor-panel_warning .icon {
     width: 35px;
