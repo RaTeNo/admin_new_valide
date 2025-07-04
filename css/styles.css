@@ -48082,3 +48082,11 @@ aside .menu .item .icon141 > * {
     height: 25px;
     flex-shrink: 0;
 }
+
+.video-control .icon {
+    display: none !important; /* Изначально все иконки скрыты */
+}
+
+.video-control .icon.active {
+    display: block !important;
+}

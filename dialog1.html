@@ -539,11 +539,15 @@
 												</div>
 
 												<div class="video_message">
-													<button class="thumb">
-														<video width="320" height="240" controls>
+													<button class="thumb video-player-btn">
+														<video class="my-video" width="320" height="240" nocontrols playsinline>
 														  	<source src="video.MP4" type="video/mp4">
 														  	Your browser does not support the video tag.
 														</video>
+														<div class="video-control">
+													        <svg class="icon play-button active"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
+													        <svg class="icon pause-button"><use xlink:href="images/sprite.svg#ic_video_pause"></use></svg>
+													    </div>
 													</button>							
 												</div>		
 											</div>	
@@ -1053,5 +1057,6 @@
 		<script src="js/nice-select.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
+		<script src="js/video.js"></script>
 	</body>
 </html>
