@@ -48100,3 +48100,70 @@ aside .menu .item .icon141 > * {
 .dialog .message .video_message.full .thumb{
     padding-bottom: 70%;
 }
+
+
+.message_new_sep{
+    text-align: center;
+    border-bottom: 1px solid #d0d0d0;
+    width: calc(100% + 160px);
+    margin-left: -80px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+.controls_button.hide{
+    display: none;
+}
+.controls_button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+}
+
+.controls_button_list{
+    display: flex;
+    gap:12px;
+}
+
+.controls_button_list button{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main_color);
+    align-items: center;
+    border-radius: 50%;
+}
+
+.controls_button_list button .icon{
+    width: 30px;
+    height: 30px;
+}
+
+.controls_button_text{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #8381A9;
+}
+
+.go_controls_button{
+    position: absolute;
+    top: -35px;
+    left:0px;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.go_controls_button .icon{
+    width: 27px;
+    height: 27px;
+}
+
+.block_control{
+    position: relative;
+}

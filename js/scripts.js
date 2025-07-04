@@ -1018,6 +1018,22 @@ $(() => {
 		})
 	})
 
+	$('body').on('click', '.js-show', function (e) {
+		e.preventDefault()
+		let block = $(this).data("block");
+
+		$(".controls_button").addClass("hide");
+		console.log(block);
+		$(block).show();
+	});
+
+	$('body').on('click', '.go_controls_button', function (e) {
+		e.preventDefault()
+		$(".block_control").hide();
+		$(".controls_button").removeClass("hide");
+	});
+	
+
 	// Восстановление пароля
 	// $('.auth .recovery .form').submit(function (e) {
 	// 	e.preventDefault()
