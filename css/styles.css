@@ -48090,3 +48090,11 @@ aside .menu .item .icon141 > * {
 .video-control .icon.active {
     display: block !important;
 }
+
+.dialog .message .video_message.full{
+    width: 700px;
+}
+
+.dialog .message .video_message.full .thumb{
+    padding-bottom: 70%;
+}
