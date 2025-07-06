@@ -48098,7 +48098,11 @@ aside .menu .item .icon141 > * {
 }
 
 .dialog .message .video_message.full .thumb{
-    padding-bottom: 70%;
+    padding-bottom: 56.25%;
+}
+
+.dialog .message .video_message.full_vert .thumb{
+    padding-bottom: 177.77%;
 }
 
 
