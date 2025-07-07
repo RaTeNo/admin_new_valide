@@ -48034,9 +48034,10 @@ aside .menu .item .icon141 > * {
 }
 
 .training_start_img img{
-    width: 85px;
-    height: 85px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .training_start_type{
