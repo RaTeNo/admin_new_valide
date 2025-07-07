@@ -48183,3 +48183,75 @@ aside .menu .item .icon141 > * {
 .block_control{
     position: relative;
 }
+
+.course_info .steps + .block_title{
+    margin-top: 40px;
+}
+
+.liders{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.lider{
+    background: #FFFFFF;
+    border-radius: 15px;
+    display: flex;
+    gap:18px;
+    padding: 15px;
+    align-items: center;
+}
+
+.lider .img{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.lider .img img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lider_name{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #020027;
+    margin-bottom: 10px;
+}
+
+.lider_post{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #5D5B8B;
+}
+
+.lider_info{
+    display: flex;
+    gap:15px;
+    margin-top: 10px;
+}
+
+.lider_info div{
+    background: #FFFFFF;
+    border: 1px solid var(--main_color);
+    border-radius: 76px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--main_color);
+    padding: 5px;
+}
+
+.lider_count{
+    margin-left: auto;
+}
+
+.lider_count .c100:after{
+    background: #fff;
+}

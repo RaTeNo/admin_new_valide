@@ -2321,4 +2321,13 @@
     .controls_button{
         margin-bottom:60px;
     }
+
+    .lider_info{
+        flex-wrap:wrap;
+        gap: 5px;
+    }
+
+    .lider{
+        align-items: flex-start;
+    }
 }
