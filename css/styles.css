@@ -48080,6 +48080,17 @@ aside .menu .item .icon141 > * {
     margin-top: 20px;
 }
 
+.training_start_status_new{
+    margin-top: 20px;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+}
+
+.training_start_status_new div{
+    font-weight: bold;
+}
+
 .training_start_status_end .icon{
     width: 25px;
     height: 25px;
