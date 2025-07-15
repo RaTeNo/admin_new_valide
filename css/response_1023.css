@@ -661,4 +661,32 @@
     }
 
 
+    .converse_items {
+        flex-wrap: nowrap;
+        overflow: auto;
+        scrollbar-width: none;
+    }
+    .converse_items > * {
+        width: 150px;
+        flex-shrink: 0;
+    }
+    .converse_item:after {
+        width: 96px;
+    }
+    .converse_items::-webkit-scrollbar { 
+        width: 0; 
+    }
+    .converse_items { 
+        -ms-overflow-style: none; 
+    }
+    .converse_items { 
+        overflow: -moz-scrollbars-none; 
+    }
+    .converse_item:nth-child(7):after {
+        display: block;
+    }
+
+
+
+
 }

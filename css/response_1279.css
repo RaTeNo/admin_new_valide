@@ -2149,6 +2149,12 @@
     }
 
 
+
+    .converse_item:after {
+        width: 50px;
+    }
+
+
 }
 
 

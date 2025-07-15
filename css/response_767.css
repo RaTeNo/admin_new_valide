@@ -3806,6 +3806,13 @@
     .supervisor-panel_btn {
         width: 100%;
     }
+
+
+
+    .converse .tabs_container .tabs {
+        flex-direction: row;
+        display: flex;
+    }
  
 
 
