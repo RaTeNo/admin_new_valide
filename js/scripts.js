@@ -1475,6 +1475,49 @@ function handle_audio() {
 	});
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. Получаем контейнер прокрутки
+    const scrollContainer = document.querySelector('.converse_items.tabs');
+
+    // 2. Получаем активный элемент
+    const activeItem = document.querySelector('.converse_items.tabs .converse_item.active');
+
+    if (scrollContainer && activeItem) {
+        // 3. Вычисляем позицию активного элемента относительно контейнера
+        // scrollLeft + offsetLeft - (scrollContainer.offsetWidth / 2) + (activeItem.offsetWidth / 2)
+        // Этот расчет центрирует активный элемент в середине видимой области,
+        // если он не слишком близко к началу или концу контейнера.
+        // Более простой подход: (activeItem.offsetLeft - scrollContainer.offsetLeft)
+
+        // Можно использовать scrollIntoView() для более простого решения
+        // activeItem.scrollIntoView({
+        //     behavior: 'smooth', // Для плавной прокрутки
+        //     inline: 'center'   // Центрирует элемент по горизонтали
+        // });
+
+        // Или ручной расчет для более точного контроля:
+        const itemOffsetLeft = activeItem.offsetLeft;
+        const containerWidth = scrollContainer.offsetWidth;
+        const itemWidth = activeItem.offsetWidth;
+
+        // Позиция для прокрутки, чтобы активный элемент оказался примерно по центру
+        // Вы можете настроить эту логику в зависимости от того, как именно вы хотите, чтобы выглядела прокрутка
+        const scrollPosition = itemOffsetLeft - (containerWidth / 2) + (itemWidth / 2);
+
+        // Устанавливаем scrollLeft контейнера
+        // Добавляем проверку на поддержку smooth scroll, если это необходимо
+        if ('scrollBehavior' in document.documentElement.style) {
+            scrollContainer.scrollTo({
+                left: scrollPosition,
+                behavior: 'smooth'
+            });
+        } else {
+            // Fallback для браузеров, не поддерживающих smooth scroll
+            scrollContainer.scrollLeft = scrollPosition;
+        }
+    }
+});
+
 // document.addEventListener('DOMContentLoaded', function() {
 //   	const video = document.querySelector('.trainer_ai_body_left video');
 //   	const loader = document.querySelector('.trainer_ai_body_left .spinner');

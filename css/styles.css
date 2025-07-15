@@ -48285,8 +48285,8 @@ aside .menu .item .icon141 > * {
     height: 28px;
 }
 .converse_item-check {
-    width: 28px;
-    height: 28px;
+    width: 29px;
+    height: 29px;
     border-radius: 50%;
     background: #DEDBF4;
     border: 3px solid #DEDBF4;
@@ -48331,8 +48331,8 @@ aside .menu .item .icon141 > * {
     height: 14px;
     border-radius: 50%;
     background: var(--main_color);
-    left: 4px;
-    top: 4px;
+    left: calc(50% - 7px);
+    top: calc(50% - 7px);
 }
 .converse_item.active .converse_item-check:before {
     position: absolute;
