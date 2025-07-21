@@ -2330,4 +2330,15 @@
     .lider{
         align-items: flex-start;
     }
+
+    .accordion_new_style{
+        .accordion_item .head .icon{
+            position: absolute;
+            top:17px;
+        }
+
+        .accordion_item.active .head .icon{
+            top:17px;
+        }
+    }   
 }
