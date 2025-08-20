@@ -866,7 +866,7 @@
     }
     
     .dialog .message .prompt .text-information {
-        width: 200px;
+        width: 100%;
         flex-shrink: 0;
     }
 
@@ -2353,4 +2353,8 @@
             top:17px;
         }
     }   
+
+    .dialog .message .prompt .text{
+        flex-direction: column;
+    }
 }
