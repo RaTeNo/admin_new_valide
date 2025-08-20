@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<!-- Адаптирование страницы для мобильных устройств -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Запрет распознования номера телефона -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+	<!-- Заголовок страницы -->
+	<title>Заголовок страницы</title>
+
+	<!-- Данное значение часто используют(использовали) поисковые системы -->
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<!-- Изменение цвета панели моб. браузера -->
+	<meta name="msapplication-TileColor" content="#0B00D8">
+	<meta name="theme-color" content="#0B00D8">
+
+	<!-- Подключение шрифтов с гугла -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+		rel="stylesheet">
+
+	<!-- Подключение файлов стилей -->
+	<link rel="stylesheet" href="css/fancybox.css" async>
+	<link rel="stylesheet" href="css/styles.css" async>
+	<link rel="stylesheet" href="css/styles2.css" async>
+
+	<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+	<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+	<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+	<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+	<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="main">
+			<header>
+				<div class="cont row">
+					<div class="logo">
+						<img src="images/logo.svg" alt="">
+					</div>
+
+					<div class="wallet">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#ic_wallet"></use>
+						</svg>
+						<span>1243</span>
+					</div>
+
+					<div class="sep"></div>
+
+					<div class="account">
+						<a href="/" class="settings_link">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#ic_settings"></use>
+							</svg>
+						</a>
+
+						<div class="user">
+							<div class="avatar">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#ic_user"></use>
+								</svg>
+								<!-- <img data-src="" alt="" class="lozad"> -->
+							</div>
+
+							<div class="name">Модератор</div>
+						</div>
+
+						<a href="/" class="logout_link">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#ic_logout"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</header>
+
+
+			<section class="mob_header">
+				<div class="row">
+					<button class="menu_btn">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#ic_menu"></use>
+						</svg>
+					</button>
+
+					<div class="page_title">Сводка</div>
+
+					<div class="wallet">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#ic_wallet"></use>
+						</svg>
+						<span>1243</span>
+					</div>
+
+					<div class="nitifications new">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#ic_nitifications"></use>
+						</svg>
+					</div>
+
+					<div class="account modal_cont">
+						<button class="user btn mini_modal_btn" data-modal-id="#account_modal">
+							<div class="avatar">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#ic_user"></use>
+								</svg>
+								<img data-src="images/tmp/user_avatar.jpg" alt="" class="lozad">
+							</div>
+
+							<svg class="arrow">
+								<use xlink:href="images/sprite.svg#ic_arrow_down"></use>
+							</svg>
+						</button>
+
+						<div class="mini_modal" id="account_modal">
+							<div><a href="/">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#ic_settings"></use>
+									</svg>
+									<span>Настройки</span>
+								</a></div>
+
+							<div><a href="/">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#ic_logout"></use>
+									</svg>
+									<span>Выход</span>
+								</a></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="content_flex">
+				<div class="cont row">
+					<aside>
+						<button class="close_btn">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#ic_close"></use>
+							</svg>
+						</button>
+
+						<div class="menu">
+							<div class="item">
+								<a href="/">
+									<div class="icon icon1">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category1"></use>
+										</svg>
+									</div>
+									<span>Сводка</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon2 point">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category2"></use>
+										</svg>
+									</div>
+									<span>Мои задачи</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="#" class="sub_link active open">
+									<div class="icon icon3 point">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category3"></use>
+										</svg>
+									</div>
+									<span>Курсы</span>
+									<svg class="arrow">
+										<use xlink:href="images/sprite.svg#ic_arrow_down"></use>
+									</svg>
+								</a>
+
+								<div class="sub_menu" style="display: block;">
+									<div><a class="active">
+											<span class="count">3</span>
+											<span>Все курсы</span>
+										</a></div>
+									<div><a href="/">Новые курсы</a></div>
+								</div>
+							</div>
+
+							<div class="item">
+								<a href="#" class="sub_link">
+									<div class="icon icon4 point">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category4"></use>
+										</svg>
+									</div>
+									<span>Обратная связь</span>
+									<svg class="arrow">
+										<use xlink:href="images/sprite.svg#ic_arrow_down"></use>
+									</svg>
+								</a>
+
+								<div class="sub_menu">
+									<div><a href="/">По тренажерам</a></div>
+									<div><a href="/">По заданиям</a></div>
+									<div><a href="/">По другому</a></div>
+								</div>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon5">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category5"></use>
+										</svg>
+									</div>
+									<span>Тренажеры</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon5_2">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category5_2"></use>
+										</svg>
+									</div>
+									<span>Аудио тренажеры</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon5_3">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category5_3"></use>
+										</svg>
+									</div>
+									<span>Тренажеры действий</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon6">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category6"></use>
+										</svg>
+									</div>
+									<span>Новости</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon7">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category7"></use>
+										</svg>
+									</div>
+									<span>Опросы</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon8">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category8"></use>
+										</svg>
+									</div>
+									<span>Обсуждения</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon9">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category9"></use>
+										</svg>
+									</div>
+									<span>Вебинары</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon10">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category10"></use>
+										</svg>
+									</div>
+									<span>Подкасты</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon11">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category11"></use>
+										</svg>
+									</div>
+									<span>Файлы</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon12">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category12"></use>
+										</svg>
+									</div>
+									<span>Коллеги</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/">
+									<div class="icon icon13">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category13"></use>
+										</svg>
+									</div>
+									<span>Настройки</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="/" class="sub_link">
+									<div class="icon icon14">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_category14"></use>
+										</svg>
+									</div>
+									<span>Управление</span>
+									<svg class="arrow">
+										<use xlink:href="images/sprite.svg#ic_arrow_down"></use>
+									</svg>
+								</a>
+
+								<div class="sub_menu">
+									<div><a href="/"></a></div>
+								</div>
+							</div>
+						</div>
+					</aside>
+
+
+					<section class="content">						
+				
+						<div class="purpose_head">
+							<div class="purpose_head-top">
+								<div class="purpose_head-title">Холодный звонок - продажа CRM системы</div>
+								<a href="#" class="purpose_heead-btn">Заново</a>
+							</div>
+							<div class="purpose_head-bottom">
+								<div class="purpose_head-label">Этап: первичный контакт</div>
+								<div class="purpose_head-view">
+									<svg>
+										<use xlink:href="images/sprite.svg#view3"></use>
+									</svg>
+									<span>Открыт: 234 раза</span>
+								</div>
+								<div class="purpose_head-rating">
+									<svg>
+										<use xlink:href="images/sprite.svg#star3"></use>
+									</svg>
+									<span>4.2/5</span>
+								</div>
+								<div class="purpose_head-update">Обновлено: <span>26.06.2025</span></div>
+							</div>
+						</div>
+
+						<div class="purpose_heading">
+							<svg>
+								<use xlink:href="images/sprite.svg#target"></use>
+							</svg>
+							<div class="purpose_heading-info">
+								<div class="purpose_heading-title">Цель: Договориться о встрече/демо</div>
+								<div class="purpose_heading-text">Не продаем по телефону, только назначаем встречу для демонстрации возможностей системы</div>
+							</div>
+						</div>
+
+						<div class="purpose_items">
+							<div class="purpose_item">
+								<div class="purpose_item-title">
+									<svg>
+										<use xlink:href="images/sprite.svg#target2"></use>
+									</svg>
+									<span>Основная линия скрипта</span>
+								</div>
+								<ol>
+									<li class="modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Приветствие и представление</div>
+										<div class="purpose_item-text">3 варианта</div>
+									</li>
+									<li class="modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Причина звонка</div>
+										<div class="purpose_item-text">2 варианта</div>
+									</li>
+									<li class="modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Квалификация</div>
+										<div class="purpose_item-text">4 варианта</div>
+									</li>
+									<li class="modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Предложение встречи</div>
+										<div class="purpose_item-text">2 варианта</div>
+									</li>
+									<li class="modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Работа с сомнениями</div>
+										<div class="purpose_item-text">2 варианта</div>
+									</li>
+									<li class="modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Закрытие</div>
+										<div class="purpose_item-text">2 варианта</div>
+									</li>
+									<li class="modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Работа с ценой</div>
+										<div class="purpose_item-text">2 варианта</div>
+									</li>
+									<li class="modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Завершение</div>
+										<div class="purpose_item-text">2 варианта</div>
+									</li>
+								</ol>
+							</div>
+
+							<div class="purpose_item">
+								<div class="purpose_item-title">
+									<svg>
+										<use xlink:href="images/sprite.svg#target3"></use>
+									</svg>
+									<span>Частые вопросы</span>
+								</div>
+								<form>
+									<input type="search" placeholder="Поиск по вопросам">
+								</form>
+								<div class="purpose_item-wrap">
+									<div class="purpose_item-box modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Что это за система?</div>
+										<div class="purpose_item-text">3 варианта</div>
+									</div>
+									<div class="purpose_item-box modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Сколько это стоит?</div>
+										<div class="purpose_item-text">3 варианта</div>
+									</div>
+									<div class="purpose_item-box modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">У нас уже есть CRM</div>
+										<div class="purpose_item-text">3 варианта</div>
+									</div>
+									<div class="purpose_item-box modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Пришлите коммерческое предложение</div>
+										<div class="purpose_item-text">3 варианта</div>
+									</div>
+									<div class="purpose_item-box modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Какие гарантии?</div>
+										<div class="purpose_item-text">3 варианта</div>
+									</div>
+									<div class="purpose_item-box modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Сколько времени на внедрение?</div>
+										<div class="purpose_item-text">3 варианта</div>
+									</div>
+									<div class="purpose_item-box modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Как работает?</div>
+										<div class="purpose_item-text">3 варианта</div>
+									</div>
+									<div class="purpose_item-box modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Есть ли техподдержка?</div>
+										<div class="purpose_item-text">3 варианта</div>
+									</div>
+								</div>								
+							</div>
+
+							<div class="purpose_item">
+								<div class="purpose_item-title">
+									<svg>
+										<use xlink:href="images/sprite.svg#target4"></use>
+									</svg>
+									<span>Частые возражения</span>
+								</div>
+								<form>
+									<input type="search" placeholder="Поиск по вопросам">
+								</form>
+								<div class="purpose_item-wrap">
+									<div class="purpose_item-box modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Нам это не нужно</div>
+										<div class="purpose_item-text">3 варианта</div>
+									</div>
+									<div class="purpose_item-box modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">У нас нет бюджета</div>
+										<div class="purpose_item-text">3 варианта</div>
+									</div>
+									<div class="purpose_item-box modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Мы не принимаем решения</div>
+										<div class="purpose_item-text">3 варианта</div>
+									</div>
+									<div class="purpose_item-box modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Позвоните через месяц</div>
+										<div class="purpose_item-text">3 варианта</div>
+									</div>
+									<div class="purpose_item-box modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">У нас все хорошо работет</div>
+										<div class="purpose_item-text">3 варианта</div>
+									</div>
+									<div class="purpose_item-box modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Мы рассматриваем других поставщиков</div>
+										<div class="purpose_item-text">3 варианта</div>
+									</div>
+									<div class="purpose_item-box modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Слишком дорого</div>
+										<div class="purpose_item-text">3 варианта</div>
+									</div>
+									<div class="purpose_item-box modal_btn" data-content="#purpose_modal">
+										<div class="purpose_item-subtitle">Нет времени сейчас</div>
+										<div class="purpose_item-text">3 варианта</div>
+									</div>
+								</div>								
+							</div> 
+						</div>
+
+
+
+						
+
+
+						<footer>
+							<div class="logo">
+								<img src="images/logo.svg" alt="">
+
+								<div class="desc">Описание первой компании 123</div>
+							</div>
+
+							<div class="contacts location">
+								<div class="name">Адрес</div>
+
+								<div class="val">г. Москва, ул. Ломоносова, д. 75</div>
+							</div>
+
+							<div class="contacts email">
+								<div class="name">Электронная почта</div>
+
+								<div class="val">
+									<div><a href="mailto:company1@gmail.com">company1@gmail.com</a></div>
+								</div>
+							</div>
+
+							<div class="contacts phone">
+								<div class="name">Телефон</div>
+
+								<div class="val">
+									<div><a href="tel:+79219879988">+79219879988</a></div>
+								</div>
+							</div>
+						</footer>
+					</section>
+				</div>
+			</section>
+		</div>
+	</div>
+
+
+	<section class="purpose_modal" id="purpose_modal">		
+		<div class="purpose_modal-top">
+			<svg>
+				<use xlink:href="images/sprite.svg#target2"></use>
+			</svg>
+			<span>Приветствие и представление</span>
+		</div>	
+			
+		<div class="tabs_container">
+			<div class="tabs">
+				<button class="active" data-content="#tab1" data-level="level1">Формальный</button>
+				<button data-content="#tab2" data-level="level1">Дружелюбный</button>
+				<button data-content="#tab3" data-level="level1">Прямой</button>
+			</div>	
+		
+						
+			<section class="tab_content level1 active" id="tab1">										
+				<div class="data">
+					<div class="purpose_modal-text">
+						<p>Добрый день1! Меня зовут [Имя], я из компании XSkill. Мы помогаем компаниям автоматизировать продажи и увеличивать выручку. У вас есть 2 минуты для разговора?</p>
+						<p>💡 Говорить уверенно, четко произносить название компании, делать паузу после вопроса</p>
+					</div>
+				</div>												
+			</section>
+
+			<section class="tab_content level1" id="tab2">
+				<div class="data">
+					<div class="purpose_modal-text">
+						<p>Добрый день2! Меня зовут [Имя], я из компании XSkill. Мы помогаем компаниям автоматизировать продажи и увеличивать выручку. У вас есть 2 минуты для разговора?</p>
+						<p>💡 Говорить уверенно, четко произносить название компании, делать паузу после вопроса</p>
+					</div>
+				</div>
+			</section>		
+			
+			<section class="tab_content level1" id="tab3">
+				<div class="data">
+					<div class="purpose_modal-text">
+						<p>Добрый день3! Меня зовут [Имя], я из компании XSkill. Мы помогаем компаниям автоматизировать продажи и увеличивать выручку. У вас есть 2 минуты для разговора?</p>
+						<p>💡 Говорить уверенно, четко произносить название компании, делать паузу после вопроса</p>
+					</div>
+				</div>
+			</section>	
+		</div>
+		
+	</section>
+
+
+	<div class="supports_error">
+		Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+	</div>
+
+
+
+	<!-- Подключение javascript файлов -->
+	<script src="js/jquery-3.5.0.min.js"></script>
+	<script src="js/lozad.min.js"></script>
+	<script src="js/media-player.js"></script>
+	<script src="js/html5sortable.min.js"></script>
+	<script src="js/wavesurfer.js"></script>
+	<script src="js/fancybox.min.js"></script>
+	<script src="js/nice-select.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/simulator_action.js"></script>
+	<script src="js/simulator.js"></script>
+	 <script src="https://unpkg.com/sortablejs-make/Sortable.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-sortablejs@latest/jquery-sortable.js"></script>
+
+	<script type="text/javascript">
+		$('.warning_training_list ul').sortable({
+			handle: '.handle', // handle's class
+		    animation: 150
+		});
+	</script>
+
+	<!-- Production -->
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<script src="https://unpkg.com/tippy.js@6"></script>
+
+	<script>
+		tippy('[data-tippy-content]');
+	</script>
+
+</body>
+
+</html>

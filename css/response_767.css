@@ -3813,6 +3813,21 @@
         flex-direction: row;
         display: flex;
     }
+
+
+    .purpose_head-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .purpose_head-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .sales_item-wrap > * {
+        width: calc(100% / 2 - 4px);
+    }
  
 
 

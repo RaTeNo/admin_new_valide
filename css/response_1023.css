@@ -688,5 +688,11 @@
 
 
 
+    .sales_item-wrap > * {
+        width: calc(100% / 3 - 6px);
+    }
+
+
+
 
 }

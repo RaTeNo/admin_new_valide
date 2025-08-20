@@ -192,9 +192,28 @@ $(() => {
 
 	$('body').on('click', '.text_block_show_more', function (e) {
 		e.preventDefault()
-		$(".text_block_hide").addClass("active");
+		$("this").addClass("active");
 		$(this).hide();
 	});
+
+	$('body').on('click', '.purpose_item ol li', function (e) {
+		e.preventDefault()
+		$(this).addClass("active");
+	});
+
+	$('body').on('click', '.purpose_item-box', function (e) {
+		e.preventDefault()
+		$(this).addClass("active");
+	});
+
+	$('body').on('click', '.purpose_heead-btn', function (e) {
+		e.preventDefault()
+		$('.purpose_item-box').removeClass("active");
+		$('.purpose_item ol li').removeClass("active");
+	});
+
+
+
 
 
 	$('body').on('click', '.shop-news_btn', function (e) {

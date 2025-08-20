@@ -2155,6 +2155,17 @@
     }
 
 
+    .purpose_items {
+        flex-wrap: wrap;
+    }
+    .purpose_items > * {
+        width: 100%;
+    }
+    .purpose_heading {
+        align-items: flex-start;
+    }
+
+
 }
 
 
