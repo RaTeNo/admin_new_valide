@@ -48509,9 +48509,20 @@ aside .menu .item .icon141 > * {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
     border-radius: 16px;
 }
-.purpose_heading svg {
+
+.purpose_heading .icon, .purpose_item-title .icon{
     width: 56px;
     height: 56px;
+    background: var(--color_light);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.purpose_heading svg {
+    width: 24px;
+    height: 24px;
     flex-shrink: 0;
 }
 .purpose_heading-title {
@@ -48550,8 +48561,8 @@ aside .menu .item .icon141 > * {
     margin-bottom: 12px;
 }
 .purpose_item-title svg {
-    width: 48px;
-    height: 48px;
+    width: 24px;
+    height: 24px;
 }
 .purpose_item ol {
     list-style: none;
@@ -48640,7 +48651,10 @@ aside .menu .item .icon141 > * {
     opacity: 0.5;
 }
 
-
+.purpose_modal_full_widht{
+    max-width: 100% !important;
+    position: relative;
+}
 
 .purpose_modal {
     display: none;
@@ -48656,10 +48670,19 @@ aside .menu .item .icon141 > * {
     align-items: center;
     gap: 16px;
 }
-.purpose_modal-top svg {
+.purpose_modal-top .icon{
     width: 56px;
     height: 56px;
+    background: var(--color_light);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-shrink: 0;
+}
+.purpose_modal-top svg {
+    width: 24px;
+    height: 24px;
 }
 .purpose_modal-top span {
     font-weight: 700;
@@ -48745,6 +48768,16 @@ aside .menu .item .icon141 > * {
 .sales_item-top .icon {
     width: 56px;
     height: 56px;
+    background: var(--color_light);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sales_item-top .icon svg{
+    width: 24px;
+    height: 24px;
 }
 .sales_item_title {
     font-weight: 700;
@@ -48886,4 +48919,114 @@ aside .menu .item .icon141 > * {
         top:3px;
     }
     
+}
+
+.purpose_head .select-right{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    flex-direction: column;
+}
+
+.purpose_head  span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    color: #655F95;
+    opacity: 0.8;
+}
+
+.purpose_head .nice-select {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #0A00C5;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #332894;
+    width: 128px;
+    height: 41px;
+    background: none;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 4%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    border: 1px solid #4D4A8D;
+    border-radius: 100px;
+
+    border-radius: 17px;
+    background: #fff;
+    width: 134px;
+    padding-right: 20px;
+}
+
+.purpose_head  .nice-select .list {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-top: 0px;
+    opacity: 0;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    overflow: hidden;
+    padding: 25px 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    -webkit-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform: scale(0.75) translateY(-21px);
+    -ms-transform: scale(0.75) translateY(-21px);
+    transform: scale(0.75) translateY(-21px);
+    -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    z-index: 9;
+    width: 134px;
+    left: -1px;
+}
+
+.purpose_head .nice-select .option {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 34px;
+    padding: 6px 18px;
+    color: #332894;
+}
+
+.purpose_head  .nice-select.open {
+    border-bottom: none;
+    border-radius: 17px 17px 0 0;
+}
+
+.purpose_head  .nice-select.open .list {
+    border: 1px solid #4D4A8D;
+    border-radius: 17px;
+    padding: 0;
+    border-radius: 0 0 17px 17px;
+    border-top: none;
+}
+
+.purpose_head .list_item.option:hover {
+    background: #4E4B8E;
+    color: #fff;
+}
+
+.close_purpose_modal{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
 }

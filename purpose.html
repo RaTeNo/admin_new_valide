@@ -39,6 +39,8 @@
 	<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
 	<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
 	<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+
+	<link rel="stylesheet" href="css/nice-select.css">
 </head>
 
 <body>
@@ -372,10 +374,22 @@
 
 
 					<section class="content">						
-				
+						
 						<div class="purpose_head">
 							<div class="purpose_head-top">
 								<div class="purpose_head-title">Холодный звонок - продажа CRM системы</div>
+
+								<div class="select-right">
+				                   <!--  <span>Сортировка:</span> -->
+				                    <form action="https://demo.xskill.com/cabinet/user/edu/change_sorting_courses" method="POST">
+				                        <input type="hidden" name="_token" value="37upWwPlCQbfmDpghH2orNJclkvMApisVdImCKQa" autocomplete="off">                        <select name="edu_order_by_created_at">
+				                            <option value="priority">Стандартно</option>
+				                            <option value="desc" >Новые</option>
+				                            <option value="asc" >Старые</option>
+				                        </select>
+				                    </form>
+				                </div>
+
 								<a href="#" class="purpose_heead-btn">Заново</a>
 							</div>
 							<div class="purpose_head-bottom">
@@ -397,21 +411,76 @@
 						</div>
 
 						<div class="purpose_heading">
-							<svg>
-								<use xlink:href="images/sprite.svg#target"></use>
-							</svg>
+							<div class="icon">
+								<svg>
+									<use xlink:href="images/sprite.svg#target"></use>
+								</svg>
+							</div>
 							<div class="purpose_heading-info">
 								<div class="purpose_heading-title">Цель: Договориться о встрече/демо</div>
 								<div class="purpose_heading-text">Не продаем по телефону, только назначаем встречу для демонстрации возможностей системы</div>
 							</div>
 						</div>
 
-						<div class="purpose_items">
-							<div class="purpose_item">
-								<div class="purpose_item-title">
+						<section class="purpose_modal purpose_modal_full_widht" id="top">		
+							<div class="purpose_modal-top">
+								<div class="icon">
 									<svg>
 										<use xlink:href="images/sprite.svg#target2"></use>
 									</svg>
+								</div>
+								<span>Приветствие и представление</span>
+							</div>	
+								
+							<div class="tabs_container">
+								<div class="tabs">
+									<button class="active" data-content="#tab1" data-level="level1">Формальный</button>
+									<button data-content="#tab2" data-level="level1">Дружелюбный</button>
+									<button data-content="#tab3" data-level="level1">Прямой</button>
+								</div>	
+							
+											
+								<section class="tab_content level1 active" id="tab1">										
+									<div class="data">
+										<div class="purpose_modal-text">
+											<p>Добрый день1! Меня зовут [Имя], я из компании XSkill. Мы помогаем компаниям автоматизировать продажи и увеличивать выручку. У вас есть 2 минуты для разговора?</p>
+											<p>💡 Говорить уверенно, четко произносить название компании, делать паузу после вопроса</p>
+										</div>
+									</div>												
+								</section>
+
+								<section class="tab_content level1" id="tab2">
+									<div class="data">
+										<div class="purpose_modal-text">
+											<p>Добрый день2! Меня зовут [Имя], я из компании XSkill. Мы помогаем компаниям автоматизировать продажи и увеличивать выручку. У вас есть 2 минуты для разговора?</p>
+											<p>💡 Говорить уверенно, четко произносить название компании, делать паузу после вопроса</p>
+										</div>
+									</div>
+								</section>		
+								
+								<section class="tab_content level1" id="tab3">
+									<div class="data">
+										<div class="purpose_modal-text">
+											<p>Добрый день3! Меня зовут [Имя], я из компании XSkill. Мы помогаем компаниям автоматизировать продажи и увеличивать выручку. У вас есть 2 минуты для разговора?</p>
+											<p>💡 Говорить уверенно, четко произносить название компании, делать паузу после вопроса</p>
+										</div>
+									</div>
+								</section>	
+							</div>
+							
+							<div class="close_purpose_modal">
+								х
+							</div>
+						</section>
+
+						<div class="purpose_items">
+							<div class="purpose_item">
+								<div class="purpose_item-title">
+									<div class="icon">
+										<svg>
+											<use xlink:href="images/sprite.svg#target2"></use>
+										</svg>
+									</div>
 									<span>Основная линия скрипта</span>
 								</div>
 								<ol>
@@ -419,7 +488,7 @@
 										<div class="purpose_item-subtitle">Приветствие и представление</div>
 										<div class="purpose_item-text">3 варианта</div>
 									</li>
-									<li class="modal_btn" data-content="#purpose_modal">
+									<li class="top_form" data-content="#top">
 										<div class="purpose_item-subtitle">Причина звонка</div>
 										<div class="purpose_item-text">2 варианта</div>
 									</li>
@@ -452,9 +521,11 @@
 
 							<div class="purpose_item">
 								<div class="purpose_item-title">
-									<svg>
-										<use xlink:href="images/sprite.svg#target3"></use>
-									</svg>
+									<div class="icon">
+										<svg>
+											<use xlink:href="images/sprite.svg#target3"></use>
+										</svg>
+									</div>
 									<span>Частые вопросы</span>
 								</div>
 								<form>
@@ -498,9 +569,11 @@
 
 							<div class="purpose_item">
 								<div class="purpose_item-title">
-									<svg>
-										<use xlink:href="images/sprite.svg#target4"></use>
-									</svg>
+									<div class="icon">
+										<svg>
+											<use xlink:href="images/sprite.svg#target4"></use>
+										</svg>
+									</div>
 									<span>Частые возражения</span>
 								</div>
 								<form>
@@ -586,9 +659,11 @@
 
 	<section class="purpose_modal" id="purpose_modal">		
 		<div class="purpose_modal-top">
-			<svg>
-				<use xlink:href="images/sprite.svg#target2"></use>
-			</svg>
+			<div class="icon">
+				<svg>
+					<use xlink:href="images/sprite.svg#target2"></use>
+				</svg>
+			</div>
 			<span>Приветствие и представление</span>
 		</div>	
 			

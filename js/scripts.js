@@ -2,8 +2,14 @@ WW = window.innerWidth || document.clientWidth || document.getElementsByTagName(
 WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
 $(() => {
 
+	$('body').on('click', '.top_form', function (e) {
+		e.preventDefault()	
+		$($(this).data("content")).toggle();
+	});
 
-
+	$('body').on('click', '.close_purpose_modal', function (e) {
+		$(this).parent().toggle();
+	});
 
 	$(".show_courses_not_complete").click(function (e) {
 		$(".show_courses_not_complete").toggleClass("active");
