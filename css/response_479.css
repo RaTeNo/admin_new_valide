@@ -2369,4 +2369,9 @@
     .purpose_head .nice-select{
         width: 100%;
     }
+
+    .purpose_head .nice-select .list{
+        width: calc(100% - -1px);
+        left: -0.5px;
+    }
 }
