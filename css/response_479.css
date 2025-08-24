@@ -2357,4 +2357,16 @@
     .dialog .message .prompt .text{
         flex-direction: column;
     }
+    
+    .purpose_head .select-right{
+        width: 100%;
+    }
+
+    .purpose_head .select-right form{
+        width:100%;
+    }
+
+    .purpose_head .nice-select{
+        width: 100%;
+    }
 }
