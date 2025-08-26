@@ -42672,8 +42672,7 @@ a.back_link_right{
 }
 .alternative_images img {
     border-radius: 15px;
-    width: 200px;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
 }
 
