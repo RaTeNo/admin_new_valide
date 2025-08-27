@@ -2,6 +2,8 @@ WW = window.innerWidth || document.clientWidth || document.getElementsByTagName(
 WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
 $(() => {
 
+
+
 	$('body').on('click', '.top_form', function (e) {
 		e.preventDefault()	
 		$($(this).data("content")).toggle();
@@ -1558,3 +1560,76 @@ document.addEventListener('DOMContentLoaded', function() {
 //   	  	loader.textContent = 'Ошибка загрузки видео';
 //   	});
 // });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Находим ВСЕ контейнеры с классом 'training-plan_items'
+    const containers = document.querySelectorAll('.learning-paths .training-plan_items');
+
+    // Проходим по каждому найденному контейнеру и применяем логику
+    containers.forEach(container => {
+        // Получаем DOM-элементы, имеющие класс .training-plan_item внутри ТЕКУЩЕГО контейнера
+        const items = Array.from(container.querySelectorAll('.training-plan_item'));
+        const itemCount = items.length;
+
+        // Сбрасываем все классы ширины для элементов ТЕКУЩЕГО контейнера перед применением новых
+        items.forEach(item => {
+            item.classList.remove('full-width', 'half-width', 'third-width');
+        });
+
+        if (itemCount === 0) {
+            // Нет элементов в этом контейнере, ничего не делаем.
+            return; // Переходим к следующему контейнеру (если есть)
+        } else if (itemCount === 1) {
+            // Если один элемент - на всю ширину
+            items[0].classList.add('full-width');
+        } else if (itemCount === 2) {
+            // Если два элемента - по 1/2 ширины
+            items.forEach(item => {
+                item.classList.add('half-width');
+            });
+        } else if (itemCount === 3) {
+            // Если три элемента - по 1/3 ширины
+            items.forEach(item => {
+                item.classList.add('third-width');
+            });
+        } else if (itemCount === 4) {
+            // Если 4 элемента:
+            // Первый ряд (3 элемента): 1/3
+            for (let i = 0; i < 3; i++) {
+                if (items[i]) {
+                    items[i].classList.add('third-width');
+                }
+            }
+            // Второй ряд (1 элемент): на всю ширину
+            if (items[3]) {
+                items[3].classList.add('full-width');
+            }
+        } else if (itemCount > 4) {
+            // Если 5 и более элементов
+            const fullRowsCount = Math.floor(itemCount / 3);
+            const remainingItemsInLastRow = itemCount % 3;
+
+            // Элементы в полных рядах (по 1/3)
+            for (let i = 0; i < fullRowsCount * 3; i++) {
+                items[i].classList.add('third-width');
+            }
+
+            // Обработка оставшихся элементов в последнем ряду
+            const startIndex = fullRowsCount * 3;
+            
+            if (remainingItemsInLastRow === 1) {
+                if (items[startIndex]) {
+                    items[startIndex].classList.add('full-width');
+                }
+            } else if (remainingItemsInLastRow === 2) {
+                if (items[startIndex]) {
+                    items[startIndex].classList.add('half-width');
+                }
+                if (items[startIndex + 1]) {
+                    items[startIndex + 1].classList.add('half-width');
+                }
+            }
+            // Если remainingItemsInLastRow === 0, все элементы уже получили third-width
+        }
+    }); // Конец forEach(container)
+});

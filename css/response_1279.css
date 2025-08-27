@@ -1939,7 +1939,7 @@
         width: calc(100%/2 - 8px);
     }
     .training-plan_item:nth-child(5):before {
-        display: block;
+        /*display: block;*/
     }
     .training-plan_item:nth-child(4):before {
         display: none;
@@ -2141,10 +2141,11 @@
         width: calc(100%/2 - 15px);
     }
 
-    .training-plan_item:last-child:nth-child(odd) {
+    
+    .learning-paths .training-plan_item:last-child:nth-child(odd) {
         width: 100%;
     }
-    .training-plan_item:last-child:nth-child(even){
+    .learning-paths .training-plan_item:last-child:nth-child(even){
          width: calc(100% / 2 - 8px);
     }
 
@@ -2163,6 +2164,10 @@
     }
     .purpose_heading {
         align-items: flex-start;
+    }
+
+    .training-plan_item:before{
+        display: none !important;
     }
 
 
