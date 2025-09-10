@@ -3828,6 +3828,12 @@
     .sales_item-wrap > * {
         width: calc(100% / 2 - 4px);
     }
+
+
+    .text-page42_item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
  
 
 
