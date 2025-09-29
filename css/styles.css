@@ -49170,3 +49170,68 @@ aside .menu .item .icon141 > * {
     letter-spacing: -0.02em;
     color: #FFFFFF;
 }
+
+.dialog .message .info .star{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 80px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    padding: 8px 16px;
+    width: 140px;
+    margin-top: 10px;
+}
+
+.dialog .message .info .star .icon{
+    width: 19px;
+    height: 19px;
+}
+
+.dialog .message .info .star.red, .dialog .message .info .star.red .icon{
+    color: #E4393C;
+}
+
+.dialog .message .info .star.yellow, .dialog .message .info .star.yellow .icon{
+    color: #DF9A1B;
+}
+
+.dialog .message .info .star.green, .dialog .message .info .star.green .icon{
+    color: #0EB42C;
+}
+
+.message_continue_text .icon{
+    width: 19px;
+    height: 19px;
+}
+.message_continue_text span{
+    display: inline-flex;
+    gap:6px;
+}
+
+.message_continue_text_not_complete span{
+    border: 2px solid #5E9D3B;
+    background: #fff;
+    color: #5E9D3B;
+}
+
+.message_continue_text_complete span{
+    border: 2px solid #2B6ABC;
+    background: #fff;
+    color: #2B6ABC;
+}
+.message_allow.message_continue button[disabled]{
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.message_allow.message_continue .yellow{
+    display: flex;
+}
+
+.message_allow.message_continue .blue{
+    display: flex;
+}
