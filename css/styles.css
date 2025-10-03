@@ -49184,6 +49184,7 @@ aside .menu .item .icon141 > * {
     padding: 8px 16px;
     width: 140px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .dialog .message .info .star .icon{
@@ -49213,15 +49214,15 @@ aside .menu .item .icon141 > * {
 }
 
 .message_continue_text_not_complete span{
-    border: 2px solid #5E9D3B;
+    border: 2px solid var(--main_color);
     background: #fff;
-    color: #5E9D3B;
+    color: var(--main_color);
 }
 
 .message_continue_text_complete span{
-    border: 2px solid #2B6ABC;
+    border: 2px solid var(--main_color);
     background: #fff;
-    color: #2B6ABC;
+    color: var(--main_color);
 }
 .message_allow.message_continue button[disabled]{
     opacity: 0.4;
@@ -49234,9 +49235,13 @@ aside .menu .item .icon141 > * {
 
 .message_allow.message_continue .blue{
     display: flex;
+    background: var(--main_color);
 }
 
-
+.message_allow.message_continue .green{
+    display: flex;
+    background: var(--main_color);
+}
 
 
 .text-page43 {
