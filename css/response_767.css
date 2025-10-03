@@ -3834,6 +3834,36 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
+
+
+    .text-page43_wrap,
+    .text-page44_wrap,
+    .text-page45_wrap,
+    .text-page46_wrap,
+    .text-page47_wrap,
+    .text-page48_wrap,
+    .text-page49_wrap,
+    .text-page50_wrap {
+        flex-direction: column;
+    }
+    .text-page43_img,
+    .text-page44_img,
+    .text-page45_img,
+    .text-page46_img,
+    .text-page47_img,
+    .text-page48_img,
+    .text-page49_img,
+    .text-page50_img {
+        width: 100%;
+        height: auto;
+    }
+    .text-page47_items > * {
+        width: 100%;
+    }
+    .text-page45_items > * {
+        width: 100%;
+    }
  
 
 
