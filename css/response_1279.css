@@ -2171,6 +2171,23 @@
     }
 
 
+
+    .case_top {
+        display: flex;
+        flex-direction: column;
+    }
+    .case_btns {
+        position: relative;
+        margin-top: 20px;
+    }
+    .case_top-info {
+        width: 100%;
+    }
+
+
+
+
+
 }
 
 

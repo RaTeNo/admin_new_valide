@@ -2383,6 +2383,62 @@
 
 
 
+    .company_item-btn {
+        width: 100%;
+    }
+    .departament_item-btn {
+        width: 100%;
+    }
+    .company_item-left {
+        flex-direction: column;
+    }
+    .company_item-logo {
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+    }
+    .company_wrap-btn {
+        width: 100%;
+    }
+    .fact_item-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .fact_item-bottom button {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+
+
+    .new-project_btns {
+        flex-direction: column;
+    }
+    .new-project_btns > * {
+        width: 100%;
+    }
+
+    .contained_item-btn,
+    .contained_item-btn,
+    .well_item-link_btn {
+        width: 100%;
+    }
+
+    .audio-response .accordion_item .head .icon {
+        top: 50%;
+        transform: translateY(-50%);
+        right: 15px;
+    }
+
+    .well_wrap-items > * {
+        width: 100%;
+    }
+    .contained_item-wrapper {
+        padding: 14px;
+    }
+
+
+
 
 
 }

@@ -3864,6 +3864,99 @@
     .text-page45_items > * {
         width: 100%;
     }
+
+
+
+
+
+
+    .company_item-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .company_item-bottom > * {
+        width: 100%;
+    }
+    .departament_item-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .conflict_item-bottom_items {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .conflict_item-top {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .conflict_item-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .upshot_box-bottom_item {
+        font-size: 14px;
+    }
+    .discourse_item.one {
+        width: 90%;
+    }
+    .discourse_item.two {
+        width: 90%;
+    }
+
+
+    .case .select-wrapper {
+        width: 100%;
+    }
+    .change-status_box {
+        flex-wrap: wrap;
+    }
+    .characteristic_top {
+        flex-direction: column;
+    }
+
+    .well_item-link_text {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+
+    .audio-response_top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .audio-response_btn {
+        margin-top: 15px;
+    }
+    .structure_items {
+        flex-wrap: wrap;
+    }
+    .structure_items > * {
+        width: 100%;
+    }
+    .contained_item-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .well_item-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .well_item-link {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .well_item-link_btn {
+        margin-top: 20px;
+    }
+
+
+    .well_wrap-items > * {
+        width: calc(100% / 2 - 7px);
+    }
+
+
+
  
 
 

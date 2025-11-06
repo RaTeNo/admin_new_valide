@@ -4,8 +4,30 @@ $(() => {
 
 
 
+	var clipboard = new ClipboardJS('#button-copy', {
+		text: function (trigger) {
+			return document.getElementById('box').innerText.replace(/\n+/g, '\n');
+		}
+	});
+
+	clipboard.on('success', function (e) {
+		alert('Текст скопирован: ' + e.text);
+		e.trigger.classList.add('btn-success');
+		setTimeout(function () {
+			e.trigger.classList.remove('btn-success');
+		}, 3000);
+	});
+
+	clipboard.on('error', function (e) {
+		alert('Ошибка копирования');
+	});
+
+
+
+
+
 	$('body').on('click', '.top_form', function (e) {
-		e.preventDefault()	
+		e.preventDefault()
 		$($(this).data("content")).toggle();
 	});
 
@@ -16,10 +38,10 @@ $(() => {
 	$(".show_courses_not_complete").click(function (e) {
 		$(".show_courses_not_complete").toggleClass("active");
 		$(".courses_not_complete_list").toggleClass("active");
-		if($(".show_courses_not_complete").hasClass("active")){
+		if ($(".show_courses_not_complete").hasClass("active")) {
 			$(".show_courses_not_complete span").text("Скрыть курсы")
 		}
-		else{
+		else {
 			$(".show_courses_not_complete span").text("Показать курсы")
 		}
 	});
@@ -40,6 +62,16 @@ $(() => {
 	// 	}, 3000);
 	// });
 	//
+
+
+	$(".case_btn").click(function (e) {
+		e.preventDefault();
+		$(".change-status").addClass("active");
+	});
+
+	$(".close-button").click(function (e) {
+		$(".change-status").removeClass("active");
+	});
 
 	$(".js-trainer_ai_button-record").click(function (e) {
 		$(this).toggleClass("active");
@@ -202,6 +234,12 @@ $(() => {
 		e.preventDefault()
 		$("this").addClass("active");
 		$(this).hide();
+	});
+
+	$('body').on('click', '.member_btn', function (e) {
+		e.preventDefault()
+		$(this).hide();
+		$(".member_item").removeClass("hide");
 	});
 
 	$('body').on('click', '.purpose_item ol li', function (e) {
@@ -445,9 +483,9 @@ $(() => {
 
 
 
-	$('.mission1 .mission_more-btn').click(function(e){
+	$('.mission1 .mission_more-btn').click(function (e) {
 		e.preventDefault()
-		$('.mission1 .mission_item.hide').slideToggle(200, function(){
+		$('.mission1 .mission_item.hide').slideToggle(200, function () {
 			if ($(this).is(':hidden')) {
 				$('.mission1 .mission_more-btn').html('Показать все');
 			} else {
@@ -457,9 +495,9 @@ $(() => {
 	});
 
 
-	$('.mission2 .mission_more-btn').click(function(e){
+	$('.mission2 .mission_more-btn').click(function (e) {
 		e.preventDefault()
-		$('.mission2 .mission_item.hide').slideToggle(200, function(){
+		$('.mission2 .mission_item.hide').slideToggle(200, function () {
 			if ($(this).is(':hidden')) {
 				$('.mission2 .mission_more-btn').html('Показать все');
 			} else {
@@ -470,7 +508,7 @@ $(() => {
 
 
 
-	$('.tool_more').click(function(e){
+	$('.tool_more').click(function (e) {
 		e.preventDefault()
 		$('.tool_hide').addClass('active');
 		$('.tool_more').css('display', 'none');
@@ -1060,7 +1098,7 @@ $(() => {
 		$(".block_control").hide();
 		$(".controls_button").removeClass("hide");
 	});
-	
+
 
 	// Восстановление пароля
 	// $('.auth .recovery .form').submit(function (e) {
@@ -1502,47 +1540,47 @@ function handle_audio() {
 	});
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    // 1. Получаем контейнер прокрутки
-    const scrollContainer = document.querySelector('.converse_items.tabs');
+document.addEventListener('DOMContentLoaded', function () {
+	// 1. Получаем контейнер прокрутки
+	const scrollContainer = document.querySelector('.converse_items.tabs');
 
-    // 2. Получаем активный элемент
-    const activeItem = document.querySelector('.converse_items.tabs .converse_item.active');
+	// 2. Получаем активный элемент
+	const activeItem = document.querySelector('.converse_items.tabs .converse_item.active');
 
-    if (scrollContainer && activeItem) {
-        // 3. Вычисляем позицию активного элемента относительно контейнера
-        // scrollLeft + offsetLeft - (scrollContainer.offsetWidth / 2) + (activeItem.offsetWidth / 2)
-        // Этот расчет центрирует активный элемент в середине видимой области,
-        // если он не слишком близко к началу или концу контейнера.
-        // Более простой подход: (activeItem.offsetLeft - scrollContainer.offsetLeft)
+	if (scrollContainer && activeItem) {
+		// 3. Вычисляем позицию активного элемента относительно контейнера
+		// scrollLeft + offsetLeft - (scrollContainer.offsetWidth / 2) + (activeItem.offsetWidth / 2)
+		// Этот расчет центрирует активный элемент в середине видимой области,
+		// если он не слишком близко к началу или концу контейнера.
+		// Более простой подход: (activeItem.offsetLeft - scrollContainer.offsetLeft)
 
-        // Можно использовать scrollIntoView() для более простого решения
-        // activeItem.scrollIntoView({
-        //     behavior: 'smooth', // Для плавной прокрутки
-        //     inline: 'center'   // Центрирует элемент по горизонтали
-        // });
+		// Можно использовать scrollIntoView() для более простого решения
+		// activeItem.scrollIntoView({
+		//     behavior: 'smooth', // Для плавной прокрутки
+		//     inline: 'center'   // Центрирует элемент по горизонтали
+		// });
 
-        // Или ручной расчет для более точного контроля:
-        const itemOffsetLeft = activeItem.offsetLeft;
-        const containerWidth = scrollContainer.offsetWidth;
-        const itemWidth = activeItem.offsetWidth;
+		// Или ручной расчет для более точного контроля:
+		const itemOffsetLeft = activeItem.offsetLeft;
+		const containerWidth = scrollContainer.offsetWidth;
+		const itemWidth = activeItem.offsetWidth;
 
-        // Позиция для прокрутки, чтобы активный элемент оказался примерно по центру
-        // Вы можете настроить эту логику в зависимости от того, как именно вы хотите, чтобы выглядела прокрутка
-        const scrollPosition = itemOffsetLeft - (containerWidth / 2) + (itemWidth / 2);
+		// Позиция для прокрутки, чтобы активный элемент оказался примерно по центру
+		// Вы можете настроить эту логику в зависимости от того, как именно вы хотите, чтобы выглядела прокрутка
+		const scrollPosition = itemOffsetLeft - (containerWidth / 2) + (itemWidth / 2);
 
-        // Устанавливаем scrollLeft контейнера
-        // Добавляем проверку на поддержку smooth scroll, если это необходимо
-        if ('scrollBehavior' in document.documentElement.style) {
-            scrollContainer.scrollTo({
-                left: scrollPosition,
-                behavior: 'smooth'
-            });
-        } else {
-            // Fallback для браузеров, не поддерживающих smooth scroll
-            scrollContainer.scrollLeft = scrollPosition;
-        }
-    }
+		// Устанавливаем scrollLeft контейнера
+		// Добавляем проверку на поддержку smooth scroll, если это необходимо
+		if ('scrollBehavior' in document.documentElement.style) {
+			scrollContainer.scrollTo({
+				left: scrollPosition,
+				behavior: 'smooth'
+			});
+		} else {
+			// Fallback для браузеров, не поддерживающих smooth scroll
+			scrollContainer.scrollLeft = scrollPosition;
+		}
+	}
 });
 
 // document.addEventListener('DOMContentLoaded', function() {
@@ -1562,74 +1600,74 @@ document.addEventListener('DOMContentLoaded', function() {
 // });
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Находим ВСЕ контейнеры с классом 'training-plan_items'
-    const containers = document.querySelectorAll('.learning-paths .training-plan_items');
+	// Находим ВСЕ контейнеры с классом 'training-plan_items'
+	const containers = document.querySelectorAll('.learning-paths .training-plan_items');
 
-    // Проходим по каждому найденному контейнеру и применяем логику
-    containers.forEach(container => {
-        // Получаем DOM-элементы, имеющие класс .training-plan_item внутри ТЕКУЩЕГО контейнера
-        const items = Array.from(container.querySelectorAll('.training-plan_item'));
-        const itemCount = items.length;
+	// Проходим по каждому найденному контейнеру и применяем логику
+	containers.forEach(container => {
+		// Получаем DOM-элементы, имеющие класс .training-plan_item внутри ТЕКУЩЕГО контейнера
+		const items = Array.from(container.querySelectorAll('.training-plan_item'));
+		const itemCount = items.length;
 
-        // Сбрасываем все классы ширины для элементов ТЕКУЩЕГО контейнера перед применением новых
-        items.forEach(item => {
-            item.classList.remove('full-width', 'half-width', 'third-width');
-        });
+		// Сбрасываем все классы ширины для элементов ТЕКУЩЕГО контейнера перед применением новых
+		items.forEach(item => {
+			item.classList.remove('full-width', 'half-width', 'third-width');
+		});
 
-        if (itemCount === 0) {
-            // Нет элементов в этом контейнере, ничего не делаем.
-            return; // Переходим к следующему контейнеру (если есть)
-        } else if (itemCount === 1) {
-            // Если один элемент - на всю ширину
-            items[0].classList.add('full-width');
-        } else if (itemCount === 2) {
-            // Если два элемента - по 1/2 ширины
-            items.forEach(item => {
-                item.classList.add('half-width');
-            });
-        } else if (itemCount === 3) {
-            // Если три элемента - по 1/3 ширины
-            items.forEach(item => {
-                item.classList.add('third-width');
-            });
-        } else if (itemCount === 4) {
-            // Если 4 элемента:
-            // Первый ряд (3 элемента): 1/3
-            for (let i = 0; i < 3; i++) {
-                if (items[i]) {
-                    items[i].classList.add('third-width');
-                }
-            }
-            // Второй ряд (1 элемент): на всю ширину
-            if (items[3]) {
-                items[3].classList.add('full-width');
-            }
-        } else if (itemCount > 4) {
-            // Если 5 и более элементов
-            const fullRowsCount = Math.floor(itemCount / 3);
-            const remainingItemsInLastRow = itemCount % 3;
+		if (itemCount === 0) {
+			// Нет элементов в этом контейнере, ничего не делаем.
+			return; // Переходим к следующему контейнеру (если есть)
+		} else if (itemCount === 1) {
+			// Если один элемент - на всю ширину
+			items[0].classList.add('full-width');
+		} else if (itemCount === 2) {
+			// Если два элемента - по 1/2 ширины
+			items.forEach(item => {
+				item.classList.add('half-width');
+			});
+		} else if (itemCount === 3) {
+			// Если три элемента - по 1/3 ширины
+			items.forEach(item => {
+				item.classList.add('third-width');
+			});
+		} else if (itemCount === 4) {
+			// Если 4 элемента:
+			// Первый ряд (3 элемента): 1/3
+			for (let i = 0; i < 3; i++) {
+				if (items[i]) {
+					items[i].classList.add('third-width');
+				}
+			}
+			// Второй ряд (1 элемент): на всю ширину
+			if (items[3]) {
+				items[3].classList.add('full-width');
+			}
+		} else if (itemCount > 4) {
+			// Если 5 и более элементов
+			const fullRowsCount = Math.floor(itemCount / 3);
+			const remainingItemsInLastRow = itemCount % 3;
 
-            // Элементы в полных рядах (по 1/3)
-            for (let i = 0; i < fullRowsCount * 3; i++) {
-                items[i].classList.add('third-width');
-            }
+			// Элементы в полных рядах (по 1/3)
+			for (let i = 0; i < fullRowsCount * 3; i++) {
+				items[i].classList.add('third-width');
+			}
 
-            // Обработка оставшихся элементов в последнем ряду
-            const startIndex = fullRowsCount * 3;
-            
-            if (remainingItemsInLastRow === 1) {
-                if (items[startIndex]) {
-                    items[startIndex].classList.add('full-width');
-                }
-            } else if (remainingItemsInLastRow === 2) {
-                if (items[startIndex]) {
-                    items[startIndex].classList.add('half-width');
-                }
-                if (items[startIndex + 1]) {
-                    items[startIndex + 1].classList.add('half-width');
-                }
-            }
-            // Если remainingItemsInLastRow === 0, все элементы уже получили third-width
-        }
-    }); // Конец forEach(container)
+			// Обработка оставшихся элементов в последнем ряду
+			const startIndex = fullRowsCount * 3;
+
+			if (remainingItemsInLastRow === 1) {
+				if (items[startIndex]) {
+					items[startIndex].classList.add('full-width');
+				}
+			} else if (remainingItemsInLastRow === 2) {
+				if (items[startIndex]) {
+					items[startIndex].classList.add('half-width');
+				}
+				if (items[startIndex + 1]) {
+					items[startIndex + 1].classList.add('half-width');
+				}
+			}
+			// Если remainingItemsInLastRow === 0, все элементы уже получили third-width
+		}
+	}); // Конец forEach(container)
 });

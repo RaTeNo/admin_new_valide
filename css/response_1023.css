@@ -693,6 +693,45 @@
     }
 
 
+    .tabs_container .tabs {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+    }
+    .tabs_container .idea-head_left button {
+        border: 1px solid #555;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+
+
+
+    .company .breadcrumbs {
+        margin-left: 40px;
+    }
+
+    .case_top-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .case_top-wrap span {
+        display: none;
+    }
+    .case_top-time span {
+        display: block;
+    }
+    .conflict_item-top_time {
+        align-items: flex-start;
+    }
+    .member_items {
+        width: max-content;
+    }
+
+
+    .well_wrap-items > * {
+        width: calc(100% / 3 - 9px);
+    }
 
 
 }
