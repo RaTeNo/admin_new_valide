@@ -734,4 +734,9 @@
     }
 
 
+    .certification_top {
+        flex-direction: column;
+    }
+
+
 }

@@ -1718,6 +1718,7 @@
     .mt7 {
         margin-top: 7px;
     }
+   
 
     .audio-notes_description-btns-ok {
         width: 100%;
@@ -2393,8 +2394,6 @@
         flex-direction: column;
     }
     .company_item-logo {
-        width: 180px;
-        height: 180px;
         margin: 0 auto;
     }
     .company_wrap-btn {
@@ -2436,7 +2435,21 @@
     .contained_item-wrapper {
         padding: 14px;
     }
+    .fact .select-wrapper {
+        width: 100%;
+    }
 
+    .courses-certification_items > *, 
+    .structure-certification_items > * {
+        width: 100%;
+    }
+    .certification_bottom-label {
+        width: 100%;
+        justify-content: center;
+    }
+    .certification_bottom-btn {
+        padding: 15px 20px;
+    }
 
 
 
