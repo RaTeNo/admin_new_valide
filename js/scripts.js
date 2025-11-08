@@ -4,23 +4,23 @@ $(() => {
 
 
 
-	var clipboard = new ClipboardJS('#button-copy', {
-		text: function (trigger) {
-			return document.getElementById('box').innerText.replace(/\n+/g, '\n');
-		}
-	});
+	// var clipboard = new ClipboardJS('#button-copy', {
+	// 	text: function (trigger) {
+	// 		return document.getElementById('box').innerText.replace(/\n+/g, '\n');
+	// 	}
+	// });
 
-	clipboard.on('success', function (e) {
-		alert('Текст скопирован: ' + e.text);
-		e.trigger.classList.add('btn-success');
-		setTimeout(function () {
-			e.trigger.classList.remove('btn-success');
-		}, 3000);
-	});
+	// clipboard.on('success', function (e) {
+	// 	alert('Текст скопирован: ' + e.text);
+	// 	e.trigger.classList.add('btn-success');
+	// 	setTimeout(function () {
+	// 		e.trigger.classList.remove('btn-success');
+	// 	}, 3000);
+	// });
 
-	clipboard.on('error', function (e) {
-		alert('Ошибка копирования');
-	});
+	// clipboard.on('error', function (e) {
+	// 	alert('Ошибка копирования');
+	// });
 
 
 
@@ -150,6 +150,11 @@ $(() => {
 		document.getElementById("imgInp").value = "";
 	});
 
+
+	$('.fact_button-ii').click(function (e) {
+		e.preventDefault();
+		$('.loading_box').addClass('active');
+	});
 
 
 	$(".create-report_wrap_hide").each(function (index) {
