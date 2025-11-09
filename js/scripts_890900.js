@@ -241,6 +241,11 @@ $(() => {
 		$(this).hide();
 	});
 
+	$('body').on('click', '.member_btn', function (e) {
+		e.preventDefault()
+		$(this).hide();
+		$(".member_item").removeClass("hide");
+	});
 
 	$('body').on('click', '.purpose_item ol li', function (e) {
 		e.preventDefault()
