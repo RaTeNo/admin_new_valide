@@ -49765,14 +49765,19 @@ aside .menu .item .icon141 > * {
 .company_item-left {
     display: flex;
     gap: 22px;
+    flex-wrap: wrap;
 }
 .company_item-logo {
-    width: 83px;
-    height: auto;
+    width: auto;
+    height: 83px;
     flex-shrink: 0;
+    max-width: 100%;
 }
 .company_item-logo img {
     width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
 }
 .company_item-title {
     font-family: 'Ubuntu';
