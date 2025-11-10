@@ -3983,6 +3983,22 @@
     }
 
 
+
+    .qualification_item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .qualification_item-rating {
+        width: 100%;
+    }
+    .qualification_item-left {
+        width: 100%;
+    }
+    .qualification_item-right {
+        align-items: flex-start;
+    }
+
+
  
 
 
