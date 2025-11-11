@@ -51210,6 +51210,8 @@ aside .menu .item .icon141 > * {
 .fact_buttons {
     display: flex;
     gap: 15px;
+    padding-bottom: 40px;
+    border-bottom:1px solid #D8D8D8;
 }
 .fact_buttons > * {
     width: calc(100%/2 - 10px);

@@ -3270,6 +3270,7 @@
     .comments_wrap_new .block_title .tabs{        
         margin-left: 0 !important;
         flex-direction: row;
+        width: auto;
     }
 
 
