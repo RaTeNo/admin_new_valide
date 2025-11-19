@@ -739,4 +739,15 @@
     }
 
 
+
+    
+    .draft_table .table-wrap {
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+
+    .draft_items > * {
+        width: calc(100% / 3 - 10px);
+    }
+
 }

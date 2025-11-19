@@ -4000,6 +4000,54 @@
     }
 
 
+    .draft_items > * {
+        width: calc(100% / 2 - 8px);
+    }
+    .draft_top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .draft_description {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .estimate_bottom-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .estimate_bottom-item_right {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .outcome_items > * {
+        width: 100%;
+    }
+    .ability .accordion_item .faq_btn span {
+        display: block;
+    }
+    .ability .progress-bar_box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .ability_item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .quarter_boxs > * {
+        width: calc(100% / 2 - 6px);
+        padding: 10px;
+    }
+    .quarter_item {
+        padding: 50px 22px 22px 22px;
+    }
+    .quarter_item-top {
+        width: 100%;
+        flex-direction: column;
+    }
  
 
 
