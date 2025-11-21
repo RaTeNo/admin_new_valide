@@ -35951,7 +35951,8 @@ bottom: 20px;
     padding: 8px;
     background: #F3F3FF;
     text-decoration: none;
-    padding-top: 14px;
+   /* padding-top: 14px;*/
+    align-items: center;
 }
 .steps-instructions_item-info {
     margin-left: 7px;
@@ -50786,6 +50787,8 @@ aside .menu .item .icon141 > * {
     padding: 3px 6px;
     background: var(--main_color);
     border-radius: 20px;
+    white-space: nowrap;
+
 }
 .case_btns {
     position: absolute;
@@ -54343,4 +54346,35 @@ p.italic {
 .quarter_item.disabled .quarter_item-top {
     margin-bottom: 0px;
     padding-bottom: 0px;
+}
+
+.estimate_modal-example{
+    background: #F3F3FF;
+    margin: 24px 0;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.estimate_modal-example p
+{
+    margin-bottom: 12px;
+}
+
+.estimate_modal-example ul{
+    list-style: none;
+}
+.estimate_modal-example ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.estimate_modal-example ul li + li{
+    margin-top: 15px;
+}
+
+.estimate_modal-example ul li .icon{
+    width: 20px;
+    height: 20px;
+        flex-shrink: 0;
 }
